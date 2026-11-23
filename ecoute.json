@@ -1,0 +1,1823 @@
+{
+ "levels": [
+  "A1",
+  "A2",
+  "B1",
+  "B2",
+  "C1"
+ ],
+ "cando": {
+  "A1": [
+   "Saluer, me présenter, dire d'où je viens",
+   "Comprendre des questions très simples (nom, pays, heure)",
+   "Compter, comprendre un prix ou une heure",
+   "Comprendre « oui / non / merci / pardon » dans un échange lent",
+   "Accueillir quelqu'un avec une formule toute faite"
+  ],
+  "A2": [
+   "Comprendre des phrases courantes sur le travail et le quotidien",
+   "Suivre une consigne simple sur le plateau (« attendez », « par ici »)",
+   "Parler de mon week-end, de la météo, de mes goûts",
+   "Comprendre l'essentiel d'un message court et clair",
+   "Proposer, accepter, refuser poliment"
+  ],
+  "B1": [
+   "Suivre une conversation de travail si on parle lentement",
+   "Comprendre les points principaux d'une réunion de planning",
+   "Raconter un problème technique et sa solution",
+   "Comprendre une annonce (horaires, changements, retards)",
+   "Donner mon avis et le justifier"
+  ],
+  "B2": [
+   "Suivre une discussion entre Coréens à débit presque normal",
+   "Comprendre les nuances (politesse, ironie, hésitation)",
+   "Négocier un planning ou un budget",
+   "Comprendre une interview ou un reportage sur l'opéra",
+   "Expliquer un procédé technique en détail"
+  ],
+  "C1": [
+   "Comprendre une conversation rapide entre plusieurs personnes",
+   "Saisir l'implicite et l'humour",
+   "Mener une réunion de production en coréen",
+   "Comprendre un film ou une émission sans sous-titres",
+   "M'exprimer avec aisance sur des sujets complexes"
+  ]
+ },
+ "base": {
+  "A1": [
+   {
+    "ko": "안녕하세요",
+    "fr": "Bonjour",
+    "ic": "👋"
+   },
+   {
+    "ko": "감사합니다",
+    "fr": "Merci",
+    "ic": "🙏"
+   },
+   {
+    "ko": "죄송합니다",
+    "fr": "Pardon, je suis désolé",
+    "ic": "🙇"
+   },
+   {
+    "ko": "네 / 아니요",
+    "fr": "Oui / non",
+    "ic": "↕️"
+   },
+   {
+    "ko": "이름",
+    "fr": "Nom, prénom",
+    "ic": "🏷️"
+   },
+   {
+    "ko": "사람",
+    "fr": "Personne",
+    "ic": "🧑"
+   },
+   {
+    "ko": "물",
+    "fr": "Eau",
+    "ic": "💧"
+   },
+   {
+    "ko": "밥",
+    "fr": "Riz, repas",
+    "ic": "🍚"
+   },
+   {
+    "ko": "커피",
+    "fr": "Café",
+    "ic": "☕"
+   },
+   {
+    "ko": "집",
+    "fr": "Maison",
+    "ic": "🏠"
+   },
+   {
+    "ko": "학교",
+    "fr": "École",
+    "ic": "🏫"
+   },
+   {
+    "ko": "회사",
+    "fr": "Entreprise",
+    "ic": "🏢"
+   },
+   {
+    "ko": "친구",
+    "fr": "Ami",
+    "ic": "🧑‍🤝‍🧑"
+   },
+   {
+    "ko": "가족",
+    "fr": "Famille",
+    "ic": "👨‍👩‍👧"
+   },
+   {
+    "ko": "시간",
+    "fr": "Heure, temps",
+    "ic": "⏰"
+   },
+   {
+    "ko": "오늘",
+    "fr": "Aujourd'hui",
+    "ic": "📅"
+   },
+   {
+    "ko": "내일",
+    "fr": "Demain",
+    "ic": "➡️"
+   },
+   {
+    "ko": "어제",
+    "fr": "Hier",
+    "ic": "⬅️"
+   },
+   {
+    "ko": "지금",
+    "fr": "Maintenant",
+    "ic": "⏱️"
+   },
+   {
+    "ko": "여기 / 거기 / 저기",
+    "fr": "Ici / là / là-bas",
+    "ic": "📍"
+   },
+   {
+    "ko": "화장실",
+    "fr": "Toilettes",
+    "ic": "🚻"
+   },
+   {
+    "ko": "얼마예요?",
+    "fr": "Combien ça coûte ?",
+    "ic": "💶"
+   },
+   {
+    "ko": "주세요",
+    "fr": "Donnez-moi, s'il vous plaît",
+    "ic": "🤲"
+   },
+   {
+    "ko": "가다",
+    "fr": "Aller",
+    "ic": "🚶"
+   },
+   {
+    "ko": "오다",
+    "fr": "Venir",
+    "ic": "🏃"
+   },
+   {
+    "ko": "먹다",
+    "fr": "Manger",
+    "ic": "🍽️"
+   },
+   {
+    "ko": "마시다",
+    "fr": "Boire",
+    "ic": "🥤"
+   },
+   {
+    "ko": "보다",
+    "fr": "Voir, regarder",
+    "ic": "👀"
+   },
+   {
+    "ko": "듣다",
+    "fr": "Écouter",
+    "ic": "👂"
+   },
+   {
+    "ko": "말하다",
+    "fr": "Parler, dire",
+    "ic": "🗣️"
+   },
+   {
+    "ko": "좋다",
+    "fr": "Être bien, aimer",
+    "ic": "👍"
+   },
+   {
+    "ko": "크다 / 작다",
+    "fr": "Grand / petit",
+    "ic": "🐘"
+   },
+   {
+    "ko": "많다 / 적다",
+    "fr": "Beaucoup / peu",
+    "ic": "📊"
+   },
+   {
+    "ko": "있다 / 없다",
+    "fr": "Il y a, avoir / il n'y a pas",
+    "ic": "✅"
+   },
+   {
+    "ko": "하나 둘 셋",
+    "fr": "Un, deux, trois",
+    "ic": "🔢"
+   },
+   {
+    "ko": "왼쪽 / 오른쪽",
+    "fr": "Gauche / droite",
+    "ic": "↔️"
+   },
+   {
+    "ko": "문",
+    "fr": "Porte",
+    "ic": "🚪"
+   },
+   {
+    "ko": "의자",
+    "fr": "Chaise",
+    "ic": "🪑"
+   },
+   {
+    "ko": "전화",
+    "fr": "Téléphone",
+    "ic": "📞"
+   },
+   {
+    "ko": "잠깐만요",
+    "fr": "Un instant, s'il vous plaît",
+    "ic": "✋"
+   }
+  ],
+  "A2": [
+   {
+    "ko": "기다리다",
+    "fr": "Attendre",
+    "ic": "⏳"
+   },
+   {
+    "ko": "시작하다 / 끝나다",
+    "fr": "Commencer / finir",
+    "ic": "🏁"
+   },
+   {
+    "ko": "준비하다",
+    "fr": "Préparer",
+    "ic": "🧰"
+   },
+   {
+    "ko": "확인하다",
+    "fr": "Vérifier",
+    "ic": "☑️"
+   },
+   {
+    "ko": "옮기다",
+    "fr": "Déplacer",
+    "ic": "📦"
+   },
+   {
+    "ko": "조심하다",
+    "fr": "Faire attention",
+    "ic": "⚠️"
+   },
+   {
+    "ko": "빨리 / 천천히",
+    "fr": "Vite / lentement",
+    "ic": "🐇"
+   },
+   {
+    "ko": "다시",
+    "fr": "De nouveau",
+    "ic": "🔁"
+   },
+   {
+    "ko": "같이",
+    "fr": "Ensemble",
+    "ic": "🤝"
+   },
+   {
+    "ko": "먼저",
+    "fr": "D'abord",
+    "ic": "1️⃣"
+   },
+   {
+    "ko": "나중에",
+    "fr": "Plus tard",
+    "ic": "🕓"
+   },
+   {
+    "ko": "벌써 / 아직",
+    "fr": "Déjà / pas encore",
+    "ic": "⌛"
+   },
+   {
+    "ko": "자주 / 가끔",
+    "fr": "Souvent / parfois",
+    "ic": "🔂"
+   },
+   {
+    "ko": "위 / 아래",
+    "fr": "Dessus / dessous",
+    "ic": "↕️"
+   },
+   {
+    "ko": "앞 / 뒤",
+    "fr": "Devant / derrière",
+    "ic": "🔄"
+   },
+   {
+    "ko": "무겁다 / 가볍다",
+    "fr": "Lourd / léger",
+    "ic": "🏋️"
+   },
+   {
+    "ko": "밝다 / 어둡다",
+    "fr": "Clair / sombre",
+    "ic": "💡"
+   },
+   {
+    "ko": "시끄럽다 / 조용하다",
+    "fr": "Bruyant / calme",
+    "ic": "🔊"
+   },
+   {
+    "ko": "바쁘다",
+    "fr": "Être occupé",
+    "ic": "🏃‍♂️"
+   },
+   {
+    "ko": "피곤하다",
+    "fr": "Être fatigué",
+    "ic": "😴"
+   },
+   {
+    "ko": "아프다",
+    "fr": "Avoir mal, être malade",
+    "ic": "🤕"
+   },
+   {
+    "ko": "배고프다",
+    "fr": "Avoir faim",
+    "ic": "🍜"
+   },
+   {
+    "ko": "약속",
+    "fr": "Rendez-vous, promesse",
+    "ic": "🤞"
+   },
+   {
+    "ko": "회의",
+    "fr": "Réunion",
+    "ic": "🗂️"
+   },
+   {
+    "ko": "휴식 / 쉬는 시간",
+    "fr": "Pause",
+    "ic": "☕"
+   },
+   {
+    "ko": "점심",
+    "fr": "Déjeuner",
+    "ic": "🍱"
+   },
+   {
+    "ko": "열쇠",
+    "fr": "Clé",
+    "ic": "🔑"
+   },
+   {
+    "ko": "사다리",
+    "fr": "Échelle",
+    "ic": "🪜"
+   },
+   {
+    "ko": "무대",
+    "fr": "Scène",
+    "ic": "🎭"
+   },
+   {
+    "ko": "소리",
+    "fr": "Son, bruit",
+    "ic": "🔉"
+   },
+   {
+    "ko": "불 켜 주세요",
+    "fr": "Allumez, s'il vous plaît",
+    "ic": "💡"
+   },
+   {
+    "ko": "불 꺼 주세요",
+    "fr": "Éteignez, s'il vous plaît",
+    "ic": "🌑"
+   },
+   {
+    "ko": "잘 안 들려요",
+    "fr": "Je n'entends pas bien",
+    "ic": "👂"
+   },
+   {
+    "ko": "다시 말해 주세요",
+    "fr": "Pouvez-vous répéter ?",
+    "ic": "🔁"
+   },
+   {
+    "ko": "천천히 말해 주세요",
+    "fr": "Parlez lentement, s'il vous plaît",
+    "ic": "🐢"
+   },
+   {
+    "ko": "무슨 뜻이에요?",
+    "fr": "Qu'est-ce que ça veut dire ?",
+    "ic": "❓"
+   },
+   {
+    "ko": "괜찮아요?",
+    "fr": "Ça va ? Tout va bien ?",
+    "ic": "👌"
+   },
+   {
+    "ko": "어디에 있어요?",
+    "fr": "Où est-ce ?",
+    "ic": "🗺️"
+   },
+   {
+    "ko": "몇 시에요?",
+    "fr": "À quelle heure ?",
+    "ic": "🕘"
+   },
+   {
+    "ko": "이쪽으로 오세요",
+    "fr": "Venez par ici",
+    "ic": "👉"
+   }
+  ],
+  "B1": [
+   {
+    "ko": "일정",
+    "fr": "Planning, programme",
+    "ic": "📆"
+   },
+   {
+    "ko": "변경되다",
+    "fr": "Être modifié",
+    "ic": "🔀"
+   },
+   {
+    "ko": "연기되다",
+    "fr": "Être reporté",
+    "ic": "⏭️"
+   },
+   {
+    "ko": "담당자",
+    "fr": "Responsable (d'une tâche)",
+    "ic": "🧑‍💼"
+   },
+   {
+    "ko": "안전",
+    "fr": "Sécurité",
+    "ic": "🦺"
+   },
+   {
+    "ko": "위험하다",
+    "fr": "Être dangereux",
+    "ic": "☢️"
+   },
+   {
+    "ko": "고장 나다",
+    "fr": "Tomber en panne",
+    "ic": "🛠️"
+   },
+   {
+    "ko": "수리하다",
+    "fr": "Réparer",
+    "ic": "🔧"
+   },
+   {
+    "ko": "해결하다",
+    "fr": "Résoudre",
+    "ic": "🔑"
+   },
+   {
+    "ko": "결정하다",
+    "fr": "Décider",
+    "ic": "⚖️"
+   },
+   {
+    "ko": "의견",
+    "fr": "Avis, opinion",
+    "ic": "💬"
+   },
+   {
+    "ko": "설명하다",
+    "fr": "Expliquer",
+    "ic": "🧑‍🏫"
+   },
+   {
+    "ko": "부탁하다",
+    "fr": "Demander un service",
+    "ic": "🙏"
+   },
+   {
+    "ko": "허락",
+    "fr": "Permission",
+    "ic": "✅"
+   },
+   {
+    "ko": "예정이다",
+    "fr": "Être prévu",
+    "ic": "🗓️"
+   },
+   {
+    "ko": "가능하다 / 불가능하다",
+    "fr": "Possible / impossible",
+    "ic": "🚦"
+   },
+   {
+    "ko": "필요하다",
+    "fr": "Être nécessaire",
+    "ic": "❗"
+   },
+   {
+    "ko": "충분하다",
+    "fr": "Être suffisant",
+    "ic": "🈵"
+   },
+   {
+    "ko": "부족하다",
+    "fr": "Manquer, être insuffisant",
+    "ic": "📉"
+   },
+   {
+    "ko": "늦다",
+    "fr": "Être en retard",
+    "ic": "⏰"
+   },
+   {
+    "ko": "미리",
+    "fr": "À l'avance",
+    "ic": "⏩"
+   },
+   {
+    "ko": "갑자기",
+    "fr": "Soudain",
+    "ic": "⚡"
+   },
+   {
+    "ko": "결국",
+    "fr": "Finalement",
+    "ic": "🏁"
+   },
+   {
+    "ko": "그런데",
+    "fr": "Mais, au fait",
+    "ic": "↩️"
+   },
+   {
+    "ko": "그래서",
+    "fr": "C'est pourquoi",
+    "ic": "➡️"
+   },
+   {
+    "ko": "왜냐하면",
+    "fr": "Parce que",
+    "ic": "❓"
+   },
+   {
+    "ko": "예를 들면",
+    "fr": "Par exemple",
+    "ic": "📌"
+   },
+   {
+    "ko": "리허설",
+    "fr": "Répétition",
+    "ic": "🔄"
+   },
+   {
+    "ko": "관객석",
+    "fr": "Salle (places du public)",
+    "ic": "💺"
+   },
+   {
+    "ko": "막 / 커튼",
+    "fr": "Rideau",
+    "ic": "🎭"
+   },
+   {
+    "ko": "조명기",
+    "fr": "Projecteur",
+    "ic": "🔦"
+   },
+   {
+    "ko": "음향 장비",
+    "fr": "Matériel son",
+    "ic": "🎚️"
+   },
+   {
+    "ko": "하중",
+    "fr": "Charge (poids)",
+    "ic": "⚖️"
+   },
+   {
+    "ko": "무대 감독",
+    "fr": "Régisseur général",
+    "ic": "📋"
+   },
+   {
+    "ko": "공연장",
+    "fr": "Salle de spectacle",
+    "ic": "🏛️"
+   }
+  ],
+  "B2": [
+   {
+    "ko": "협의하다",
+    "fr": "Se concerter",
+    "ic": "🤝"
+   },
+   {
+    "ko": "조정하다",
+    "fr": "Ajuster, coordonner",
+    "ic": "🎛️"
+   },
+   {
+    "ko": "검토하다",
+    "fr": "Examiner, passer en revue",
+    "ic": "🔍"
+   },
+   {
+    "ko": "승인하다",
+    "fr": "Approuver",
+    "ic": "🖊️"
+   },
+   {
+    "ko": "견적",
+    "fr": "Devis",
+    "ic": "🧾"
+   },
+   {
+    "ko": "예산을 초과하다",
+    "fr": "Dépasser le budget",
+    "ic": "💸"
+   },
+   {
+    "ko": "계약",
+    "fr": "Contrat",
+    "ic": "📄"
+   },
+   {
+    "ko": "규정",
+    "fr": "Règlement",
+    "ic": "📜"
+   },
+   {
+    "ko": "책임지다",
+    "fr": "Assumer la responsabilité",
+    "ic": "🧭"
+   },
+   {
+    "ko": "우선순위",
+    "fr": "Priorité",
+    "ic": "🥇"
+   },
+   {
+    "ko": "효율적이다",
+    "fr": "Être efficace",
+    "ic": "⚙️"
+   },
+   {
+    "ko": "문제점",
+    "fr": "Point problématique",
+    "ic": "🚩"
+   },
+   {
+    "ko": "대안",
+    "fr": "Alternative, plan B",
+    "ic": "🔀"
+   },
+   {
+    "ko": "양해 부탁드립니다",
+    "fr": "Merci de votre compréhension",
+    "ic": "🙇"
+   },
+   {
+    "ko": "말씀하신 대로",
+    "fr": "Comme vous l'avez dit",
+    "ic": "👂"
+   },
+   {
+    "ko": "그렇다고 해도",
+    "fr": "Même si c'est le cas",
+    "ic": "🤔"
+   },
+   {
+    "ko": "오히려",
+    "fr": "Au contraire, plutôt",
+    "ic": "🔄"
+   },
+   {
+    "ko": "아무래도",
+    "fr": "De toute façon, il semble que",
+    "ic": "🤷"
+   },
+   {
+    "ko": "어쩔 수 없다",
+    "fr": "On n'y peut rien",
+    "ic": "😮‍💨"
+   },
+   {
+    "ko": "눈치",
+    "fr": "Sens de l'implicite (lire l'ambiance)",
+    "ic": "👀"
+   },
+   {
+    "ko": "분위기를 맞추다",
+    "fr": "S'adapter à l'ambiance",
+    "ic": "🎶"
+   },
+   {
+    "ko": "무대 전환",
+    "fr": "Changement de décor",
+    "ic": "🔁"
+   },
+   {
+    "ko": "리깅",
+    "fr": "Accroches (rigging)",
+    "ic": "🪢"
+   },
+   {
+    "ko": "하중 계산",
+    "fr": "Calcul de charge",
+    "ic": "🧮"
+   },
+   {
+    "ko": "안전 점검",
+    "fr": "Contrôle de sécurité",
+    "ic": "🦺"
+   },
+   {
+    "ko": "기술 회의",
+    "fr": "Réunion technique",
+    "ic": "🗂️"
+   },
+   {
+    "ko": "투어 일정",
+    "fr": "Planning de tournée",
+    "ic": "🚌"
+   },
+   {
+    "ko": "현지 스태프",
+    "fr": "Équipe locale",
+    "ic": "👷"
+   },
+   {
+    "ko": "통역을 거치다",
+    "fr": "Passer par l'interprète",
+    "ic": "🗣️"
+   },
+   {
+    "ko": "의사소통",
+    "fr": "Communication",
+    "ic": "📡"
+   }
+  ],
+  "C1": [
+   {
+    "ko": "관행",
+    "fr": "Usage, pratique habituelle",
+    "ic": "📚"
+   },
+   {
+    "ko": "전반적으로",
+    "fr": "Dans l'ensemble",
+    "ic": "🌐"
+   },
+   {
+    "ko": "구체적으로",
+    "fr": "Concrètement",
+    "ic": "🧱"
+   },
+   {
+    "ko": "궁극적으로",
+    "fr": "En fin de compte",
+    "ic": "🎯"
+   },
+   {
+    "ko": "불가피하다",
+    "fr": "Être inévitable",
+    "ic": "⛓️"
+   },
+   {
+    "ko": "시행착오",
+    "fr": "Essais et erreurs",
+    "ic": "🔬"
+   },
+   {
+    "ko": "타협하다",
+    "fr": "Faire un compromis",
+    "ic": "🤝"
+   },
+   {
+    "ko": "의견 차이를 좁히다",
+    "fr": "Réduire les divergences",
+    "ic": "↔️"
+   },
+   {
+    "ko": "책임 소재",
+    "fr": "Attribution des responsabilités",
+    "ic": "🧭"
+   },
+   {
+    "ko": "파급 효과",
+    "fr": "Effet de répercussion",
+    "ic": "🌊"
+   },
+   {
+    "ko": "여지가 있다",
+    "fr": "Il y a de la marge",
+    "ic": "📏"
+   },
+   {
+    "ko": "실무진",
+    "fr": "Équipe opérationnelle",
+    "ic": "👷"
+   },
+   {
+    "ko": "간과하다",
+    "fr": "Négliger, passer à côté",
+    "ic": "🙈"
+   },
+   {
+    "ko": "제작 여건",
+    "fr": "Conditions de production",
+    "ic": "🏗️"
+   },
+   {
+    "ko": "예술적 의도",
+    "fr": "Intention artistique",
+    "ic": "🎨"
+   },
+   {
+    "ko": "연출가의 의도를 살리다",
+    "fr": "Respecter l'intention du metteur en scène",
+    "ic": "🎬"
+   },
+   {
+    "ko": "완성도를 높이다",
+    "fr": "Améliorer la qualité finale",
+    "ic": "✨"
+   },
+   {
+    "ko": "눈에 띄지 않게",
+    "fr": "Discrètement, sans que ça se voie",
+    "ic": "🫥"
+   },
+   {
+    "ko": "말끝을 흐리다",
+    "fr": "Ne pas finir sa phrase (hésiter)",
+    "ic": "…"
+   },
+   {
+    "ko": "돌려 말하다",
+    "fr": "Parler à demi-mot",
+    "ic": "🌀"
+   },
+   {
+    "ko": "무리하다",
+    "fr": "Forcer, en faire trop",
+    "ic": "🏋️"
+   },
+   {
+    "ko": "감수하다",
+    "fr": "Accepter (un risque)",
+    "ic": "🎲"
+   },
+   {
+    "ko": "한계에 부딪히다",
+    "fr": "Se heurter à ses limites",
+    "ic": "🧱"
+   },
+   {
+    "ko": "박수를 받다",
+    "fr": "Être applaudi",
+    "ic": "👏"
+   },
+   {
+    "ko": "성황리에 끝나다",
+    "fr": "Se terminer avec un grand succès",
+    "ic": "🏆"
+   }
+  ]
+ },
+ "dialogues": [
+  {
+   "id": "d1",
+   "title": "Premier contact",
+   "lv": "A1",
+   "ctx": "Tu accueilles une chanteuse coréenne à l'entrée des artistes.",
+   "lines": [
+    {
+     "s": "A",
+     "ko": "안녕하세요! 어서 오세요.",
+     "fr": "Bonjour ! Bienvenue."
+    },
+    {
+     "s": "B",
+     "ko": "안녕하세요. 저는 김수진이에요.",
+     "fr": "Bonjour. Je suis Kim Sujin."
+    },
+    {
+     "s": "A",
+     "ko": "저는 아르노예요. 기술감독이에요.",
+     "fr": "Je suis Arnaud. Je suis le directeur technique."
+    },
+    {
+     "s": "B",
+     "ko": "아, 반가워요! 한국어 잘하시네요.",
+     "fr": "Ah, enchantée ! Vous parlez bien coréen."
+    },
+    {
+     "s": "A",
+     "ko": "감사합니다. 조금 해요.",
+     "fr": "Merci. Je parle un peu."
+    }
+   ],
+   "qs": [
+    {
+     "q": "Qui est la personne qui arrive ?",
+     "opts": [
+      "Une danseuse",
+      "Une chanteuse nommée Kim Sujin",
+      "L'interprète"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Que dit-elle du coréen d'Arnaud ?",
+     "opts": [
+      "Qu'il parle bien",
+      "Qu'il parle trop vite",
+      "Qu'elle ne comprend pas"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "title": "Un café ?",
+   "lv": "A1",
+   "ctx": "Pause au foyer du personnel.",
+   "lines": [
+    {
+     "s": "A",
+     "ko": "커피 마실까요?",
+     "fr": "On prend un café ?"
+    },
+    {
+     "s": "B",
+     "ko": "좋아요! 아메리카노 주세요.",
+     "fr": "Bonne idée ! Un americano, s'il vous plaît."
+    },
+    {
+     "s": "A",
+     "ko": "설탕 있어요?",
+     "fr": "Il y a du sucre ?"
+    },
+    {
+     "s": "B",
+     "ko": "아니요, 설탕 없어요. 우유는 있어요.",
+     "fr": "Non, pas de sucre. Il y a du lait."
+    },
+    {
+     "s": "A",
+     "ko": "괜찮아요. 그냥 마실게요.",
+     "fr": "Pas grave. Je le bois tel quel."
+    }
+   ],
+   "qs": [
+    {
+     "q": "Que commande la deuxième personne ?",
+     "opts": [
+      "Un thé",
+      "Un americano",
+      "Un jus d'orange"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Qu'est-ce qui manque ?",
+     "opts": [
+      "Le lait",
+      "Le sucre",
+      "Les tasses"
+     ],
+     "a": 1
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "title": "À quelle heure ?",
+   "lv": "A1",
+   "ctx": "Un technicien coréen demande l'horaire.",
+   "lines": [
+    {
+     "s": "A",
+     "ko": "리허설 몇 시에 시작해요?",
+     "fr": "La répétition commence à quelle heure ?"
+    },
+    {
+     "s": "B",
+     "ko": "두 시에 시작해요.",
+     "fr": "Elle commence à deux heures."
+    },
+    {
+     "s": "A",
+     "ko": "몇 시에 끝나요?",
+     "fr": "Elle finit à quelle heure ?"
+    },
+    {
+     "s": "B",
+     "ko": "여섯 시에 끝나요.",
+     "fr": "Elle finit à six heures."
+    },
+    {
+     "s": "A",
+     "ko": "네, 알겠어요. 감사합니다.",
+     "fr": "D'accord, compris. Merci."
+    }
+   ],
+   "qs": [
+    {
+     "q": "À quelle heure commence la répétition ?",
+     "opts": [
+      "1 h",
+      "2 h",
+      "6 h"
+     ],
+     "a": 1
+    },
+    {
+     "q": "À quelle heure finit-elle ?",
+     "opts": [
+      "4 h",
+      "5 h",
+      "6 h"
+     ],
+     "a": 2
+    }
+   ]
+  },
+  {
+   "id": "d4",
+   "title": "Le décor arrive",
+   "lv": "A2",
+   "ctx": "Coup de fil avec le chef d'équipe coréen.",
+   "lines": [
+    {
+     "s": "A",
+     "ko": "트럭이 언제 도착해요?",
+     "fr": "Le camion arrive quand ?"
+    },
+    {
+     "s": "B",
+     "ko": "내일 아침 여덟 시쯤 도착할 거예요.",
+     "fr": "Il arrivera demain vers huit heures du matin."
+    },
+    {
+     "s": "A",
+     "ko": "몇 명이 같이 와요?",
+     "fr": "Combien de personnes viennent avec ?"
+    },
+    {
+     "s": "B",
+     "ko": "기술팀 여섯 명이 와요.",
+     "fr": "Six personnes de l'équipe technique."
+    },
+    {
+     "s": "A",
+     "ko": "좋아요. 주차장에서 기다릴게요.",
+     "fr": "Parfait. Je vous attendrai au parking."
+    }
+   ],
+   "qs": [
+    {
+     "q": "Quand arrive le camion ?",
+     "opts": [
+      "Ce soir",
+      "Demain vers 8 h",
+      "Demain vers 18 h"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Combien de techniciens viennent ?",
+     "opts": [
+      "Quatre",
+      "Six",
+      "Huit"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Où Arnaud attendra-t-il ?",
+     "opts": [
+      "Au parking",
+      "Sur scène",
+      "À l'hôtel"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "d5",
+   "title": "Il fait froid",
+   "lv": "A2",
+   "ctx": "Bavardage en arrivant au théâtre.",
+   "lines": [
+    {
+     "s": "A",
+     "ko": "오늘 정말 춥네요.",
+     "fr": "Il fait vraiment froid aujourd'hui."
+    },
+    {
+     "s": "B",
+     "ko": "네, 바람도 많이 불어요. 서울보다 더 추운 것 같아요.",
+     "fr": "Oui, et il y a beaucoup de vent. On dirait qu'il fait plus froid qu'à Séoul."
+    },
+    {
+     "s": "A",
+     "ko": "정말요? 몽쁠리에는 보통 따뜻해요.",
+     "fr": "Vraiment ? D'habitude Montpellier est doux."
+    },
+    {
+     "s": "B",
+     "ko": "그럼 제가 운이 나쁘네요!",
+     "fr": "Alors je n'ai pas de chance !"
+    },
+    {
+     "s": "A",
+     "ko": "하하, 따뜻한 차 한잔 드릴까요?",
+     "fr": "Haha, je vous offre un thé chaud ?"
+    }
+   ],
+   "qs": [
+    {
+     "q": "Comment est le temps ?",
+     "opts": [
+      "Chaud et ensoleillé",
+      "Froid et venteux",
+      "Pluvieux"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Que propose Arnaud ?",
+     "opts": [
+      "Un thé chaud",
+      "Un manteau",
+      "De rentrer à l'hôtel"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "d6",
+   "title": "Le week-end",
+   "lv": "A2",
+   "ctx": "Lundi matin, avec l'interprète.",
+   "lines": [
+    {
+     "s": "A",
+     "ko": "주말에 뭐 했어요?",
+     "fr": "Qu'est-ce que vous avez fait ce week-end ?"
+    },
+    {
+     "s": "B",
+     "ko": "바다에 갔어요. 날씨가 좋아서 산책도 했어요.",
+     "fr": "Je suis allée à la mer. Comme il faisait beau, je me suis aussi promenée."
+    },
+    {
+     "s": "A",
+     "ko": "좋았겠네요! 저는 집에서 쉬었어요.",
+     "fr": "Ça devait être bien ! Moi, je me suis reposé à la maison."
+    },
+    {
+     "s": "B",
+     "ko": "요즘 많이 바쁘시죠?",
+     "fr": "Vous êtes très occupé ces temps-ci, non ?"
+    },
+    {
+     "s": "A",
+     "ko": "네, 공연이 다음 주라서 조금 바빠요.",
+     "fr": "Oui, comme le spectacle est la semaine prochaine, je suis un peu occupé."
+    }
+   ],
+   "qs": [
+    {
+     "q": "Où est allée l'interprète ?",
+     "opts": [
+      "À la montagne",
+      "À la mer",
+      "À Paris"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Pourquoi Arnaud est-il occupé ?",
+     "opts": [
+      "Il déménage",
+      "Le spectacle est la semaine prochaine",
+      "Il part en vacances"
+     ],
+     "a": 1
+    }
+   ]
+  },
+  {
+   "id": "d7",
+   "title": "Changement de planning",
+   "lv": "B1",
+   "ctx": "Réunion rapide avant la répétition.",
+   "lines": [
+    {
+     "s": "A",
+     "ko": "오늘 오후 리허설 일정이 조금 바뀌었어요.",
+     "fr": "Le planning de la répétition de cet après-midi a un peu changé."
+    },
+    {
+     "s": "B",
+     "ko": "어떻게 바뀌었어요?",
+     "fr": "Qu'est-ce qui a changé ?"
+    },
+    {
+     "s": "A",
+     "ko": "조명 점검 때문에 한 시간 늦게 시작할 거예요. 세 시 대신 네 시에 시작해요.",
+     "fr": "À cause du contrôle des lumières, on commencera une heure plus tard. À quatre heures au lieu de trois."
+    },
+    {
+     "s": "B",
+     "ko": "그럼 가수들한테도 알려야겠네요.",
+     "fr": "Alors il faudra aussi prévenir les chanteurs."
+    },
+    {
+     "s": "A",
+     "ko": "네, 제가 무대 감독님한테 말씀드릴게요.",
+     "fr": "Oui, je vais le dire au régisseur général."
+    }
+   ],
+   "qs": [
+    {
+     "q": "Pourquoi la répétition est-elle décalée ?",
+     "opts": [
+      "Un chanteur est malade",
+      "Contrôle des lumières",
+      "Le camion est en retard"
+     ],
+     "a": 1
+    },
+    {
+     "q": "À quelle heure commence-t-elle maintenant ?",
+     "opts": [
+      "3 h",
+      "4 h",
+      "5 h"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Qui Arnaud va-t-il prévenir ?",
+     "opts": [
+      "Le chef d'orchestre",
+      "Le régisseur général",
+      "L'interprète"
+     ],
+     "a": 1
+    }
+   ]
+  },
+  {
+   "id": "d8",
+   "title": "Une panne",
+   "lv": "B1",
+   "ctx": "Sur le plateau, un moteur ne répond plus.",
+   "lines": [
+    {
+     "s": "A",
+     "ko": "이 모터가 갑자기 멈췄어요.",
+     "fr": "Ce moteur s'est arrêté d'un coup."
+    },
+    {
+     "s": "B",
+     "ko": "전원 문제인 것 같아요. 케이블 확인해 봤어요?",
+     "fr": "On dirait un problème d'alimentation. Vous avez vérifié le câble ?"
+    },
+    {
+     "s": "A",
+     "ko": "네, 케이블은 괜찮아요. 아마 컨트롤러가 고장 난 것 같아요.",
+     "fr": "Oui, le câble va bien. Le contrôleur est peut-être en panne."
+    },
+    {
+     "s": "B",
+     "ko": "예비 컨트롤러가 있으면 바꿔 볼까요?",
+     "fr": "Si on a un contrôleur de rechange, on essaie de le changer ?"
+    },
+    {
+     "s": "A",
+     "ko": "창고에 하나 있어요. 바로 가져올게요.",
+     "fr": "Il y en a un à l'entrepôt. Je l'apporte tout de suite."
+    }
+   ],
+   "qs": [
+    {
+     "q": "Quel est le problème ?",
+     "opts": [
+      "Un projecteur grillé",
+      "Un moteur arrêté",
+      "Un micro qui grésille"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Que soupçonne Arnaud finalement ?",
+     "opts": [
+      "Le câble",
+      "Le contrôleur",
+      "Le fusible"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Où se trouve la pièce de rechange ?",
+     "opts": [
+      "À l'entrepôt",
+      "Dans le camion",
+      "En Corée"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "d9",
+   "title": "Au restaurant après le spectacle",
+   "lv": "B1",
+   "ctx": "Le 뒤풀이 avec l'équipe coréenne.",
+   "lines": [
+    {
+     "s": "A",
+     "ko": "오늘 공연 정말 멋있었어요. 다들 수고하셨어요!",
+     "fr": "Le spectacle était vraiment superbe aujourd'hui. Bravo à tous !"
+    },
+    {
+     "s": "B",
+     "ko": "감사합니다. 처음에는 걱정했는데 관객 반응이 좋아서 다행이에요.",
+     "fr": "Merci. Au début j'étais inquiet, mais heureusement le public a bien réagi."
+    },
+    {
+     "s": "A",
+     "ko": "무대 전환도 완벽했어요. 연습을 많이 한 보람이 있네요.",
+     "fr": "Les changements de décor étaient parfaits aussi. Les répétitions ont payé."
+    },
+    {
+     "s": "B",
+     "ko": "아르노 씨 덕분이에요. 항상 도와주셔서 감사해요.",
+     "fr": "C'est grâce à vous, Arnaud. Merci de toujours nous aider."
+    },
+    {
+     "s": "A",
+     "ko": "별말씀을요. 자, 건배합시다!",
+     "fr": "Je vous en prie. Allez, trinquons !"
+    }
+   ],
+   "qs": [
+    {
+     "q": "Comment le Coréen se sentait-il au début ?",
+     "opts": [
+      "Fatigué",
+      "Inquiet",
+      "Malade"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Qu'est-ce qui était parfait ?",
+     "opts": [
+      "Le son",
+      "Les changements de décor",
+      "Le repas"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Que dit Arnaud à la fin ?",
+     "opts": [
+      "Rentrons",
+      "Trinquons",
+      "Encore une répétition"
+     ],
+     "a": 1
+    }
+   ]
+  },
+  {
+   "id": "d10",
+   "title": "Négocier le montage",
+   "lv": "B2",
+   "ctx": "Réunion technique avec le directeur de production coréen.",
+   "lines": [
+    {
+     "s": "A",
+     "ko": "현지 스태프가 여섯 명밖에 없어서 하루 안에 설치를 끝내기는 어려울 것 같습니다.",
+     "fr": "Comme nous n'avons que six personnes sur place, il sera difficile de finir le montage en une journée."
+    },
+    {
+     "s": "B",
+     "ko": "그렇다고 해도 일정을 미루면 리허설 시간이 부족해집니다.",
+     "fr": "Même si c'est le cas, si on repousse le planning, on manquera de temps de répétition."
+    },
+    {
+     "s": "A",
+     "ko": "그럼 대안으로 조명 작업을 밤에 따로 진행하는 건 어떨까요?",
+     "fr": "Alors, comme alternative, que diriez-vous de faire le travail lumière séparément, la nuit ?"
+    },
+    {
+     "s": "B",
+     "ko": "좋은 생각이네요. 다만 추가 인건비는 검토해 봐야 합니다.",
+     "fr": "Bonne idée. Il faudra seulement examiner le coût de main-d'œuvre supplémentaire."
+    },
+    {
+     "s": "A",
+     "ko": "제가 견적을 내일까지 보내 드리겠습니다.",
+     "fr": "Je vous enverrai un devis d'ici demain."
+    }
+   ],
+   "qs": [
+    {
+     "q": "Quel est le problème de départ ?",
+     "opts": [
+      "Trop de techniciens",
+      "Pas assez de personnel pour finir en un jour",
+      "Le décor est abîmé"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Quelle solution propose Arnaud ?",
+     "opts": [
+      "Annuler une représentation",
+      "Faire la lumière la nuit",
+      "Engager l'équipe coréenne"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Que faut-il vérifier ?",
+     "opts": [
+      "Le coût de main-d'œuvre supplémentaire",
+      "Les visas",
+      "La météo"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "d11",
+   "title": "Entre deux Coréens",
+   "lv": "B2",
+   "ctx": "Tu entends deux techniciens coréens parler vite entre eux.",
+   "lines": [
+    {
+     "s": "A",
+     "ko": "야, 그거 아직 안 끝났어? 곧 리허설 시작하잖아.",
+     "fr": "Hé, t'as pas encore fini ça ? La répétition commence bientôt."
+    },
+    {
+     "s": "B",
+     "ko": "아, 말도 마. 케이블이 하나 모자라서 계속 찾고 있었어.",
+     "fr": "Ah, m'en parle pas. Il manquait un câble, je le cherche depuis tout à l'heure."
+    },
+    {
+     "s": "A",
+     "ko": "창고 쪽에 남는 거 있던데. 같이 가 볼까?",
+     "fr": "Il y en avait en trop du côté de l'entrepôt. On va voir ensemble ?"
+    },
+    {
+     "s": "B",
+     "ko": "진짜? 살았다! 빨리 가자.",
+     "fr": "C'est vrai ? Tu me sauves ! Allons-y vite."
+    },
+    {
+     "s": "A",
+     "ko": "근데 아르노 씨한테는 말해 놓자. 괜히 걱정하실라.",
+     "fr": "Mais prévenons Arnaud. Il risquerait de s'inquiéter pour rien."
+    }
+   ],
+   "qs": [
+    {
+     "q": "Pourquoi le technicien n'a-t-il pas fini ?",
+     "opts": [
+      "Il était en pause",
+      "Il manquait un câble",
+      "Il attendait l'interprète"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Quel registre utilisent-ils ?",
+     "opts": [
+      "Très poli (formel)",
+      "Familier (entre collègues)",
+      "Écrit"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Que décident-ils de faire en plus ?",
+     "opts": [
+      "Prévenir Arnaud",
+      "Annuler la répétition",
+      "Commander un câble"
+     ],
+     "a": 0
+    }
+   ]
+  },
+  {
+   "id": "d12",
+   "title": "Bilan de production",
+   "lv": "C1",
+   "ctx": "Réunion de fin de tournée avec la direction coréenne.",
+   "lines": [
+    {
+     "s": "A",
+     "ko": "전반적으로 이번 공동 제작은 성황리에 끝났다고 봅니다.",
+     "fr": "Dans l'ensemble, je considère que cette coproduction s'est terminée avec un grand succès."
+    },
+    {
+     "s": "B",
+     "ko": "동의합니다. 다만 초반에 의사소통 문제로 시행착오가 좀 있었죠.",
+     "fr": "Je suis d'accord. Cependant, au début, il y a eu quelques essais et erreurs à cause de problèmes de communication."
+    },
+    {
+     "s": "A",
+     "ko": "맞습니다. 통역을 거치다 보니 실무진 사이에 미묘한 오해가 생기기도 했고요.",
+     "fr": "Exactement. Comme on passait par l'interprète, il y a eu aussi de légers malentendus entre les équipes opérationnelles."
+    },
+    {
+     "s": "B",
+     "ko": "다음에는 기술 회의를 미리 잡아서 그런 여지를 줄이면 좋겠습니다.",
+     "fr": "La prochaine fois, ce serait bien de fixer les réunions techniques à l'avance pour réduire ce genre de risque."
+    },
+    {
+     "s": "A",
+     "ko": "좋은 제안입니다. 연출가의 의도를 살리면서도 제작 여건을 고려하는 게 관건이겠네요.",
+     "fr": "Bonne proposition. La clé sera de respecter l'intention du metteur en scène tout en tenant compte des conditions de production."
+    }
+   ],
+   "qs": [
+    {
+     "q": "Comment évaluent-ils la coproduction ?",
+     "opts": [
+      "Un échec",
+      "Un grand succès malgré des débuts difficiles",
+      "Un projet annulé"
+     ],
+     "a": 1
+    },
+    {
+     "q": "D'où venaient les malentendus ?",
+     "opts": [
+      "Du budget",
+      "Du passage par l'interprète",
+      "Du public"
+     ],
+     "a": 1
+    },
+    {
+     "q": "Que proposent-ils pour la prochaine fois ?",
+     "opts": [
+      "Fixer les réunions techniques à l'avance",
+      "Supprimer l'interprète",
+      "Raccourcir la tournée"
+     ],
+     "a": 0
+    }
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "t": "어 / 오",
+   "w": [
+    {
+     "ko": "어",
+     "fr": "« o » ouvert"
+    },
+    {
+     "ko": "오",
+     "fr": "« o » fermé"
+    }
+   ],
+   "help": "어 : bouche ouverte et détendue, presque « o » de « bol ». 오 : lèvres arrondies, « ô » de « beau »."
+  },
+  {
+   "t": "서 / 소",
+   "w": [
+    {
+     "ko": "서",
+     "fr": "ouest"
+    },
+    {
+     "ko": "소",
+     "fr": "vache"
+    }
+   ],
+   "help": "Même différence 어/오."
+  },
+  {
+   "t": "거 / 고",
+   "w": [
+    {
+     "ko": "거",
+     "fr": "chose (oral)"
+    },
+    {
+     "ko": "고",
+     "fr": "et (liaison)"
+    }
+   ],
+   "help": "Même différence 어/오."
+  },
+  {
+   "t": "으 / 우",
+   "w": [
+    {
+     "ko": "으",
+     "fr": "voyelle neutre"
+    },
+    {
+     "ko": "우",
+     "fr": "« ou »"
+    }
+   ],
+   "help": "으 : lèvres étirées, sans arrondi. 우 : lèvres arrondies et projetées."
+  },
+  {
+   "t": "그 / 구",
+   "w": [
+    {
+     "ko": "그",
+     "fr": "ce, cela"
+    },
+    {
+     "ko": "구",
+     "fr": "neuf (9)"
+    }
+   ],
+   "help": "Même différence 으/우."
+  },
+  {
+   "t": "애 / 에",
+   "w": [
+    {
+     "ko": "개",
+     "fr": "chien"
+    },
+    {
+     "ko": "게",
+     "fr": "crabe"
+    }
+   ],
+   "help": "Aujourd'hui, presque tous les Coréens les prononcent pareil : le contexte décide."
+  },
+  {
+   "t": "ㄱ / ㄲ / ㅋ",
+   "w": [
+    {
+     "ko": "가",
+     "fr": "aller (racine)"
+    },
+    {
+     "ko": "까",
+     "fr": "peler (racine)"
+    },
+    {
+     "ko": "카",
+     "fr": "car (anglais)"
+    }
+   ],
+   "help": "ㄱ doux, ㄲ tendu (gorge serrée, sans souffle), ㅋ aspiré (avec souffle)."
+  },
+  {
+   "t": "ㄷ / ㄸ / ㅌ",
+   "w": [
+    {
+     "ko": "달",
+     "fr": "lune"
+    },
+    {
+     "ko": "딸",
+     "fr": "fille"
+    },
+    {
+     "ko": "탈",
+     "fr": "masque"
+    }
+   ],
+   "help": "ㄸ tendu sans souffle, ㅌ aspiré avec souffle."
+  },
+  {
+   "t": "ㅂ / ㅃ / ㅍ",
+   "w": [
+    {
+     "ko": "불",
+     "fr": "feu, lumière"
+    },
+    {
+     "ko": "뿔",
+     "fr": "corne"
+    },
+    {
+     "ko": "풀",
+     "fr": "herbe, colle"
+    }
+   ],
+   "help": "ㅃ tendu, ㅍ aspiré."
+  },
+  {
+   "t": "ㅈ / ㅉ / ㅊ",
+   "w": [
+    {
+     "ko": "자다",
+     "fr": "dormir"
+    },
+    {
+     "ko": "짜다",
+     "fr": "être salé"
+    },
+    {
+     "ko": "차다",
+     "fr": "être froid"
+    }
+   ],
+   "help": "ㅉ tendu, ㅊ aspiré."
+  },
+  {
+   "t": "ㅅ / ㅆ",
+   "w": [
+    {
+     "ko": "사다",
+     "fr": "acheter"
+    },
+    {
+     "ko": "싸다",
+     "fr": "être bon marché"
+    }
+   ],
+   "help": "ㅆ est tendu, plus sifflé."
+  },
+  {
+   "t": "ㄴ / ㄹ",
+   "w": [
+    {
+     "ko": "나",
+     "fr": "moi"
+    },
+    {
+     "ko": "라",
+     "fr": "la (note)"
+    }
+   ],
+   "help": "ㄹ en début de syllabe : léger « r/l » battu."
+  },
+  {
+   "t": "받침 ㄴ / ㅇ",
+   "w": [
+    {
+     "ko": "반",
+     "fr": "moitié, classe"
+    },
+    {
+     "ko": "방",
+     "fr": "chambre"
+    }
+   ],
+   "help": "ㄴ final : langue contre les dents. ㅇ final : « ng », langue en arrière."
+  },
+  {
+   "t": "받침 ㅁ / ㄴ",
+   "w": [
+    {
+     "ko": "감",
+     "fr": "kaki"
+    },
+    {
+     "ko": "간",
+     "fr": "foie"
+    }
+   ],
+   "help": "ㅁ final : lèvres fermées. ㄴ final : lèvres ouvertes."
+  }
+ ]
+}

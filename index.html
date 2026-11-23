@@ -35,7 +35,7 @@ h1 .ko,h1{background:linear-gradient(100deg,var(--ink) 15%,light-dark(#b9782a,#e
 h2{font:600 21px/1.25 "Noto Serif KR",Georgia,serif;margin:26px 0 8px;display:flex;justify-content:space-between;gap:10px;align-items:center}
 .sub{color:var(--soft);margin:0 0 12px;font-size:15px}
 .tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--paper);border-top:1px solid var(--line);display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom)}
-.tabs a{flex:1;max-width:150px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 4px 10px;text-decoration:none;color:var(--soft);font-size:12px;min-height:56px}
+.tabs a{flex:1;max-width:140px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 4px 10px;text-decoration:none;color:var(--soft);font-size:12px;min-height:56px}
 .tabs a b{font-size:22px;line-height:1;font-weight:400}
 .tabs a.on{color:var(--red);font-weight:700}
 .panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px}
@@ -117,7 +117,7 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
 .pill{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--chip);color:var(--soft);white-space:nowrap}
 .pill.off{background:color-mix(in srgb,var(--warn) 25%,var(--paper));color:var(--ink)}
 .empty{text-align:center;color:var(--soft);padding:40px 10px}
-@media(max-width:600px){.hero{grid-template-columns:1fr;justify-items:center;text-align:center}.stats3{justify-content:center}
+@media(max-width:600px){.tabs a{font-size:10px;padding:8px 0 9px;white-space:nowrap;letter-spacing:-.01em}.tabs a b{font-size:20px}.hero{grid-template-columns:1fr;justify-items:center;text-align:center}.stats3{justify-content:center}
  .answer button{font-size:15px}}
 @media(prefers-reduced-motion:reduce){.card,.toast,.bar i{transition:none}}
 
@@ -138,6 +138,38 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
  .cours .it{grid-template-columns:36px 54px minmax(0,1fr)}.cours .it>*{grid-row:auto!important;grid-column:auto!important}
 }
 input[type=range],input[type=checkbox]{accent-color:var(--red)}
+/* ---- écoute & niveaux ---- */
+.lvtag{display:inline-block;font:700 10px/1 system-ui;padding:3px 6px;border-radius:6px;background:var(--chip);color:var(--soft);margin-left:6px;vertical-align:middle;letter-spacing:.03em}
+.ecards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px}
+.dlist{display:grid;gap:10px}
+.dcard{display:flex;gap:14px;align-items:center;text-align:left;padding:14px 16px;border-radius:16px;background:var(--paper);border:1px solid var(--line);width:100%;min-height:64px}
+.dcard b{display:block}.dcard span{font-size:13px;color:var(--soft)}
+.dcard .lvbig{font:700 14px/1 system-ui;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--chip);flex:none}
+.dcard .ok{margin-left:auto;color:var(--ok);font-weight:700;white-space:nowrap}
+.player{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.line{display:grid;grid-template-columns:44px minmax(0,1fr);gap:10px;align-items:start;padding:10px 0;border-top:1px solid var(--line)}
+.line:first-child{border-top:0}
+.line .who{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff}
+.who.A{background:#7fa99b}.who.B{background:#c49a6c}
+.line .txt{font-size:18px}.line .tr{font-size:14px;color:var(--soft)}
+.line.playing{background:color-mix(in srgb,var(--red) 8%,transparent);border-radius:12px}
+.hidden-txt .txt,.hidden-tr .tr{filter:blur(6px);user-select:none}
+.speeds{display:inline-flex;background:var(--chip);border-radius:999px;padding:3px}
+.speeds button{padding:7px 12px;border-radius:999px;font-size:14px;min-height:38px}
+.speeds button.on{background:var(--paper);font-weight:700;box-shadow:0 1px 3px #0002}
+.qblock{margin-top:16px}
+.qblock h3{color:var(--ink);font-size:16px}
+.lvbar{display:grid;grid-template-columns:44px minmax(0,1fr) 70px;gap:12px;align-items:center;padding:8px 0}
+.lvbar b{font:700 15px/1 system-ui}.lvbar span{text-align:right;color:var(--soft);font-size:13px;font-variant-numeric:tabular-nums}
+.lvbar .bar{height:10px}
+.lvbar.goal b{color:var(--red)}
+details.cd{border-top:1px solid var(--line);padding:8px 0}
+details.cd summary{cursor:pointer;font-weight:600;padding:6px 0;list-style:none}
+details.cd label{display:flex;gap:10px;align-items:flex-start;padding:6px 0;font-size:15px}
+details.cd input{width:22px;height:22px;flex:none;margin-top:1px}
+.bigplay{font-size:22px;min-height:76px;padding:14px 30px}
+.rec{background:var(--err);color:#fff}
+.diff .ok{color:var(--ok);font-weight:700}.diff .ko{color:var(--err);text-decoration:line-through}
 /* ---- ink & hanji layer ---- */
 .panel,.mode,.list,.qcard,.face,.opt{border-radius:16px}
 .panel{box-shadow:0 1px 0 var(--line),0 12px 28px -24px #0006}
@@ -244,6 +276,14 @@ input[type=range],input[type=checkbox]{accent-color:var(--red)}
  <div id="sbody"></div>
 </section>
 
+<!-- ===== ÉCOUTE ===== -->
+<section class="view" id="v-ecoute">
+ <h1>Écoute</h1>
+ <p class="sub">Entraîne ton oreille : dialogues, dictée, vitesse progressive, sons proches et shadowing.</p>
+ <div class="chips" id="elv"></div>
+ <div id="ebody"></div>
+</section>
+
 <!-- ===== CARNET ===== -->
 <section class="view" id="v-carnet">
  <h1>Carnet</h1>
@@ -276,6 +316,15 @@ input[type=range],input[type=checkbox]{accent-color:var(--red)}
 <!-- ===== PROGRÈS ===== -->
 <section class="view" id="v-stats">
  <h1>Progrès</h1>
+ <div class="panel" id="lvpanel" style="margin-bottom:12px">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+   <div><div class="sub" style="margin:0">Niveau estimé</div><b style="font:600 30px/1.1 'Noto Serif KR',Georgia,serif" id="lvest">A1</b></div>
+   <label style="display:flex;align-items:center;gap:8px">Objectif <select class="inp" style="width:auto" id="lvgoal"><option>A1</option><option>A2</option><option selected>B1</option><option>B2</option><option>C1</option></select></label>
+  </div>
+  <div id="lvbars" style="margin-top:8px"></div>
+  <p class="sub" style="margin:6px 0 0">Un mot compte comme « su » quand tu l'as réussi plusieurs fois de suite. Le vocabulaire de base de ton objectif est ajouté à tes nouveaux mots du jour.</p>
+ </div>
+ <div class="panel" style="margin-bottom:12px"><h2 style="margin-top:0">Ce que je sais faire</h2><div id="cando"></div></div>
  <div class="grid">
   <div class="panel"><div class="sub" style="margin:0">Mots sus</div><b style="font-size:34px" id="tmast">0</b><div class="sub" id="tmast2"></div></div>
   <div class="panel"><div class="sub" style="margin:0">Série en cours</div><b style="font-size:34px" id="tstreak">0</b><div class="sub">jours d'affilée</div></div>
@@ -328,6 +377,7 @@ input[type=range],input[type=checkbox]{accent-color:var(--red)}
 
 <nav class="tabs">
  <a href="#home" data-v="home"><b class="emo">🏠</b>Aujourd'hui</a>
+ <a href="#ecoute" data-v="ecoute"><b class="emo">🎧</b>Écoute</a>
  <a href="#carnet" data-v="carnet"><b class="emo">📖</b>Carnet</a>
  <a href="#gram" data-v="gram"><b class="emo">📐</b>Grammaire</a>
  <a href="#mine" data-v="mine"><b class="emo">➕</b>Mes mots</a>
@@ -344,7 +394,8 @@ const LS={get(k,d){try{const v=localStorage.getItem('dj-'+k);return v==null?d:JS
 const today=()=>Math.floor((Date.now()-new Date().getTimezoneOffset()*60000)/864e5);
 const INT=[0,1,2,4,7,14,30,60,120];
 let D=null, ITEMS=[], deck='today', dir='kf';
-let SRS=LS.get('srs',{}), FAV=LS.get('fav',{}), OWN=LS.get('own',[]), LOG=LS.get('log',{}), CFG=Object.assign({goal:30,newd:15,rate:.8,pitch:.85,voice:'',auto:true},LS.get('cfg',{}));
+let EC=LS.get('ecoute',null),CANDO=LS.get('cando',{}),DLG=LS.get('dlg',{}),ELV='Tous';
+let SRS=LS.get('srs',{}), FAV=LS.get('fav',{}), OWN=LS.get('own',[]), LOG=LS.get('log',{}), CFG=Object.assign({goal:30,newd:15,rate:.8,pitch:.85,voice:'',auto:true,goalLv:'B1'},LS.get('cfg',{}));
 const saveAll=()=>{LS.set('srs',SRS);LS.set('fav',FAV);LS.set('own',OWN);LS.set('log',LOG);LS.set('cfg',CFG);syncSoon()};
 function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),2600)}
 const koVoices=()=>{try{return speechSynthesis.getVoices().filter(v=>/^ko/i.test(v.lang))}catch(e){return []}};
@@ -354,30 +405,36 @@ const coursOf=c=>String(c||'').split('·').map(x=>parseInt(x)).filter(n=>!isNaN(
 /* ---------- data ---------- */
 function build(){
  ITEMS=[];
- D.sections.forEach(s=>s.items.forEach(i=>ITEMS.push({id:i.ko,ko:i.ko,fr:i.fr,ic:i.ic,c:i.c,th:s.title})));
- D.nombres.forEach(i=>ITEMS.push({id:i.ko,ko:i.ko,fr:i.fr,ic:i.ic,c:i.c,th:'Les nombres'}));
- D.grammaire.forEach(g=>g.rows.forEach(r=>ITEMS.push({id:'G:'+r.form,ko:r.form,fr:r.sens,ex:r.ex+' — '+r.tr,ic:r.ic,c:r.c,th:'Grammaire',gram:1})));
- OWN.filter(o=>!o.del).forEach(o=>ITEMS.push({id:'M:'+o.ko,ko:o.ko,fr:o.fr,ic:o.ic||'✏️',c:'',th:o.th||'Mes mots',own:1}));
+ D.sections.forEach(s=>s.items.forEach(i=>ITEMS.push({id:i.ko,ko:i.ko,fr:i.fr,ic:i.ic,c:i.c,th:s.title,lv:i.lv||'A2'})));
+ D.nombres.forEach(i=>ITEMS.push({id:i.ko,ko:i.ko,fr:i.fr,ic:i.ic,c:i.c,th:'Les nombres',lv:i.lv||'A1'}));
+ D.grammaire.forEach(g=>g.rows.forEach(r=>ITEMS.push({id:'G:'+r.form,ko:r.form,fr:r.sens,ex:r.ex+' — '+r.tr,ic:r.ic,c:r.c,th:'Grammaire',gram:1,lv:r.lv||'B1'})));
+ if(EC)for(const L in EC.base)EC.base[L].forEach(b=>{if(!ITEMS.some(x=>x.ko===b.ko))ITEMS.push({id:'B:'+b.ko,ko:b.ko,fr:b.fr,ic:b.ic,c:'',th:'Base '+L,base:1,lv:L})});
+ OWN.filter(o=>!o.del).forEach(o=>ITEMS.push({id:'M:'+o.ko,ko:o.ko,fr:o.fr,ic:o.ic||'✏️',c:'',th:o.th||'Mes mots',own:1,lv:'A2'}));
  const last=D.cours[D.cours.length-1];
  $('#hsub').textContent=`Cours 1 à ${last.n} avec In-young · carnet du ${D.updated.split('-').reverse().join('/')}`;
  $('#sver').textContent=`${ITEMS.length} entrées · mis à jour le ${D.updated.split('-').reverse().join('/')}`;
- const decks=[['today','Séance du jour'],['all','Tout'],['hard','À retravailler'],['fav','⭐ Favoris'],['last','Dernier cours ('+last.n+')'],['mine','✏️ Mes mots'],...D.sections.map(s=>['th:'+s.title,s.icon.slice(0,2)+' '+s.title]),['th:Les nombres','🔢 Nombres'],['th:Grammaire','📐 Grammaire']];
+ const decks=[['today','Séance du jour'],['all','Tout'],['hard','À retravailler'],['fav','⭐ Favoris'],['last','Dernier cours ('+last.n+')'],['mine','✏️ Mes mots'],['base','📗 Vocabulaire de base'],...D.sections.map(s=>['th:'+s.title,s.icon.slice(0,2)+' '+s.title]),['th:Les nombres','🔢 Nombres'],['th:Grammaire','📐 Grammaire']];
  $('#decks').innerHTML=decks.map(([k,l])=>`<button class="chip${k===deck?' on':''}" data-k="${esc(k)}">${esc(l)}</button>`).join('');
- const ths=['Tous','⭐ Favoris',...D.sections.map(s=>s.title),'Les nombres','Prononciation'];
+ const ths=['Tous','⭐ Favoris',...D.sections.map(s=>s.title),'Les nombres','Prononciation',...LVS.map(L=>'Base '+L)];
  $('#themes').innerHTML=ths.map((t,i)=>`<button class="chip${i?'':' on'}" data-t="${esc(t)}">${esc(t)}</button>`).join('');
  $('#nth').innerHTML=['Mes mots',...D.sections.map(s=>s.title)].map(t=>`<option>${esc(t)}</option>`).join('');
  renderHome();renderCarnet();renderGram();renderMine();renderStats();
 }
 const st=id=>SRS[id]||null;
+const LVS=['A1','A2','B1','B2','C1'],LVI=l=>Math.max(0,LVS.indexOf(l||'A2'));
+function freshPool(){const g=LVI(CFG.goalLv);return ITEMS.filter(i=>!st(i.id)&&!i.gram&&(!i.base||LVI(i.lv)<=g)).sort((a,b)=>{const la=LVI(a.lv),lb=LVI(b.lv);const oa=la>g?1:0,ob=lb>g?1:0;return oa-ob||(a.base?1:0)-(b.base?1:0)||la-lb})}
+function lvStats(){return LVS.map(L=>{const its=ITEMS.filter(i=>!i.own&&i.lv===L),k=its.filter(i=>(st(i.id)||{}).box>=3).length;return {L,n:its.length,k,r:its.length?k/its.length:0}})}
+function estLevel(){const S=lvStats();let e=-1;for(let i=0;i<S.length;i++){if(S[i].n&&S[i].r>=.6)e=i;else break}return e<0?{txt:'En route vers A1',i:-1}:{txt:LVS[e],i:e}}
 const isDue=id=>{const s=st(id);return s&&s.due<=today()};
 function pool(k=deck){
  const T=today();
  if(k==='today'){const due=ITEMS.filter(i=>isDue(i.id)).sort((a,b)=>st(a.id).due-st(b.id).due);
-  const doneNew=(LOG[T]||{}).n||0, fresh=ITEMS.filter(i=>!st(i.id)&&!i.gram).slice(0,Math.max(0,CFG.newd-doneNew));return [...due,...fresh]}
+  const doneNew=(LOG[T]||{}).n||0, fresh=freshPool().slice(0,Math.max(0,CFG.newd-doneNew));return [...due,...fresh]}
  if(k==='all')return ITEMS;
  if(k==='hard')return ITEMS.filter(i=>{const s=st(i.id);return s&&(s.box<=2||s.lapses>=2)});
  if(k==='fav')return ITEMS.filter(i=>FAV[i.id]>0);
  if(k==='mine')return ITEMS.filter(i=>i.own);
+ if(k==='base')return ITEMS.filter(i=>i.base&&LVI(i.lv)<=LVI(CFG.goalLv));
  if(k==='last'){const n=D.cours[D.cours.length-1].n;return ITEMS.filter(i=>coursOf(i.c).includes(n))}
  if(k.startsWith('c:')){const n=+k.slice(2);return ITEMS.filter(i=>coursOf(i.c).includes(n))}
  return ITEMS.filter(i=>i.th===k.slice(3));
@@ -407,7 +464,7 @@ const reduced=()=>{try{return matchMedia('(prefers-reduced-motion: reduce)').mat
 function pop(t){if(reduced())return;const e=document.createElement('div');e.className='pop';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),1100)}
 function confetti(n=24){if(reduced())return;n=Math.min(n,40);const col=['#f0bcb7','#e7a3a0','#f6d6cf','#bcd9cf'];for(let i=0;i<n;i++){const e=document.createElement('span');e.className='petal';e.style.background=pick(col);e.style.left=Math.random()*100+'vw';e.style.setProperty('--dx',(Math.random()*160-80)+'px');e.style.animationDuration=(3+Math.random()*2.5)+'s';e.style.animationDelay=(Math.random()*1.2)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),7000)}}
 function greet(){const h=new Date().getHours();const [k,f]=h<11?['좋은 아침이에요','Bonjour, Arnaud']:h<18?['안녕하세요','Bonjour, Arnaud']:['좋은 저녁이에요','Bonsoir, Arnaud'];$('#hello').textContent=k;$('#hellofr').textContent=f;
- const m=mastered();let L=LEVELS[0];for(const l of LEVELS)if(m>=l[0])L=l;const nx=LEVELS.find(l=>l[0]>m);$('#lvl').textContent=L[1]+(nx?` · encore ${nx[0]-m} mots`:'');
+ const e=estLevel();$('#lvl').textContent=`Niveau ${e.txt} · objectif ${CFG.goalLv}`;
  const p=PROVERBS[today()%PROVERBS.length];$('#proverb').innerHTML=`<b>${p[0]}</b><span>${p[1]}</span>`}
 function wod(){const pool=ITEMS.filter(i=>!i.gram&&i.ic);if(!pool.length)return;const i=pool[today()%pool.length];
  $('#wod').innerHTML=`<div class="pic emo">${esc(i.ic)}</div><div><small>Mot du jour · 오늘의 단어 ${badge(i)}</small><div class="k ko">${esc(i.ko)}</div><div class="sub" style="margin:0">${esc(i.fr)}</div></div><div style="display:flex"><button class="ib" data-say="${esc(i.ko)}" aria-label="Écouter">🔊</button><button class="ib star${FAV[i.id]>0?' on':''}" data-fav="${esc(i.id)}" aria-label="Favori">${FAV[i.id]>0?'★':'☆'}</button></div>`}
@@ -416,7 +473,7 @@ $('#proverb')&&$('#proverb').addEventListener('click',()=>{const p=pick(PROVERBS
 /* ---------- home ---------- */
 function renderHome(){
  const T=today(),L=LOG[T]||{r:0},due=ITEMS.filter(i=>isDue(i.id)).length,doneNew=L.n||0;
- const fresh=Math.min(ITEMS.filter(i=>!st(i.id)&&!i.gram).length,Math.max(0,CFG.newd-doneNew));
+ const fresh=Math.min(freshPool().length,Math.max(0,CFG.newd-doneNew));
  $('#goaln').textContent=L.r;$('#goalt').textContent=CFG.goal;
  $('#ringc').style.strokeDashoffset=327-327*Math.min(1,L.r/CFG.goal);
  $('#sdue').textContent=due;$('#snew').textContent=fresh;$('#sstreak').textContent=streak();$('#smast').textContent=mastered();
@@ -490,11 +547,11 @@ function writeView(b,i){
 
 /* ---------- carnet ---------- */
 let theme='Tous';
-const row=(i,del)=>`<div class="it"><div class="e emo">${esc(i.ic)}</div><div class="k ko"><span class="lv l${(st(i.id)||{box:0}).box}"></span>${esc(i.ko)}</div><div class="f">${esc(i.fr)}${badge(i)}</div><button class="ib" data-say="${esc(i.ko)}" aria-label="Écouter">🔊</button>${del?`<button class="ib" data-del="${esc(i.ko)}" aria-label="Supprimer">🗑️</button>`:`<button class="ib star${FAV[i.id]>0?' on':''}" data-fav="${esc(i.id)}" aria-label="Favori">${FAV[i.id]>0?'★':'☆'}</button>`}</div>`;
+const row=(i,del)=>`<div class="it"><div class="e emo">${esc(i.ic)}</div><div class="k ko"><span class="lv l${(st(i.id)||{box:0}).box}"></span>${esc(i.ko)}</div><div class="f">${esc(i.fr)}${badge(i)}${i.lv?`<span class="lvtag">${i.lv}</span>`:''}</div><button class="ib" data-say="${esc(i.ko)}" aria-label="Écouter">🔊</button>${del?`<button class="ib" data-del="${esc(i.ko)}" aria-label="Supprimer">🗑️</button>`:`<button class="ib star${FAV[i.id]>0?' on':''}" data-fav="${esc(i.id)}" aria-label="Favori">${FAV[i.id]>0?'★':'☆'}</button>`}</div>`;
 function renderCarnet(){
  const n=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');const q=n($('#q').value.trim());
  const groups=[...D.sections.map(s=>({t:s.title,sub:s.sub,ic:s.icon,items:ITEMS.filter(i=>i.th===s.title)})),{t:'Les nombres',sub:'Compteurs et quantités',ic:'🔢',items:ITEMS.filter(i=>i.th==='Les nombres')},
-  {t:'Prononciation',sub:'Les pièges signalés par In-young',ic:'🗣️',items:D.prononciation.map(i=>({id:'P:'+i.ko,...i}))},{t:'Mes mots',sub:'Ajoutés par toi',ic:'✏️',items:ITEMS.filter(i=>i.own&&i.th==='Mes mots')}];
+  {t:'Prononciation',sub:'Les pièges signalés par In-young',ic:'🗣️',items:D.prononciation.map(i=>({id:'P:'+i.ko,...i}))},{t:'Mes mots',sub:'Ajoutés par toi',ic:'✏️',items:ITEMS.filter(i=>i.own&&i.th==='Mes mots')},...LVS.map(L=>({t:'Base '+L,sub:'Vocabulaire de base · niveau '+L,ic:'📗',items:ITEMS.filter(i=>i.base&&i.lv===L)}))];
  let html='';
  for(const g of groups){if(theme!=='Tous'&&theme!=='⭐ Favoris'&&g.t!==theme)continue;
   const its=g.items.filter(i=>(!q||n(i.ko+' '+i.fr).includes(q))&&(theme!=='⭐ Favoris'||FAV[i.id]>0));
@@ -521,10 +578,10 @@ function renderStats(){
 }
 
 /* ---------- routing & events ---------- */
-const VIEWS=['home','session','carnet','gram','mine','stats','set'];
+const VIEWS=['home','session','ecoute','carnet','gram','mine','stats','set'];
 function route(){let v=(location.hash||'#home').slice(1);if(!VIEWS.includes(v))v='home';if(v==='session'&&!S)v='home';
  $$('.view').forEach(e=>e.classList.toggle('on',e.id==='v-'+v));$$('.tabs a').forEach(a=>a.classList.toggle('on',a.dataset.v===v));
- $('.tabs').style.display=v==='session'?'none':'flex';if(v==='home')renderHome();if(v==='stats')renderStats();if(v==='carnet')renderCarnet();window.scrollTo(0,0)}
+ $('.tabs').style.display=v==='session'?'none':'flex';if(v==='home')renderHome();if(v==='stats'){renderStats();renderLevels()}if(v==='ecoute')renderEcoute();if(v==='carnet')renderCarnet();window.scrollTo(0,0)}
 window.addEventListener('hashchange',route);
 $('#decks').addEventListener('click',e=>{const b=e.target.closest('[data-k]');if(!b)return;deck=b.dataset.k;$$('#decks .chip').forEach(c=>c.classList.toggle('on',c===b));toast(`${pool().length} cartes dans ce paquet`)});
 $('#dirs').addEventListener('click',e=>{const b=e.target.closest('[data-d]');if(!b)return;dir=b.dataset.d;$$('#dirs .chip').forEach(c=>c.classList.toggle('on',c===b))});
@@ -571,17 +628,137 @@ document.addEventListener('change',e=>{const inp=e.target.closest('[data-av]');i
  img.onerror=()=>toast('Image illisible');img.src=u});
 document.addEventListener('click',e=>{const d=e.target.closest('[data-avdel]');if(!d)return;const w=d.dataset.avdel;AV[w]='';AVT[w]=Date.now();LS.set('avt',AVT);syncSoon();LS.set('av-'+w,'');renderAv();build()});
 renderAv();
+/* ---------- écoute ---------- */
+function speakP(t,o={}){return new Promise(res=>{try{const u=new SpeechSynthesisUtterance(String(t));u.lang='ko-KR';u.rate=o.rate??CFG.rate;u.pitch=Math.max(.1,Math.min(2,o.pitch??(CFG.pitch??.85)));const vs=koVoices();const v=o.voice||vs.find(v=>v.voiceURI===CFG.voice)||vs.find(v=>v.localService)||vs[0];if(v)u.voice=v;let done=false;const fin=()=>{if(!done){done=true;res()}};u.onend=fin;u.onerror=fin;setTimeout(fin,Math.max(2500,t.length*450/(u.rate||1)));speechSynthesis.speak(u)}catch(e){res()}})}
+function twoVoices(){const vs=koVoices(),base=vs.find(v=>v.voiceURI===CFG.voice)||vs.find(v=>v.localService)||vs[0];const other=vs.find(v=>v!==base);const p=CFG.pitch??.85;
+ return other?{A:{voice:base,pitch:p},B:{voice:other,pitch:p}}:{A:{voice:base,pitch:Math.min(1.4,p+.25)},B:{voice:base,pitch:Math.max(.3,p-.25)}}}
+let EMODE='menu',ESPEED=.85;
+const sentences=()=>ITEMS.filter(i=>!i.gram&&/\s/.test(i.ko.split(' / ')[0])&&i.ko.length>=6&&i.ko.length<=34&&(ELV==='Tous'||i.lv===ELV));
+const pickS=()=>{const p=sentences();return p[Math.floor(Math.random()*p.length)]};
+const clean=t=>String(t).split(' / ')[0].replace(/\[.*?\]|\(.*?\)/g,'').trim();
+function renderEcoute(){if(!EC){$('#ebody').innerHTML='<p class="empty">Chargement…</p>';return}
+ $('#elv').innerHTML=['Tous',...LVS].map(l=>`<button class="chip${l===ELV?' on':''}" data-elv="${l}">${l==='Tous'?'Tous niveaux':l}</button>`).join('');
+ if(EMODE==='menu'){const done=Object.keys(DLG).length;
+  $('#ebody').innerHTML=`<div class="ecards">
+   <button class="mode m1" data-em="dlg"><span class="emo">💬</span><div><b>Mini-dialogues</b><span>${EC.dialogues.length} scènes à deux voix · ${done} faites</span></div></button>
+   <button class="mode m2" data-em="dict"><span class="emo">✍️</span><div><b>Dictée</b><span>Écoute une phrase et écris-la</span></div></button>
+   <button class="mode m3" data-em="prog"><span class="emo">🐢</span><div><b>Écoute progressive</b><span>Lent, normal, puis rapide</span></div></button>
+   <button class="mode m4" data-em="pair"><span class="emo">👂</span><div><b>Oreille fine</b><span>Distinguer les sons proches</span></div></button>
+   <button class="mode m1" data-em="shadow"><span class="emo">🎙️</span><div><b>Shadowing</b><span>Écoute, répète, compare</span></div></button></div>`;return}
+ if(EMODE==='dlg')return dlgList();if(EMODE==='dict')return dictee();if(EMODE==='prog')return progressive();if(EMODE==='pair')return pairs();if(EMODE==='shadow')return shadow()}
+const backBtn='<button class="btn sm" data-em="menu">← Retour</button>';
+function dlgList(){const L=EC.dialogues.filter(d=>ELV==='Tous'||d.lv===ELV);
+ $('#ebody').innerHTML=`<div class="player">${backBtn}</div><div class="dlist">${L.map(d=>`<button class="dcard" data-dlg="${d.id}"><span class="lvbig">${d.lv}</span><div><b>${esc(d.title)}</b><span>${esc(d.ctx)}</span></div>${DLG[d.id]?`<span class="ok">✓ ${DLG[d.id].best}/${d.qs.length}</span>`:''}</button>`).join('')||'<p class="empty">Pas encore de dialogue à ce niveau.</p>'}</div>`}
+let CUR=null,PLAYING=false;
+function openDlg(id){const d=EC.dialogues.find(x=>x.id===id);CUR={d,ans:{},showKo:false,showFr:false};drawDlg()}
+function drawDlg(){const {d}=CUR;
+ $('#ebody').innerHTML=`<div class="player">${backBtn.replace('menu','dlg')}<span class="lvtag">${d.lv}</span><b style="font-size:18px">${esc(d.title)}</b></div>
+ <p class="sub">${esc(d.ctx)} Écoute d'abord sans lire, puis réponds aux questions.</p>
+ <div class="panel"><div class="player"><button class="btn pri" id="dplay">▶ Écouter le dialogue</button>
+  <span class="speeds" id="dspd">${[[.6,'🐢 Lent'],[.85,'Normal'],[1.1,'🏃 Rapide']].map(([v,l])=>`<button data-spd="${v}" class="${v===ESPEED?'on':''}">${l}</button>`).join('')}</span>
+  <button class="btn sm" id="dko">${CUR.showKo?'Masquer':'Afficher'} le coréen</button><button class="btn sm" id="dfr">${CUR.showFr?'Masquer':'Afficher'} la traduction</button></div>
+  <div class="${CUR.showKo?'':'hidden-txt'} ${CUR.showFr?'':'hidden-tr'}">${d.lines.map((l,n)=>`<div class="line" id="ln${n}"><button class="who ${l.s}" data-ln="${n}" aria-label="Réécouter">${l.s}</button><div><div class="txt ko">${esc(l.ko)}</div><div class="tr">${esc(l.fr)}</div></div></div>`).join('')}</div></div>
+ <div class="qblock">${d.qs.map((q,qi)=>`<h3>${qi+1}. ${esc(q.q)}</h3><div class="opts">${q.opts.map((o,oi)=>`<button class="opt ${CUR.ans[qi]!=null?(oi===q.a?'good':(CUR.ans[qi]===oi?'bad':'')):''}" data-q="${qi}" data-o="${oi}">${esc(o)}</button>`).join('')}</div>`).join('')}</div>
+ <div class="fb" id="dfb"></div>`;
+ if(Object.keys(CUR.ans).length===d.qs.length)finishDlg()}
+async function playLines(from=0,only=false){const {d}=CUR,V=twoVoices();PLAYING=true;speechSynthesis.cancel();
+ for(let n=from;n<d.lines.length&&PLAYING;n++){$$('.line').forEach(e=>e.classList.remove('playing'));const el=$('#ln'+n);el&&el.classList.add('playing');
+  await speakP(clean(d.lines[n].ko),{...V[d.lines[n].s],rate:ESPEED});await new Promise(r=>setTimeout(r,350));if(only)break}
+ $$('.line').forEach(e=>e.classList.remove('playing'));PLAYING=false}
+function finishDlg(){const {d}=CUR,score=d.qs.filter((q,i)=>CUR.ans[i]===q.a).length;
+ const prev=DLG[d.id];DLG[d.id]={best:Math.max(score,prev?prev.best:0),t:Date.now()};LS.set('dlg',DLG);syncSoon();
+ $('#dfb').innerHTML=`<b>${score}/${d.qs.length}</b> — ${score===d.qs.length?'참 잘했어요 ! Réécoute maintenant en lisant le texte.':'Affiche le texte et réécoute les répliques pour repérer ce qui t’a échappé.'}`;
+ if(score===d.qs.length)confetti(16);const T=today(),L=LOG[T]||(LOG[T]={r:0,ok:0,n:0});L.r+=d.qs.length;L.ok+=score;saveAll()}
+/* dictée */
+let DS=null;
+function dictee(next){if(!DS||next)DS={it:pickS(),hint:0};const it=DS.it;if(!it){$('#ebody').innerHTML=`<div class="player">${backBtn}</div><p class="empty">Pas de phrase à ce niveau.</p>`;return}
+ $('#ebody').innerHTML=`<div class="player">${backBtn}</div><div class="qbox"><div class="qcard"><span class="lvtag" style="position:absolute;top:12px;right:14px">${it.lv}</span>
+ <div class="player" style="justify-content:center"><button class="btn pri bigplay" id="dsay">🔊 Écouter</button><button class="btn" id="dslow">🐢 Lentement</button></div>
+ <form id="dform"><input class="type ko" id="din" lang="ko" autocomplete="off" placeholder="Écris ce que tu entends…"><div class="player" style="justify-content:center"><button type="button" class="btn" id="dhint">Indice</button><button class="btn pri" type="submit">Vérifier</button></div></form>
+ <div class="fb diff" id="dres"></div></div></div>`;
+ const say=r=>speakP(clean(it.ko),{rate:r});$('#dsay').onclick=()=>say(ESPEED);$('#dslow').onclick=()=>say(.6);setTimeout(()=>say(ESPEED),300);
+ $('#dhint').onclick=()=>{DS.hint++;$('#dres').innerHTML=`<span class="sub">${esc(it.fr)}</span>`};
+ $('#dform').onsubmit=e=>{e.preventDefault();const ans=clean(it.ko),got=$('#din').value.trim();const W=ans.split(/\s+/),G=got.split(/\s+/);const nn=x=>x.replace(/[.,!?~…]/g,'');
+  const html=W.map((w,k)=>nn(G[k]||'')===nn(w)?`<span class="ok ko">${esc(w)}</span>`:`<span class="ko">${esc(w)}</span>`).join(' ');const okc=W.filter((w,k)=>nn(G[k]||'')===nn(w)).length,perfect=okc===W.length;
+  $('#dres').innerHTML=`<div>${perfect?'✅ <b>Parfait !</b>':`${okc}/${W.length} mots justes`}</div><div class="ko" style="font-size:20px;margin-top:6px">${html}</div><div class="sub">${esc(it.fr)}</div><button class="btn pri" id="dnext" style="margin-top:10px">Phrase suivante →</button>`;
+  if(perfect)pop(pick(YAY));grade(it,perfect?(DS.hint?1:2):okc>=W.length/2?1:0);$('#dnext').onclick=()=>dictee(true)}}
+/* progressive */
+let PS=null;
+function progressive(next){if(!PS||next)PS={it:pickS()};const it=PS.it;if(!it){$('#ebody').innerHTML=`<div class="player">${backBtn}</div><p class="empty">Pas de phrase à ce niveau.</p>`;return}
+ $('#ebody').innerHTML=`<div class="player">${backBtn}</div><div class="qbox"><div class="qcard"><span class="lvtag" style="position:absolute;top:12px;right:14px">${it.lv}</span>
+ <p class="sub">La même phrase trois fois : lente, normale, puis rapide comme entre Coréens.</p>
+ <div class="player" style="justify-content:center"><button class="btn pri bigplay" id="pall">▶ Lancer les 3 vitesses</button></div>
+ <div class="player" style="justify-content:center"><button class="btn" data-pr="0.55">🐢</button><button class="btn" data-pr="0.85">🚶</button><button class="btn" data-pr="1.2">🏃</button></div>
+ <div id="pans" class="fb"></div>
+ <div class="player" style="justify-content:center"><button class="btn" id="preveal">Voir la phrase</button></div></div></div>`;
+ const t=clean(it.ko);$('#pall').onclick=async()=>{for(const r of [.55,.85,1.2]){await speakP(t,{rate:r});await new Promise(z=>setTimeout(z,600))}};
+ $$('[data-pr]').forEach(b=>b.onclick=()=>speakP(t,{rate:+b.dataset.pr}));
+ $('#preveal').onclick=()=>{$('#pans').innerHTML=`<div class="ko" style="font-size:24px">${esc(it.ko)}</div><div class="sub">${esc(it.fr)}</div><div class="player" style="justify-content:center"><button class="btn" id="pno">Pas compris</button><button class="btn ok" id="pyes">J'avais compris ✓</button></div>`;
+  $('#pno').onclick=()=>{grade(it,0);progressive(true)};$('#pyes').onclick=()=>{grade(it,2);pop(pick(YAY));progressive(true)}};
+ setTimeout(()=>{const b=$('#pall');if(b&&PS&&PS.it===it)b.click()},300)}
+/* oreille fine */
+let PP=null;
+function pairs(next){if(!PP)PP={n:0,ok:0};if(next||!PP.cur){const p=EC.pairs[Math.floor(Math.random()*EC.pairs.length)];PP.cur={p,w:p.w[Math.floor(Math.random()*p.w.length)]};}
+ const {p,w}=PP.cur;
+ $('#ebody').innerHTML=`<div class="player">${backBtn}<span class="pill">${PP.ok}/${PP.n} justes</span></div><div class="qbox"><div class="qcard">
+ <p class="sub">Sons proches : <b>${esc(p.t)}</b>. Quel mot entends-tu ?</p>
+ <div class="player" style="justify-content:center"><button class="btn pri bigplay" id="psay">🔊 Écouter</button></div>
+ <div class="opts" id="popts">${p.w.map(x=>`<button class="opt" data-pw="${esc(x.ko)}"><span class="ko" style="font-size:24px">${esc(x.ko)}</span> <span class="sub">${esc(x.fr)}</span></button>`).join('')}</div>
+ <div class="fb" id="pfb"></div></div></div>`;
+ const say=()=>speakP(w.ko,{rate:.75});$('#psay').onclick=say;setTimeout(say,300);
+ $('#popts').onclick=e=>{const b=e.target.closest('[data-pw]');if(!b||PP.lock)return;PP.lock=1;const good=b.dataset.pw===w.ko;PP.n++;if(good)PP.ok++;
+  $$('#popts .opt').forEach(o=>{if(o.dataset.pw===w.ko)o.classList.add('good')});if(!good)b.classList.add('bad');
+  $('#pfb').innerHTML=`${good?'✅ Bien entendu !':'❌ C’était <b class="ko">'+esc(w.ko)+'</b>'}<div class="sub">${esc(p.help)}</div><div class="player" style="justify-content:center">${p.w.map(x=>`<button class="btn sm" data-say="${esc(x.ko)}">🔊 ${esc(x.ko)}</button>`).join('')}<button class="btn pri" id="pnext">Suivant →</button></div>`;
+  $('#pnext').onclick=()=>{PP.lock=0;pairs(true)}}}
+/* shadowing */
+let SH=null,REC=null;
+function shadow(next){if(!SH||next)SH={it:pickS(),url:null};const it=SH.it;if(!it){$('#ebody').innerHTML=`<div class="player">${backBtn}</div><p class="empty">Pas de phrase à ce niveau.</p>`;return}
+ const canRec=!!(navigator.mediaDevices&&window.MediaRecorder)&&!/claude/.test(location.hostname);
+ $('#ebody').innerHTML=`<div class="player">${backBtn}</div><div class="qbox"><div class="qcard"><span class="lvtag" style="position:absolute;top:12px;right:14px">${it.lv}</span>
+ <div class="ko" style="font-size:26px;margin:6px 0">${esc(it.ko)}</div><div class="sub">${esc(it.fr)}</div>
+ <p class="sub">1. Écoute le modèle · 2. Enregistre-toi en l'imitant · 3. Compare.</p>
+ <div class="player" style="justify-content:center"><button class="btn pri" id="smodel">🔊 Modèle</button><button class="btn" id="sslow">🐢 Lent</button>
+ ${canRec?`<button class="btn rec" id="srec">🎙️ M'enregistrer</button><button class="btn" id="sme" ${SH.url?'':'disabled'}>▶ Ma voix</button><button class="btn" id="scmp" ${SH.url?'':'disabled'}>⇄ Comparer</button>`:'<span class="sub">L’enregistrement fonctionne dans l’appli installée (github.io).</span>'}</div>
+ <div class="fb" id="sfb"></div><div class="player" style="justify-content:center"><button class="btn" id="snext">Phrase suivante →</button></div></div></div>`;
+ const t=clean(it.ko);$('#smodel').onclick=()=>speakP(t,{rate:ESPEED});$('#sslow').onclick=()=>speakP(t,{rate:.6});$('#snext').onclick=()=>shadow(true);
+ const playMe=()=>new Promise(r=>{const a=new Audio(SH.url);a.onended=r;a.onerror=r;a.play().catch(r)});
+ if(canRec){$('#sme').onclick=playMe;$('#scmp').onclick=async()=>{await speakP(t,{rate:ESPEED});await new Promise(z=>setTimeout(z,400));await playMe()};
+  $('#srec').onclick=async()=>{if(REC&&REC.state==='recording'){REC.stop();return}
+   try{const stream=await navigator.mediaDevices.getUserMedia({audio:true});const chunks=[];REC=new MediaRecorder(stream);REC.ondataavailable=e=>chunks.push(e.data);
+    REC.onstop=()=>{stream.getTracks().forEach(x=>x.stop());SH.url=URL.createObjectURL(new Blob(chunks,{type:REC.mimeType||'audio/webm'}));$('#sme').disabled=false;$('#scmp').disabled=false;$('#srec').textContent='🎙️ Recommencer';$('#sfb').textContent='Enregistré. Compare avec le modèle.'};
+    REC.start();$('#srec').textContent='⏹ Arrêter';$('#sfb').textContent='Parle maintenant…';setTimeout(()=>{if(REC&&REC.state==='recording')REC.stop()},Math.max(4000,t.length*500))}
+   catch(e){$('#sfb').textContent='Micro refusé : autorise le micro pour cette appli dans Chrome.'}}}}
+/* niveaux */
+function renderLevels(){if(!$('#lvbars'))return;const S=lvStats(),e=estLevel();$('#lvest').textContent=e.txt;$('#lvgoal').value=CFG.goalLv;
+ $('#lvbars').innerHTML=S.map(x=>`<div class="lvbar${x.L===CFG.goalLv?' goal':''}"><b>${x.L}</b><div class="bar"><i style="width:${x.r*100}%"></i></div><span>${x.k}/${x.n}</span></div>`).join('');
+ if(EC)$('#cando').innerHTML=LVS.map(L=>{const items=EC.cando[L]||[],k=items.filter((_,i)=>CANDO[L+i]>0).length;return `<details class="cd"${L===CFG.goalLv?' open':''}><summary>${L} · ${k}/${items.length}</summary>${items.map((c,i)=>`<label><input type="checkbox" data-cd="${L+i}" ${CANDO[L+i]>0?'checked':''}> ${esc(c)}</label>`).join('')}</details>`}).join('')}
+document.addEventListener('change',e=>{const c=e.target.closest('[data-cd]');if(!c)return;CANDO[c.dataset.cd]=c.checked?Date.now():-Date.now();LS.set('cando',CANDO);syncSoon();renderLevels()});
+$('#lvgoal').onchange=e=>{CFG.goalLv=e.target.value;CFG.t=Date.now();saveAll();build();renderLevels();toast('Objectif : '+CFG.goalLv)};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-em]');if(b){PLAYING=false;try{speechSynthesis.cancel()}catch(_){}EMODE=b.dataset.em;renderEcoute();window.scrollTo(0,0);return}
+ const l=e.target.closest('[data-elv]');if(l){ELV=l.dataset.elv;DS=PS=SH=null;renderEcoute();return}
+ const d=e.target.closest('[data-dlg]');if(d){openDlg(d.dataset.dlg);return}
+ if(!CUR)return;
+ if(e.target.closest('#dplay')){if(PLAYING){PLAYING=false;speechSynthesis.cancel();return}playLines(0);return}
+ const ln=e.target.closest('[data-ln]');if(ln){PLAYING=false;speechSynthesis.cancel();setTimeout(()=>playLines(+ln.dataset.ln,true),80);return}
+ const sp=e.target.closest('[data-spd]');if(sp){ESPEED=+sp.dataset.spd;$$('#dspd button').forEach(x=>x.classList.toggle('on',x===sp));return}
+ if(e.target.closest('#dko')){CUR.showKo=!CUR.showKo;drawDlg();return}if(e.target.closest('#dfr')){CUR.showFr=!CUR.showFr;drawDlg();return}
+ const o=e.target.closest('[data-o]');if(o&&o.closest('.qblock')){const qi=+o.dataset.q;if(CUR.ans[qi]!=null)return;CUR.ans[qi]=+o.dataset.o;drawDlg()}});
+async function loadEcoute(){try{const r=await fetch('ecoute.json?t='+Date.now(),{cache:'no-store'});if(r.ok){EC=await r.json();LS.set('ecoute',EC)}}catch(e){}if(EC&&D){build();renderEcoute();renderLevels()}}
+
 /* ---------- sync (Firebase) ---------- */
 const FB_CFG={"apiKey": "AIzaSyCJPTHJ6JOwx2JD_NAMl_CyJbq9jG8x5Qs", "authDomain": "danojang-coreen.firebaseapp.com", "projectId": "danojang-coreen", "storageBucket": "danojang-coreen.firebasestorage.app", "messagingSenderId": "1043089385709", "appId": "1:1043089385709:web:61baed2db991b3548284e4"};
 let FB=null,USER=null,syncT=null,lastRemote='',lastSync=LS.get('lastsync',0);
 const ONLINE_SYNC=location.protocol==='https:'&&!/claude/.test(location.hostname);
-function stateObj(){return {srs:SRS,fav:FAV,own:OWN,log:LOG,cfg:CFG,av:AV,avt:AVT,v:1}}
+function stateObj(){return {srs:SRS,fav:FAV,own:OWN,log:LOG,cfg:CFG,av:AV,avt:AVT,cando:CANDO,dlg:DLG,v:1}}
 function mergeIn(r){if(!r)return false;let ch=false;
  for(const k in (r.srs||{})){const a=SRS[k],b=r.srs[k];if(!a||(b.t||0)>(a.t||0)||(!b.t&&!a.t&&b.reps>a.reps)){SRS[k]=b;ch=true}}
  for(const k in (r.fav||{})){if(Math.abs(r.fav[k])>Math.abs(FAV[k]||0)){FAV[k]=r.fav[k];ch=true}}
  const om=new Map(OWN.map(o=>[o.ko,o]));for(const o of (r.own||[])){const m=om.get(o.ko);if(!m||(o.t||o.added||0)>(m.t||m.added||0)){om.set(o.ko,o);ch=true}}OWN=[...om.values()];
  for(const d in (r.log||{})){const a=LOG[d]||{r:0,ok:0,n:0},b=r.log[d];const m={r:Math.max(a.r,b.r||0),ok:Math.max(a.ok,b.ok||0),n:Math.max(a.n||0,b.n||0)};if(JSON.stringify(m)!==JSON.stringify(LOG[d])){LOG[d]=m;ch=true}}
  if(r.cfg&&(r.cfg.t||0)>(CFG.t||0)){CFG=Object.assign(CFG,r.cfg);ch=true;try{$('#sgoal').value=CFG.goal;$('#snewd').value=CFG.newd;$('#srate').value=CFG.rate;$('#sauto').checked=CFG.auto}catch(e){}}
+ for(const k in (r.cando||{})){if(Math.abs(r.cando[k])>Math.abs(CANDO[k]||0)){CANDO[k]=r.cando[k];ch=true}}
+ for(const k in (r.dlg||{})){if(((r.dlg[k]||{}).t||0)>((DLG[k]||{}).t||0)){DLG[k]=r.dlg[k];ch=true}}
+ LS.set('cando',CANDO);LS.set('dlg',DLG);
  for(const w of ['iy','me']){if(r.avt&&(r.avt[w]||0)>(AVT[w]||0)){AV[w]=(r.av||{})[w]||'';AVT[w]=r.avt[w];LS.set('av-'+w,AV[w]);ch=true}}
  LS.set('avt',AVT);LS.set('srs',SRS);LS.set('fav',FAV);LS.set('own',OWN);LS.set('log',LOG);LS.set('cfg',CFG);
  return ch}
@@ -622,6 +799,7 @@ if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostnam
 /* boot: cached copy first (works offline), then network */
 (async()=>{const cached=LS.get('vocab',null);if(cached)useVocab(cached,'boot');
  if(!D){try{const r=await fetch('vocab.json');useVocab(await r.json(),'boot')}catch(e){}}
+ loadEcoute();
  const l=$('#loading');if(D){l.remove();route();net()}else l.textContent='Impossible de charger le carnet. Connecte-toi une première fois à Internet.'})();
 }
 </script>

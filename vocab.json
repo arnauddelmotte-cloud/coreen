@@ -99,175 +99,204 @@
      "ko": "어서 오세요 / 환영합니다",
      "fr": "Bienvenue",
      "c": "1",
-     "ic": "🙌"
+     "ic": "🙌",
+     "lv": "A1"
     },
     {
      "ko": "어서 와",
      "fr": "Viens ! Bienvenue (familier)",
      "c": "1",
-     "ic": "👋"
+     "ic": "👋",
+     "lv": "A1"
     },
     {
      "ko": "한국에서 오셨어요?",
      "fr": "Vous venez de Corée ?",
      "c": "1",
-     "ic": "🇰🇷"
+     "ic": "🇰🇷",
+     "lv": "A1"
     },
     {
      "ko": "한국 어디에서 오셨어요?",
      "fr": "D'où venez-vous, en Corée ?",
      "c": "2",
-     "ic": "📍"
+     "ic": "📍",
+     "lv": "A1"
     },
     {
      "ko": "프랑스에는 처음 오셨어요?",
      "fr": "C'est la première fois que vous venez en France ?",
      "c": "2",
-     "ic": "🇫🇷"
+     "ic": "🇫🇷",
+     "lv": "A1"
     },
     {
      "ko": "처음이에요",
      "fr": "C'est la première fois",
      "c": "1",
-     "ic": "1️⃣"
+     "ic": "1️⃣",
+     "lv": "A1"
     },
     {
      "ko": "첫 수업이에요",
      "fr": "C'est le premier cours (pas 처음 수업)",
      "c": "1",
-     "ic": "📖"
+     "ic": "📖",
+     "lv": "A1"
     },
     {
      "ko": "공연 보러 오셨어요?",
      "fr": "Vous êtes venu(e) voir le spectacle ?",
      "c": "1",
-     "ic": "🎟️"
+     "ic": "🎟️",
+     "lv": "A1"
     },
     {
      "ko": "자주 오세요?",
      "fr": "Vous venez souvent ?",
      "c": "1",
-     "ic": "🔁"
+     "ic": "🔁",
+     "lv": "A1"
     },
     {
      "ko": "도와드릴까요?",
      "fr": "Je peux vous aider ?",
      "c": "1",
-     "ic": "🙋"
+     "ic": "🙋",
+     "lv": "A1"
     },
     {
      "ko": "제가 도와드릴게요",
      "fr": "Je vais vous aider",
      "c": "2",
-     "ic": "💪"
+     "ic": "💪",
+     "lv": "A1"
     },
     {
      "ko": "도와주세요!",
      "fr": "Aidez-moi ! (돕다 : aider)",
      "c": "1",
-     "ic": "🆘"
+     "ic": "🆘",
+     "lv": "A1"
     },
     {
      "ko": "필요한 거 있어요?",
      "fr": "Vous avez besoin de quelque chose ?",
      "c": "2",
-     "ic": "🎒"
+     "ic": "🎒",
+     "lv": "A1"
     },
     {
      "ko": "필요한 거 있으면 알려주세요",
      "fr": "Si vous avez besoin de quelque chose, dites-le-moi",
      "c": "3",
-     "ic": "📣"
+     "ic": "📣",
+     "lv": "A1"
     },
     {
      "ko": "불편한 거 있으면 알려주세요",
      "fr": "Si quelque chose vous gêne, dites-le-moi",
      "c": "3",
-     "ic": "😣"
+     "ic": "😣",
+     "lv": "A1"
     },
     {
      "ko": "편하게 말해주세요",
      "fr": "N'hésitez pas à me le dire",
      "c": "3",
-     "ic": "🛋️"
+     "ic": "🛋️",
+     "lv": "A1"
     },
     {
      "ko": "잘 부탁드려요",
      "fr": "Ravi de travailler avec vous (je compte sur vous)",
      "c": "2·3",
-     "ic": "🙇"
+     "ic": "🙇",
+     "lv": "A1"
     },
     {
      "ko": "한국 팀이랑 같이 일하게 돼서 좋아요",
      "fr": "Je suis ravi de travailler avec l'équipe coréenne",
      "c": "2",
-     "ic": "🤝"
+     "ic": "🤝",
+     "lv": "A1"
     },
     {
      "ko": "패닉할 필요 없어요",
      "fr": "Pas besoin de paniquer",
      "c": "2",
-     "ic": "😱"
+     "ic": "😱",
+     "lv": "A1"
     },
     {
      "ko": "괜찮아요",
      "fr": "Ça va / pas de problème",
      "c": "1",
-     "ic": "👌"
+     "ic": "👌",
+     "lv": "A1"
     },
     {
      "ko": "천천히 하세요",
      "fr": "Prenez votre temps",
      "c": "6",
-     "ic": "🐢"
+     "ic": "🐢",
+     "lv": "A1"
     },
     {
      "ko": "화이팅!",
      "fr": "Courage ! On peut le faire !",
      "c": "15",
-     "ic": "✊"
+     "ic": "✊",
+     "lv": "A1"
     },
     {
      "ko": "조심해서 다녀오세요",
      "fr": "Bon voyage, sois prudent(e)",
      "c": "12",
-     "ic": "🧳"
+     "ic": "🧳",
+     "lv": "A1"
     },
     {
      "ko": "인영씨는요?",
      "fr": "Et toi, In-young ?",
      "c": "16·17",
-     "ic": "👉"
+     "ic": "👉",
+     "lv": "A1"
     },
     {
      "ko": "오늘 하루 어땠어요?",
      "fr": "Comment s'est passée ta journée ?",
      "c": "2",
-     "ic": "🌇"
+     "ic": "🌇",
+     "lv": "A1"
     },
     {
      "ko": "좋은 하루 보냈어요?",
      "fr": "Tu as passé une bonne journée ?",
      "c": "2",
-     "ic": "☀️"
+     "ic": "☀️",
+     "lv": "A1"
     },
     {
      "ko": "일주일 만이에요",
      "fr": "Ça fait une semaine (qu'on ne s'est pas vus)",
      "c": "5",
-     "ic": "🗓️"
+     "ic": "🗓️",
+     "lv": "A1"
     },
     {
      "ko": "문자 주세요",
      "fr": "Envoie-moi un message",
      "c": "9",
-     "ic": "📱"
+     "ic": "📱",
+     "lv": "A1"
     },
     {
      "ko": "다음 수업은 언제가 제일 좋아요?",
      "fr": "Quel moment serait le mieux pour le prochain cours ?",
      "c": "7",
-     "ic": "⏰"
+     "ic": "⏰",
+     "lv": "A1"
     }
    ]
   },
@@ -280,205 +309,239 @@
      "ko": "진짜요? / 정말요?",
      "fr": "Vraiment ?",
      "c": "2",
-     "ic": "😲"
+     "ic": "😲",
+     "lv": "A2"
     },
     {
      "ko": "그래요?",
      "fr": "Ah bon ? C'est vrai ?",
      "c": "2",
-     "ic": "🤨"
+     "ic": "🤨",
+     "lv": "A2"
     },
     {
      "ko": "그렇구나! / 그렇군요!",
      "fr": "Ah, je vois !",
      "c": "2",
-     "ic": "💡"
+     "ic": "💡",
+     "lv": "A2"
     },
     {
      "ko": "알겠어요",
      "fr": "Je vois / je comprends",
      "c": "2",
-     "ic": "🙆"
+     "ic": "🙆",
+     "lv": "B1"
     },
     {
      "ko": "맞아요",
      "fr": "C'est ça, exactement",
      "c": "2",
-     "ic": "✅"
+     "ic": "✅",
+     "lv": "A2"
     },
     {
      "ko": "그렇죠!",
      "fr": "Exactement !",
      "c": "2",
-     "ic": "🎯"
+     "ic": "🎯",
+     "lv": "A2"
     },
     {
      "ko": "저도요 / 저도 그래요",
      "fr": "Moi aussi (나도 / 나도 그래 : familier)",
      "c": "2·15",
-     "ic": "🙋‍♂️"
+     "ic": "🙋‍♂️",
+     "lv": "A2"
     },
     {
      "ko": "저도 똑같아요",
      "fr": "Pareil pour moi",
      "c": "15",
-     "ic": "🟰"
+     "ic": "🟰",
+     "lv": "A2"
     },
     {
      "ko": "저도 공감해요",
      "fr": "Je comprends ce que tu ressens",
      "c": "6·9",
-     "ic": "🫂"
+     "ic": "🫂",
+     "lv": "A2"
     },
     {
      "ko": "마찬가지예요",
      "fr": "C'est pareil",
      "c": "6·14",
-     "ic": "↔️"
+     "ic": "↔️",
+     "lv": "A2"
     },
     {
      "ko": "보면 알겠죠",
      "fr": "On verra bien",
      "c": "17",
-     "ic": "🔮"
+     "ic": "🔮",
+     "lv": "B1"
     },
     {
      "ko": "큰일이네요",
      "fr": "C'est grave !",
      "c": "7",
-     "ic": "🚨"
+     "ic": "🚨",
+     "lv": "A2"
     },
     {
      "ko": "믿기지 않네요",
      "fr": "Je n'arrive pas à y croire",
      "c": "7",
-     "ic": "🤯"
+     "ic": "🤯",
+     "lv": "A2"
     },
     {
      "ko": "끔찍하네요",
      "fr": "C'est horrible",
      "c": "9",
-     "ic": "😖"
+     "ic": "😖",
+     "lv": "A2"
     },
     {
      "ko": "흥미롭네요",
      "fr": "C'est intéressant",
      "c": "12·13",
-     "ic": "🧐"
+     "ic": "🧐",
+     "lv": "A2"
     },
     {
      "ko": "신기하네요",
      "fr": "C'est fascinant, étonnant",
      "c": "9·13",
-     "ic": "✨"
+     "ic": "✨",
+     "lv": "A2"
     },
     {
      "ko": "멋있어요",
      "fr": "C'est classe, c'est cool",
      "c": "2·12",
-     "ic": "😎"
+     "ic": "😎",
+     "lv": "A2"
     },
     {
      "ko": "부럽네요 / 부러워요",
      "fr": "Je suis jaloux(se)",
      "c": "3·6",
-     "ic": "😒"
+     "ic": "😒",
+     "lv": "A2"
     },
     {
      "ko": "부러워할 필요 없어요",
      "fr": "Pas la peine d'être jaloux",
      "c": "6",
-     "ic": "🙅"
+     "ic": "🙅",
+     "lv": "A2"
     },
     {
      "ko": "슬프네요 / 마음이 아프네요",
      "fr": "C'est triste / ça me fend le cœur",
      "c": "7",
-     "ic": "💔"
+     "ic": "💔",
+     "lv": "A2"
     },
     {
      "ko": "마음이 안 좋네요",
      "fr": "Ça me fait de la peine",
      "c": "7",
-     "ic": "😔"
+     "ic": "😔",
+     "lv": "A2"
     },
     {
      "ko": "일이 다 그런 거죠",
      "fr": "C'est comme ça, le travail",
      "c": "7",
-     "ic": "🤷"
+     "ic": "🤷",
+     "lv": "A2"
     },
     {
      "ko": "관점에 따라 달라요",
      "fr": "Ça dépend du point de vue",
      "c": "6",
-     "ic": "👓"
+     "ic": "👓",
+     "lv": "B1"
     },
     {
      "ko": "당연해요",
      "fr": "Bien sûr, c'est évident",
      "c": "14",
-     "ic": "👍"
+     "ic": "👍",
+     "lv": "A2"
     },
     {
      "ko": "진심이에요",
      "fr": "Je suis sincère (plus naturel que 진실이에요)",
      "c": "6·9",
-     "ic": "❤️"
+     "ic": "❤️",
+     "lv": "A2"
     },
     {
      "ko": "정신 없겠네요",
      "fr": "Tu dois être débordé",
      "c": "7·14",
-     "ic": "🌀"
+     "ic": "🌀",
+     "lv": "B1"
     },
     {
      "ko": "힘들었겠네요",
      "fr": "Ça a dû être dur",
      "c": "16",
-     "ic": "😓"
+     "ic": "😓",
+     "lv": "B1"
     },
     {
      "ko": "바쁘겠네요",
      "fr": "Tu dois être bien occupé",
      "c": "3",
-     "ic": "🏃"
+     "ic": "🏃",
+     "lv": "B1"
     },
     {
      "ko": "재미있겠네요",
      "fr": "Ça a l'air amusant",
      "c": "3",
-     "ic": "😄"
+     "ic": "😄",
+     "lv": "B1"
     },
     {
      "ko": "어렵겠네요 / 쉽지 않겠네요",
      "fr": "Ça a l'air difficile / ça ne doit pas être facile",
      "c": "3",
-     "ic": "🧗"
+     "ic": "🧗",
+     "lv": "B1"
     },
     {
      "ko": "맛있겠네요",
      "fr": "Ça a l'air délicieux",
      "c": "3",
-     "ic": "😋"
+     "ic": "😋",
+     "lv": "B1"
     },
     {
      "ko": "기대되네요",
      "fr": "J'ai hâte (attente)",
      "c": "11",
-     "ic": "🤩"
+     "ic": "🤩",
+     "lv": "A2"
     },
     {
      "ko": "설레요",
      "fr": "J'ai hâte (excitation, cœur qui bat)",
      "c": "17",
-     "ic": "💓"
+     "ic": "💓",
+     "lv": "A2"
     },
     {
      "ko": "신나네요",
      "fr": "C'est excitant !",
      "c": "11",
-     "ic": "🎉"
+     "ic": "🎉",
+     "lv": "A2"
     }
    ]
   },
@@ -491,187 +554,218 @@
      "ko": "기쁘다 / 기뻐요",
      "fr": "Être content / je suis content",
      "c": "4·14",
-     "ic": "😊"
+     "ic": "😊",
+     "lv": "A2"
     },
     {
      "ko": "그렇게 말해줘서 기쁘네요",
      "fr": "Ça me fait plaisir que tu dises ça",
      "c": "4",
-     "ic": "🥰"
+     "ic": "🥰",
+     "lv": "A2"
     },
     {
      "ko": "감동이에요",
      "fr": "Je suis touché",
      "c": "9·14·17",
-     "ic": "🥹"
+     "ic": "🥹",
+     "lv": "A2"
     },
     {
      "ko": "자랑스러워요",
      "fr": "Je suis fier de toi",
      "c": "5·11·17",
-     "ic": "🏅"
+     "ic": "🏅",
+     "lv": "A2"
     },
     {
      "ko": "그럴 자격 있어요",
      "fr": "Tu le mérites",
      "c": "17",
-     "ic": "🏆"
+     "ic": "🏆",
+     "lv": "B1"
     },
     {
      "ko": "쉴 자격 있어요",
      "fr": "Tu mérites du repos",
      "c": "12",
-     "ic": "🛌"
+     "ic": "🛌",
+     "lv": "B1"
     },
     {
      "ko": "칭찬 / 칭찬하다",
      "fr": "Compliment / complimenter, féliciter",
      "c": "5·12",
-     "ic": "👏"
+     "ic": "👏",
+     "lv": "A2"
     },
     {
      "ko": "멋진 칭찬이네요",
      "fr": "Quel joli compliment",
      "c": "12",
-     "ic": "💐"
+     "ic": "💐",
+     "lv": "A2"
     },
     {
      "ko": "잘했어요 / 잘하고 있어요",
      "fr": "Bien joué / tu t'en sors bien",
      "c": "5",
-     "ic": "🌟"
+     "ic": "🌟",
+     "lv": "A2"
     },
     {
      "ko": "열심히",
      "fr": "Sérieusement, avec ardeur",
      "c": "5·8",
-     "ic": "🔥"
+     "ic": "🔥",
+     "lv": "A2"
     },
     {
      "ko": "열심히 노력하고 있어요",
      "fr": "Je fais beaucoup d'efforts",
      "c": "16",
-     "ic": "💦"
+     "ic": "💦",
+     "lv": "A2"
     },
     {
      "ko": "부지런하네요",
      "fr": "Tu es consciencieux",
      "c": "8",
-     "ic": "🐝"
+     "ic": "🐝",
+     "lv": "A2"
     },
     {
      "ko": "친절하다",
      "fr": "Être gentil, aimable",
      "c": "5·13",
-     "ic": "🤗"
+     "ic": "🤗",
+     "lv": "A2"
     },
     {
      "ko": "나이스하다",
      "fr": "Gentil (pour la personnalité seulement)",
      "c": "5",
-     "ic": "😇"
+     "ic": "😇",
+     "lv": "A2"
     },
     {
      "ko": "좌우명",
      "fr": "Devise",
      "c": "17",
-     "ic": "📜"
+     "ic": "📜",
+     "lv": "A2"
     },
     {
      "ko": "겸손함이 제 좌우명이에요",
      "fr": "L'humilité, c'est ma devise",
      "c": "17",
-     "ic": "🌾"
+     "ic": "🌾",
+     "lv": "A2"
     },
     {
      "ko": "강하다 / 강한 사람",
      "fr": "Fort / une personne forte",
      "c": "17",
-     "ic": "🦁"
+     "ic": "🦁",
+     "lv": "A2"
     },
     {
      "ko": "좋은 에너지를 얻었어요",
      "fr": "J'ai reçu de bonnes énergies (얻다 : obtenir)",
      "c": "17",
-     "ic": "🔋"
+     "ic": "🔋",
+     "lv": "A2"
     },
     {
      "ko": "운이 좋아요",
      "fr": "J'ai de la chance",
      "c": "2·3",
-     "ic": "🍀"
+     "ic": "🍀",
+     "lv": "A2"
     },
     {
      "ko": "놀랐어요",
      "fr": "J'ai été surpris(e) (놀라다)",
      "c": "5·11",
-     "ic": "😯"
+     "ic": "😯",
+     "lv": "A2"
     },
     {
      "ko": "무서워요",
      "fr": "J'ai peur",
      "c": "7",
-     "ic": "😨"
+     "ic": "😨",
+     "lv": "A2"
     },
     {
      "ko": "실망했어요",
      "fr": "Il/elle a été déçu(e)",
      "c": "15",
-     "ic": "😞"
+     "ic": "😞",
+     "lv": "A2"
     },
     {
      "ko": "후회하다",
      "fr": "Regretter",
      "c": "7",
-     "ic": "🤦"
+     "ic": "🤦",
+     "lv": "A2"
     },
     {
      "ko": "외로워요",
      "fr": "Je me sens seul",
      "c": "9",
-     "ic": "🥀"
+     "ic": "🥀",
+     "lv": "A2"
     },
     {
      "ko": "혼자가 아니에요",
      "fr": "Tu n'es pas seul(e)",
      "c": "9",
-     "ic": "👫"
+     "ic": "👫",
+     "lv": "A2"
     },
     {
      "ko": "고민",
      "fr": "Souci, préoccupation",
      "c": "15",
-     "ic": "💭"
+     "ic": "💭",
+     "lv": "A2"
     },
     {
      "ko": "신뢰 [실뢰]",
      "fr": "Confiance",
      "c": "13",
-     "ic": "🤞"
+     "ic": "🤞",
+     "lv": "A2"
     },
     {
      "ko": "제 삶의 낙이에요",
      "fr": "C'est ma joie de vivre (삶 : vie, 낙 : joie)",
      "c": "10·15·16",
-     "ic": "🌈"
+     "ic": "🌈",
+     "lv": "A2"
     },
     {
      "ko": "이 순간을 즐겨야 해요",
      "fr": "Je dois profiter de ce moment",
      "c": "15",
-     "ic": "📸"
+     "ic": "📸",
+     "lv": "A2"
     },
     {
      "ko": "힘들어 죽겠어요",
      "fr": "Je suis mort de fatigue (litt. je vais mourir)",
      "c": "9·10",
-     "ic": "😵"
+     "ic": "😵",
+     "lv": "B1"
     },
     {
      "ko": "불평하다",
      "fr": "Se plaindre",
      "c": "10",
-     "ic": "😤"
+     "ic": "😤",
+     "lv": "A2"
     }
    ]
   },
@@ -684,181 +778,211 @@
      "ko": "공연",
      "fr": "Spectacle, représentation, concert",
      "c": "1",
-     "ic": "🎭"
+     "ic": "🎭",
+     "lv": "B1"
     },
     {
      "ko": "큰 공연",
      "fr": "Un grand spectacle",
      "c": "3",
-     "ic": "🏟️"
+     "ic": "🏟️",
+     "lv": "B1"
     },
     {
      "ko": "공연 제목 / 공연 이름",
      "fr": "Titre du spectacle",
      "c": "13",
-     "ic": "🏷️"
+     "ic": "🏷️",
+     "lv": "B1"
     },
     {
      "ko": "첫 공연",
      "fr": "La première",
      "c": "6·17",
-     "ic": "🥇"
+     "ic": "🥇",
+     "lv": "B1"
     },
     {
      "ko": "두 번째 공연",
      "fr": "La deuxième représentation",
      "c": "15",
-     "ic": "🥈"
+     "ic": "🥈",
+     "lv": "B1"
     },
     {
      "ko": "오페라 가수",
      "fr": "Chanteur d'opéra",
      "c": "3",
-     "ic": "🎤"
+     "ic": "🎤",
+     "lv": "B1"
     },
     {
      "ko": "가수 / 노래하는 사람",
      "fr": "Chanteur",
      "c": "3",
-     "ic": "🎙️"
+     "ic": "🎙️",
+     "lv": "B1"
     },
     {
      "ko": "솔리스트",
      "fr": "Soliste",
      "c": "8·11",
-     "ic": "⭐"
+     "ic": "⭐",
+     "lv": "B1"
     },
     {
      "ko": "합창단",
      "fr": "Chœur, choristes",
      "c": "8·11",
-     "ic": "👥"
+     "ic": "👥",
+     "lv": "B1"
     },
     {
      "ko": "어린이 합창단",
      "fr": "Chœur d'enfants",
      "c": "11",
-     "ic": "🧒"
+     "ic": "🧒",
+     "lv": "B1"
     },
     {
      "ko": "댄서",
      "fr": "Danseur",
      "c": "11",
-     "ic": "🩰"
+     "ic": "🩰",
+     "lv": "B1"
     },
     {
      "ko": "지휘자",
      "fr": "Chef d'orchestre",
      "c": "13",
-     "ic": "🎼"
+     "ic": "🎼",
+     "lv": "B1"
     },
     {
      "ko": "아티스트 / 뮤지션",
      "fr": "Artiste / musicien",
      "c": "3",
-     "ic": "🎻"
+     "ic": "🎻",
+     "lv": "B1"
     },
     {
      "ko": "관객",
      "fr": "Public, spectateur",
      "c": "7·13",
-     "ic": "👀"
+     "ic": "👀",
+     "lv": "B1"
     },
     {
      "ko": "자막",
      "fr": "Sous-titres, surtitres",
      "c": "17",
-     "ic": "🔤"
+     "ic": "🔤",
+     "lv": "B1"
     },
     {
      "ko": "리허설하다",
      "fr": "Répéter",
      "c": "3·5",
-     "ic": "🔄"
+     "ic": "🔄",
+     "lv": "B1"
     },
     {
      "ko": "리허설할 공간이 없어요",
      "fr": "Il n'y a pas d'espace pour répéter",
      "c": "8",
-     "ic": "🚫"
+     "ic": "🚫",
+     "lv": "B1"
     },
     {
      "ko": "극장",
      "fr": "Théâtre, salle de spectacle",
      "c": "7·9",
-     "ic": "🏛️"
+     "ic": "🏛️",
+     "lv": "B1"
     },
     {
      "ko": "탈의실 / 대기실",
      "fr": "Loge",
      "c": "7",
-     "ic": "🚪"
+     "ic": "🚪",
+     "lv": "B1"
     },
     {
      "ko": "국립오페라 [궁닙]",
      "fr": "Opéra national",
      "c": "11·13",
-     "ic": "🏛️"
+     "ic": "🏛️",
+     "lv": "B1"
     },
     {
      "ko": "서울 국립오페라",
      "fr": "Opéra national de Séoul",
      "c": "11",
-     "ic": "🇰🇷"
+     "ic": "🇰🇷",
+     "lv": "B1"
     },
     {
      "ko": "시즌",
      "fr": "Saison (d'opéra)",
      "c": "12",
-     "ic": "🍂"
+     "ic": "🍂",
+     "lv": "B1"
     },
     {
      "ko": "투어",
      "fr": "Tournée",
      "c": "12",
-     "ic": "🚌"
+     "ic": "🚌",
+     "lv": "B1"
     },
     {
      "ko": "워크샵",
      "fr": "Atelier (workshop)",
      "c": "16",
-     "ic": "🛠️"
+     "ic": "🛠️",
+     "lv": "B1"
     },
     {
      "ko": "행사",
      "fr": "Événement",
      "c": "16",
-     "ic": "🎪"
+     "ic": "🎪",
+     "lv": "B1"
     },
     {
      "ko": "뒤풀이",
      "fr": "Soirée d'après-spectacle",
      "c": "17",
-     "ic": "🍻"
+     "ic": "🍻",
+     "lv": "B1"
     },
     {
      "ko": "모차르트 오페라예요",
      "fr": "C'est un opéra de Mozart",
      "c": "3",
-     "ic": "🎹"
+     "ic": "🎹",
+     "lv": "B1"
     },
     {
      "ko": "오페라가 트위치에서 라이브할 거예요",
      "fr": "L'opéra sera diffusé en direct sur Twitch",
      "c": "13",
-     "ic": "📺"
+     "ic": "📺",
+     "lv": "B1"
     },
     {
      "ko": "공연이 몇 시에 시작해요?",
      "fr": "Le spectacle commence à quelle heure ?",
      "c": "1",
-     "ic": "🕘"
+     "ic": "🕘",
+     "lv": "B1"
     },
     {
      "ko": "공연 어땠어요?",
      "fr": "C'était comment, le spectacle ?",
      "c": "1",
-     "ic": "⭐"
+     "ic": "⭐",
+     "lv": "B1"
     }
    ]
   },
@@ -871,271 +995,316 @@
      "ko": "무대",
      "fr": "Scène, plateau",
      "c": "8",
-     "ic": "🎭"
+     "ic": "🎭",
+     "lv": "B1"
     },
     {
      "ko": "무대 설치 / 설치",
      "fr": "Montage de la scène / installation",
      "c": "13·15·16",
-     "ic": "🏗️"
+     "ic": "🏗️",
+     "lv": "B1"
     },
     {
      "ko": "무대 장식 / 무대 세팅",
      "fr": "Décor",
      "c": "8",
-     "ic": "🌳"
+     "ic": "🌳",
+     "lv": "B1"
     },
     {
      "ko": "세트 디자이너",
      "fr": "Scénographe",
      "c": "12",
-     "ic": "📐"
+     "ic": "📐",
+     "lv": "B1"
     },
     {
      "ko": "조명",
      "fr": "Éclairage (lumière de scène)",
      "c": "8",
-     "ic": "💡"
+     "ic": "💡",
+     "lv": "B1"
     },
     {
      "ko": "의상",
      "fr": "Costume",
      "c": "8",
-     "ic": "👘"
+     "ic": "👘",
+     "lv": "B1"
     },
     {
      "ko": "의상 치수를 재러 왔어요",
      "fr": "Ils sont venus prendre les mesures des costumes",
      "c": "8",
-     "ic": "📏"
+     "ic": "📏",
+     "lv": "B1"
     },
     {
      "ko": "사이즈 / 치수 / 재다",
      "fr": "Taille / mensurations / mesurer",
      "c": "8",
-     "ic": "📏"
+     "ic": "📏",
+     "lv": "B1"
     },
     {
      "ko": "바닥",
      "fr": "Sol, plancher de scène",
      "c": "16",
-     "ic": "🟦"
+     "ic": "🟦",
+     "lv": "B1"
     },
     {
      "ko": "스크린 / 화면",
      "fr": "Écran",
      "c": "13",
-     "ic": "🖥️"
+     "ic": "🖥️",
+     "lv": "B1"
     },
     {
      "ko": "영상 / 동영상",
      "fr": "Vidéo",
      "c": "10·13",
-     "ic": "🎞️"
+     "ic": "🎞️",
+     "lv": "B1"
     },
     {
      "ko": "음향팀 / 음향 엔지니어",
      "fr": "Équipe son / ingénieur du son",
      "c": "17",
-     "ic": "🎧"
+     "ic": "🎧",
+     "lv": "B1"
     },
     {
      "ko": "기술팀",
      "fr": "Équipe technique",
      "c": "15·16",
-     "ic": "👷"
+     "ic": "👷",
+     "lv": "B1"
     },
     {
      "ko": "기술감독",
      "fr": "Directeur technique",
      "c": "2·3",
-     "ic": "🧑‍🔧"
+     "ic": "🧑‍🔧",
+     "lv": "B1"
     },
     {
      "ko": "무대 관리자",
      "fr": "Régisseur de scène",
      "c": "17",
-     "ic": "📋"
+     "ic": "📋",
+     "lv": "B1"
     },
     {
      "ko": "제작",
      "fr": "Production (d'un spectacle)",
      "c": "14",
-     "ic": "🎬"
+     "ic": "🎬",
+     "lv": "B1"
     },
     {
      "ko": "제작 감독",
      "fr": "Directeur(trice) de production",
      "c": "14",
-     "ic": "🧑‍💼"
+     "ic": "🧑‍💼",
+     "lv": "B1"
     },
     {
      "ko": "제작진 / 제작팀",
      "fr": "Équipe de production",
      "c": "13",
-     "ic": "👥"
+     "ic": "👥",
+     "lv": "B1"
     },
     {
      "ko": "크리에이티브 팀",
      "fr": "Équipe créative",
      "c": "13",
-     "ic": "🎨"
+     "ic": "🎨",
+     "lv": "B1"
     },
     {
      "ko": "기술 용어 / 용어",
      "fr": "Termes techniques / terminologie",
      "c": "8·15",
-     "ic": "📘"
+     "ic": "📘",
+     "lv": "B1"
     },
     {
      "ko": "통역가 / 통역사",
      "fr": "Interprète",
      "c": "8·15",
-     "ic": "🗣️"
+     "ic": "🗣️",
+     "lv": "B1"
     },
     {
      "ko": "기획 회의 / 계획 회의",
      "fr": "Réunion de planification",
      "c": "8",
-     "ic": "🗂️"
+     "ic": "🗂️",
+     "lv": "B1"
     },
     {
      "ko": "계획 / 기획",
      "fr": "Plan, planification",
      "c": "14·16",
-     "ic": "🗺️"
+     "ic": "🗺️",
+     "lv": "B1"
     },
     {
      "ko": "일정 / 공연 일정",
      "fr": "Planning / planning des représentations",
      "c": "14",
-     "ic": "📆"
+     "ic": "📆",
+     "lv": "B1"
     },
     {
      "ko": "예산",
      "fr": "Budget",
      "c": "13",
-     "ic": "💶"
+     "ic": "💶",
+     "lv": "B1"
     },
     {
      "ko": "비용 / 손실 / 보험",
      "fr": "Coût / perte / assurance",
      "c": "7",
-     "ic": "📉"
+     "ic": "📉",
+     "lv": "B1"
     },
     {
      "ko": "손해 보다",
      "fr": "Subir une perte",
      "c": "7",
-     "ic": "💸"
+     "ic": "💸",
+     "lv": "B1"
     },
     {
      "ko": "취소되다",
      "fr": "Être annulé",
      "c": "7",
-     "ic": "❌"
+     "ic": "❌",
+     "lv": "B1"
     },
     {
      "ko": "진행되다",
      "fr": "Avoir lieu, se dérouler",
      "c": "7·9",
-     "ic": "▶️"
+     "ic": "▶️",
+     "lv": "B1"
     },
     {
      "ko": "옮기다 [옴기다]",
      "fr": "Déplacer",
      "c": "8·12",
-     "ic": "📦"
+     "ic": "📦",
+     "lv": "B1"
     },
     {
      "ko": "장소",
      "fr": "Lieu",
      "c": "8·12",
-     "ic": "📍"
+     "ic": "📍",
+     "lv": "B1"
     },
     {
      "ko": "대형 트럭 / 트럭 두 대",
      "fr": "Semi-remorque / deux camions",
      "c": "16",
-     "ic": "🚛"
+     "ic": "🚛",
+     "lv": "B1"
     },
     {
      "ko": "배로 이동해요",
      "fr": "C'est transporté par bateau",
      "c": "8",
-     "ic": "🚢"
+     "ic": "🚢",
+     "lv": "B1"
     },
     {
      "ko": "확인하다 / 더블체킹하다",
      "fr": "Vérifier / double-vérifier",
      "c": "11",
-     "ic": "☑️"
+     "ic": "☑️",
+     "lv": "B1"
     },
     {
      "ko": "해결하다",
      "fr": "Résoudre",
      "c": "12",
-     "ic": "🔑"
+     "ic": "🔑",
+     "lv": "B1"
     },
     {
      "ko": "과제",
      "fr": "Tâche, défi",
      "c": "12",
-     "ic": "🎯"
+     "ic": "🎯",
+     "lv": "B1"
     },
     {
      "ko": "대신",
      "fr": "À la place (de)",
      "c": "12",
-     "ic": "🔀"
+     "ic": "🔀",
+     "lv": "B1"
     },
     {
      "ko": "시간낭비 / 낭비하다",
      "fr": "Perte de temps / gaspiller",
      "c": "12·16",
-     "ic": "🗑️"
+     "ic": "🗑️",
+     "lv": "B1"
     },
     {
      "ko": "일하는 방식",
      "fr": "La façon de travailler",
      "c": "13·15",
-     "ic": "⚙️"
+     "ic": "⚙️",
+     "lv": "B1"
     },
     {
      "ko": "우리는 팀이에요",
      "fr": "Nous sommes une équipe",
      "c": "13",
-     "ic": "🤜"
+     "ic": "🤜",
+     "lv": "B1"
     },
     {
      "ko": "업무 전화 [엄무]",
      "fr": "Appel professionnel",
      "c": "6·10",
-     "ic": "☎️"
+     "ic": "☎️",
+     "lv": "B1"
     },
     {
      "ko": "이 분마다 전화가 와요",
      "fr": "Mon téléphone sonne toutes les deux minutes",
      "c": "14",
-     "ic": "📳"
+     "ic": "📳",
+     "lv": "B1"
     },
     {
      "ko": "재택근무",
      "fr": "Télétravail",
      "c": "6",
-     "ic": "🏡"
+     "ic": "🏡",
+     "lv": "B1"
     },
     {
      "ko": "사무실 / 회사",
      "fr": "Bureau / entreprise, travail",
      "c": "6·14",
-     "ic": "🏢"
+     "ic": "🏢",
+     "lv": "B1"
     },
     {
      "ko": "출장",
      "fr": "Voyage d'affaires",
      "c": "8",
-     "ic": "💼"
+     "ic": "💼",
+     "lv": "B1"
     }
    ]
   },
@@ -1148,175 +1317,204 @@
      "ko": "15년째 기술감독 하고 있어요",
      "fr": "Je suis directeur technique depuis 15 ans",
      "c": "2",
-     "ic": "🧑‍🔧"
+     "ic": "🧑‍🔧",
+     "lv": "B2"
     },
     {
      "ko": "이십 년째 이게 나의 세상이에요",
      "fr": "C'est mon monde depuis 20 ans",
      "c": "11",
-     "ic": "🌍"
+     "ic": "🌍",
+     "lv": "B2"
     },
     {
      "ko": "저한테는 익숙해요",
      "fr": "Pour moi, c'est familier",
      "c": "11",
-     "ic": "🧦"
+     "ic": "🧦",
+     "lv": "B2"
     },
     {
      "ko": "부담이 커요 / 부담이 많이 돼요",
      "fr": "Il y a beaucoup de pression",
      "c": "3",
-     "ic": "🏋️"
+     "ic": "🏋️",
+     "lv": "B2"
     },
     {
      "ko": "이 일을 하려면 부담을 즐겨야 해요",
      "fr": "Pour faire ce métier, il faut aimer la pression",
      "c": "5",
-     "ic": "😤"
+     "ic": "😤",
+     "lv": "B2"
     },
     {
      "ko": "세트 디자인은 쉬워요. 근데 설치는 정말 어려워요",
      "fr": "La conception du décor est facile, mais le montage est vraiment difficile",
      "c": "17",
-     "ic": "🏗️"
+     "ic": "🏗️",
+     "lv": "C1"
     },
     {
      "ko": "무에서 유를 만들어야 해요",
      "fr": "Il faut créer quelque chose à partir de rien",
      "c": "17",
-     "ic": "🪄"
+     "ic": "🪄",
+     "lv": "B2"
     },
     {
      "ko": "관객 입장에서 보면 쉬워 보여요. 근데 실제로는 정말 쉽지 않아요",
      "fr": "Vu du public, ça a l'air simple. Mais en réalité, ce n'est pas simple du tout",
      "c": "13",
-     "ic": "🎩"
+     "ic": "🎩",
+     "lv": "C1"
     },
     {
      "ko": "무대 설치에는 놀라울 정도로 많은 노력이 필요해요",
      "fr": "Le montage demande un effort étonnant",
      "c": "13",
-     "ic": "💪"
+     "ic": "💪",
+     "lv": "C1"
     },
     {
      "ko": "아주 작은 것도 문제가 될 수 있어요",
      "fr": "Même un tout petit détail peut devenir un problème",
      "c": "13",
-     "ic": "🔩"
+     "ic": "🔩",
+     "lv": "B2"
     },
     {
      "ko": "모든 기술 팀이 오면 모두 피곤할 거예요",
      "fr": "Quand toutes les équipes techniques arriveront, tout le monde sera fatigué",
      "c": "13",
-     "ic": "🥱"
+     "ic": "🥱",
+     "lv": "B2"
     },
     {
      "ko": "저한테 그들이 중요하다는 걸 알면 좋겠어요",
      "fr": "Je voudrais qu'ils sachent qu'ils comptent pour moi",
      "c": "13",
-     "ic": "💛"
+     "ic": "💛",
+     "lv": "C1"
     },
     {
      "ko": "아닌 건 아니라고 말해도 돼요",
      "fr": "Vous avez le droit de dire non",
      "c": "15",
-     "ic": "🙅"
+     "ic": "🙅",
+     "lv": "B2"
     },
     {
      "ko": "프랑스에서는 “no”라고 하는 건 존중하지 않는 게 아니에요",
      "fr": "En France, dire « non » n'est pas un manque de respect",
      "c": "13",
-     "ic": "🇫🇷"
+     "ic": "🇫🇷",
+     "lv": "C1"
     },
     {
      "ko": "오늘 무대 설치가 끝날 거예요",
      "fr": "Aujourd'hui, le montage de la scène sera terminé",
      "c": "15",
-     "ic": "🏁"
+     "ic": "🏁",
+     "lv": "B2"
     },
     {
      "ko": "트럭이 없었고 두 시간을 낭비했어요. 근데 무대 설치가 끝났어요. 그래서 다 괜찮아요",
      "fr": "Le camion n'était pas là et on a perdu 2 h. Mais le montage est fini, donc tout va bien",
      "c": "16",
-     "ic": "🚛"
+     "ic": "🚛",
+     "lv": "C1"
     },
     {
      "ko": "공연 무대를 설치할 거예요",
      "fr": "On va monter le décor du spectacle",
      "c": "14",
-     "ic": "🔨"
+     "ic": "🔨",
+     "lv": "B2"
     },
     {
      "ko": "모든 오페라를 다른 장소로 옮겨야 해요",
      "fr": "Tous les opéras doivent être déplacés vers un autre lieu",
      "c": "12",
-     "ic": "📦"
+     "ic": "📦",
+     "lv": "B2"
     },
     {
      "ko": "제 일도 있는데 그 사람의 일을 대신 하고 있어요",
      "fr": "J'ai mon propre travail, mais je fais aussi le sien à sa place",
      "c": "12",
-     "ic": "🤹"
+     "ic": "🤹",
+     "lv": "C1"
     },
     {
      "ko": "처음에는 복잡한데 점점 쉬워져요",
      "fr": "C'est compliqué au début, puis ça devient plus facile",
      "c": "12",
-     "ic": "📈"
+     "ic": "📈",
+     "lv": "B2"
     },
     {
      "ko": "공연 두 개를 동시에 오페라에서 해요",
      "fr": "On joue deux spectacles en même temps à l'opéra",
      "c": "15",
-     "ic": "✌️"
+     "ic": "✌️",
+     "lv": "B2"
     },
     {
      "ko": "몽쁠리에 오페라랑 한국 오페라랑 같이 일해요",
      "fr": "L'Opéra de Montpellier et l'opéra coréen travaillent ensemble",
      "c": "15",
-     "ic": "🤝"
+     "ic": "🤝",
+     "lv": "C1"
     },
     {
      "ko": "다행히 통역가들이 많이 있어요",
      "fr": "Heureusement, il y a beaucoup d'interprètes",
      "c": "15",
-     "ic": "😮‍💨"
+     "ic": "😮‍💨",
+     "lv": "B2"
     },
     {
      "ko": "한국팀이랑 준비하는 게 재미있어요",
      "fr": "Préparer avec l'équipe coréenne, c'est amusant",
      "c": "16",
-     "ic": "😄"
+     "ic": "😄",
+     "lv": "B2"
     },
     {
      "ko": "기대는 높은데 실제는 어려워요",
      "fr": "Les attentes sont élevées, mais la réalité est difficile",
      "c": "16",
-     "ic": "⛰️"
+     "ic": "⛰️",
+     "lv": "B2"
     },
     {
      "ko": "십년 전에 오 년 동안 이 공연 맡았어요",
      "fr": "Il y a dix ans, j'ai été responsable de ce spectacle pendant cinq ans",
      "c": "12",
-     "ic": "🕰️"
+     "ic": "🕰️",
+     "lv": "B2"
     },
     {
      "ko": "열 시간 일했어요",
      "fr": "J'ai travaillé dix heures",
      "c": "17",
-     "ic": "🔟"
+     "ic": "🔟",
+     "lv": "B2"
     },
     {
      "ko": "세 개 공연이 취소됐어요",
      "fr": "Trois spectacles ont été annulés",
      "c": "7",
-     "ic": "❌"
+     "ic": "❌",
+     "lv": "B2"
     },
     {
      "ko": "다 잘 될 거예요",
      "fr": "Tout ira bien",
      "c": "7",
-     "ic": "🤞"
+     "ic": "🤞",
+     "lv": "B2"
     }
    ]
   },
@@ -1329,139 +1527,162 @@
      "ko": "오페라에서 노래했어요",
      "fr": "J'ai chanté à l'opéra",
      "c": "2",
-     "ic": "🎤"
+     "ic": "🎤",
+     "lv": "A2"
     },
     {
      "ko": "20년 동안 노래했어요",
      "fr": "J'ai chanté pendant 20 ans",
      "c": "2",
-     "ic": "🎶"
+     "ic": "🎶",
+     "lv": "A2"
     },
     {
      "ko": "물리학을 공부했어요",
      "fr": "J'ai étudié la physique",
      "c": "2",
-     "ic": "⚛️"
+     "ic": "⚛️",
+     "lv": "A2"
     },
     {
      "ko": "십 년째 이 길을 걷고 있어요",
      "fr": "Je suis ce chemin depuis dix ans",
      "c": "17",
-     "ic": "🛤️"
+     "ic": "🛤️",
+     "lv": "A2"
     },
     {
      "ko": "제가 한국어를 해서 모두 놀랐어요",
      "fr": "Tout le monde a été surpris que je parle coréen",
      "c": "11",
-     "ic": "😮"
+     "ic": "😮",
+     "lv": "A2"
     },
     {
      "ko": "일대일로 대화하는 건 쉬워요",
      "fr": "Converser en tête-à-tête, c'est facile",
      "c": "17",
-     "ic": "👥"
+     "ic": "👥",
+     "lv": "A2"
     },
     {
      "ko": "근데 사람이 많으면 쉽지 않아요",
      "fr": "Mais quand il y a beaucoup de monde, ce n'est pas facile",
      "c": "17",
-     "ic": "👨‍👩‍👧‍👦"
+     "ic": "👨‍👩‍👧‍👦",
+     "lv": "A2"
     },
     {
      "ko": "한국인들이 서로 말하면 너무 빨리 말해요",
      "fr": "Quand les Coréens parlent entre eux, ils parlent trop vite",
      "c": "15",
-     "ic": "💨"
+     "ic": "💨",
+     "lv": "A2"
     },
     {
      "ko": "아직 더 많이 연습해야 해요",
      "fr": "Je dois encore beaucoup pratiquer",
      "c": "15",
-     "ic": "📝"
+     "ic": "📝",
+     "lv": "A2"
     },
     {
      "ko": "제 특기 중에 남을 흉내내는 걸 잘해요",
      "fr": "Un de mes talents : je sais bien imiter les autres",
      "c": "6",
-     "ic": "🦜"
+     "ic": "🦜",
+     "lv": "A2"
     },
     {
      "ko": "저는 항상 짧은 머리가 좋아요",
      "fr": "J'aime toujours les cheveux courts",
      "c": "9",
-     "ic": "💇‍♂️"
+     "ic": "💇‍♂️",
+     "lv": "A2"
     },
     {
      "ko": "삼 년 째 살고 있어요",
      "fr": "J'y habite depuis trois ans",
      "c": "6",
-     "ic": "🏠"
+     "ic": "🏠",
+     "lv": "A2"
     },
     {
      "ko": "집이랑 회사랑 멀어요",
      "fr": "Ma maison est loin de mon travail",
      "c": "6",
-     "ic": "🛣️"
+     "ic": "🛣️",
+     "lv": "A2"
     },
     {
      "ko": "요즘 러닝 자주 해요",
      "fr": "Ces temps-ci, je cours souvent",
      "c": "8",
-     "ic": "🏃‍♂️"
+     "ic": "🏃‍♂️",
+     "lv": "A2"
     },
     {
      "ko": "업무 전화보다 너와 대화하는 게 더 좋아요",
      "fr": "Je préfère parler avec toi qu'un appel de travail",
      "c": "6",
-     "ic": "☎️"
+     "ic": "☎️",
+     "lv": "B1"
     },
     {
      "ko": "너와 공부하는 게 정말 좋아요",
      "fr": "J'aime vraiment étudier avec toi",
      "c": "14",
-     "ic": "📚"
+     "ic": "📚",
+     "lv": "A2"
     },
     {
      "ko": "인영씨랑 보내는 시간이 좋아요",
      "fr": "J'aime le temps passé avec In-young",
      "c": "11",
-     "ic": "⏱️"
+     "ic": "⏱️",
+     "lv": "A2"
     },
     {
      "ko": "서울에 (한 번도) 안 가 봤어요",
      "fr": "Je ne suis jamais allé à Séoul",
      "c": "11",
-     "ic": "🗼"
+     "ic": "🗼",
+     "lv": "A2"
     },
     {
      "ko": "한국에 갈 수 있으면 좋겠어요",
      "fr": "J'aimerais pouvoir aller en Corée",
      "c": "15",
-     "ic": "🌏"
+     "ic": "🌏",
+     "lv": "B1"
     },
     {
      "ko": "꼭 갈게요",
      "fr": "J'irai, c'est sûr",
      "c": "11",
-     "ic": "📌"
+     "ic": "📌",
+     "lv": "A2"
     },
     {
      "ko": "인영씨에게 화정가를 보여줄 거예요",
      "fr": "Je te montrerai Hwajeongga",
      "c": "11",
-     "ic": "🎭"
+     "ic": "🎭",
+     "lv": "A2"
     },
     {
      "ko": "내일 여자친구랑 공연 보러 가요",
      "fr": "Demain je vais voir le spectacle avec ma copine",
      "c": "16",
-     "ic": "💑"
+     "ic": "💑",
+     "lv": "A2"
     },
     {
      "ko": "프랑스 친구 있다는 걸 잊지 마세요",
      "fr": "N'oublie pas que tu as un ami français",
      "c": "9",
-     "ic": "🥖"
+     "ic": "🥖",
+     "lv": "A2"
     }
    ]
   },
@@ -1474,217 +1695,253 @@
      "ko": "오늘 / 내일 / 모레",
      "fr": "Aujourd'hui / demain / après-demain",
      "c": "12",
-     "ic": "📅"
+     "ic": "📅",
+     "lv": "A1"
     },
     {
      "ko": "어제 / 그저께",
      "fr": "Hier / avant-hier",
      "c": "17",
-     "ic": "⏪"
+     "ic": "⏪",
+     "lv": "A1"
     },
     {
      "ko": "하루 / 이틀 / 사흘 / 나흘",
      "fr": "1 / 2 / 3 / 4 jours",
      "c": "7",
-     "ic": "🔢"
+     "ic": "🔢",
+     "lv": "A1"
     },
     {
      "ko": "하루종일",
      "fr": "Toute la journée",
      "c": "9·11",
-     "ic": "🕛"
+     "ic": "🕛",
+     "lv": "A1"
     },
     {
      "ko": "아침 / 정오 / 저녁",
      "fr": "Matin / midi / soir",
      "c": "2·13",
-     "ic": "🌅"
+     "ic": "🌅",
+     "lv": "A1"
     },
     {
      "ko": "이번 주 / 다음 주 / 지난 주",
      "fr": "Cette semaine / la semaine prochaine / la semaine dernière",
      "c": "5·7·15",
-     "ic": "🗓️"
+     "ic": "🗓️",
+     "lv": "A1"
     },
     {
      "ko": "다다음 주",
      "fr": "Dans deux semaines",
      "c": "5",
-     "ic": "⏩"
+     "ic": "⏩",
+     "lv": "A1"
     },
     {
      "ko": "다음 달 / 매달",
      "fr": "Le mois prochain / chaque mois",
      "c": "3·8",
-     "ic": "🌙"
+     "ic": "🌙",
+     "lv": "A1"
     },
     {
      "ko": "내년 / 매년",
      "fr": "L'année prochaine / chaque année",
      "c": "7·16",
-     "ic": "🎆"
+     "ic": "🎆",
+     "lv": "A1"
     },
     {
      "ko": "시월 / 유월",
      "fr": "Octobre / juin (pas 십월, 육월)",
      "c": "6",
-     "ic": "🍁"
+     "ic": "🍁",
+     "lv": "A1"
     },
     {
      "ko": "삼월 / 십일월",
      "fr": "Mars / novembre",
      "c": "11·14",
-     "ic": "🌱"
+     "ic": "🌱",
+     "lv": "A1"
     },
     {
      "ko": "일요일 / 목요일 / 토요일",
      "fr": "Dimanche / jeudi / samedi",
      "c": "13·15·16",
-     "ic": "📆"
+     "ic": "📆",
+     "lv": "A1"
     },
     {
      "ko": "두 시 반",
      "fr": "Deux heures et demie",
      "c": "16",
-     "ic": "🕝"
+     "ic": "🕝",
+     "lv": "A1"
     },
     {
      "ko": "요즘",
      "fr": "Ces jours-ci",
      "c": "4·15",
-     "ic": "📰"
+     "ic": "📰",
+     "lv": "A1"
     },
     {
      "ko": "방금",
      "fr": "À l'instant (방금 왔어요 : je viens d'arriver)",
      "c": "2",
-     "ic": "⚡"
+     "ic": "⚡",
+     "lv": "A1"
     },
     {
      "ko": "곧 / 금방",
      "fr": "Bientôt",
      "c": "6·8",
-     "ic": "⏳"
+     "ic": "⏳",
+     "lv": "A1"
     },
     {
      "ko": "얼마 안 남았네요",
      "fr": "Il ne reste plus longtemps",
      "c": "6",
-     "ic": "⌛"
+     "ic": "⌛",
+     "lv": "A1"
     },
     {
      "ko": "한 달 남았어요",
      "fr": "Il reste un mois",
      "c": "17",
-     "ic": "🗓️"
+     "ic": "🗓️",
+     "lv": "A1"
     },
     {
      "ko": "한 달만 기다리면 돼요",
      "fr": "Il suffit d'attendre un mois",
      "c": "17",
-     "ic": "⏱️"
+     "ic": "⏱️",
+     "lv": "A1"
     },
     {
      "ko": "지금쯤",
      "fr": "À peu près maintenant",
      "c": "6",
-     "ic": "🕐"
+     "ic": "🕐",
+     "lv": "A1"
     },
     {
      "ko": "원래는",
      "fr": "Normalement, à l'origine",
      "c": "6",
-     "ic": "📏"
+     "ic": "📏",
+     "lv": "A1"
     },
     {
      "ko": "그때",
      "fr": "À ce moment-là",
      "c": "7·14",
-     "ic": "📷"
+     "ic": "📷",
+     "lv": "A1"
     },
     {
      "ko": "처음에는",
      "fr": "Au début",
      "c": "12·13",
-     "ic": "🚦"
+     "ic": "🚦",
+     "lv": "A1"
     },
     {
      "ko": "드디어",
      "fr": "Enfin",
      "c": "12",
-     "ic": "🏁"
+     "ic": "🏁",
+     "lv": "A1"
     },
     {
      "ko": "점점",
      "fr": "Petit à petit",
      "c": "12",
-     "ic": "📶"
+     "ic": "📶",
+     "lv": "A1"
     },
     {
      "ko": "이미 / 벌써",
      "fr": "Déjà",
      "c": "14",
-     "ic": "✔️"
+     "ic": "✔️",
+     "lv": "A1"
     },
     {
      "ko": "아직",
      "fr": "Encore, toujours",
      "c": "15",
-     "ic": "⏸️"
+     "ic": "⏸️",
+     "lv": "A1"
     },
     {
      "ko": "동시에",
      "fr": "En même temps",
      "c": "15",
-     "ic": "👯"
+     "ic": "👯",
+     "lv": "A1"
     },
     {
      "ko": "항상 / 자주 / 종종",
      "fr": "Toujours / fréquemment / souvent",
      "c": "1",
-     "ic": "🔁"
+     "ic": "🔁",
+     "lv": "A1"
     },
     {
      "ko": "가끔 / 절대",
      "fr": "Parfois / jamais (abrupt)",
      "c": "1·11",
-     "ic": "🎲"
+     "ic": "🎲",
+     "lv": "A1"
     },
     {
      "ko": "매일 / 맨날",
      "fr": "Tous les jours",
      "c": "5",
-     "ic": "🔂"
+     "ic": "🔂",
+     "lv": "A1"
     },
     {
      "ko": "일주일 내내 / 주 7일",
      "fr": "Toute la semaine / 7 jours sur 7",
      "c": "9",
-     "ic": "7️⃣"
+     "ic": "7️⃣",
+     "lv": "A1"
     },
     {
      "ko": "시간이 빨리 가요",
      "fr": "Le temps passe vite",
      "c": "6·8·15",
-     "ic": "🚀"
+     "ic": "🚀",
+     "lv": "A1"
     },
     {
      "ko": "시간이 부족해요",
      "fr": "On manque de temps",
      "c": "14",
-     "ic": "⏰"
+     "ic": "⏰",
+     "lv": "A1"
     },
     {
      "ko": "시간이 필요해요",
      "fr": "Il faut du temps",
      "c": "10·16",
-     "ic": "⏳"
+     "ic": "⏳",
+     "lv": "A1"
     },
     {
      "ko": "시간을 보내다",
      "fr": "Passer du temps",
      "c": "11·13",
-     "ic": "☕"
+     "ic": "☕",
+     "lv": "A1"
     }
    ]
   },
@@ -1697,109 +1954,127 @@
      "ko": "날씨가 좋네요",
      "fr": "Il fait beau",
      "c": "1·4",
-     "ic": "☀️"
+     "ic": "☀️",
+     "lv": "A1"
     },
     {
      "ko": "날씨가 안 좋네요",
      "fr": "Il ne fait pas beau",
      "c": "4",
-     "ic": "🌥️"
+     "ic": "🌥️",
+     "lv": "A1"
     },
     {
      "ko": "비가 많이 와요",
      "fr": "Il pleut beaucoup",
      "c": "4",
-     "ic": "🌧️"
+     "ic": "🌧️",
+     "lv": "A1"
     },
     {
      "ko": "비가 올 것 같아요",
      "fr": "On dirait qu'il va pleuvoir",
      "c": "4",
-     "ic": "🌦️"
+     "ic": "🌦️",
+     "lv": "A1"
     },
     {
      "ko": "눈이 올 것 같아요",
      "fr": "On dirait qu'il va neiger (눈 : neige / yeux)",
      "c": "4",
-     "ic": "❄️"
+     "ic": "❄️",
+     "lv": "A1"
     },
     {
      "ko": "바람이 많이 불어요",
      "fr": "Il y a beaucoup de vent",
      "c": "4",
-     "ic": "🌬️"
+     "ic": "🌬️",
+     "lv": "A1"
     },
     {
      "ko": "더워요 / 추워요",
      "fr": "Il fait chaud / il fait froid",
      "c": "4",
-     "ic": "🌡️"
+     "ic": "🌡️",
+     "lv": "A1"
     },
     {
      "ko": "따뜻하다",
      "fr": "Doux, tiède (météo et objets)",
      "c": "4",
-     "ic": "🧣"
+     "ic": "🧣",
+     "lv": "A1"
     },
     {
      "ko": "시원하다",
      "fr": "Frais, rafraîchissant (météo et objets)",
      "c": "4",
-     "ic": "🍃"
+     "ic": "🍃",
+     "lv": "A1"
     },
     {
      "ko": "차갑다 / 뜨겁다",
      "fr": "Froid / brûlant (objets, pas la météo)",
      "c": "4",
-     "ic": "🧊"
+     "ic": "🧊",
+     "lv": "A1"
     },
     {
      "ko": "바람이 차요",
      "fr": "Le vent est froid (차다 : sensation de froid)",
      "c": "16",
-     "ic": "💨"
+     "ic": "💨",
+     "lv": "A1"
     },
     {
      "ko": "얼음이 차가워요",
      "fr": "La glace est froide (froid au toucher)",
      "c": "16",
-     "ic": "🧊"
+     "ic": "🧊",
+     "lv": "A1"
     },
     {
      "ko": "추위",
      "fr": "Le froid",
      "c": "16",
-     "ic": "🥶"
+     "ic": "🥶",
+     "lv": "A1"
     },
     {
      "ko": "싱싱하다",
      "fr": "Frais (fruits, légumes)",
      "c": "4",
-     "ic": "🥬"
+     "ic": "🥬",
+     "lv": "A1"
     },
     {
      "ko": "요즘 날씨가 산책하기 좋아요",
      "fr": "Ces jours-ci, il fait un temps idéal pour se promener",
      "c": "4",
-     "ic": "🚶"
+     "ic": "🚶",
+     "lv": "A1"
     },
     {
      "ko": "우산 / 빌려주다",
      "fr": "Parapluie / prêter",
      "c": "4",
-     "ic": "☂️"
+     "ic": "☂️",
+     "lv": "A1"
     },
     {
      "ko": "제 우산 빌려드릴까요?",
      "fr": "Je vous prête mon parapluie ?",
      "c": "4",
-     "ic": "☔"
+     "ic": "☔",
+     "lv": "A1"
     },
     {
      "ko": "태풍 / 산불 / 자연재해",
      "fr": "Typhon / incendie de forêt / catastrophe naturelle",
      "c": "7",
-     "ic": "🌪️"
+     "ic": "🌪️",
+     "lv": "A1"
     }
    ]
   },
@@ -1812,199 +2087,232 @@
      "ko": "집 / 아파트 / 주택",
      "fr": "Maison / appartement / habitation",
      "c": "6",
-     "ic": "🏘️"
+     "ic": "🏘️",
+     "lv": "A2"
     },
     {
      "ko": "흰색 / 회색 / 파란색 / 색",
      "fr": "Blanc / gris / bleu / couleur",
      "c": "6·16",
-     "ic": "🎨"
+     "ic": "🎨",
+     "lv": "A2"
     },
     {
      "ko": "페인트칠하다",
      "fr": "Peindre",
      "c": "6",
-     "ic": "🖌️"
+     "ic": "🖌️",
+     "lv": "A2"
     },
     {
      "ko": "식당 / 매장",
      "fr": "Restaurant / magasin",
      "c": "8",
-     "ic": "🍽️"
+     "ic": "🍽️",
+     "lv": "A2"
     },
     {
      "ko": "산책하다",
      "fr": "Se promener",
      "c": "4",
-     "ic": "🚶"
+     "ic": "🚶",
+     "lv": "A2"
     },
     {
      "ko": "달리다 / 러닝하다",
      "fr": "Courir",
      "c": "8",
-     "ic": "🏃"
+     "ic": "🏃",
+     "lv": "A2"
     },
     {
      "ko": "운동 / 발레",
      "fr": "Sport / ballet",
      "c": "10·14",
-     "ic": "🩰"
+     "ic": "🩰",
+     "lv": "A2"
     },
     {
      "ko": "샤워",
      "fr": "Douche",
      "c": "9",
-     "ic": "🚿"
+     "ic": "🚿",
+     "lv": "A2"
     },
     {
      "ko": "머리 잘랐어요",
      "fr": "Je me suis fait couper les cheveux",
      "c": "9",
-     "ic": "✂️"
+     "ic": "✂️",
+     "lv": "A2"
     },
     {
      "ko": "짧다 / 짧은 머리",
      "fr": "Court / cheveux courts",
      "c": "9",
-     "ic": "💇"
+     "ic": "💇",
+     "lv": "A2"
     },
     {
      "ko": "사진 찍다",
      "fr": "Prendre une photo",
      "c": "14",
-     "ic": "📷"
+     "ic": "📷",
+     "lv": "A2"
     },
     {
      "ko": "사진 보여줄 수 있어요?",
      "fr": "Tu peux me montrer des photos ?",
      "c": "15",
-     "ic": "🖼️"
+     "ic": "🖼️",
+     "lv": "A2"
     },
     {
      "ko": "팟캐스트 들었어요",
      "fr": "J'ai écouté des podcasts",
      "c": "9",
-     "ic": "🎧"
+     "ic": "🎧",
+     "lv": "A2"
     },
     {
      "ko": "가족",
      "fr": "Famille",
      "c": "5·17",
-     "ic": "👨‍👩‍👧"
+     "ic": "👨‍👩‍👧",
+     "lv": "A2"
     },
     {
      "ko": "남편 / 남자친구 / 여자친구",
      "fr": "Mari / petit ami / petite amie",
      "c": "7·16",
-     "ic": "💞"
+     "ic": "💞",
+     "lv": "A2"
     },
     {
      "ko": "학생",
      "fr": "Étudiant",
      "c": "4",
-     "ic": "🎓"
+     "ic": "🎓",
+     "lv": "A2"
     },
     {
      "ko": "졸업 / 축하하다",
      "fr": "Diplôme / féliciter",
      "c": "5",
-     "ic": "🎓"
+     "ic": "🎓",
+     "lv": "A2"
     },
     {
      "ko": "요리하다 / 요리해 주다",
      "fr": "Cuisiner / cuisiner pour quelqu'un",
      "c": "5·6",
-     "ic": "🍳"
+     "ic": "🍳",
+     "lv": "A2"
     },
     {
      "ko": "노래하다 / 노래를 잘하네요",
      "fr": "Chanter / tu chantes bien !",
      "c": "2·3",
-     "ic": "🎵"
+     "ic": "🎵",
+     "lv": "A2"
     },
     {
      "ko": "도시 / 작은 도시",
      "fr": "Ville / petite ville",
      "c": "9",
-     "ic": "🏙️"
+     "ic": "🏙️",
+     "lv": "A2"
     },
     {
      "ko": "나라",
      "fr": "Pays",
      "c": "13",
-     "ic": "🗺️"
+     "ic": "🗺️",
+     "lv": "A2"
     },
     {
      "ko": "도로 / 좁다 / 넓다",
      "fr": "Route / étroit / large",
      "c": "9",
-     "ic": "🛣️"
+     "ic": "🛣️",
+     "lv": "A2"
     },
     {
      "ko": "대사관 / 대사",
      "fr": "Ambassade / ambassadeur",
      "c": "15",
-     "ic": "🏳️"
+     "ic": "🏳️",
+     "lv": "A2"
     },
     {
      "ko": "대출 / 절차",
      "fr": "Prêt (bancaire) / procédure",
      "c": "9",
-     "ic": "🏦"
+     "ic": "🏦",
+     "lv": "A2"
     },
     {
      "ko": "비자 문제",
      "fr": "Problème de visa",
      "c": "6",
-     "ic": "🛂"
+     "ic": "🛂",
+     "lv": "A2"
     },
     {
      "ko": "파업 / 데모",
      "fr": "Grève / manifestation",
      "c": "8·10",
-     "ic": "📢"
+     "ic": "📢",
+     "lv": "A2"
     },
     {
      "ko": "폭력적이다 [퐁녁쩌기다]",
      "fr": "Violent",
      "c": "10·12",
-     "ic": "👊"
+     "ic": "👊",
+     "lv": "A2"
     },
     {
      "ko": "시끄럽다",
      "fr": "Bruyant",
      "c": "10",
-     "ic": "🔊"
+     "ic": "🔊",
+     "lv": "A2"
     },
     {
      "ko": "부상을 입다",
      "fr": "Être blessé",
      "c": "10",
-     "ic": "🩹"
+     "ic": "🩹",
+     "lv": "A2"
     },
     {
      "ko": "안전하길 바라요",
      "fr": "J'espère que vous êtes en sécurité",
      "c": "10",
-     "ic": "🛡️"
+     "ic": "🛡️",
+     "lv": "A2"
     },
     {
      "ko": "모든 곳이 문 닫았어요",
      "fr": "Tout est fermé",
      "c": "13",
-     "ic": "🔒"
+     "ic": "🔒",
+     "lv": "A2"
     },
     {
      "ko": "북적북적해요",
      "fr": "C'est très animé",
      "c": "16",
-     "ic": "🎊"
+     "ic": "🎊",
+     "lv": "A2"
     },
     {
      "ko": "평화로운 분위기",
      "fr": "Une ambiance paisible",
      "c": "9",
-     "ic": "🕊️"
+     "ic": "🕊️",
+     "lv": "A2"
     }
    ]
   },
@@ -2017,97 +2325,113 @@
      "ko": "여행 / 출장 / 출국",
      "fr": "Voyage (loisir) / voyage d'affaires / départ à l'étranger",
      "c": "8",
-     "ic": "🧳"
+     "ic": "🧳",
+     "lv": "A2"
     },
     {
      "ko": "내일 한국으로 출국할 거예요",
      "fr": "Demain, je pars pour la Corée",
      "c": "8",
-     "ic": "🛫"
+     "ic": "🛫",
+     "lv": "A2"
     },
     {
      "ko": "돌아가다 / 돌아오다",
      "fr": "Rentrer (en repartant) / revenir",
      "c": "5·8",
-     "ic": "🔙"
+     "ic": "🔙",
+     "lv": "A2"
     },
     {
      "ko": "급하게 돌아가야 했어요",
      "fr": "J'ai dû rentrer en urgence",
      "c": "9",
-     "ic": "🏃‍♀️"
+     "ic": "🏃‍♀️",
+     "lv": "A2"
     },
     {
      "ko": "기차로 갈 거예요",
      "fr": "J'irai en train (기차 탈 거예요)",
      "c": "12",
-     "ic": "🚄"
+     "ic": "🚄",
+     "lv": "A2"
     },
     {
      "ko": "비행기로 가요?",
      "fr": "Tu y vas en avion ?",
      "c": "12",
-     "ic": "✈️"
+     "ic": "✈️",
+     "lv": "A2"
     },
     {
      "ko": "타다",
      "fr": "Prendre, monter (ski, voiture, train, vélo)",
      "c": "4",
-     "ic": "🚲"
+     "ic": "🚲",
+     "lv": "A2"
     },
     {
      "ko": "풍경",
      "fr": "Paysage",
      "c": "12",
-     "ic": "🏞️"
+     "ic": "🏞️",
+     "lv": "A2"
     },
     {
      "ko": "남부 / 미국 동부",
      "fr": "Le sud / la côte Est des États-Unis",
      "c": "7·8",
-     "ic": "🧭"
+     "ic": "🧭",
+     "lv": "A2"
     },
     {
      "ko": "렌트카 / 짐",
      "fr": "Voiture de location / bagages",
      "c": "7",
-     "ic": "🚗"
+     "ic": "🚗",
+     "lv": "A2"
     },
     {
      "ko": "머물다",
      "fr": "Séjourner, rester",
      "c": "7",
-     "ic": "🏨"
+     "ic": "🏨",
+     "lv": "A2"
     },
     {
      "ko": "몽쁠리에에 오세요",
      "fr": "Viens à Montpellier",
      "c": "9",
-     "ic": "☀️"
+     "ic": "☀️",
+     "lv": "A2"
     },
     {
      "ko": "몽쁠리에에 왔어요",
      "fr": "… est venu à Montpellier (pas 에서)",
      "c": "13",
-     "ic": "📍"
+     "ic": "📍",
+     "lv": "A2"
     },
     {
      "ko": "파리에 있을 거예요",
      "fr": "Je serai à Paris",
      "c": "12",
-     "ic": "🗼"
+     "ic": "🗼",
+     "lv": "A2"
     },
     {
      "ko": "열네 개 도시에 갔어요",
      "fr": "Je suis allé dans 14 villes",
      "c": "12",
-     "ic": "🗺️"
+     "ic": "🗺️",
+     "lv": "A2"
     },
     {
      "ko": "혼자 여행하면 외로워요",
      "fr": "Voyager seul, on se sent seul",
      "c": "9",
-     "ic": "🚶‍♂️"
+     "ic": "🚶‍♂️",
+     "lv": "A2"
     }
    ]
   },
@@ -2120,289 +2444,337 @@
      "ko": "그래서",
      "fr": "Donc, alors",
      "c": "16",
-     "ic": "➡️"
+     "ic": "➡️",
+     "lv": "A2"
     },
     {
      "ko": "근데",
      "fr": "Mais",
      "c": "17",
-     "ic": "↩️"
+     "ic": "↩️",
+     "lv": "A2"
     },
     {
      "ko": "그래도",
      "fr": "Quand même",
      "c": "9",
-     "ic": "🤲"
+     "ic": "🤲",
+     "lv": "A2"
     },
     {
      "ko": "왜냐하면 / 왜냐면",
      "fr": "Parce que",
      "c": "12·13",
-     "ic": "❓"
+     "ic": "❓",
+     "lv": "A2"
     },
     {
      "ko": "사실 / 실제로",
      "fr": "En fait / en réalité",
      "c": "6",
-     "ic": "🔍"
+     "ic": "🔍",
+     "lv": "A2"
     },
     {
      "ko": "어쨌든",
      "fr": "En tout cas",
      "c": "5",
-     "ic": "🤷"
+     "ic": "🤷",
+     "lv": "A2"
     },
     {
      "ko": "아마 / 아마도",
      "fr": "Peut-être",
      "c": "8",
-     "ic": "🤔"
+     "ic": "🤔",
+     "lv": "A2"
     },
     {
      "ko": "다행히",
      "fr": "Heureusement",
      "c": "14·15",
-     "ic": "😌"
+     "ic": "😌",
+     "lv": "A2"
     },
     {
      "ko": "적어도",
      "fr": "Au moins",
      "c": "9",
-     "ic": "⬇️"
+     "ic": "⬇️",
+     "lv": "A2"
     },
     {
      "ko": "그러고 나서 / 그 다음에",
      "fr": "Ensuite, et puis",
      "c": "13",
-     "ic": "⏭️"
+     "ic": "⏭️",
+     "lv": "A2"
     },
     {
      "ko": "대부분",
      "fr": "La plupart",
      "c": "17",
-     "ic": "🍕"
+     "ic": "🍕",
+     "lv": "A2"
     },
     {
      "ko": "모든 / 모두 / 다",
      "fr": "Tous les / tout le monde / tout",
      "c": "3·5",
-     "ic": "💯"
+     "ic": "💯",
+     "lv": "A2"
     },
     {
      "ko": "서로",
      "fr": "Mutuellement, l'un l'autre",
      "c": "5·15",
-     "ic": "🔄"
+     "ic": "🔄",
+     "lv": "A2"
     },
     {
      "ko": "혼자 / 같이",
      "fr": "Seul / ensemble",
      "c": "9",
-     "ic": "👤"
+     "ic": "👤",
+     "lv": "A2"
     },
     {
      "ko": "바로",
      "fr": "Juste, tout de suite",
      "c": "10·13",
-     "ic": "⚡"
+     "ic": "⚡",
+     "lv": "A2"
     },
     {
      "ko": "아주 / 엄청",
      "fr": "Très / énormément",
      "c": "6·13",
-     "ic": "📢"
+     "ic": "📢",
+     "lv": "A2"
     },
     {
      "ko": "훨씬",
      "fr": "Beaucoup plus (accentue une différence)",
      "c": "9",
-     "ic": "📈"
+     "ic": "📈",
+     "lv": "A2"
     },
     {
      "ko": "충분히",
      "fr": "Assez, suffisamment",
      "c": "9",
-     "ic": "🈵"
+     "ic": "🈵",
+     "lv": "A2"
     },
     {
      "ko": "조금 / 약간",
      "fr": "Un peu",
      "c": "13",
-     "ic": "🤏"
+     "ic": "🤏",
+     "lv": "A2"
     },
     {
      "ko": "별로 안 …",
      "fr": "Pas très…",
      "c": "13",
-     "ic": "😐"
+     "ic": "😐",
+     "lv": "A2"
     },
     {
      "ko": "전혀",
      "fr": "Pas du tout",
      "c": "10·17",
-     "ic": "🚫"
+     "ic": "🚫",
+     "lv": "A2"
     },
     {
      "ko": "꼭",
      "fr": "Absolument, sans faute (futur)",
      "c": "11",
-     "ic": "📌"
+     "ic": "📌",
+     "lv": "A2"
     },
     {
      "ko": "계속",
      "fr": "Sans arrêt, continuer",
      "c": "6·8",
-     "ic": "♾️"
+     "ic": "♾️",
+     "lv": "A2"
     },
     {
      "ko": "또 / 또 다른",
      "fr": "Encore / un autre",
      "c": "4·12",
-     "ic": "➕"
+     "ic": "➕",
+     "lv": "A2"
     },
     {
      "ko": "말고",
      "fr": "Sauf, à part (≠ 말하고)",
      "c": "4",
-     "ic": "➖"
+     "ic": "➖",
+     "lv": "A2"
     },
     {
      "ko": "보통",
      "fr": "En général",
      "c": "16",
-     "ic": "📊"
+     "ic": "📊",
+     "lv": "A2"
     },
     {
      "ko": "어디에나 / 어디서나",
      "fr": "Partout",
      "c": "15·16",
-     "ic": "🌐"
+     "ic": "🌐",
+     "lv": "A2"
     },
     {
      "ko": "아무것도",
      "fr": "Rien",
      "c": "13",
-     "ic": "🕳️"
+     "ic": "🕳️",
+     "lv": "A2"
     },
     {
      "ko": "똑같다 / 다르다",
      "fr": "Identique / différent",
      "c": "5·13",
-     "ic": "⚖️"
+     "ic": "⚖️",
+     "lv": "A2"
     },
     {
      "ko": "이상하다",
      "fr": "Bizarre",
      "c": "8",
-     "ic": "👽"
+     "ic": "👽",
+     "lv": "A2"
     },
     {
      "ko": "중요하다",
      "fr": "Important",
      "c": "5·13",
-     "ic": "❗"
+     "ic": "❗",
+     "lv": "A2"
     },
     {
      "ko": "복잡하다",
      "fr": "Compliqué",
      "c": "12",
-     "ic": "🧶"
+     "ic": "🧶",
+     "lv": "A2"
     },
     {
      "ko": "쉽다 / 어렵다",
      "fr": "Facile / difficile",
      "c": "3",
-     "ic": "🎚️"
+     "ic": "🎚️",
+     "lv": "A2"
     },
     {
      "ko": "편하다 / 불편하다",
      "fr": "Confortable / gênant, inconfortable",
      "c": "3",
-     "ic": "🛋️"
+     "ic": "🛋️",
+     "lv": "A2"
     },
     {
      "ko": "유용하다",
      "fr": "Utile",
      "c": "2",
-     "ic": "🧰"
+     "ic": "🧰",
+     "lv": "A2"
     },
     {
      "ko": "특별하다",
      "fr": "Spécial",
      "c": "6",
-     "ic": "💎"
+     "ic": "💎",
+     "lv": "A2"
     },
     {
      "ko": "필요하다",
      "fr": "Nécessaire",
      "c": "2",
-     "ic": "🔑"
+     "ic": "🔑",
+     "lv": "A2"
     },
     {
      "ko": "가능하다",
      "fr": "Possible",
      "c": "17",
-     "ic": "✅"
+     "ic": "✅",
+     "lv": "A2"
     },
     {
      "ko": "크다 / 큰",
      "fr": "Grand / grand (devant un nom)",
      "c": "3·9",
-     "ic": "🐘"
+     "ic": "🐘",
+     "lv": "A2"
     },
     {
      "ko": "높다",
      "fr": "Haut, élevé",
      "c": "16",
-     "ic": "🗻"
+     "ic": "🗻",
+     "lv": "A2"
     },
     {
      "ko": "멀다",
      "fr": "Loin",
      "c": "6·13",
-     "ic": "🔭"
+     "ic": "🔭",
+     "lv": "A2"
     },
     {
      "ko": "분위기",
      "fr": "Ambiance",
      "c": "9",
-     "ic": "🕯️"
+     "ic": "🕯️",
+     "lv": "A2"
     },
     {
      "ko": "이유",
      "fr": "Raison",
      "c": "11",
-     "ic": "💡"
+     "ic": "💡",
+     "lv": "A2"
     },
     {
      "ko": "차이",
      "fr": "Différence",
      "c": "9",
-     "ic": "🆚"
+     "ic": "🆚",
+     "lv": "A2"
     },
     {
      "ko": "단어 / 표현",
      "fr": "Mot / expression",
      "c": "2·10",
-     "ic": "🔤"
+     "ic": "🔤",
+     "lv": "A2"
     },
     {
      "ko": "동작",
      "fr": "Mouvement",
      "c": "10",
-     "ic": "🤸"
+     "ic": "🤸",
+     "lv": "A2"
     },
     {
      "ko": "직업",
      "fr": "Métier, profession",
      "c": "13",
-     "ic": "👔"
+     "ic": "👔",
+     "lv": "A2"
     },
     {
      "ko": "방향",
      "fr": "Sens, direction",
      "c": "14",
-     "ic": "🧭"
+     "ic": "🧭",
+     "lv": "A2"
     }
    ]
   }
@@ -2412,109 +2784,127 @@
    "ko": "세 공연 / 공연 세 개",
    "fr": "Trois spectacles (pas 삼 공연)",
    "c": "5",
-   "ic": "3️⃣"
+   "ic": "3️⃣",
+   "lv": "A2"
   },
   {
    "ko": "여섯 개 공연",
    "fr": "Six spectacles",
    "c": "3",
-   "ic": "6️⃣"
+   "ic": "6️⃣",
+   "lv": "A1"
   },
   {
    "ko": "공연 두 번 했어요",
    "fr": "On a joué deux fois",
    "c": "13",
-   "ic": "2️⃣"
+   "ic": "2️⃣",
+   "lv": "A2"
   },
   {
    "ko": "구십 명 / 아흔 명의 아티스트",
    "fr": "90 artistes (sino / natif)",
    "c": "8",
-   "ic": "👥"
+   "ic": "👥",
+   "lv": "A2"
   },
   {
    "ko": "댄서들 일곱 명",
    "fr": "Sept danseurs",
    "c": "11",
-   "ic": "🩰"
+   "ic": "🩰",
+   "lv": "A2"
   },
   {
    "ko": "여섯 명 있어요",
    "fr": "Il y a six personnes",
    "c": "15",
-   "ic": "👥"
+   "ic": "👥",
+   "lv": "A2"
   },
   {
    "ko": "이천 명의 관객",
    "fr": "2 000 spectateurs",
    "c": "7",
-   "ic": "🏟️"
+   "ic": "🏟️",
+   "lv": "A2"
   },
   {
    "ko": "이백오십 명의 관객",
    "fr": "250 spectateurs",
    "c": "7",
-   "ic": "👀"
+   "ic": "👀",
+   "lv": "A2"
   },
   {
    "ko": "이십오만 유로",
    "fr": "250 000 euros",
    "c": "7",
-   "ic": "💶"
+   "ic": "💶",
+   "lv": "A1"
   },
   {
    "ko": "삼백",
    "fr": "300",
    "c": "3",
-   "ic": "💯"
+   "ic": "💯",
+   "lv": "A1"
   },
   {
    "ko": "오십팔 퍼센트",
    "fr": "58 %",
    "c": "9",
-   "ic": "📊"
+   "ic": "📊",
+   "lv": "A1"
   },
   {
    "ko": "육십 퍼센트 / 육십 프로",
    "fr": "60 %",
    "c": "11",
-   "ic": "📊"
+   "ic": "📊",
+   "lv": "A2"
   },
   {
    "ko": "백 번",
    "fr": "Cent fois",
    "c": "17",
-   "ic": "💯"
+   "ic": "💯",
+   "lv": "A1"
   },
   {
    "ko": "사 분 남았어요",
    "fr": "Il reste quatre minutes",
    "c": "17",
-   "ic": "⏲️"
+   "ic": "⏲️",
+   "lv": "A2"
   },
   {
    "ko": "열 시간",
    "fr": "Dix heures (durée)",
    "c": "17",
-   "ic": "🕙"
+   "ic": "🕙",
+   "lv": "A1"
   },
   {
    "ko": "두 시에 끝날 거예요",
    "fr": "Ça finira à deux heures",
    "c": "17",
-   "ic": "🕑"
+   "ic": "🕑",
+   "lv": "A2"
   },
   {
    "ko": "삼 년 째 / 삼 개월 째",
    "fr": "Depuis trois ans / trois mois",
    "c": "6",
-   "ic": "📆"
+   "ic": "📆",
+   "lv": "A2"
   },
   {
    "ko": "트럭 두 대",
    "fr": "Deux camions (대 : véhicules)",
    "c": "16",
-   "ic": "🚛"
+   "ic": "🚛",
+   "lv": "A1"
   }
  ],
  "grammaire": [
@@ -2527,7 +2917,8 @@
      "ex": "날씨가 좋네요",
      "tr": "Il fait beau !",
      "c": "1",
-     "ic": "😮"
+     "ic": "😮",
+     "lv": "A2"
     },
     {
      "form": "-겠네요",
@@ -2535,7 +2926,8 @@
      "ex": "바쁘겠네요",
      "tr": "Tu dois être occupé",
      "c": "3",
-     "ic": "🤔"
+     "ic": "🤔",
+     "lv": "B1"
     },
     {
      "form": "-죠 (= -지요)",
@@ -2543,7 +2935,8 @@
      "ex": "오늘 덥죠?",
      "tr": "Il fait chaud, non ?",
      "c": "4",
-     "ic": "🤝"
+     "ic": "🤝",
+     "lv": "A2"
     },
     {
      "form": "-ㄹ게요",
@@ -2551,7 +2944,8 @@
      "ex": "알려줄게요",
      "tr": "Je vais te dire",
      "c": "2·3",
-     "ic": "🫡"
+     "ic": "🫡",
+     "lv": "A2"
     },
     {
      "form": "-ㄹ 거예요",
@@ -2559,7 +2953,8 @@
      "ex": "먹을 거예요",
      "tr": "Je vais manger",
      "c": "3",
-     "ic": "⏩"
+     "ic": "⏩",
+     "lv": "A1"
     },
     {
      "form": "-ㄹ까요?",
@@ -2567,7 +2962,8 @@
      "ex": "먹으러 갈까요?",
      "tr": "On va manger ?",
      "c": "1",
-     "ic": "🙋"
+     "ic": "🙋",
+     "lv": "A1"
     },
     {
      "form": "-고 있어요",
@@ -2575,7 +2971,8 @@
      "ex": "리허설하고 있어요",
      "tr": "Je suis en train de répéter",
      "c": "3",
-     "ic": "🔄"
+     "ic": "🔄",
+     "lv": "A1"
     },
     {
      "form": "-았/었어요",
@@ -2583,7 +2980,8 @@
      "ex": "먹었어요",
      "tr": "J'ai mangé",
      "c": "3",
-     "ic": "⏪"
+     "ic": "⏪",
+     "lv": "A1"
     },
     {
      "form": "-았/었을 거예요",
@@ -2591,7 +2989,8 @@
      "ex": "놀랐을 거예요",
      "tr": "Ils ont sûrement été surpris",
      "c": "11",
-     "ic": "🕵️"
+     "ic": "🕵️",
+     "lv": "B1"
     },
     {
      "form": "-아/어야 해요",
@@ -2599,7 +2998,8 @@
      "ex": "쉬어야 해요",
      "tr": "Je dois me reposer",
      "c": "6",
-     "ic": "❗"
+     "ic": "❗",
+     "lv": "A2"
     },
     {
      "form": "-아/어도 돼요",
@@ -2607,7 +3007,8 @@
      "ex": "먹어도 돼요",
      "tr": "Tu peux manger",
      "c": "3",
-     "ic": "🟢"
+     "ic": "🟢",
+     "lv": "A2"
     },
     {
      "form": "-ㄹ 수 있어요",
@@ -2615,7 +3016,8 @@
      "ex": "보낼 수 있어요",
      "tr": "Je peux envoyer",
      "c": "15",
-     "ic": "💪"
+     "ic": "💪",
+     "lv": "A2"
     },
     {
      "form": "-ㄹ 필요 없어요",
@@ -2623,7 +3025,8 @@
      "ex": "패닉할 필요 없어요",
      "tr": "Pas besoin de paniquer",
      "c": "2",
-     "ic": "🙅"
+     "ic": "🙅",
+     "lv": "B1"
     },
     {
      "form": "-ㄹ 자격 있어요",
@@ -2631,7 +3034,8 @@
      "ex": "쉴 자격 있어요",
      "tr": "Tu mérites du repos",
      "c": "12",
-     "ic": "🏆"
+     "ic": "🏆",
+     "lv": "B2"
     },
     {
      "form": "-지 마세요",
@@ -2639,7 +3043,8 @@
      "ex": "잊지 마세요",
      "tr": "N'oublie pas",
      "c": "9",
-     "ic": "⛔"
+     "ic": "⛔",
+     "lv": "A2"
     },
     {
      "form": "-기 좋아요",
@@ -2647,7 +3052,8 @@
      "ex": "산책하기 좋아요",
      "tr": "Idéal pour se promener",
      "c": "4",
-     "ic": "👍"
+     "ic": "👍",
+     "lv": "B1"
     }
    ]
   },
@@ -2660,7 +3066,8 @@
      "ex": "비가 올 것 같아요",
      "tr": "On dirait qu'il va pleuvoir",
      "c": "4",
-     "ic": "🌫️"
+     "ic": "🌫️",
+     "lv": "A2"
     },
     {
      "form": "-인 것 같아요",
@@ -2668,7 +3075,8 @@
      "ex": "시스템 차이인 것 같아요",
      "tr": "Ça semble être une différence de système",
      "c": "9",
-     "ic": "🔎"
+     "ic": "🔎",
+     "lv": "B1"
     },
     {
      "form": "-길 바라요",
@@ -2676,7 +3084,8 @@
      "ex": "다 잘 되길 바라요",
      "tr": "J'espère que tout ira bien",
      "c": "7",
-     "ic": "🙏"
+     "ic": "🙏",
+     "lv": "B1"
     },
     {
      "form": "-(으)면 좋겠어요",
@@ -2684,7 +3093,8 @@
      "ex": "다 잘 됐으면 좋겠어요",
      "tr": "J'espère que tout ira bien",
      "c": "12",
-     "ic": "🌠"
+     "ic": "🌠",
+     "lv": "B1"
     },
     {
      "form": "-ㄹ 거라고 생각해요",
@@ -2692,7 +3102,8 @@
      "ex": "데모가 있을 거라고 생각해요",
      "tr": "Je pense qu'il y aura des manifs",
      "c": "17",
-     "ic": "💭"
+     "ic": "💭",
+     "lv": "B1"
     },
     {
      "form": "-라고 생각했어요",
@@ -2700,7 +3111,8 @@
      "ex": "아름다운 이유라고 생각했어요",
      "tr": "J'ai trouvé que c'était une belle raison",
      "c": "11",
-     "ic": "💭"
+     "ic": "💭",
+     "lv": "B1"
     },
     {
      "form": "-다고 들었어요",
@@ -2708,7 +3120,8 @@
      "ex": "취소되었다고 들었어요",
      "tr": "J'ai entendu dire que c'était annulé",
      "c": "7",
-     "ic": "👂"
+     "ic": "👂",
+     "lv": "B1"
     },
     {
      "form": "-(으)ㄴ 게 아니라",
@@ -2716,7 +3129,8 @@
      "ex": "놀란 게 아니라…",
      "tr": "Ce n'est pas qu'ils étaient surpris, mais…",
      "c": "11",
-     "ic": "↪️"
+     "ic": "↪️",
+     "lv": "B2"
     }
    ]
   },
@@ -2729,7 +3143,8 @@
      "ex": "일하게 돼서 좋아요",
      "tr": "Je suis content de pouvoir travailler",
      "c": "2·3",
-     "ic": "➡️"
+     "ic": "➡️",
+     "lv": "A2"
     },
     {
      "form": "-(으)니까",
@@ -2737,7 +3152,8 @@
      "ex": "가봤으니까…",
      "tr": "Puisque j'y suis déjà allé…",
      "c": "2·8",
-     "ic": "☝️"
+     "ic": "☝️",
+     "lv": "A2"
     },
     {
      "form": "-(으)면",
@@ -2745,7 +3161,8 @@
      "ex": "비가 오면 공부하기 좋아요",
      "tr": "Quand il pleut, c'est idéal pour étudier",
      "c": "3·4",
-     "ic": "🔀"
+     "ic": "🔀",
+     "lv": "A1"
     },
     {
      "form": "-아도/어도",
@@ -2753,7 +3170,8 @@
      "ex": "한국에 있어도 계속하고 싶어요",
      "tr": "Même en Corée, je veux continuer",
      "c": "6",
-     "ic": "🛡️"
+     "ic": "🛡️",
+     "lv": "A2"
     },
     {
      "form": "-고",
@@ -2761,7 +3179,8 @@
      "ex": "트럭이 없었고 두 시간을 낭비했어요",
      "tr": "Pas de camion, et 2 h perdues",
      "c": "9·16",
-     "ic": "➕"
+     "ic": "➕",
+     "lv": "A1"
     },
     {
      "form": "-고 나서",
@@ -2769,7 +3188,8 @@
      "ex": "오고 나서 바로 시작했어요",
      "tr": "J'ai commencé dès mon arrivée",
      "c": "10",
-     "ic": "⏭️"
+     "ic": "⏭️",
+     "lv": "A2"
     },
     {
      "form": "-는데 / -ㄴ데",
@@ -2777,7 +3197,8 @@
      "ex": "복잡한데 점점 쉬워져요",
      "tr": "C'est compliqué, mais ça devient facile",
      "c": "12",
-     "ic": "↩️"
+     "ic": "↩️",
+     "lv": "A2"
     },
     {
      "form": "-러 가다/오다",
@@ -2785,7 +3206,8 @@
      "ex": "공연 보러 오셨어요?",
      "tr": "Vous êtes venu voir le spectacle ?",
      "c": "1·17",
-     "ic": "🚶"
+     "ic": "🚶",
+     "lv": "A1"
     },
     {
      "form": "-(으)려고",
@@ -2793,7 +3215,8 @@
      "ex": "공부하려고 노력해요",
      "tr": "Je fais des efforts pour étudier",
      "c": "8",
-     "ic": "🎯"
+     "ic": "🎯",
+     "lv": "A2"
     },
     {
      "form": "-기 위해",
@@ -2801,7 +3224,8 @@
      "ex": "공연을 준비하기 위해",
      "tr": "Pour préparer le spectacle",
      "c": "5·14",
-     "ic": "🎯"
+     "ic": "🎯",
+     "lv": "B1"
     },
     {
      "form": "-(으)려면",
@@ -2809,7 +3233,8 @@
      "ex": "이 일을 하려면…",
      "tr": "Pour faire ce travail…",
      "c": "5",
-     "ic": "🗝️"
+     "ic": "🗝️",
+     "lv": "B1"
     },
     {
      "form": "-ㄹ 때",
@@ -2817,7 +3242,8 @@
      "ex": "학생이었을 때",
      "tr": "Quand j'étais étudiant",
      "c": "2·4",
-     "ic": "⏰"
+     "ic": "⏰",
+     "lv": "A2"
     }
    ]
   },
@@ -2830,7 +3256,8 @@
      "ex": "도와드릴까요?",
      "tr": "Je peux vous aider ?",
      "c": "1·4",
-     "ic": "🎁"
+     "ic": "🎁",
+     "lv": "A2"
     },
     {
      "form": "-아/어 보다",
@@ -2838,7 +3265,8 @@
      "ex": "홈페이지에 들어가 봤어요",
      "tr": "Je suis allé voir le site",
      "c": "5",
-     "ic": "🧪"
+     "ic": "🧪",
+     "lv": "A2"
     },
     {
      "form": "-아/어지다",
@@ -2846,7 +3274,8 @@
      "ex": "쉬워져요",
      "tr": "Ça devient facile",
      "c": "12",
-     "ic": "🦋"
+     "ic": "🦋",
+     "lv": "B1"
     },
     {
      "form": "되다",
@@ -2854,7 +3283,8 @@
      "ex": "기술감독이 됐어요",
      "tr": "Je suis devenu directeur technique",
      "c": "3",
-     "ic": "🌱"
+     "ic": "🌱",
+     "lv": "A2"
     },
     {
      "form": "시작하다 / 시작되다",
@@ -2862,7 +3292,8 @@
      "ex": "하루가 방금 시작됐어요",
      "tr": "La journée vient de commencer",
      "c": "2",
-     "ic": "🚦"
+     "ic": "🚦",
+     "lv": "B1"
     }
    ]
   },
@@ -2875,7 +3306,8 @@
      "ex": "오늘 일 안 해요",
      "tr": "Je ne travaille pas aujourd'hui",
      "c": "3",
-     "ic": "🚫"
+     "ic": "🚫",
+     "lv": "A1"
     },
     {
      "form": "-지 않아요",
@@ -2883,7 +3315,8 @@
      "ex": "맵지 않아요",
      "tr": "Ce n'est pas épicé",
      "c": "3·4",
-     "ic": "🚫"
+     "ic": "🚫",
+     "lv": "A1"
     },
     {
      "form": "못 / -지 못해요",
@@ -2891,7 +3324,8 @@
      "ex": "노래 못했어요",
      "tr": "Ils n'ont pas pu chanter",
      "c": "7",
-     "ic": "😩"
+     "ic": "😩",
+     "lv": "A1"
     },
     {
      "form": "불-",
@@ -2899,7 +3333,8 @@
      "ex": "불편하다",
      "tr": "Gênant, pas confortable",
      "c": "3",
-     "ic": "⛔"
+     "ic": "⛔",
+     "lv": "B1"
     }
    ]
   },
@@ -2912,7 +3347,8 @@
      "ex": "인영은요?",
      "tr": "Et toi, In-young ?",
      "c": "16",
-     "ic": "🏷️"
+     "ic": "🏷️",
+     "lv": "A1"
     },
     {
      "form": "-랑/이랑",
@@ -2920,7 +3356,8 @@
      "ex": "인영씨랑 보내는 시간",
      "tr": "Le temps passé avec In-young",
      "c": "2·17",
-     "ic": "🤝"
+     "ic": "🤝",
+     "lv": "A1"
     },
     {
      "form": "-에게 / -한테",
@@ -2928,7 +3365,8 @@
      "ex": "저한테 중요해요",
      "tr": "C'est important pour moi",
      "c": "11·13",
-     "ic": "📨"
+     "ic": "📨",
+     "lv": "A1"
     },
     {
      "form": "-에 / -에서",
@@ -2936,7 +3374,8 @@
      "ex": "몽쁠리에에 왔어요 / 몽쁠리에에서 일해요",
      "tr": "Venu à Montpellier / je travaille à Montpellier",
      "c": "13·14",
-     "ic": "📍"
+     "ic": "📍",
+     "lv": "A1"
     },
     {
      "form": "-부터",
@@ -2944,7 +3383,8 @@
      "ex": "일요일부터",
      "tr": "À partir de dimanche",
      "c": "7·13",
-     "ic": "🏁"
+     "ic": "🏁",
+     "lv": "A1"
     },
     {
      "form": "-째",
@@ -2952,7 +3392,8 @@
      "ex": "20년째 노래하고 있어요",
      "tr": "Je chante depuis 20 ans",
      "c": "2·6",
-     "ic": "📆"
+     "ic": "📆",
+     "lv": "B1"
     },
     {
      "form": "동안 / 간",
@@ -2960,7 +3401,8 @@
      "ex": "20년 동안 노래했어요",
      "tr": "J'ai chanté pendant 20 ans",
      "c": "2",
-     "ic": "⏳"
+     "ic": "⏳",
+     "lv": "A2"
     },
     {
      "form": "-만",
@@ -2968,7 +3410,8 @@
      "ex": "리허설만 했어요",
      "tr": "On a seulement répété",
      "c": "7",
-     "ic": "☝️"
+     "ic": "☝️",
+     "lv": "A1"
     },
     {
      "form": "-밖에 + négation",
@@ -2976,7 +3419,8 @@
      "ex": "일주일밖에 없었어요",
      "tr": "Je n'avais qu'une semaine",
      "c": "8",
-     "ic": "🤏"
+     "ic": "🤏",
+     "lv": "A2"
     },
     {
      "form": "-마다",
@@ -2984,7 +3428,8 @@
      "ex": "이 분마다",
      "tr": "Toutes les deux minutes",
      "c": "14",
-     "ic": "🔁"
+     "ic": "🔁",
+     "lv": "A2"
     },
     {
      "form": "-처럼 / 같아요",
@@ -2992,7 +3437,8 @@
      "ex": "물처럼 / 물 같아요",
      "tr": "Comme de l'eau",
      "c": "16",
-     "ic": "🪞"
+     "ic": "🪞",
+     "lv": "A2"
     },
     {
      "form": "-에 따라",
@@ -3000,7 +3446,8 @@
      "ex": "관점에 따라 달라요",
      "tr": "Ça dépend du point de vue",
      "c": "6",
-     "ic": "👓"
+     "ic": "👓",
+     "lv": "B1"
     },
     {
      "form": "-에 대해(서)",
@@ -3008,7 +3455,8 @@
      "ex": "너에 대해서 생각해요",
      "tr": "Je pense à toi",
      "c": "11",
-     "ic": "💬"
+     "ic": "💬",
+     "lv": "B1"
     },
     {
      "form": "-중에",
@@ -3016,7 +3464,8 @@
      "ex": "특기 중에",
      "tr": "Parmi mes talents",
      "c": "6",
-     "ic": "🎯"
+     "ic": "🎯",
+     "lv": "A2"
     },
     {
      "form": "-이서 같이",
@@ -3024,7 +3473,8 @@
      "ex": "한 명이서 같이",
      "tr": "Avec une personne, ensemble",
      "c": "11",
-     "ic": "👫"
+     "ic": "👫",
+     "lv": "B1"
     },
     {
      "form": "A보다 B가 더",
@@ -3032,7 +3482,8 @@
      "ex": "A보다 B가 더 좋아요",
      "tr": "Je préfère B à A",
      "c": "6",
-     "ic": "⚖️"
+     "ic": "⚖️",
+     "lv": "A2"
     },
     {
      "form": "-보다 낫다",
@@ -3040,7 +3491,8 @@
      "ex": "전보다 훨씬 나아요",
      "tr": "C'est bien mieux qu'avant",
      "c": "9",
-     "ic": "📈"
+     "ic": "📈",
+     "lv": "B1"
     }
    ]
   }
