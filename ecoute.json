@@ -8,39 +8,114 @@
  ],
  "cando": {
   "A1": [
-   "Saluer, me présenter, dire d'où je viens",
-   "Comprendre des questions très simples (nom, pays, heure)",
-   "Compter, comprendre un prix ou une heure",
-   "Comprendre « oui / non / merci / pardon » dans un échange lent",
-   "Accueillir quelqu'un avec une formule toute faite"
+   {
+    "t": "Comprendre un échange très simple (salutations, présentations, prix)",
+    "k": "dlg"
+   },
+   {
+    "t": "Reconnaître à l'oreille les mots de base",
+    "k": "mot"
+   },
+   {
+    "t": "Écrire sous dictée une phrase courte et simple",
+    "k": "dict"
+   },
+   {
+    "t": "Distinguer les sons proches (어/오, ㄱ/ㅋ/ㄲ…)",
+    "k": "pair"
+   },
+   {
+    "t": "Me faire comprendre en répétant une phrase simple",
+    "k": "pro"
+   }
   ],
   "A2": [
-   "Comprendre des phrases courantes sur le travail et le quotidien",
-   "Suivre une consigne simple sur le plateau (« attendez », « par ici »)",
-   "Parler de mon week-end, de la météo, de mes goûts",
-   "Comprendre l'essentiel d'un message court et clair",
-   "Proposer, accepter, refuser poliment"
+   {
+    "t": "Suivre une conversation courante sur le quotidien et le travail",
+    "k": "dlg"
+   },
+   {
+    "t": "Comprendre une phrase courante au débit normal",
+    "k": "prog"
+   },
+   {
+    "t": "Transcrire une phrase courante (rendez-vous, horaire, météo)",
+    "k": "dict"
+   },
+   {
+    "t": "Reconnaître à l'oreille le vocabulaire courant",
+    "k": "mot"
+   },
+   {
+    "t": "Prononcer une phrase courante de façon compréhensible",
+    "k": "pro"
+   }
   ],
   "B1": [
-   "Suivre une conversation de travail si on parle lentement",
-   "Comprendre les points principaux d'une réunion de planning",
-   "Raconter un problème technique et sa solution",
-   "Comprendre une annonce (horaires, changements, retards)",
-   "Donner mon avis et le justifier"
+   {
+    "t": "Suivre une conversation de travail (planning, panne, avis)",
+    "k": "dlg"
+   },
+   {
+    "t": "Comprendre une phrase de niveau B1 dite rapidement",
+    "k": "prog"
+   },
+   {
+    "t": "Transcrire une phrase avec connecteurs (-는데, -아서, -니까)",
+    "k": "dict"
+   },
+   {
+    "t": "Reconnaître à l'oreille le vocabulaire professionnel",
+    "k": "mot"
+   },
+   {
+    "t": "Prononcer une phrase longue de façon compréhensible",
+    "k": "pro"
+   }
   ],
   "B2": [
-   "Suivre une discussion entre Coréens à débit presque normal",
-   "Comprendre les nuances (politesse, ironie, hésitation)",
-   "Négocier un planning ou un budget",
-   "Comprendre une interview ou un reportage sur l'opéra",
-   "Expliquer un procédé technique en détail"
+   {
+    "t": "Saisir les nuances d'un échange (négociation, réponse évasive)",
+    "k": "dlg"
+   },
+   {
+    "t": "Comprendre une phrase complexe au débit rapide",
+    "k": "prog"
+   },
+   {
+    "t": "Transcrire une phrase longue ou au discours indirect",
+    "k": "dict"
+   },
+   {
+    "t": "Reconnaître à l'oreille le vocabulaire abstrait",
+    "k": "mot"
+   },
+   {
+    "t": "Prononcer une phrase complexe avec fluidité",
+    "k": "pro"
+   }
   ],
   "C1": [
-   "Comprendre une conversation rapide entre plusieurs personnes",
-   "Saisir l'implicite et l'humour",
-   "Mener une réunion de production en coréen",
-   "Comprendre un film ou une émission sans sous-titres",
-   "M'exprimer avec aisance sur des sujets complexes"
+   {
+    "t": "Comprendre l'implicite et l'humour dans un échange rapide",
+    "k": "dlg"
+   },
+   {
+    "t": "Comprendre une phrase soutenue au débit rapide",
+    "k": "prog"
+   },
+   {
+    "t": "Transcrire une phrase soutenue ou idiomatique",
+    "k": "dict"
+   },
+   {
+    "t": "Reconnaître expressions idiomatiques et 사자성어",
+    "k": "mot"
+   },
+   {
+    "t": "Prononcer une phrase soutenue avec aisance",
+    "k": "pro"
+   }
   ]
  },
  "base": {
@@ -1819,5 +1894,1101 @@
    ],
    "help": "ㅁ final : lèvres fermées. ㄴ final : lèvres ouvertes."
   }
- ]
+ ],
+ "test": {
+  "A1": {
+   "words": [
+    {
+     "ko": "물",
+     "fr": "eau"
+    },
+    {
+     "ko": "학교",
+     "fr": "école"
+    },
+    {
+     "ko": "친구",
+     "fr": "ami"
+    },
+    {
+     "ko": "오늘",
+     "fr": "aujourd'hui"
+    },
+    {
+     "ko": "시간",
+     "fr": "temps, heure"
+    },
+    {
+     "ko": "가방",
+     "fr": "sac"
+    },
+    {
+     "ko": "의자",
+     "fr": "chaise"
+    },
+    {
+     "ko": "아침",
+     "fr": "matin"
+    }
+   ],
+   "sents": [
+    {
+     "ko": "이 커피는 얼마예요?",
+     "fr": "Combien coûte ce café ?"
+    },
+    {
+     "ko": "지금 몇 시예요?",
+     "fr": "Quelle heure est-il ?"
+    },
+    {
+     "ko": "저는 프랑스 사람이에요.",
+     "fr": "Je suis français."
+    },
+    {
+     "ko": "화장실이 어디예요?",
+     "fr": "Où sont les toilettes ?"
+    },
+    {
+     "ko": "내일 다시 만나요.",
+     "fr": "On se revoit demain."
+    },
+    {
+     "ko": "물 한 잔 주세요.",
+     "fr": "Un verre d'eau, s'il vous plaît."
+    }
+   ],
+   "dlgs": [
+    {
+     "id": "tA1a",
+     "title": "Au café",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "어서 오세요. 뭐 드릴까요?"
+      },
+      {
+       "s": "B",
+       "ko": "아메리카노 하나 주세요."
+      },
+      {
+       "s": "A",
+       "ko": "네, 사천 원이에요."
+      },
+      {
+       "s": "B",
+       "ko": "여기 있어요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Que commande le client ?",
+       "opts": [
+        "Un thé",
+        "Un américano",
+        "Un jus"
+       ],
+       "a": 1
+      },
+      {
+       "q": "Combien ça coûte ?",
+       "opts": [
+        "4 000 wons",
+        "14 000 wons",
+        "400 wons"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "id": "tA1b",
+     "title": "Rendez-vous",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "내일 몇 시에 만나요?"
+      },
+      {
+       "s": "B",
+       "ko": "오후 세 시 어때요?"
+      },
+      {
+       "s": "A",
+       "ko": "좋아요. 극장 앞에서 만나요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "À quelle heure ?",
+       "opts": [
+        "9 h",
+        "15 h",
+        "13 h"
+       ],
+       "a": 1
+      },
+      {
+       "q": "Où ?",
+       "opts": [
+        "Devant le théâtre",
+        "À la gare",
+        "Au café"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "id": "tA1c",
+     "title": "Présentations",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "이름이 뭐예요?"
+      },
+      {
+       "s": "B",
+       "ko": "박민호예요."
+      },
+      {
+       "s": "A",
+       "ko": "어느 나라 사람이에요?"
+      },
+      {
+       "s": "B",
+       "ko": "한국 사람이에요. 서울에서 왔어요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Quelle est sa nationalité ?",
+       "opts": [
+        "Japonais",
+        "Coréen",
+        "Chinois"
+       ],
+       "a": 1
+      },
+      {
+       "q": "D'où vient-il ?",
+       "opts": [
+        "Busan",
+        "Séoul",
+        "Incheon"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "id": "tA1d",
+     "title": "Au téléphone",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "여보세요? 지금 어디예요?"
+      },
+      {
+       "s": "B",
+       "ko": "지하철역이에요. 십 분 후에 도착해요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Où est la personne B ?",
+       "opts": [
+        "À la station de métro",
+        "À la maison",
+        "Au bureau"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Quand arrive-t-elle ?",
+       "opts": [
+        "Dans 10 minutes",
+        "Dans une heure",
+        "Dans 2 minutes"
+       ],
+       "a": 0
+      }
+     ]
+    }
+   ]
+  },
+  "A2": {
+   "words": [
+    {
+     "ko": "회의",
+     "fr": "réunion"
+    },
+    {
+     "ko": "약속",
+     "fr": "rendez-vous, promesse"
+    },
+    {
+     "ko": "날씨",
+     "fr": "météo"
+    },
+    {
+     "ko": "주말",
+     "fr": "week-end"
+    },
+    {
+     "ko": "연습",
+     "fr": "entraînement, répétition"
+    },
+    {
+     "ko": "표",
+     "fr": "billet"
+    },
+    {
+     "ko": "늦다",
+     "fr": "être en retard"
+    },
+    {
+     "ko": "준비하다",
+     "fr": "préparer"
+    }
+   ],
+   "sents": [
+    {
+     "ko": "어제 비가 많이 와서 집에 있었어요.",
+     "fr": "Hier il a beaucoup plu, alors je suis resté chez moi."
+    },
+    {
+     "ko": "다음 주에 같이 영화 볼까요?",
+     "fr": "On va voir un film ensemble la semaine prochaine ?"
+    },
+    {
+     "ko": "주말에 친구하고 바다에 갈 거예요.",
+     "fr": "Ce week-end, j'irai à la mer avec un ami."
+    },
+    {
+     "ko": "죄송하지만 오늘은 시간이 없어요.",
+     "fr": "Désolé, mais aujourd'hui je n'ai pas le temps."
+    },
+    {
+     "ko": "리허설은 몇 시에 시작해요?",
+     "fr": "La répétition commence à quelle heure ?"
+    },
+    {
+     "ko": "무대 뒤에서 잠깐 기다려 주세요.",
+     "fr": "Attendez un instant derrière la scène, s'il vous plaît."
+    }
+   ],
+   "dlgs": [
+    {
+     "id": "tA2a",
+     "title": "Un retard",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "미안해요, 길이 너무 막혀서 늦었어요."
+      },
+      {
+       "s": "B",
+       "ko": "괜찮아요. 리허설은 아직 시작 안 했어요."
+      },
+      {
+       "s": "A",
+       "ko": "다행이네요. 몇 시에 시작해요?"
+      },
+      {
+       "s": "B",
+       "ko": "삼십 분 후에 시작해요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Pourquoi A est-il en retard ?",
+       "opts": [
+        "Les embouteillages",
+        "Son réveil",
+        "Un train annulé"
+       ],
+       "a": 0
+      },
+      {
+       "q": "La répétition…",
+       "opts": [
+        "a déjà commencé",
+        "commence dans 30 minutes",
+        "est demain"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "id": "tA2b",
+     "title": "Le week-end",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "주말에 뭐 했어요?"
+      },
+      {
+       "s": "B",
+       "ko": "토요일에는 등산했고 일요일에는 집에서 쉬었어요."
+      },
+      {
+       "s": "A",
+       "ko": "날씨가 좋았어요?"
+      },
+      {
+       "s": "B",
+       "ko": "네, 조금 추웠지만 맑았어요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Qu'a-t-il fait samedi ?",
+       "opts": [
+        "De la randonnée",
+        "Du cinéma",
+        "Du travail"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Quel temps faisait-il ?",
+       "opts": [
+        "Pluvieux",
+        "Un peu froid mais clair",
+        "Très chaud"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "id": "tA2c",
+     "title": "Une invitation",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "금요일 저녁에 같이 식사할래요?"
+      },
+      {
+       "s": "B",
+       "ko": "금요일은 공연이 있어서 안 돼요. 토요일은 어때요?"
+      },
+      {
+       "s": "A",
+       "ko": "좋아요, 토요일에 봐요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Pourquoi pas vendredi ?",
+       "opts": [
+        "Il y a un spectacle",
+        "Il est malade",
+        "Il est en voyage"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Quel jour finalement ?",
+       "opts": [
+        "Jeudi",
+        "Samedi",
+        "Dimanche"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "id": "tA2d",
+     "title": "Au guichet",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "오늘 공연 표 있어요?"
+      },
+      {
+       "s": "B",
+       "ko": "저녁 공연은 다 팔렸어요. 오후 공연은 두 자리 남았어요."
+      },
+      {
+       "s": "A",
+       "ko": "그럼 오후 공연 두 장 주세요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Le spectacle du soir est…",
+       "opts": [
+        "complet",
+        "encore disponible",
+        "annulé"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Combien de billets achète-t-il ?",
+       "opts": [
+        "Un",
+        "Deux",
+        "Trois"
+       ],
+       "a": 1
+      }
+     ]
+    }
+   ]
+  },
+  "B1": {
+   "words": [
+    {
+     "ko": "일정",
+     "fr": "programme, planning"
+    },
+    {
+     "ko": "조명",
+     "fr": "éclairage"
+    },
+    {
+     "ko": "변경",
+     "fr": "changement"
+    },
+    {
+     "ko": "의견",
+     "fr": "avis"
+    },
+    {
+     "ko": "문제",
+     "fr": "problème"
+    },
+    {
+     "ko": "해결하다",
+     "fr": "résoudre"
+    },
+    {
+     "ko": "안전",
+     "fr": "sécurité"
+    },
+    {
+     "ko": "출장",
+     "fr": "déplacement professionnel"
+    }
+   ],
+   "sents": [
+    {
+     "ko": "조명 테스트 때문에 리허설이 한 시간 늦어질 것 같아요.",
+     "fr": "À cause du test lumière, la répétition sera sans doute retardée d'une heure."
+    },
+    {
+     "ko": "회의가 끝나면 바로 연락 드릴게요.",
+     "fr": "Je vous contacte dès que la réunion est finie."
+    },
+    {
+     "ko": "안전 문제가 있으니까 무대에 올라가지 마세요.",
+     "fr": "Il y a un problème de sécurité, alors ne montez pas sur scène."
+    },
+    {
+     "ko": "제 생각에는 일정을 조금 바꾸는 게 좋겠어요.",
+     "fr": "À mon avis, il vaudrait mieux modifier un peu le planning."
+    },
+    {
+     "ko": "출장 때문에 다음 주 수업은 못 할 것 같아요.",
+     "fr": "À cause d'un déplacement, je ne pourrai sans doute pas faire le cours la semaine prochaine."
+    },
+    {
+     "ko": "장비가 도착했는데 상자 하나가 없어요.",
+     "fr": "Le matériel est arrivé, mais il manque une caisse."
+    }
+   ],
+   "dlgs": [
+    {
+     "id": "tB1a",
+     "title": "Une annonce",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "안내 말씀 드립니다. 오늘 저녁 공연은 기술적인 문제로 삼십 분 늦게 시작합니다."
+      },
+      {
+       "s": "B",
+       "ko": "그럼 여덟 시 반에 시작하는 거네요."
+      },
+      {
+       "s": "A",
+       "ko": "관객 여러분의 양해 부탁드립니다."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Que se passe-t-il ?",
+       "opts": [
+        "Le spectacle est annulé",
+        "Il commence avec 30 minutes de retard",
+        "Un chanteur est remplacé"
+       ],
+       "a": 1
+      },
+      {
+       "q": "Pour quelle raison ?",
+       "opts": [
+        "Un problème technique",
+        "Une grève",
+        "Une maladie"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "id": "tB1b",
+     "title": "Une panne",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "무대 리프트가 갑자기 멈췄어요."
+      },
+      {
+       "s": "B",
+       "ko": "전원은 확인했어요?"
+      },
+      {
+       "s": "A",
+       "ko": "네, 전원은 문제없는데 센서가 고장 난 것 같아요."
+      },
+      {
+       "s": "B",
+       "ko": "그럼 기술자한테 연락해서 오늘 안에 고쳐 달라고 할게요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Quel est le problème ?",
+       "opts": [
+        "L'élévateur de scène s'est arrêté",
+        "La lumière",
+        "Le son"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Que va faire B ?",
+       "opts": [
+        "Annuler",
+        "Appeler un technicien",
+        "Réparer lui-même"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "id": "tB1c",
+     "title": "Le planning",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "다음 주 일정 확인하셨어요?"
+      },
+      {
+       "s": "B",
+       "ko": "네, 그런데 화요일 오전에 오케스트라 리허설이랑 무대 작업이 겹쳐요."
+      },
+      {
+       "s": "A",
+       "ko": "그럼 무대 작업을 오후로 옮기면 어때요?"
+      },
+      {
+       "s": "B",
+       "ko": "좋아요, 팀에 알려 줄게요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Quel est le problème ?",
+       "opts": [
+        "Deux activités en même temps mardi matin",
+        "Une absence",
+        "Le budget"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Quelle solution ?",
+       "opts": [
+        "Annuler la répétition",
+        "Déplacer le travail de scène à l'après-midi",
+        "Travailler la nuit"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "id": "tB1d",
+     "title": "Un avis",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "이번 무대 디자인 어떻게 생각해요?"
+      },
+      {
+       "s": "B",
+       "ko": "색깔은 예쁜데 무대 전환이 너무 오래 걸릴 것 같아요."
+      },
+      {
+       "s": "A",
+       "ko": "맞아요. 세트를 좀 가볍게 만들어야겠어요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Que pense B des couleurs ?",
+       "opts": [
+        "Elles sont jolies",
+        "Trop sombres",
+        "Criardes"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Qu'est-ce qui l'inquiète ?",
+       "opts": [
+        "Les changements de décor trop longs",
+        "Le coût",
+        "La sécurité"
+       ],
+       "a": 0
+      }
+     ]
+    }
+   ]
+  },
+  "B2": {
+   "words": [
+    {
+     "ko": "예산",
+     "fr": "budget"
+    },
+    {
+     "ko": "협상",
+     "fr": "négociation"
+    },
+    {
+     "ko": "절감",
+     "fr": "réduction (des coûts)"
+    },
+    {
+     "ko": "우려",
+     "fr": "inquiétude"
+    },
+    {
+     "ko": "제작",
+     "fr": "production, fabrication"
+    },
+    {
+     "ko": "계약",
+     "fr": "contrat"
+    },
+    {
+     "ko": "반영하다",
+     "fr": "prendre en compte"
+    },
+    {
+     "ko": "불가피하다",
+     "fr": "être inévitable"
+    }
+   ],
+   "sents": [
+    {
+     "ko": "예산이 줄어서 세트 제작 방식을 다시 검토해야 한다고 들었어요.",
+     "fr": "J'ai entendu dire qu'avec la baisse du budget, il faut revoir la fabrication du décor."
+    },
+    {
+     "ko": "연출가의 의견을 최대한 반영하되 안전 기준은 양보할 수 없습니다.",
+     "fr": "Nous tiendrons compte de l'avis du metteur en scène, sans transiger sur la sécurité."
+    },
+    {
+     "ko": "일정이 이렇게 촉박한 줄 알았으면 미리 인력을 더 구했을 거예요.",
+     "fr": "Si j'avais su que le planning était si serré, j'aurais trouvé du personnel en plus."
+    },
+    {
+     "ko": "계약서에 따르면 추가 비용은 제작사가 부담하게 되어 있어요.",
+     "fr": "Selon le contrat, les frais supplémentaires sont à la charge du producteur."
+    },
+    {
+     "ko": "관객들의 반응이 생각보다 훨씬 뜨거웠다고 하더라고요.",
+     "fr": "Il paraît que le public a réagi bien plus chaleureusement que prévu."
+    },
+    {
+     "ko": "그 방법도 나쁘지 않지만 비용 대비 효과가 크지 않을 것 같아요.",
+     "fr": "Cette méthode n'est pas mauvaise, mais le rapport coût-efficacité semble faible."
+    }
+   ],
+   "dlgs": [
+    {
+     "id": "tB2a",
+     "title": "Négociation",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "투어 일정에 서울 공연을 하루 더 추가할 수 있을까요?"
+      },
+      {
+       "s": "B",
+       "ko": "가능은 하지만 극장 대관료가 꽤 올라갈 거예요."
+      },
+      {
+       "s": "A",
+       "ko": "그 비용은 저희가 일부 부담할 수 있습니다. 대신 기술 리허설을 하루 보장해 주셨으면 해요."
+      },
+      {
+       "s": "B",
+       "ko": "그 조건이라면 긍정적으로 검토해 보겠습니다."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Que demande A ?",
+       "opts": [
+        "Une date de plus à Séoul",
+        "D'annuler la tournée",
+        "De baisser le prix des billets"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Que veut A en échange ?",
+       "opts": [
+        "Un jour de répétition technique garanti",
+        "Plus de billets",
+        "Un hôtel"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "id": "tB2b",
+     "title": "Interview",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "이번 작품에서 가장 어려웠던 점은 무엇이었나요?"
+      },
+      {
+       "s": "B",
+       "ko": "솔직히 말씀드리면 무대 위에서 물을 쓰는 장면이었어요. 조명이나 음향 장비에 영향이 없게 하는 게 쉽지 않았거든요."
+      },
+      {
+       "s": "A",
+       "ko": "결과적으로는 아주 인상적인 장면이 됐네요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Qu'est-ce qui a été le plus difficile ?",
+       "opts": [
+        "Une scène avec de l'eau",
+        "Les costumes",
+        "Le travail avec les chanteurs"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Pourquoi ?",
+       "opts": [
+        "Il fallait protéger la lumière et le son",
+        "C'était trop cher",
+        "Il manquait de temps"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "id": "tB2c",
+     "title": "Réponse évasive",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "김 감독님, 혹시 내일 회의 자료는 다 준비되셨어요?"
+      },
+      {
+       "s": "B",
+       "ko": "아, 그게… 거의 다 됐는데 몇 가지만 확인하면 돼요."
+      },
+      {
+       "s": "A",
+       "ko": "그럼 오늘 저녁까지 보내 주실 수 있을까요?"
+      },
+      {
+       "s": "B",
+       "ko": "네, 최대한 맞춰 볼게요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Les documents sont-ils prêts ?",
+       "opts": [
+        "Oui, entièrement",
+        "Presque, pas tout à fait",
+        "Pas encore commencés"
+       ],
+       "a": 1
+      },
+      {
+       "q": "B s'engage-t-il fermement ?",
+       "opts": [
+        "Oui, il promet",
+        "Il dit qu'il fera de son mieux",
+        "Il refuse"
+       ],
+       "a": 1
+      }
+     ]
+    }
+   ]
+  },
+  "C1": {
+   "words": [
+    {
+     "ko": "관행",
+     "fr": "usage établi"
+    },
+    {
+     "ko": "타당성",
+     "fr": "pertinence, faisabilité"
+    },
+    {
+     "ko": "시사하다",
+     "fr": "laisser entendre"
+    },
+    {
+     "ko": "간과하다",
+     "fr": "négliger"
+    },
+    {
+     "ko": "일석이조",
+     "fr": "faire d'une pierre deux coups"
+    },
+    {
+     "ko": "우여곡절",
+     "fr": "péripéties"
+    },
+    {
+     "ko": "역부족",
+     "fr": "être insuffisant"
+    },
+    {
+     "ko": "고육지책",
+     "fr": "solution de dernier recours"
+    }
+   ],
+   "sents": [
+    {
+     "ko": "기존 관행을 그대로 따르기보다는 작품에 맞게 유연하게 접근할 필요가 있습니다.",
+     "fr": "Plutôt que de suivre les usages établis, il faut une approche souple adaptée à l'œuvre."
+    },
+    {
+     "ko": "우여곡절 끝에 초연을 무사히 마쳤으니 이제 한숨 돌려도 되겠네요.",
+     "fr": "Après bien des péripéties, la première s'est bien passée : on peut souffler."
+    },
+    {
+     "ko": "이번 결정은 단기적으로는 손해처럼 보여도 장기적으로는 일석이조라고 봅니다.",
+     "fr": "À court terme cela semble une perte, mais à long terme c'est faire d'une pierre deux coups."
+    },
+    {
+     "ko": "인력만으로 해결하기엔 역부족이라 결국 장비를 새로 들이기로 했어요.",
+     "fr": "Le personnel seul ne suffisait pas, alors nous avons acheté du nouveau matériel."
+    },
+    {
+     "ko": "사소해 보이는 소음 문제도 간과했다가는 공연 전체의 완성도가 떨어질 수 있어요.",
+     "fr": "Négliger un petit problème de bruit peut nuire à la qualité de tout le spectacle."
+    },
+    {
+     "ko": "말씀하신 취지는 충분히 이해하지만 현실적으로 가능한지는 따져 봐야겠습니다.",
+     "fr": "Je comprends l'intention, mais il faut examiner si c'est réalisable."
+    }
+   ],
+   "dlgs": [
+    {
+     "id": "tC1a",
+     "title": "Opéra en plein air",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "다음 시즌에 야외 오페라를 하자는 얘기가 나왔다면서요?"
+      },
+      {
+       "s": "B",
+       "ko": "네, 취지는 좋은데 날씨 변수를 생각하면 타당성 검토부터 해야 할 것 같아요."
+      },
+      {
+       "s": "A",
+       "ko": "그렇죠. 비라도 오면 장비는 둘째 치고 가수들 목 상태가 문제니까요."
+      },
+      {
+       "s": "B",
+       "ko": "그래서 비가 오면 실내로 옮기는 방안까지 같이 준비하자고 했어요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "De quel projet parle-t-on ?",
+       "opts": [
+        "Un opéra en plein air",
+        "Une tournée",
+        "Un enregistrement"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Quel est le plan B ?",
+       "opts": [
+        "Se replier en salle s'il pleut",
+        "Annuler",
+        "Repousser à l'été"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "id": "tC1b",
+     "title": "Douze heures de répétition",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "이번 리허설도 열두 시간이었다면서요? 다들 체력이 대단하네요."
+      },
+      {
+       "s": "B",
+       "ko": "체력은 무슨, 커피로 버틴 거죠. 커피 회사 협찬이라도 받아야 할 판이에요."
+      },
+      {
+       "s": "A",
+       "ko": "하하, 그럼 다음 프로그램에 로고라도 넣어 드릴까요?"
+      }
+     ],
+     "qs": [
+      {
+       "q": "Comment l'équipe a-t-elle tenu ?",
+       "opts": [
+        "Grâce au café",
+        "Grâce à sa bonne forme",
+        "Avec beaucoup de pauses"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Quel est le ton de B ?",
+       "opts": [
+        "Ironique, plein d'humour",
+        "En colère",
+        "Triste"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "id": "tC1c",
+     "title": "Coupes budgétaires",
+     "lines": [
+      {
+       "s": "A",
+       "ko": "예산 삭감 소식 들으셨죠? 이대로라면 합창단 규모를 줄이는 수밖에 없겠어요."
+      },
+      {
+       "s": "B",
+       "ko": "그건 정말 고육지책이네요. 다른 방법은 없을까요?"
+      },
+      {
+       "s": "A",
+       "ko": "후원사를 더 찾고 있긴 한데 시간이 촉박해서 장담은 못 해요."
+      }
+     ],
+     "qs": [
+      {
+       "q": "Quelle mesure est envisagée ?",
+       "opts": [
+        "Réduire le chœur",
+        "Annuler la saison",
+        "Augmenter le prix des places"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Comment B la qualifie-t-il ?",
+       "opts": [
+        "Une solution de dernier recours",
+        "Une excellente idée",
+        "Sans importance"
+       ],
+       "a": 0
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "phr": {
+  "B2": [
+   {
+    "ko": "공연이 끝나자마자 무대 철수를 시작해야 한다고 하네요.",
+    "fr": "On dit qu'il faut démonter la scène dès la fin du spectacle."
+   },
+   {
+    "ko": "리허설을 거듭할수록 장면 전환이 점점 매끄러워지고 있어요.",
+    "fr": "Plus on répète, plus les changements de scène deviennent fluides."
+   },
+   {
+    "ko": "예산을 줄이는 대신 일정을 조금 늘리는 게 어떨까 싶어요.",
+    "fr": "Je me demande s'il ne vaudrait pas mieux allonger un peu le planning plutôt que réduire le budget."
+   },
+   {
+    "ko": "감독님이 그렇게까지 말씀하시는 걸 보니 꽤 심각한가 봐요.",
+    "fr": "Vu que le directeur va jusqu'à dire ça, ça doit être assez grave."
+   },
+   {
+    "ko": "장비 점검을 미리 했더라면 이런 문제는 없었을 텐데요.",
+    "fr": "Si on avait vérifié le matériel à l'avance, on n'aurait pas eu ce problème."
+   }
+  ],
+  "C1": [
+   {
+    "ko": "결과만 놓고 보면 성공이지만 과정에서 놓친 부분도 적지 않습니다.",
+    "fr": "À ne regarder que le résultat c'est un succès, mais nous avons manqué pas mal de choses en route."
+   },
+   {
+    "ko": "이 정도 규모의 작품을 석 달 만에 올린다는 건 사실상 무리입니다.",
+    "fr": "Monter une œuvre de cette ampleur en trois mois est en pratique déraisonnable."
+   },
+   {
+    "ko": "관객의 기대치가 높은 만큼 작은 실수도 크게 보일 수밖에 없어요.",
+    "fr": "Plus les attentes du public sont élevées, plus la moindre erreur se remarque."
+   },
+   {
+    "ko": "그분 말씀은 반대한다기보다 시기를 늦추자는 쪽에 가까웠어요.",
+    "fr": "Ce qu'il disait ressemblait moins à une opposition qu'à une demande de report."
+   },
+   {
+    "ko": "전례가 없는 시도인 만큼 위험 요소를 꼼꼼히 따져 봐야 합니다.",
+    "fr": "Comme c'est sans précédent, il faut examiner les risques minutieusement."
+   },
+   {
+    "ko": "비용 문제는 차치하더라도 인력 확보가 관건입니다.",
+    "fr": "Même en laissant de côté le coût, la clé reste de trouver le personnel."
+   },
+   {
+    "ko": "말이 쉽지, 막상 해 보면 생각보다 훨씬 까다로워요.",
+    "fr": "C'est facile à dire, mais en pratique c'est bien plus délicat qu'on ne pense."
+   },
+   {
+    "ko": "이번 일을 계기로 작업 방식을 전면적으로 재검토하기로 했습니다.",
+    "fr": "Nous avons profité de cet épisode pour revoir entièrement nos méthodes de travail."
+   }
+  ]
+ }
 }
