@@ -15,14 +15,14 @@
    COLOUR and TYPE: hanji paper, ink, dancheong red, deep teal, jade green; system fonts so it works offline
    LAYOUT: bottom tab bar like a native tablet app, one view at a time, content max 980px */
 :root{color-scheme:light dark;
- --bg:light-dark(#fff6ee,#17151f);--paper:light-dark(#ffffff,#24212f);--ink:light-dark(#2b2335,#f3eefb);
- --soft:light-dark(#7a6f86,#b3a9c4);--line:light-dark(#f1e3d8,#3a3549);--red:light-dark(#ef5b6b,#ff8a96);
- --teal:light-dark(#3a86a8,#8fd0ea);--ok:light-dark(#2fae7f,#6fe0b0);--warn:light-dark(#f0a202,#ffc94d);--chip:light-dark(#fdebe1,#322d42);
- --sun:#ffd166;--mint:light-dark(#c9f2e3,#24443b);--sky:light-dark(#dff1ff,#1f2f45);--pink:light-dark(#ffe1e8,#45263a);--lav:light-dark(#ece6ff,#30294a)}
+ --bg:light-dark(#f6f2ea,#15171a);--paper:light-dark(#fffdf9,#1f2226);--ink:light-dark(#1f1c19,#ece7df);
+ --soft:light-dark(#6f685f,#a39d93);--line:light-dark(#e6dfd3,#33373d);--red:light-dark(#a8322d,#e0675e);
+ --teal:light-dark(#2f4a5a,#8fb3c4);--ok:light-dark(#3f6e5b,#7fbf9f);--warn:light-dark(#b07a2a,#e0b065);--chip:light-dark(#efe9de,#2a2e33);
+ --sun:#e9d8b4;--mint:light-dark(#e6efe9,#22302a);--sky:light-dark(#e8edf0,#202a31);--pink:light-dark(#f3e6e2,#2e2425);--lav:light-dark(#efece6,#26292e)}
 :root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
 *{box-sizing:border-box;min-width:0;-webkit-tap-highlight-color:transparent}
 html,body{height:100%}
-body{margin:0;background:var(--bg);background-image:radial-gradient(circle at 10% 0%,var(--pink),transparent 40%),radial-gradient(circle at 100% 30%,var(--sky),transparent 35%);background-attachment:fixed;color:var(--ink);font:16px/1.5 ui-rounded,"SF Pro Rounded","Nunito",system-ui,"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;overflow-x:clip}
 .ko{font-family:"Noto Serif KR","Nanum Myeongjo","AppleMyungjo",serif}
 .emo{font-family:"Noto Color Emoji","Apple Color Emoji","Segoe UI Emoji",sans-serif}
 main{max-width:980px;margin:0 auto;padding:calc(18px + env(safe-area-inset-top)) max(4vw,16px) calc(110px + env(safe-area-inset-bottom))}
@@ -30,9 +30,9 @@ main{max-width:980px;margin:0 auto;padding:calc(18px + env(safe-area-inset-top))
 button,input,select,textarea{font:inherit;color:inherit}
 button{cursor:pointer;border:0;background:none}
 :focus-visible{outline:3px solid var(--teal);outline-offset:2px}
-h1{font:700 clamp(28px,4vw,40px)/1.05 system-ui,sans-serif;margin:4px 0 6px;text-wrap:balance}
+h1{font:600 clamp(28px,4vw,40px)/1.1 "Noto Serif KR","Nanum Myeongjo",Georgia,serif;letter-spacing:.01em;margin:4px 0 6px;text-wrap:balance}
 h1 .ko{color:var(--red)}
-h2{font:700 22px/1.2 system-ui,sans-serif;margin:26px 0 8px;display:flex;justify-content:space-between;gap:10px;align-items:center}
+h2{font:600 21px/1.25 "Noto Serif KR",Georgia,serif;margin:26px 0 8px;display:flex;justify-content:space-between;gap:10px;align-items:center}
 .sub{color:var(--soft);margin:0 0 12px;font-size:15px}
 .tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--paper);border-top:1px solid var(--line);display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom)}
 .tabs a{flex:1;max-width:150px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 4px 10px;text-decoration:none;color:var(--soft);font-size:12px;min-height:56px}
@@ -123,54 +123,45 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
  .answer button{font-size:15px}}
 @media(prefers-reduced-motion:reduce){.card,.toast,.bar i{transition:none}}
 
-/* ---- cheerful layer ---- */
-.panel,.mode,.list,.qcard,.face,.opt{border-radius:22px}
-.panel{box-shadow:0 10px 30px -18px #b4527055}
-.scene{position:relative;border-radius:26px;overflow:hidden;min-height:clamp(170px,26vw,240px);margin:4px 0 14px;box-shadow:0 18px 40px -22px #b4527077}
+/* ---- ink & hanji layer ---- */
+.panel,.mode,.list,.qcard,.face,.opt{border-radius:16px}
+.panel{box-shadow:0 1px 0 var(--line),0 12px 28px -24px #0006}
+.scene{position:relative;border-radius:18px;overflow:hidden;min-height:clamp(170px,26vw,240px);margin:6px 0 14px;box-shadow:0 14px 34px -26px #000a}
 .scene svg.bg{position:absolute;inset:0;width:100%;height:100%}
-.scene .greet{position:relative;z-index:2;padding:clamp(18px,3vw,30px);max-width:62%}
-.scene .greet .hello{font:800 clamp(24px,4vw,38px)/1.1 "Noto Serif KR","Nanum Myeongjo",serif;color:#3b2140;text-shadow:0 2px 0 #fff8}
-.scene .greet .fr{font-size:15px;color:#5b3d55;margin-top:4px}
-.scene .lvl{display:inline-flex;align-items:center;gap:6px;margin-top:10px;background:#ffffffcc;color:#3b2140;padding:6px 12px;border-radius:999px;font-weight:700;font-size:14px}
-.mascot{position:absolute;right:clamp(8px,3vw,36px);bottom:-6px;width:clamp(104px,17vw,150px);z-index:2;animation:bob 3.2s ease-in-out infinite}
-.bubble{position:absolute;right:clamp(110px,19vw,190px);top:16px;z-index:3;background:#fff;color:#3b2140;border-radius:18px;padding:9px 14px;font-size:14px;max-width:min(240px,40%);box-shadow:0 6px 16px -8px #0004;line-height:1.35}
-.bubble b{display:block;font-family:"Noto Serif KR",serif;font-size:16px}
-.bubble::after{content:"";position:absolute;right:-8px;top:22px;border:8px solid transparent;border-left-color:#fff}
-@keyframes bob{50%{transform:translateY(-6px) rotate(-2deg)}}
-.mode{border:0;color:#2b2335;box-shadow:0 10px 24px -16px #0005;transition:transform .15s}
-.mode:hover,.mode:active{transform:translateY(-2px) scale(1.01)}
-.mode .emo{font-size:38px;width:58px;height:58px;display:grid;place-items:center;background:#ffffffaa;border-radius:18px}
-.mode span{color:#5d5266}
-.m1{background:linear-gradient(135deg,#ffd6de,#ffeef1)}.m2{background:linear-gradient(135deg,#ffe7a8,#fff5d6)}.m3{background:linear-gradient(135deg,#c5ecff,#e9f7ff)}.m4{background:linear-gradient(135deg,#d4f5e4,#effcf5)}
-.wod{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:16px;align-items:center;background:linear-gradient(135deg,var(--lav),var(--paper));border:0}
-.wod .pic{font-size:62px;margin:0}
-.wod .k{font:700 28px/1.2 "Noto Serif KR",serif}
-.wod small{display:block;color:var(--soft);font-size:13px;margin-bottom:2px}
-.chip{border:1px solid transparent}.chip.on{background:var(--red);box-shadow:0 6px 14px -8px var(--red)}
-.face{background:linear-gradient(180deg,var(--paper) 70%,var(--pink));border:0;box-shadow:0 22px 44px -26px #b4527088}
-.back{background:linear-gradient(180deg,var(--paper) 65%,var(--mint))}
-.qcard{background:linear-gradient(180deg,var(--paper) 70%,var(--sky));border:0;box-shadow:0 22px 44px -26px #3a86a866}
-.opt{border-width:2px;box-shadow:0 6px 16px -12px #0004}
-.a3{background:var(--ok)}.btn.pri{background:linear-gradient(135deg,#ff7a85,#ef5b6b)}
-.tabs{background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(10px)}
-.tabs a.on b{transform:scale(1.15)}
-.pop{position:fixed;left:50%;top:38%;transform:translate(-50%,-50%);z-index:50;font:800 34px/1 "Noto Serif KR",serif;color:var(--red);pointer-events:none;animation:pop 1s ease-out forwards;text-shadow:0 3px 0 #fff}
-@keyframes pop{0%{opacity:0;transform:translate(-50%,-30%) scale(.6)}25%{opacity:1;transform:translate(-50%,-50%) scale(1.1)}100%{opacity:0;transform:translate(-50%,-120%) scale(1)}}
-.conf{position:fixed;top:-30px;z-index:60;pointer-events:none;font-size:22px;animation:fall linear forwards}
-@keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
-.done .mascotbig{width:150px;margin:0 auto 6px;display:block;animation:bob 2.6s ease-in-out infinite}
-.empty .emo{font-size:46px;display:block}
-
-.bdg{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--soft);white-space:nowrap;vertical-align:middle}
-.av{width:24px;height:24px;border-radius:50%;display:inline-grid;place-items:center;font:700 12px/1 system-ui;color:#fff;overflow:hidden;flex:none;box-shadow:0 0 0 2px var(--paper),0 2px 6px -2px #0006}
-.av img{width:100%;height:100%;object-fit:cover}
-.av.iy{background:linear-gradient(135deg,#ff8fa3,#ef5b6b)}.av.me{background:linear-gradient(135deg,#5fd3a8,#2fae7f)}
-.meta .bdg .av{width:30px;height:30px;font-size:14px}
-.it .f .bdg{margin-left:8px}
-.avset{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.avset .av{width:64px;height:64px;font-size:26px}
-@media(max-width:600px){.scene .greet{max-width:100%;padding-bottom:110px}.bubble{display:none}.mascot{width:110px}.wod{grid-template-columns:auto minmax(0,1fr)}.wod .ib{display:none}}
-@media(prefers-reduced-motion:reduce){.mascot,.done .mascotbig{animation:none}.pop,.conf{display:none}}
+.scene .greet{position:relative;z-index:2;padding:clamp(46px,6vw,64px) clamp(18px,3vw,32px) 18px;max-width:58%}
+.scene .greet .hello{font:600 clamp(24px,3.6vw,36px)/1.15 "Noto Serif KR","Nanum Myeongjo",serif;color:#1f1c19}
+.scene .greet .fr{font-size:14px;color:#4d463e;margin-top:4px;letter-spacing:.02em}
+.scene .lvl{display:inline-flex;align-items:center;gap:6px;margin-top:12px;background:#fffdf9d9;color:#1f1c19;padding:5px 12px;border-radius:999px;font-size:13px;border:1px solid #d9cfbf}
+.proverb{position:absolute;right:clamp(14px,3vw,30px);bottom:clamp(14px,2.4vw,24px);z-index:3;max-width:min(320px,44%);text-align:right;color:#1f1c19;background:#fbf7f0e6;padding:10px 14px;border-radius:12px;border:1px solid #e3d9c8;cursor:pointer}
+.proverb b{display:block;font:600 17px/1.35 "Noto Serif KR",serif}
+.proverb span{font-size:13px;color:#4d463e;font-style:italic}
+.seal{position:absolute;right:clamp(14px,3vw,30px);top:clamp(14px,2.4vw,22px);z-index:3;width:44px;height:44px;border-radius:6px;background:#a8322d;color:#fbeee4;display:grid;place-items:center;font:700 20px/1 "Noto Serif KR",serif;box-shadow:inset 0 0 0 3px #a8322d,inset 0 0 0 4px #f3d7c8;transform:rotate(-4deg);opacity:.92}
+.mode{border:1px solid var(--line);background:var(--paper);color:var(--ink);box-shadow:0 10px 22px -22px #0008;transition:border-color .15s,transform .15s}
+.mode:hover,.mode:active{border-color:var(--red);transform:translateY(-1px)}
+.mode .emo{font-size:26px;width:52px;height:52px;display:grid;place-items:center;border-radius:50%}
+.mode span{color:var(--soft)}
+.m1 .emo{background:var(--pink)}.m2 .emo{background:#f2ead8}.m3 .emo{background:var(--sky)}.m4 .emo{background:var(--mint)}
+:root[data-theme=dark] .m2 .emo{background:#2e2a22}@media(prefers-color-scheme:dark){.m2 .emo{background:#2e2a22}}
+.wod{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px;align-items:center}
+.wod .pic{font-size:46px;margin:0;width:76px;height:76px;display:grid;place-items:center;border-radius:50%;background:var(--chip)}
+.wod .k{font:600 28px/1.2 "Noto Serif KR",serif}
+.wod small{display:block;color:var(--soft);font-size:12px;letter-spacing:.06em;text-transform:none;margin-bottom:2px}
+.chip.on{background:var(--ink);color:var(--bg)}
+.face{background:var(--paper);border:1px solid var(--line);box-shadow:0 22px 44px -32px #000a}
+.qcard{background:var(--paper);border:1px solid var(--line)}
+.btn.pri{background:var(--red)}
+.tabs{background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px)}
+.tabs a.on{color:var(--red)}
+.pop{position:fixed;left:50%;top:36%;transform:translate(-50%,-50%);z-index:50;font:600 28px/1 "Noto Serif KR",serif;color:var(--red);pointer-events:none;animation:pop .9s ease-out forwards}
+@keyframes pop{0%{opacity:0;transform:translate(-50%,-40%)}30%{opacity:1;transform:translate(-50%,-50%)}100%{opacity:0;transform:translate(-50%,-75%)}}
+.petal{position:fixed;top:-20px;z-index:60;pointer-events:none;width:12px;height:9px;border-radius:60% 0 60% 0;animation:drift linear forwards;opacity:.85}
+@keyframes drift{to{transform:translate(var(--dx),108vh) rotate(380deg)}}
+.stamp{width:132px;height:132px;margin:4px auto 10px;border-radius:50%;border:4px solid var(--red);color:var(--red);display:grid;place-items:center;text-align:center;font:700 22px/1.15 "Noto Serif KR",serif;transform:rotate(-8deg);box-shadow:inset 0 0 0 4px var(--paper),inset 0 0 0 6px var(--red);animation:stamp .5s cubic-bezier(.2,1.6,.4,1) both}
+.stamp small{display:block;font:400 11px/1.2 system-ui;letter-spacing:.08em;margin-top:4px}
+@keyframes stamp{from{transform:rotate(-8deg) scale(1.6);opacity:0}to{transform:rotate(-8deg) scale(1);opacity:1}}
+.empty .emo{font-size:40px;display:block;opacity:.8}
+@media(max-width:600px){.scene .greet{max-width:100%;padding-bottom:96px}.proverb{max-width:80%}.wod{grid-template-columns:auto minmax(0,1fr)}.wod .ib{display:none}}
+@media(prefers-reduced-motion:reduce){.pop,.petal{display:none}.stamp{animation:none}}
 </style>
 </head>
 <body>
@@ -183,31 +174,31 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
  <p class="sub" id="hsub">Cours avec In-young</p>
  <div class="scene" id="scene">
   <svg class="bg" viewBox="0 0 800 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-   <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd9e2"/><stop offset=".55" stop-color="#ffe9d6"/><stop offset="1" stop-color="#fff4e4"/></linearGradient>
-   <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a8e6cf"/><stop offset="1" stop-color="#7fd1b0"/></linearGradient>
-   <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c8f0dd"/><stop offset="1" stop-color="#a6e3c8"/></linearGradient>
-   <g id="bl"><circle r="6" fill="#ffb7c9"/><circle r="2.2" fill="#ff7fa0"/></g></defs>
-   <rect width="800" height="240" fill="url(#sky)"/>
-   <circle cx="560" cy="70" r="38" fill="#ffd166" opacity=".95"/><circle cx="560" cy="70" r="54" fill="#ffd166" opacity=".25"/>
-   <g fill="#fff" opacity=".9"><ellipse cx="420" cy="52" rx="38" ry="12"/><ellipse cx="445" cy="44" rx="24" ry="12"/><ellipse cx="690" cy="96" rx="34" ry="10"/><ellipse cx="712" cy="88" rx="20" ry="10"/></g>
-   <path d="M0 190 Q160 130 330 175 T800 160 V240 H0Z" fill="url(#hill2)"/>
-   <g transform="translate(420 132)">
-    <path d="M-70 26 Q-40 8 0 4 Q40 8 70 26 Q40 18 0 16 Q-40 18 -70 26Z" fill="#3d4f63"/>
-    <path d="M-60 24 Q0 10 60 24 L54 30 Q0 20 -54 30Z" fill="#53677d"/>
-    <rect x="-50" y="30" width="100" height="34" fill="#fff6ea"/>
-    <rect x="-50" y="30" width="6" height="34" fill="#c44b4b"/><rect x="44" y="30" width="6" height="34" fill="#c44b4b"/><rect x="-3" y="30" width="6" height="34" fill="#c44b4b"/>
-    <g fill="none" stroke="#c9a77c" stroke-width="1.6"><rect x="-38" y="36" width="28" height="22"/><rect x="10" y="36" width="28" height="22"/><path d="M-24 36v22M24 36v22M-38 47h28M10 47h28"/></g>
-    <rect x="-56" y="64" width="112" height="6" rx="2" fill="#b08a66"/>
+   <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4eee3"/><stop offset="1" stop-color="#ece3d3"/></linearGradient>
+    <linearGradient id="m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa6ab" stop-opacity=".55"/><stop offset="1" stop-color="#9aa6ab" stop-opacity="0"/></linearGradient>
+    <linearGradient id="m2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5f6d74" stop-opacity=".7"/><stop offset="1" stop-color="#5f6d74" stop-opacity=".05"/></linearGradient>
+    <linearGradient id="m3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e3a40" stop-opacity=".85"/><stop offset="1" stop-color="#2e3a40" stop-opacity=".25"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+    <g id="pb"><circle r="4.2" fill="#b8423a"/><circle r="1.4" fill="#f1d9a8"/></g>
+   </defs>
+   <rect width="800" height="240" fill="url(#paper)"/>
+   <circle cx="610" cy="62" r="30" fill="#e9d8b4" opacity=".8"/>
+   <path d="M300 170 L380 92 L430 128 L500 70 L590 150 L660 104 L800 168 V240 H300Z" fill="url(#m1)" filter="url(#soft)"/>
+   <path d="M220 200 L330 120 L390 160 L470 112 L560 186 L640 142 L800 206 V240 H220Z" fill="url(#m2)" filter="url(#soft)"/>
+   <path d="M380 240 L470 170 L520 196 L600 150 L700 214 L760 190 L800 210 V240Z" fill="url(#m3)"/>
+   <g stroke="#f6f2ea" stroke-width="2" opacity=".55"><path d="M240 214 H420"/><path d="M300 222 H520"/><path d="M560 228 H760"/></g>
+   <g transform="translate(-10 -18) scale(.92)"><path d="M-6 30 Q60 52 120 44 Q180 36 230 64 Q262 82 292 80" fill="none" stroke="#2a2420" stroke-width="6" stroke-linecap="round"/>
+   <path d="M110 46 Q132 74 168 88" fill="none" stroke="#2a2420" stroke-width="3.5" stroke-linecap="round"/>
+   <path d="M200 52 Q214 30 240 24" fill="none" stroke="#2a2420" stroke-width="3" stroke-linecap="round"/>
+   <use href="#pb" x="52" y="44"/><use href="#pb" x="88" y="52"/><use href="#pb" x="136" y="40"/><use href="#pb" x="150" y="80"/><use href="#pb" x="174" y="90"/><use href="#pb" x="206" y="44"/><use href="#pb" x="236" y="26"/><use href="#pb" x="262" y="76"/><use href="#pb" x="290" y="82"/>
+   <g fill="#b8423a" opacity=".55"><circle cx="196" cy="120" r="2.4"/><circle cx="250" cy="150" r="2"/><circle cx="160" cy="170" r="1.8"/></g>
    </g>
-   <path d="M0 210 Q200 165 420 205 T800 195 V240 H0Z" fill="url(#hill1)"/>
-   <path d="M-10 18 Q90 40 170 30 Q230 24 270 46" fill="none" stroke="#7a4b3a" stroke-width="7" stroke-linecap="round"/>
-   <path d="M120 34 Q150 60 190 66" fill="none" stroke="#7a4b3a" stroke-width="4" stroke-linecap="round"/>
-   <use href="#bl" x="40" y="30"/><use href="#bl" x="72" y="42"/><use href="#bl" x="104" y="28"/><use href="#bl" x="140" y="44"/><use href="#bl" x="168" y="62"/><use href="#bl" x="194" y="70"/><use href="#bl" x="214" y="34"/><use href="#bl" x="246" y="48"/><use href="#bl" x="262" y="40"/><use href="#bl" x="88" y="22"/>
-   <g fill="#ffb7c9" opacity=".8"><circle cx="300" cy="96" r="3"/><circle cx="340" cy="130" r="2.5"/><circle cx="250" cy="120" r="2.5"/><circle cx="610" cy="150" r="3"/></g>
+   <g stroke="#2a2420" stroke-width="1.6" fill="none" opacity=".7"><path d="M520 54 q6 -5 12 0 q6 -5 12 0"/><path d="M548 70 q4 -4 9 0 q4 -4 9 0"/></g>
   </svg>
-  <div class="greet"><div class="hello" id="hello">안녕하세요!</div><div class="fr" id="hellofr">Bonjour Arnaud</div><div class="lvl" id="lvl">🌱 새싹 · Pousse</div></div>
-  <div class="bubble" id="bubble"><b>화이팅!</b>Courage !</div>
-  <div class="mascot" id="mascot"></div>
+  <div class="greet"><div class="hello" id="hello">안녕하세요</div><div class="fr" id="hellofr">Bonjour, Arnaud</div><div class="lvl" id="lvl">새싹 · Pousse</div></div>
+  <div class="seal" aria-hidden="true">단</div>
+  <div class="proverb" id="proverb"><b>천 리 길도 한 걸음부터</b><span>Un voyage de mille lieues commence par un pas</span></div>
  </div>
  <div class="panel hero">
   <div class="ring"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="var(--chip)" stroke-width="12"/><circle id="ringc" cx="60" cy="60" r="52" fill="none" stroke="var(--ok)" stroke-width="12" stroke-linecap="round" stroke-dasharray="327" stroke-dashoffset="327"/></svg><div><b id="goaln">0</b>sur <span id="goalt">30</span></div></div>
@@ -382,30 +373,21 @@ const mastered=()=>ITEMS.filter(i=>(st(i.id)||{}).box>=4).length;
 function streak(){let n=0,d=today();if(!LOG[d])d--;while(LOG[d]&&LOG[d].r>0){n++;d--}return n}
 
 /* ---------- cheer ---------- */
-const TIGER=`<svg viewBox="0 0 140 150" xmlns="http://www.w3.org/2000/svg" aria-label="Horang-i, la mascotte"><ellipse cx="70" cy="144" rx="40" ry="6" fill="#0002"/>
-<path d="M36 112 Q70 96 104 112 L100 140 Q70 148 40 140Z" fill="#ff9f43"/><path d="M52 118 Q70 112 88 118 L86 140 Q70 144 54 140Z" fill="#fff3e6"/>
-<rect x="38" y="112" width="30" height="24" rx="3" fill="#ef5b6b" transform="rotate(-12 53 124)"/><rect x="41" y="115" width="24" height="18" rx="2" fill="#fff" transform="rotate(-12 53 124)"/><path d="M46 121h14M46 126h11" stroke="#ef5b6b" stroke-width="2" transform="rotate(-12 53 124)"/>
-<circle cx="34" cy="34" r="16" fill="#ff9f43"/><circle cx="106" cy="34" r="16" fill="#ff9f43"/><circle cx="34" cy="34" r="8" fill="#ffc2b4"/><circle cx="106" cy="34" r="8" fill="#ffc2b4"/>
-<circle cx="70" cy="66" r="46" fill="#ff9f43"/>
-<path d="M70 22 v14 M58 25 l4 11 M82 25 l-4 11" stroke="#3b2a2a" stroke-width="5" stroke-linecap="round"/>
-<path d="M26 60 h12 M25 72 h11 M114 60 h-12 M115 72 h-11" stroke="#3b2a2a" stroke-width="5" stroke-linecap="round"/>
-<ellipse cx="70" cy="84" rx="26" ry="20" fill="#fff3e6"/>
-<circle cx="53" cy="62" r="6" fill="#2b2335"/><circle cx="87" cy="62" r="6" fill="#2b2335"/><circle cx="55" cy="60" r="2" fill="#fff"/><circle cx="89" cy="60" r="2" fill="#fff"/>
-<path d="M64 76 h12 l-6 6z" fill="#3b2a2a"/><path d="M60 86 q10 9 20 0" fill="none" stroke="#3b2a2a" stroke-width="3" stroke-linecap="round"/>
-<circle cx="42" cy="80" r="6" fill="#ff7f9f" opacity=".55"/><circle cx="98" cy="80" r="6" fill="#ff7f9f" opacity=".55"/></svg>`;
+const TIGER='';
+const PROVERBS=[['천 리 길도 한 걸음부터','Un voyage de mille lieues commence par un pas'],['시작이 반이다','Commencer, c\u2019est déjà la moitié du chemin'],['티끌 모아 태산','Grain de poussière après grain de poussière, on bâtit une montagne'],['낙숫물이 댓돌을 뚫는다','La goutte d\u2019eau finit par percer la pierre'],['배움에는 끝이 없다','Apprendre n\u2019a pas de fin'],['구슬이 서 말이라도 꿰어야 보배','Les perles ne deviennent trésor qu\u2019une fois enfilées'],['백 번 듣는 것이 한 번 보는 것만 못하다','Mieux vaut voir une fois qu\u2019entendre cent fois'],['고생 끝에 낙이 온다','Après la peine vient la joie']];
 const CHEERS=[['화이팅!','Courage, tu vas y arriver !'],['잘하고 있어요!','Tu t\u2019en sors très bien !'],['천천히, 꾸준히','Lentement mais sûrement'],['오늘도 한 걸음!','Encore un pas aujourd\u2019hui !'],['대박!','Génial !'],['최고예요!','Tu es le meilleur !'],['무대는 당신 거예요!','La scène est à toi !'],['브라보, 마에스트로!','Bravo, maestro !'],['조금씩 매일','Un peu chaque jour'],['자랑스러워요!','Je suis fier de toi !']];
-const YAY=['대박!','좋아요!','완벽해요!','잘했어요!','최고!','멋있어요!'];
-const LEVELS=[[0,'🌱 새싹 · Pousse'],[25,'🎒 학생 · Élève'],[75,'🎭 배우 · Comédien'],[150,'🎤 가수 · Chanteur'],[250,'🎼 마에스트로 · Maestro'],[400,'👑 선생님 · Professeur']];
+const YAY=['좋아요','완벽해요','잘했어요','맞아요'];
+const LEVELS=[[0,'새싹 · Pousse'],[25,'학생 · Élève'],[75,'배우 · Comédien'],[150,'가수 · Chanteur'],[250,'마에스트로 · Maestro'],[400,'선생님 · Maître']];
 const pick=a=>a[Math.floor(Math.random()*a.length)];
 const reduced=()=>{try{return matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){return false}};
 function pop(t){if(reduced())return;const e=document.createElement('div');e.className='pop';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),1100)}
-function confetti(n=70){if(reduced())return;const em=['🌸','✨','🎉','💖','⭐','🎶','🧧'];for(let i=0;i<n;i++){const e=document.createElement('span');e.className='conf';e.textContent=pick(em);e.style.left=Math.random()*100+'vw';e.style.animationDuration=(1.6+Math.random()*1.8)+'s';e.style.animationDelay=(Math.random()*.6)+'s';e.style.fontSize=(14+Math.random()*18)+'px';document.body.appendChild(e);setTimeout(()=>e.remove(),4200)}}
-function greet(){const h=new Date().getHours();const [k,f]=h<11?['좋은 아침이에요!','Bon matin, Arnaud']:h<18?['안녕하세요!','Bonjour, Arnaud']:['좋은 저녁이에요!','Bonsoir, Arnaud'];$('#hello').textContent=k;$('#hellofr').textContent=f;
+function confetti(n=24){if(reduced())return;n=Math.min(n,40);const col=['#b8423a','#d77a6f','#e9b9a8','#c99b55'];for(let i=0;i<n;i++){const e=document.createElement('span');e.className='petal';e.style.background=pick(col);e.style.left=Math.random()*100+'vw';e.style.setProperty('--dx',(Math.random()*160-80)+'px');e.style.animationDuration=(3+Math.random()*2.5)+'s';e.style.animationDelay=(Math.random()*1.2)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),7000)}}
+function greet(){const h=new Date().getHours();const [k,f]=h<11?['좋은 아침이에요','Bonjour, Arnaud']:h<18?['안녕하세요','Bonjour, Arnaud']:['좋은 저녁이에요','Bonsoir, Arnaud'];$('#hello').textContent=k;$('#hellofr').textContent=f;
  const m=mastered();let L=LEVELS[0];for(const l of LEVELS)if(m>=l[0])L=l;const nx=LEVELS.find(l=>l[0]>m);$('#lvl').textContent=L[1]+(nx?` · encore ${nx[0]-m} mots`:'');
- const c=pick(CHEERS);$('#bubble').innerHTML=`<b>${c[0]}</b>${c[1]}`;$('#mascot').innerHTML=TIGER}
+ const p=PROVERBS[today()%PROVERBS.length];$('#proverb').innerHTML=`<b>${p[0]}</b><span>${p[1]}</span>`}
 function wod(){const pool=ITEMS.filter(i=>!i.gram&&i.ic);if(!pool.length)return;const i=pool[today()%pool.length];
  $('#wod').innerHTML=`<div class="pic emo">${esc(i.ic)}</div><div><small>Mot du jour · 오늘의 단어 ${badge(i)}</small><div class="k ko">${esc(i.ko)}</div><div class="sub" style="margin:0">${esc(i.fr)}</div></div><div style="display:flex"><button class="ib" data-say="${esc(i.ko)}" aria-label="Écouter">🔊</button><button class="ib star${FAV[i.id]?' on':''}" data-fav="${esc(i.id)}" aria-label="Favori">${FAV[i.id]?'★':'☆'}</button></div>`}
-$('#mascot')&&$('#mascot').addEventListener('click',()=>{const c=pick(CHEERS);$('#bubble').innerHTML=`<b>${c[0]}</b>${c[1]}`;speak(c[0])});
+$('#proverb')&&$('#proverb').addEventListener('click',()=>{const p=pick(PROVERBS);$('#proverb').innerHTML=`<b>${p[0]}</b><span>${p[1]}</span>`;speak(p[0])});
 
 /* ---------- home ---------- */
 function renderHome(){
@@ -414,7 +396,7 @@ function renderHome(){
  $('#goaln').textContent=L.r;$('#goalt').textContent=CFG.goal;
  $('#ringc').style.strokeDashoffset=327-327*Math.min(1,L.r/CFG.goal);
  $('#sdue').textContent=due;$('#snew').textContent=fresh;$('#sstreak').textContent=streak();$('#smast').textContent=mastered();
- $('#hmsg').textContent=L.r>=CFG.goal?'Objectif du jour atteint, 잘했어요 ! 🎉':(due+fresh?`${due+fresh} cartes t'attendent aujourd'hui ✨`:'Rien à revoir aujourd\u2019hui : choisis un thème 🌸');
+ $('#hmsg').textContent=L.r>=CFG.goal?'Objectif du jour atteint — 참 잘했어요':(due+fresh?`${due+fresh} cartes t'attendent aujourd'hui`:'Rien à revoir aujourd\u2019hui : choisis un thème');
  greet();wod();
 }
 
@@ -433,9 +415,9 @@ function curDir(){return dir==='mix'?['kf','fk','pk'][Math.floor(Math.random()*3
 function next(){
  const b=$('#sbody');$('#pbar').style.width=(S.done/S.total*100)+'%';$('#pcount').textContent=`${S.done}/${S.total}`;
  S.cur=S.q.shift();
- if(!S.cur){const c=pick(CHEERS),rate=S.done?S.ok/S.done:0;b.innerHTML=`<div class="done panel"><div class="mascotbig">${TIGER}</div><h2 style="justify-content:center">${rate>=.8?'대박! Séance brillante':'Séance terminée, 수고했어요 !'}</h2><p class="sub">${S.ok} bonnes réponses sur ${S.done} · <span class="ko">${c[0]}</span> ${c[1]}</p><div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap"><button class="btn pri" id="again">Continuer</button><button class="btn" id="home">Retour</button></div></div>`;
-  $('#again').onclick=()=>startSession(S.mode);$('#home').onclick=()=>location.hash='home';renderHome();renderStats();confetti(S.done>=5?80:30);
-  const T=today();if((LOG[T]||{}).r>=CFG.goal&&!LS.get('goal-'+T,0)){LS.set('goal-'+T,1);setTimeout(()=>{confetti(120);toast('🎯 Objectif du jour atteint ! 잘했어요 !')},700)}return}
+ if(!S.cur){const c=pick(CHEERS),rate=S.done?S.ok/S.done:0;b.innerHTML=`<div class="done panel"><div class="stamp">${rate>=.8?'참<br>잘했어요':'수고<br>했어요'}<small>${rate>=.8?'TRÈS BIEN':'BEAU TRAVAIL'}</small></div><h2 style="justify-content:center">${rate>=.8?'Très belle séance':'Séance terminée'}</h2><p class="sub">${S.ok} bonnes réponses sur ${S.done} · <span class="ko">${c[0]}</span> ${c[1]}</p><div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap"><button class="btn pri" id="again">Continuer</button><button class="btn" id="home">Retour</button></div></div>`;
+  $('#again').onclick=()=>startSession(S.mode);$('#home').onclick=()=>location.hash='home';renderHome();renderStats();confetti(S.done>=5?28:12);
+  const T=today();if((LOG[T]||{}).r>=CFG.goal&&!LS.get('goal-'+T,0)){LS.set('goal-'+T,1);setTimeout(()=>{confetti(40);toast('Objectif du jour atteint — 참 잘했어요')},700)}return}
  const i=S.cur,d=curDir();S.d=d;
  if(S.mode==='cards')cardsView(b,i,d);else if(S.mode==='quiz')quizView(b,i,d==='pk'?'kf':d);else if(S.mode==='listen')listenView(b,i);else writeView(b,i);
 }
