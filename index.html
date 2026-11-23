@@ -295,6 +295,11 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
   <div class="set"><span>Lecture automatique<small>Prononcer le coréen à chaque carte</small></span><input type="checkbox" id="sauto" checked style="width:26px;height:26px"></div>
   <div class="set"><span>Tester la voix coréenne</span><button class="btn sm" id="stest">🔊 안녕하세요</button></div>
  </div>
+ <h2>Synchronisation</h2>
+ <div class="panel">
+  <p class="sub" style="margin-top:0">Connecte-toi avec ton compte Google sur chaque appareil (tablette, téléphone…) : progression, favoris, mots ajoutés et photos se synchronisent automatiquement dès qu'il y a du réseau.</p>
+  <div class="set"><span id="syncstate">Non connecté<small>Les données restent sur cet appareil</small></span><span><button class="btn pri sm" id="sgin">Se connecter avec Google</button> <button class="btn sm" id="sgout" style="display:none">Se déconnecter</button></span></div>
+ </div>
  <h2>Pastilles</h2>
  <div class="panel">
   <p class="sub" style="margin-top:0">Chaque mot affiche une pastille : <b>In-young</b> pour les mots vus en cours, <b>toi</b> pour ceux que tu ajoutes. Choisis une photo pour chacun : elle reste uniquement sur cette tablette.</p>
@@ -336,7 +341,7 @@ const today=()=>Math.floor((Date.now()-new Date().getTimezoneOffset()*60000)/864
 const INT=[0,1,2,4,7,14,30,60,120];
 let D=null, ITEMS=[], deck='today', dir='kf';
 let SRS=LS.get('srs',{}), FAV=LS.get('fav',{}), OWN=LS.get('own',[]), LOG=LS.get('log',{}), CFG=Object.assign({goal:30,newd:15,rate:.85,auto:true},LS.get('cfg',{}));
-const saveAll=()=>{LS.set('srs',SRS);LS.set('fav',FAV);LS.set('own',OWN);LS.set('log',LOG);LS.set('cfg',CFG)};
+const saveAll=()=>{LS.set('srs',SRS);LS.set('fav',FAV);LS.set('own',OWN);LS.set('log',LOG);LS.set('cfg',CFG);syncSoon()};
 function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),2600)}
 function speak(t){try{const u=new SpeechSynthesisUtterance(String(t).replace(/\[.*?\]|\(.*?\)/g,'').split(' / ')[0]);u.lang='ko-KR';u.rate=CFG.rate;const v=speechSynthesis.getVoices().find(v=>/^ko/i.test(v.lang));if(v)u.voice=v;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
 const coursOf=c=>String(c||'').split('·').map(x=>parseInt(x)).filter(n=>!isNaN(n));
@@ -347,7 +352,7 @@ function build(){
  D.sections.forEach(s=>s.items.forEach(i=>ITEMS.push({id:i.ko,ko:i.ko,fr:i.fr,ic:i.ic,c:i.c,th:s.title})));
  D.nombres.forEach(i=>ITEMS.push({id:i.ko,ko:i.ko,fr:i.fr,ic:i.ic,c:i.c,th:'Les nombres'}));
  D.grammaire.forEach(g=>g.rows.forEach(r=>ITEMS.push({id:'G:'+r.form,ko:r.form,fr:r.sens,ex:r.ex+' — '+r.tr,ic:r.ic,c:r.c,th:'Grammaire',gram:1})));
- OWN.forEach(o=>ITEMS.push({id:'M:'+o.ko,ko:o.ko,fr:o.fr,ic:o.ic||'✏️',c:'',th:o.th||'Mes mots',own:1}));
+ OWN.filter(o=>!o.del).forEach(o=>ITEMS.push({id:'M:'+o.ko,ko:o.ko,fr:o.fr,ic:o.ic||'✏️',c:'',th:o.th||'Mes mots',own:1}));
  const last=D.cours[D.cours.length-1];
  $('#hsub').textContent=`Cours 1 à ${last.n} avec In-young · carnet du ${D.updated.split('-').reverse().join('/')}`;
  $('#sver').textContent=`${ITEMS.length} entrées · mis à jour le ${D.updated.split('-').reverse().join('/')}`;
@@ -366,7 +371,7 @@ function pool(k=deck){
   const doneNew=(LOG[T]||{}).n||0, fresh=ITEMS.filter(i=>!st(i.id)&&!i.gram).slice(0,Math.max(0,CFG.newd-doneNew));return [...due,...fresh]}
  if(k==='all')return ITEMS;
  if(k==='hard')return ITEMS.filter(i=>{const s=st(i.id);return s&&(s.box<=2||s.lapses>=2)});
- if(k==='fav')return ITEMS.filter(i=>FAV[i.id]);
+ if(k==='fav')return ITEMS.filter(i=>FAV[i.id]>0);
  if(k==='mine')return ITEMS.filter(i=>i.own);
  if(k==='last'){const n=D.cours[D.cours.length-1].n;return ITEMS.filter(i=>coursOf(i.c).includes(n))}
  if(k.startsWith('c:')){const n=+k.slice(2);return ITEMS.filter(i=>coursOf(i.c).includes(n))}
@@ -375,7 +380,7 @@ function pool(k=deck){
 function grade(item,q){ // q: 0 raté, 1 difficile, 2 facile
  const T=today();let s=SRS[item.id];const isNew=!s;
  if(!s)s={box:0,due:T,reps:0,lapses:0,ok:0};
- s.reps++;
+ s.reps++;s.t=Date.now();
  if(q===0){if(s.box>1)s.lapses++;s.box=0;s.due=T}
  else if(q===1){s.box=Math.max(1,s.box);s.due=T+Math.max(1,Math.round(INT[s.box]/2));s.ok++}
  else{s.box=Math.min(INT.length-1,s.box+1);s.due=T+INT[s.box];s.ok++}
@@ -400,7 +405,7 @@ function greet(){const h=new Date().getHours();const [k,f]=h<11?['좋은 아침�
  const m=mastered();let L=LEVELS[0];for(const l of LEVELS)if(m>=l[0])L=l;const nx=LEVELS.find(l=>l[0]>m);$('#lvl').textContent=L[1]+(nx?` · encore ${nx[0]-m} mots`:'');
  const p=PROVERBS[today()%PROVERBS.length];$('#proverb').innerHTML=`<b>${p[0]}</b><span>${p[1]}</span>`}
 function wod(){const pool=ITEMS.filter(i=>!i.gram&&i.ic);if(!pool.length)return;const i=pool[today()%pool.length];
- $('#wod').innerHTML=`<div class="pic emo">${esc(i.ic)}</div><div><small>Mot du jour · 오늘의 단어 ${badge(i)}</small><div class="k ko">${esc(i.ko)}</div><div class="sub" style="margin:0">${esc(i.fr)}</div></div><div style="display:flex"><button class="ib" data-say="${esc(i.ko)}" aria-label="Écouter">🔊</button><button class="ib star${FAV[i.id]?' on':''}" data-fav="${esc(i.id)}" aria-label="Favori">${FAV[i.id]?'★':'☆'}</button></div>`}
+ $('#wod').innerHTML=`<div class="pic emo">${esc(i.ic)}</div><div><small>Mot du jour · 오늘의 단어 ${badge(i)}</small><div class="k ko">${esc(i.ko)}</div><div class="sub" style="margin:0">${esc(i.fr)}</div></div><div style="display:flex"><button class="ib" data-say="${esc(i.ko)}" aria-label="Écouter">🔊</button><button class="ib star${FAV[i.id]>0?' on':''}" data-fav="${esc(i.id)}" aria-label="Favori">${FAV[i.id]>0?'★':'☆'}</button></div>`}
 $('#proverb')&&$('#proverb').addEventListener('click',()=>{const p=pick(PROVERBS);$('#proverb').innerHTML=`<b>${p[0]}</b><span>${p[1]}</span>`;speak(p[0])});
 
 /* ---------- home ---------- */
@@ -437,7 +442,7 @@ function next(){
 }
 function after(q){if(q===2&&Math.random()<.35)pop(pick(YAY));grade(S.cur,q);S.done++;if(q>0)S.ok++;else{S.q.splice(Math.min(S.q.length,3),0,S.cur);S.total++}next()}
 const metaT=i=>i.own?'mon mot':(i.c?'cours '+i.c:'');
-let AV={iy:LS.get('av-iy',''),me:LS.get('av-me','')};
+let AV={iy:LS.get('av-iy',''),me:LS.get('av-me','')},AVT=LS.get('avt',{iy:0,me:0});
 const avatar=w=>`<span class="av ${w}">${AV[w]?`<img src="${AV[w]}" alt="">`:(w==='iy'?'인':'A')}</span>`;
 function badge(i){if(i.own)return `<span class="bdg" title="Ajouté par toi">${avatar('me')}moi</span>`;if(!i.c)return '';return `<span class="bdg" title="Vu en cours avec In-young">${avatar('iy')}${esc(String(i.c).replace(/·/g,' · '))}</span>`}
 function cardsView(b,i,d){
@@ -480,14 +485,14 @@ function writeView(b,i){
 
 /* ---------- carnet ---------- */
 let theme='Tous';
-const row=(i,del)=>`<div class="it"><div class="e emo">${esc(i.ic)}</div><div class="k ko"><span class="lv l${(st(i.id)||{box:0}).box}"></span>${esc(i.ko)}</div><div class="f">${esc(i.fr)}${badge(i)}</div><button class="ib" data-say="${esc(i.ko)}" aria-label="Écouter">🔊</button>${del?`<button class="ib" data-del="${esc(i.ko)}" aria-label="Supprimer">🗑️</button>`:`<button class="ib star${FAV[i.id]?' on':''}" data-fav="${esc(i.id)}" aria-label="Favori">${FAV[i.id]?'★':'☆'}</button>`}</div>`;
+const row=(i,del)=>`<div class="it"><div class="e emo">${esc(i.ic)}</div><div class="k ko"><span class="lv l${(st(i.id)||{box:0}).box}"></span>${esc(i.ko)}</div><div class="f">${esc(i.fr)}${badge(i)}</div><button class="ib" data-say="${esc(i.ko)}" aria-label="Écouter">🔊</button>${del?`<button class="ib" data-del="${esc(i.ko)}" aria-label="Supprimer">🗑️</button>`:`<button class="ib star${FAV[i.id]>0?' on':''}" data-fav="${esc(i.id)}" aria-label="Favori">${FAV[i.id]>0?'★':'☆'}</button>`}</div>`;
 function renderCarnet(){
  const n=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');const q=n($('#q').value.trim());
  const groups=[...D.sections.map(s=>({t:s.title,sub:s.sub,ic:s.icon,items:ITEMS.filter(i=>i.th===s.title)})),{t:'Les nombres',sub:'Compteurs et quantités',ic:'🔢',items:ITEMS.filter(i=>i.th==='Les nombres')},
   {t:'Prononciation',sub:'Les pièges signalés par In-young',ic:'🗣️',items:D.prononciation.map(i=>({id:'P:'+i.ko,...i}))},{t:'Mes mots',sub:'Ajoutés par toi',ic:'✏️',items:ITEMS.filter(i=>i.own&&i.th==='Mes mots')}];
  let html='';
  for(const g of groups){if(theme!=='Tous'&&theme!=='⭐ Favoris'&&g.t!==theme)continue;
-  const its=g.items.filter(i=>(!q||n(i.ko+' '+i.fr).includes(q))&&(theme!=='⭐ Favoris'||FAV[i.id]));
+  const its=g.items.filter(i=>(!q||n(i.ko+' '+i.fr).includes(q))&&(theme!=='⭐ Favoris'||FAV[i.id]>0));
   if(its.length)html+=`<h2>${esc(g.t)}<span class="emo">${esc(g.ic)}</span></h2><p class="sub">${esc(g.sub)} · ${its.length} entrées</p><div class="list">${its.map(i=>row(i)).join('')}</div>`}
  $('#clist').innerHTML=html||'<p class="empty"><span class="emo">🔍</span>Rien trouvé… essaie un autre mot.</p>';
 }
@@ -495,7 +500,7 @@ function renderGram(){
  $('#glist').innerHTML=D.grammaire.map(g=>`<h2>${esc(g.title)}</h2><div class="list g">${g.rows.map(r=>`<div class="it"><div class="e emo">${esc(r.ic)}</div><div class="fm ko">${esc(r.form)}</div><div><div>${esc(r.sens)}</div><div class="ex ko" style="margin-top:2px;font-size:14px">${esc(r.ex)} — ${esc(r.tr)}</div></div><button class="ib" data-say="${esc(r.ex)}">🔊</button></div>`).join('')}</div>`).join('')
  +`<h2>것 et ses contractions</h2><div class="list g">${D.geot.map(r=>`<div class="it"><div class="e emo">${esc(r.ic)}</div><div class="fm ko">${esc(r.form)}</div><div><div>${esc(r.sens)}</div><div class="ex ko" style="font-size:14px">${esc(r.ex)}</div></div><button class="ib" data-say="${esc(r.ex)}">🔊</button></div>`).join('')}</div>`;
 }
-function renderMine(){$('#minec').textContent=OWN.length;$('#mlist').innerHTML=OWN.length?`<div class="list">${OWN.map(o=>row({id:'M:'+o.ko,ko:o.ko,fr:o.fr,ic:o.ic||'✏️',own:1},1)).join('')}</div>`:'<p class="empty">Aucun mot ajouté pour l’instant.</p>'}
+function renderMine(){const L=OWN.filter(o=>!o.del);$('#minec').textContent=L.length;$('#mlist').innerHTML=L.length?`<div class="list">${L.map(o=>row({id:'M:'+o.ko,ko:o.ko,fr:o.fr,ic:o.ic||'✏️',own:1},1)).join('')}</div>`:'<p class="empty">Aucun mot ajouté pour l’instant.</p>'}
 
 /* ---------- stats ---------- */
 function renderStats(){
@@ -522,18 +527,18 @@ $$('.mode').forEach(b=>b.addEventListener('click',()=>startSession(b.dataset.mod
 $('#quit').onclick=()=>{S=null;location.hash='home'};
 document.addEventListener('click',e=>{
  const s=e.target.closest('[data-say]');if(s){speak(s.dataset.say||(S&&S.cur?S.cur.ko:''));return}
- const f=e.target.closest('[data-fav]');if(f){const id=f.dataset.fav;FAV[id]?delete FAV[id]:FAV[id]=1;saveAll();f.classList.toggle('on',!!FAV[id]);f.textContent=FAV[id]?'★':'☆';return}
- const d=e.target.closest('[data-del]');if(d){OWN=OWN.filter(o=>o.ko!==d.dataset.del);saveAll();build();toast('Mot supprimé')}
+ const f=e.target.closest('[data-fav]');if(f){const id=f.dataset.fav,on=FAV[id]>0;FAV[id]=on?-Date.now():Date.now();saveAll();f.classList.toggle('on',!on);f.textContent=!on?'★':'☆';return}
+ const d=e.target.closest('[data-del]');if(d){OWN.forEach(o=>{if(o.ko===d.dataset.del){o.del=1;o.t=Date.now()}});saveAll();build();toast('Mot supprimé')}
 });
 $('#q').addEventListener('input',renderCarnet);
 $('#themes').addEventListener('click',e=>{const b=e.target.closest('[data-t]');if(!b)return;theme=b.dataset.t;$$('#themes .chip').forEach(c=>c.classList.toggle('on',c===b));renderCarnet()});
 $('#addf').addEventListener('submit',e=>{e.preventDefault();const ko=$('#nko').value.trim(),fr=$('#nfr').value.trim();if(!ko||!fr)return;
  if(ITEMS.some(i=>i.ko===ko)){toast('Ce mot est déjà dans le carnet');return}
- OWN.push({ko,fr,ic:$('#nic').value.trim(),th:$('#nth').value,added:Date.now()});saveAll();build();e.target.reset();toast('Ajouté : '+ko)});
+ OWN=OWN.filter(o=>o.ko!==ko);OWN.push({ko,fr,ic:$('#nic').value.trim(),th:$('#nth').value,added:Date.now(),t:Date.now()});saveAll();build();e.target.reset();toast('Ajouté : '+ko)});
 /* settings */
 $('#sgoal').value=CFG.goal;$('#snewd').value=CFG.newd;$('#srate').value=CFG.rate;$('#sauto').checked=CFG.auto;
-$('#sgoal').onchange=e=>{CFG.goal=+e.target.value;saveAll();renderHome()};$('#snewd').onchange=e=>{CFG.newd=+e.target.value;saveAll();renderHome()};
-$('#srate').oninput=e=>{CFG.rate=+e.target.value;saveAll()};$('#sauto').onchange=e=>{CFG.auto=e.target.checked;saveAll()};
+$('#sgoal').onchange=e=>{CFG.t=Date.now();CFG.goal=+e.target.value;saveAll();renderHome()};$('#snewd').onchange=e=>{CFG.t=Date.now();CFG.newd=+e.target.value;saveAll();renderHome()};
+$('#srate').oninput=e=>{CFG.t=Date.now();CFG.rate=+e.target.value;saveAll()};$('#sauto').onchange=e=>{CFG.t=Date.now();CFG.auto=e.target.checked;saveAll()};
 $('#stest').onclick=()=>{speak('안녕하세요');setTimeout(()=>{try{if(!speechSynthesis.getVoices().some(v=>/^ko/i.test(v.lang)))toast('Aucune voix coréenne trouvée : ajoute le coréen dans la synthèse vocale de la tablette')}catch(e){}},400)};
 function readFile(inp,cb){const f=inp.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{cb(JSON.parse(r.result))}catch(e){toast('Fichier illisible')}inp.value=''};r.readAsText(f)}
 function useVocab(j,src){if(!j||!j.sections||!j.cours){toast('Ce fichier n’est pas un carnet');return false}
@@ -544,16 +549,56 @@ $('#supd').onclick=()=>checkUpdate(true);
 $('#sexp').onclick=async()=>{const data=JSON.stringify({app:'dj',when:new Date().toISOString(),srs:SRS,fav:FAV,own:OWN,log:LOG,cfg:CFG,av:AV});
  try{if(/claude/.test(location.hostname))throw 0;const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type:'application/json'}));a.download='coreen-progression-'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(a);a.click();a.remove();toast('Sauvegarde téléchargée')}
  catch(e){try{await navigator.clipboard.writeText(data);toast('Sauvegarde copiée dans le presse-papiers')}catch(_){toast('Export impossible ici')}}};
-$('#simp').onchange=e=>readFile(e.target,j=>{if(j.app!=='dj'){toast('Ce n’est pas une sauvegarde');return}SRS=j.srs||{};FAV=j.fav||{};OWN=j.own||[];LOG=j.log||{};CFG=Object.assign(CFG,j.cfg||{});if(j.av){AV=j.av;LS.set('av-iy',AV.iy||'');LS.set('av-me',AV.me||'');renderAv()}saveAll();build();toast('Progression restaurée')});
+$('#simp').onchange=e=>readFile(e.target,j=>{if(j.app!=='dj'){toast('Ce n’est pas une sauvegarde');return}SRS=j.srs||{};FAV=j.fav||{};OWN=j.own||[];LOG=j.log||{};CFG.t=Date.now();CFG=Object.assign(CFG,j.cfg||{});if(j.av){AV=j.av;LS.set('av-iy',AV.iy||'');LS.set('av-me',AV.me||'');renderAv()}saveAll();build();toast('Progression restaurée')});
 $('#sreset').onclick=()=>{const b=$('#sreset');if(b.dataset.c){SRS={};LOG={};saveAll();build();b.textContent='Remettre à zéro';delete b.dataset.c;toast('Progression remise à zéro')}else{b.dataset.c=1;b.textContent='Toucher encore pour confirmer';setTimeout(()=>{b.textContent='Remettre à zéro';delete b.dataset.c},4000)}};
 /* avatars */
 function renderAv(){$('#av-iy-box').innerHTML=avatar('iy')+'<span><b>In-young</b><small style="display:block;color:var(--soft)">mots des cours</small></span>';$('#av-me-box').innerHTML=avatar('me')+'<span><b>Moi</b><small style="display:block;color:var(--soft)">mots ajoutés à la main</small></span>'}
 document.addEventListener('change',e=>{const inp=e.target.closest('[data-av]');if(!inp||!inp.files[0])return;const w=inp.dataset.av,f=inp.files[0],img=new Image(),u=URL.createObjectURL(f);
  img.onload=()=>{const c=document.createElement('canvas'),S=128;c.width=c.height=S;const x=c.getContext('2d'),m=Math.min(img.width,img.height);x.drawImage(img,(img.width-m)/2,(img.height-m)/2,m,m,0,0,S,S);
-  AV[w]=c.toDataURL('image/jpeg',.85);LS.set('av-'+w,AV[w]);URL.revokeObjectURL(u);inp.value='';renderAv();build();toast('Photo enregistrée sur la tablette')};
+  AV[w]=c.toDataURL('image/jpeg',.85);LS.set('av-'+w,AV[w]);AVT[w]=Date.now();LS.set('avt',AVT);syncSoon();URL.revokeObjectURL(u);inp.value='';renderAv();build();toast('Photo enregistrée sur la tablette')};
  img.onerror=()=>toast('Image illisible');img.src=u});
-document.addEventListener('click',e=>{const d=e.target.closest('[data-avdel]');if(!d)return;const w=d.dataset.avdel;AV[w]='';LS.set('av-'+w,'');renderAv();build()});
+document.addEventListener('click',e=>{const d=e.target.closest('[data-avdel]');if(!d)return;const w=d.dataset.avdel;AV[w]='';AVT[w]=Date.now();LS.set('avt',AVT);syncSoon();LS.set('av-'+w,'');renderAv();build()});
 renderAv();
+/* ---------- sync (Firebase) ---------- */
+const FB_CFG={"apiKey": "AIzaSyCJPTHJ6JOwx2JD_NAMl_CyJbq9jG8x5Qs", "authDomain": "danojang-coreen.firebaseapp.com", "projectId": "danojang-coreen", "storageBucket": "danojang-coreen.firebasestorage.app", "messagingSenderId": "1043089385709", "appId": "1:1043089385709:web:61baed2db991b3548284e4"};
+let FB=null,USER=null,syncT=null,lastRemote='',lastSync=LS.get('lastsync',0);
+const ONLINE_SYNC=location.protocol==='https:'&&!/claude/.test(location.hostname);
+function stateObj(){return {srs:SRS,fav:FAV,own:OWN,log:LOG,cfg:CFG,av:AV,avt:AVT,v:1}}
+function mergeIn(r){if(!r)return false;let ch=false;
+ for(const k in (r.srs||{})){const a=SRS[k],b=r.srs[k];if(!a||(b.t||0)>(a.t||0)||(!b.t&&!a.t&&b.reps>a.reps)){SRS[k]=b;ch=true}}
+ for(const k in (r.fav||{})){if(Math.abs(r.fav[k])>Math.abs(FAV[k]||0)){FAV[k]=r.fav[k];ch=true}}
+ const om=new Map(OWN.map(o=>[o.ko,o]));for(const o of (r.own||[])){const m=om.get(o.ko);if(!m||(o.t||o.added||0)>(m.t||m.added||0)){om.set(o.ko,o);ch=true}}OWN=[...om.values()];
+ for(const d in (r.log||{})){const a=LOG[d]||{r:0,ok:0,n:0},b=r.log[d];const m={r:Math.max(a.r,b.r||0),ok:Math.max(a.ok,b.ok||0),n:Math.max(a.n||0,b.n||0)};if(JSON.stringify(m)!==JSON.stringify(LOG[d])){LOG[d]=m;ch=true}}
+ if(r.cfg&&(r.cfg.t||0)>(CFG.t||0)){CFG=Object.assign(CFG,r.cfg);ch=true;try{$('#sgoal').value=CFG.goal;$('#snewd').value=CFG.newd;$('#srate').value=CFG.rate;$('#sauto').checked=CFG.auto}catch(e){}}
+ for(const w of ['iy','me']){if(r.avt&&(r.avt[w]||0)>(AVT[w]||0)){AV[w]=(r.av||{})[w]||'';AVT[w]=r.avt[w];LS.set('av-'+w,AV[w]);ch=true}}
+ LS.set('avt',AVT);LS.set('srs',SRS);LS.set('fav',FAV);LS.set('own',OWN);LS.set('log',LOG);LS.set('cfg',CFG);
+ return ch}
+function renderSync(msg){const st=$('#syncstate');if(!st)return;
+ if(!ONLINE_SYNC){st.innerHTML='Synchronisation indisponible ici<small>Utilise l\u2019appli installée (github.io)</small>';$('#sgin').style.display='none';return}
+ if(USER){st.innerHTML=`Connecté : ${esc(USER.email||USER.displayName||'')}<small>${msg||('Dernière synchro : '+(lastSync?new Date(lastSync).toLocaleString('fr-FR',{dateStyle:'short',timeStyle:'short'}):'—'))}</small>`;$('#sgin').style.display='none';$('#sgout').style.display=''}
+ else{st.innerHTML=`Non connecté<small>${msg||'Les données restent sur cet appareil'}</small>`;$('#sgin').style.display='';$('#sgout').style.display='none'}
+ const p=$('#netpill');if(p&&USER&&navigator.onLine)p.textContent='En ligne · synchronisé'}
+async function fbInit(){if(FB)return FB;const b='https://www.gstatic.com/firebasejs/10.12.2/';
+ const [app,auth,fs]=await Promise.all([import(b+'firebase-app.js'),import(b+'firebase-auth.js'),import(b+'firebase-firestore.js')]);
+ const a=app.initializeApp(FB_CFG),au=auth.getAuth(a);let db;try{db=fs.initializeFirestore(a,{localCache:fs.persistentLocalCache()})}catch(e){db=fs.getFirestore(a)}
+ try{await auth.setPersistence(au,auth.browserLocalPersistence)}catch(e){}
+ FB={auth,fs,au,db};auth.getRedirectResult(au).catch(()=>{});
+ auth.onAuthStateChanged(au,u=>{USER=u;LS.set('signedin',!!u);renderSync();if(u)listen()});return FB}
+let unsub=null;
+function listen(){if(unsub)unsub();const {fs,db}=FB,ref=fs.doc(db,'users',USER.uid);
+ unsub=fs.onSnapshot(ref,snap=>{const r=snap.exists()?snap.data():null;lastRemote=r?JSON.stringify(r):'';
+  if(r&&mergeIn(r)){build();renderAv&&renderAv()}
+  if(!snap.metadata.hasPendingWrites&&!snap.metadata.fromCache){lastSync=Date.now();LS.set('lastsync',lastSync)}
+  renderSync();syncSoon(300)},e=>renderSync('Erreur de synchronisation : '+e.code))}
+function syncSoon(ms=1500){if(!USER||!FB)return;clearTimeout(syncT);syncT=setTimeout(pushNow,ms)}
+async function pushNow(){if(!USER||!FB)return;const st=stateObj(),js=JSON.stringify(st);if(js===lastRemote)return;
+ try{await FB.fs.setDoc(FB.fs.doc(FB.db,'users',USER.uid),st);lastRemote=js}catch(e){renderSync('Envoi en attente : '+(e.code||'hors connexion'))}}
+$('#sgin').onclick=async()=>{try{await fbInit();const p=new FB.auth.GoogleAuthProvider();p.setCustomParameters({prompt:'select_account'});
+ try{await FB.auth.signInWithPopup(FB.au,p)}catch(e){if(/popup/.test(e.code||''))await FB.auth.signInWithRedirect(FB.au,p);else throw e}
+ toast('Connecté : la synchronisation est active')}catch(e){toast('Connexion impossible ('+(e.code||e.message||'erreur')+')')}};
+$('#sgout').onclick=async()=>{try{await fbInit();if(unsub)unsub();unsub=null;await FB.auth.signOut(FB.au);toast('Déconnecté : les données restent sur cet appareil')}catch(e){}};
+renderSync();
+if(ONLINE_SYNC&&LS.get('signedin',false))fbInit().catch(()=>renderSync('Synchronisation reprendra avec le réseau'));
 /* online / updates */
 function net(){const on=navigator.onLine;$('#netpill').textContent=on?'En ligne':'Hors connexion';$('#netpill').classList.toggle('off',!on);if(on)checkUpdate(false)}
 async function checkUpdate(manual){try{const r=await fetch('vocab.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0;const j=await r.json();
