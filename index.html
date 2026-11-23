@@ -137,6 +137,7 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
  .g .it{grid-template-columns:32px minmax(0,1fr)}.g .it>.fm{grid-column:2;grid-row:1}.g .it>div:nth-child(3){grid-column:2;grid-row:2}.g .it>.ib{display:none}
  .cours .it{grid-template-columns:36px 54px minmax(0,1fr)}.cours .it>*{grid-row:auto!important;grid-column:auto!important}
 }
+input[type=range],input[type=checkbox]{accent-color:var(--red)}
 /* ---- ink & hanji layer ---- */
 .panel,.mode,.list,.qcard,.face,.opt{border-radius:16px}
 .panel{box-shadow:0 1px 0 var(--line),0 12px 28px -24px #0006}
@@ -291,7 +292,10 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
  <div class="panel">
   <div class="set"><span>Objectif quotidien<small>Nombre de réponses par jour</small></span><select class="inp" style="width:auto" id="sgoal"><option>15</option><option>20</option><option selected>30</option><option>50</option><option>80</option></select></div>
   <div class="set"><span>Nouveaux mots par jour</span><select class="inp" style="width:auto" id="snewd"><option>5</option><option>10</option><option selected>15</option><option>25</option><option>40</option></select></div>
-  <div class="set"><span>Vitesse de la voix</span><input type="range" id="srate" min="0.5" max="1.2" step="0.05" value="0.85" style="width:180px"></div>
+  <div class="set"><span>Voix coréenne<small id="svoicen">Voix de l'appareil</small></span><select class="inp" style="width:auto;max-width:260px" id="svoice"><option value="">Voix par défaut de l'appareil</option></select></div>
+  <div class="set"><span>Style de voix</span><span style="display:flex;gap:6px;flex-wrap:wrap"><button class="btn sm" data-vp="calme">🌙 Douce et calme</button><button class="btn sm" data-vp="normal">Naturelle</button><button class="btn sm" data-vp="grave">Plus grave</button></span></div>
+  <div class="set"><span>Hauteur<small>← plus grave · plus aigu →</small></span><input type="range" id="spitch" min="0.5" max="1.3" step="0.05" value="0.85" style="width:180px"></div>
+  <div class="set"><span>Vitesse<small>← plus lent · plus rapide →</small></span><input type="range" id="srate" min="0.5" max="1.2" step="0.05" value="0.8" style="width:180px"></div>
   <div class="set"><span>Lecture automatique<small>Prononcer le coréen à chaque carte</small></span><input type="checkbox" id="sauto" checked style="width:26px;height:26px"></div>
   <div class="set"><span>Tester la voix coréenne</span><button class="btn sm" id="stest">🔊 안녕하세요</button></div>
  </div>
@@ -340,10 +344,11 @@ const LS={get(k,d){try{const v=localStorage.getItem('dj-'+k);return v==null?d:JS
 const today=()=>Math.floor((Date.now()-new Date().getTimezoneOffset()*60000)/864e5);
 const INT=[0,1,2,4,7,14,30,60,120];
 let D=null, ITEMS=[], deck='today', dir='kf';
-let SRS=LS.get('srs',{}), FAV=LS.get('fav',{}), OWN=LS.get('own',[]), LOG=LS.get('log',{}), CFG=Object.assign({goal:30,newd:15,rate:.85,auto:true},LS.get('cfg',{}));
+let SRS=LS.get('srs',{}), FAV=LS.get('fav',{}), OWN=LS.get('own',[]), LOG=LS.get('log',{}), CFG=Object.assign({goal:30,newd:15,rate:.8,pitch:.85,voice:'',auto:true},LS.get('cfg',{}));
 const saveAll=()=>{LS.set('srs',SRS);LS.set('fav',FAV);LS.set('own',OWN);LS.set('log',LOG);LS.set('cfg',CFG);syncSoon()};
 function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),2600)}
-function speak(t){try{const u=new SpeechSynthesisUtterance(String(t).replace(/\[.*?\]|\(.*?\)/g,'').split(' / ')[0]);u.lang='ko-KR';u.rate=CFG.rate;const v=speechSynthesis.getVoices().find(v=>/^ko/i.test(v.lang));if(v)u.voice=v;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
+const koVoices=()=>{try{return speechSynthesis.getVoices().filter(v=>/^ko/i.test(v.lang))}catch(e){return []}};
+function speak(t){try{const u=new SpeechSynthesisUtterance(String(t).replace(/\[.*?\]|\(.*?\)/g,'').split(' / ')[0]);u.lang='ko-KR';u.rate=CFG.rate;u.pitch=CFG.pitch??.85;const vs=koVoices();const v=vs.find(v=>v.voiceURI===CFG.voice||v.name===CFG.voice)||vs.find(v=>v.localService)||vs[0];if(v)u.voice=v;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
 const coursOf=c=>String(c||'').split('·').map(x=>parseInt(x)).filter(n=>!isNaN(n));
 
 /* ---------- data ---------- */
@@ -539,6 +544,13 @@ $('#addf').addEventListener('submit',e=>{e.preventDefault();const ko=$('#nko').v
 $('#sgoal').value=CFG.goal;$('#snewd').value=CFG.newd;$('#srate').value=CFG.rate;$('#sauto').checked=CFG.auto;
 $('#sgoal').onchange=e=>{CFG.t=Date.now();CFG.goal=+e.target.value;saveAll();renderHome()};$('#snewd').onchange=e=>{CFG.t=Date.now();CFG.newd=+e.target.value;saveAll();renderHome()};
 $('#srate').oninput=e=>{CFG.t=Date.now();CFG.rate=+e.target.value;saveAll()};$('#sauto').onchange=e=>{CFG.t=Date.now();CFG.auto=e.target.checked;saveAll()};
+function fillVoices(){const sel=$('#svoice');if(!sel)return;const vs=koVoices();
+ sel.innerHTML='<option value="">Voix par défaut de l\u2019appareil</option>'+vs.map(v=>`<option value="${esc(v.voiceURI)}">${esc(v.name.replace(/Korean|한국어|\(.*?\)/gi,'').trim()||v.name)}${v.localService?'':' · en ligne'}</option>`).join('');
+ sel.value=vs.some(v=>v.voiceURI===CFG.voice)?CFG.voice:'';$('#svoicen').textContent=vs.length>1?`${vs.length} voix coréennes sur cet appareil`:(vs.length?'1 seule voix coréenne sur cet appareil':'Aucune voix coréenne trouvée')}
+try{speechSynthesis.addEventListener('voiceschanged',fillVoices)}catch(e){}setTimeout(fillVoices,300);setTimeout(fillVoices,1500);
+$('#svoice').onchange=e=>{CFG.t=Date.now();CFG.voice=e.target.value;saveAll();speak('안녕하세요, 반갑습니다')};
+$('#spitch').value=CFG.pitch??.85;$('#spitch').oninput=e=>{CFG.t=Date.now();CFG.pitch=+e.target.value;saveAll()};$('#spitch').onchange=()=>speak('안녕하세요');
+document.addEventListener('click',e=>{const b=e.target.closest('[data-vp]');if(!b)return;const P={calme:[.75,.8],normal:[.9,1],grave:[.8,.65]}[b.dataset.vp];CFG.t=Date.now();CFG.rate=P[0];CFG.pitch=P[1];$('#srate').value=P[0];$('#spitch').value=P[1];saveAll();speak('천천히, 꾸준히 공부해요')});
 $('#stest').onclick=()=>{speak('안녕하세요');setTimeout(()=>{try{if(!speechSynthesis.getVoices().some(v=>/^ko/i.test(v.lang)))toast('Aucune voix coréenne trouvée : ajoute le coréen dans la synthèse vocale de la tablette')}catch(e){}},400)};
 function readFile(inp,cb){const f=inp.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{cb(JSON.parse(r.result))}catch(e){toast('Fichier illisible')}inp.value=''};r.readAsText(f)}
 function useVocab(j,src){if(!j||!j.sections||!j.cours){toast('Ce fichier n’est pas un carnet');return false}
