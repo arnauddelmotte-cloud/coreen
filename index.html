@@ -502,7 +502,7 @@ function renderHome(){
  $('#goaln').textContent=L.r;$('#goalt').textContent=CFG.goal;
  $('#ringc').style.strokeDashoffset=327-327*Math.min(1,L.r/CFG.goal);
  $('#sdue').textContent=due;$('#snew').textContent=fresh;$('#sstreak').textContent=streak();$('#smast').textContent=mastered();
- $('#hmsg').textContent=L.r>=CFG.goal?'Objectif du jour atteint — 참 잘했어요':(due+fresh?`${due+fresh} cartes t'attendent aujourd'hui`:'Rien à revoir aujourd\u2019hui : choisis un thème');
+ $('#hmsg').textContent=L.r>=CFG.goal?'Objectif du jour atteint — 참 잘했어요':(due+fresh?`${due+fresh} cartes t'attendent aujourd'hui`:'Tout est révisé : touche un mode pour une séance libre');
  greet();wod();
 }
 
@@ -513,8 +513,10 @@ function startSession(mode){
  let p=pool();
  if(deck!=='today')p=shuffle(p.slice()).sort((a,b)=>((st(a.id)||{box:-1}).box)-((st(b.id)||{box:-1}).box)).slice(0,20);
  if(mode==='listen'||mode==='write')p=p.filter(i=>!i.gram);
+ let free=false;
+ if(!p.length&&deck==='today'){const seen=ITEMS.filter(i=>st(i.id)&&!(mode!=='cards'&&mode!=='quiz'&&i.gram));p=(seen.length?shuffle(seen.slice()).sort((a,b)=>st(a.id).box-st(b.id).box):freshPool()).slice(0,20);free=true;if(p.length)toast('Tout est révisé pour aujourd’hui : séance libre de '+p.length+' cartes')}
  if(!p.length){toast('Aucune carte dans ce paquet pour l’instant');return}
- S={mode,q:p.slice(),total:p.length,done:0,ok:0,cur:null};
+ S={mode,q:p.slice(),total:p.length,done:0,ok:0,cur:null,free};
  location.hash='session';next();
 }
 function curDir(){return dir==='mix'?['kf','fk','pk'][Math.floor(Math.random()*3)]:dir}
@@ -527,7 +529,7 @@ function next(){
  const i=S.cur,d=curDir();S.d=d;
  if(S.mode==='cards')cardsView(b,i,d);else if(S.mode==='quiz')quizView(b,i,d==='pk'?'kf':d);else if(S.mode==='listen')listenView(b,i);else writeView(b,i);
 }
-function after(q){if(q===2&&Math.random()<.35)pop(pick(YAY));if(S.mode==='listen'&&!S.cur.own&&!S.cur.gram)rec('mot',S.cur.lv,q>0?1:0);grade(S.cur,q);S.done++;if(q>0)S.ok++;else{S.q.splice(Math.min(S.q.length,3),0,S.cur);S.total++}next()}
+function after(q){if(q===2&&Math.random()<.35)pop(pick(YAY));if(S.mode==='listen'&&!S.cur.own&&!S.cur.gram)rec('mot',S.cur.lv,q>0?1:0);if(!S.free||q===0)grade(S.cur,q);else{const L=LOG[today()]||(LOG[today()]={r:0,ok:0,n:0});L.r++;L.ok++;saveAll()}S.done++;if(q>0)S.ok++;else{S.q.splice(Math.min(S.q.length,3),0,S.cur);S.total++}next()}
 const metaT=i=>i.own?'mon mot':(i.c?'cours '+i.c:'');
 let AV={iy:LS.get('av-iy',''),me:LS.get('av-me','')},AVT=LS.get('avt',{iy:0,me:0});
 const avatar=w=>`<span class="av ${w}">${AV[w]?`<img src="${AV[w]}" alt="">`:(w==='iy'?'인':'A')}</span>`;
