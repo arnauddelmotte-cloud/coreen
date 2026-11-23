@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#b8322a">
+<meta name="theme-color" content="#6f9f92">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -16,7 +16,7 @@
    LAYOUT: bottom tab bar like a native tablet app, one view at a time, content max 980px */
 :root{color-scheme:light dark;
  --bg:light-dark(#f6f2ea,#15171a);--paper:light-dark(#fffdf9,#1f2226);--ink:light-dark(#1f1c19,#ece7df);
- --soft:light-dark(#6f685f,#a39d93);--line:light-dark(#e6dfd3,#33373d);--red:light-dark(#a8322d,#e0675e);
+ --soft:light-dark(#6f685f,#a39d93);--line:light-dark(#e6dfd3,#33373d);--red:light-dark(#4f8576,#8cc4b4);--err:light-dark(#c0786c,#e3a194);--rose:light-dark(#d9928c,#e8b2ad);
  --teal:light-dark(#2f4a5a,#8fb3c4);--ok:light-dark(#3f6e5b,#7fbf9f);--warn:light-dark(#b07a2a,#e0b065);--chip:light-dark(#efe9de,#2a2e33);
  --sun:#e9d8b4;--mint:light-dark(#e6efe9,#22302a);--sky:light-dark(#e8edf0,#202a31);--pink:light-dark(#f3e6e2,#2e2425);--lav:light-dark(#efece6,#26292e)}
 :root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
@@ -78,11 +78,11 @@ h2{font:600 21px/1.25 "Noto Serif KR",Georgia,serif;margin:26px 0 8px;display:fl
 .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:10px;margin-top:14px}
 .opt{min-height:60px;padding:12px 16px;border-radius:14px;background:var(--paper);border:2px solid var(--line);text-align:left;font-size:17px}
 .opt.good{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 14%,var(--paper))}
-.opt.bad{border-color:var(--red);background:color-mix(in srgb,var(--red) 12%,var(--paper))}
+.opt.bad{border-color:var(--err);background:color-mix(in srgb,var(--err) 12%,var(--paper))}
 .answer{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:660px;margin:14px auto 0}
 .answer button{min-height:58px;border-radius:14px;font-weight:700;font-size:16px;line-height:1.15}
 .answer small{display:block;font-weight:400;font-size:12px;opacity:.8}
-.a1{background:var(--chip);color:var(--red)}.a2{background:var(--chip);color:var(--warn)}.a3{background:var(--ok);color:#fff}
+.a1{background:var(--chip);color:var(--err)}.a2{background:var(--chip);color:var(--warn)}.a3{background:var(--ok);color:#fff}
 .type{width:100%;margin-top:16px;padding:14px 16px;font-size:24px;border-radius:14px;border:2px solid var(--line);background:var(--bg);text-align:center}
 .fb{margin-top:12px;font-size:17px;min-height:26px}
 .done{text-align:center;padding:40px 10px}
@@ -125,7 +125,7 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
 .bdg{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--soft);white-space:nowrap;vertical-align:middle}
 .av{width:24px;height:24px;border-radius:50%;display:inline-grid;place-items:center;font:700 12px/1 system-ui;color:#fff;overflow:hidden;flex:none;box-shadow:0 0 0 2px var(--paper),0 2px 6px -2px #0006}
 .av img{width:100%;height:100%;object-fit:cover}
-.av.iy{background:linear-gradient(135deg,#c4564e,#a8322d)}.av.me{background:linear-gradient(135deg,#5c8f78,#3f6e5b)}
+.av.iy{background:linear-gradient(135deg,#e7aaa4,#cf8a83)}.av.me{background:linear-gradient(135deg,#8fc0b2,#5f9384)}
 .meta .bdg .av{width:30px;height:30px;font-size:14px}
 .it .f .bdg{margin-left:8px}
 .avset{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
@@ -149,7 +149,7 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
 .proverb{position:absolute;right:clamp(14px,3vw,30px);bottom:clamp(14px,2.4vw,24px);z-index:3;max-width:min(320px,44%);text-align:right;color:#1f1c19;background:#fbf7f0e6;padding:10px 14px;border-radius:12px;border:1px solid #e3d9c8;cursor:pointer}
 .proverb b{display:block;font:600 17px/1.35 "Noto Serif KR",serif}
 .proverb span{font-size:13px;color:#4d463e;font-style:italic}
-.seal{position:absolute;right:clamp(14px,3vw,30px);top:clamp(14px,2.4vw,22px);z-index:3;width:44px;height:44px;border-radius:6px;background:#a8322d;color:#fbeee4;display:grid;place-items:center;font:700 20px/1 "Noto Serif KR",serif;box-shadow:inset 0 0 0 3px #a8322d,inset 0 0 0 4px #f3d7c8;transform:rotate(-4deg);opacity:.92}
+.seal{position:absolute;right:clamp(14px,3vw,30px);top:clamp(14px,2.4vw,22px);z-index:3;width:44px;height:44px;border-radius:6px;background:#6f9f92;color:#fbf6ec;display:grid;place-items:center;font:700 20px/1 "Noto Serif KR",serif;box-shadow:inset 0 0 0 3px #6f9f92,inset 0 0 0 4px #e6f0ec;transform:rotate(-4deg);opacity:.92}
 .mode{border:1px solid var(--line);background:var(--paper);color:var(--ink);box-shadow:0 10px 22px -22px #0008;transition:border-color .15s,transform .15s}
 .mode:hover,.mode:active{border-color:var(--red);transform:translateY(-1px)}
 .mode .emo{font-size:26px;width:52px;height:52px;display:grid;place-items:center;border-radius:50%}
@@ -163,7 +163,7 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
 .chip.on{background:var(--ink);color:var(--bg)}
 .face{background:var(--paper);border:1px solid var(--line);box-shadow:0 22px 44px -32px #000a}
 .qcard{background:var(--paper);border:1px solid var(--line)}
-.btn.pri{background:var(--red)}
+.btn.pri{background:var(--red);color:#fff}
 .tabs{background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px)}
 .tabs a.on{color:var(--red)}
 .pop{position:fixed;left:50%;top:36%;transform:translate(-50%,-50%);z-index:50;font:600 28px/1 "Noto Serif KR",serif;color:var(--red);pointer-events:none;animation:pop .9s ease-out forwards}
@@ -194,7 +194,7 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
     <linearGradient id="m2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5f6d74" stop-opacity=".7"/><stop offset="1" stop-color="#5f6d74" stop-opacity=".05"/></linearGradient>
     <linearGradient id="m3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e3a40" stop-opacity=".85"/><stop offset="1" stop-color="#2e3a40" stop-opacity=".25"/></linearGradient>
     <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
-    <g id="pb"><circle r="4.2" fill="#b8423a"/><circle r="1.4" fill="#f1d9a8"/></g>
+    <g id="pb"><circle r="4.4" fill="#eeb2ad"/><circle r="1.5" fill="#d98b7c"/></g>
    </defs>
    <rect width="800" height="240" fill="url(#paper)"/>
    <circle cx="610" cy="62" r="30" fill="#e9d8b4" opacity=".8"/>
@@ -206,7 +206,7 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
    <path d="M110 46 Q132 74 168 88" fill="none" stroke="#2a2420" stroke-width="3.5" stroke-linecap="round"/>
    <path d="M200 52 Q214 30 240 24" fill="none" stroke="#2a2420" stroke-width="3" stroke-linecap="round"/>
    <use href="#pb" x="52" y="44"/><use href="#pb" x="88" y="52"/><use href="#pb" x="136" y="40"/><use href="#pb" x="150" y="80"/><use href="#pb" x="174" y="90"/><use href="#pb" x="206" y="44"/><use href="#pb" x="236" y="26"/><use href="#pb" x="262" y="76"/><use href="#pb" x="290" y="82"/>
-   <g fill="#b8423a" opacity=".55"><circle cx="196" cy="120" r="2.4"/><circle cx="250" cy="150" r="2"/><circle cx="160" cy="170" r="1.8"/></g>
+   <g fill="#eeb2ad" opacity=".7"><circle cx="196" cy="120" r="2.4"/><circle cx="250" cy="150" r="2"/><circle cx="160" cy="170" r="1.8"/></g>
    </g>
    <g stroke="#2a2420" stroke-width="1.6" fill="none" opacity=".7"><path d="M520 54 q6 -5 12 0 q6 -5 12 0"/><path d="M548 70 q4 -4 9 0 q4 -4 9 0"/></g>
   </svg>
@@ -315,7 +315,7 @@ label.f{display:block;font-size:14px;color:var(--soft);margin:12px 0 4px}
  <div class="panel">
   <div class="set"><span>Exporter<small>Progression, favoris et mots ajoutés</small></span><button class="btn sm" id="sexp">Exporter</button></div>
   <div class="set"><span>Restaurer</span><label class="btn sm" style="display:inline-flex;align-items:center">Choisir le fichier<input type="file" id="simp" accept=".json,application/json" hidden></label></div>
-  <div class="set"><span>Remettre à zéro la progression</span><button class="btn sm" id="sreset" style="color:var(--red)">Remettre à zéro</button></div>
+  <div class="set"><span>Remettre à zéro la progression</span><button class="btn sm" id="sreset" style="color:var(--err)">Remettre à zéro</button></div>
  </div>
  <p class="sub" style="margin-top:16px" id="sinstall">Pour l'installer : menu ⋮ de Chrome › « Installer l'application » ou « Ajouter à l'écran d'accueil ».</p>
 </section>
@@ -400,7 +400,7 @@ const LEVELS=[[0,'새싹 · Pousse'],[25,'학생 · Élève'],[75,'배우 · Com
 const pick=a=>a[Math.floor(Math.random()*a.length)];
 const reduced=()=>{try{return matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){return false}};
 function pop(t){if(reduced())return;const e=document.createElement('div');e.className='pop';e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),1100)}
-function confetti(n=24){if(reduced())return;n=Math.min(n,40);const col=['#b8423a','#d77a6f','#e9b9a8','#c99b55'];for(let i=0;i<n;i++){const e=document.createElement('span');e.className='petal';e.style.background=pick(col);e.style.left=Math.random()*100+'vw';e.style.setProperty('--dx',(Math.random()*160-80)+'px');e.style.animationDuration=(3+Math.random()*2.5)+'s';e.style.animationDelay=(Math.random()*1.2)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),7000)}}
+function confetti(n=24){if(reduced())return;n=Math.min(n,40);const col=['#f0bcb7','#e7a3a0','#f6d6cf','#bcd9cf'];for(let i=0;i<n;i++){const e=document.createElement('span');e.className='petal';e.style.background=pick(col);e.style.left=Math.random()*100+'vw';e.style.setProperty('--dx',(Math.random()*160-80)+'px');e.style.animationDuration=(3+Math.random()*2.5)+'s';e.style.animationDelay=(Math.random()*1.2)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),7000)}}
 function greet(){const h=new Date().getHours();const [k,f]=h<11?['좋은 아침이에요','Bonjour, Arnaud']:h<18?['안녕하세요','Bonjour, Arnaud']:['좋은 저녁이에요','Bonsoir, Arnaud'];$('#hello').textContent=k;$('#hellofr').textContent=f;
  const m=mastered();let L=LEVELS[0];for(const l of LEVELS)if(m>=l[0])L=l;const nx=LEVELS.find(l=>l[0]>m);$('#lvl').textContent=L[1]+(nx?` · encore ${nx[0]-m} mots`:'');
  const p=PROVERBS[today()%PROVERBS.length];$('#proverb').innerHTML=`<b>${p[0]}</b><span>${p[1]}</span>`}
