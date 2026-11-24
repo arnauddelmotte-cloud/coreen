@@ -182,6 +182,7 @@ details.cd input{width:22px;height:22px;flex:none;margin-top:1px}
 .ytwrap{position:relative;width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000;margin:10px 0}.ytwrap>div,.ytwrap iframe{position:absolute;inset:0;width:100%;height:100%}
 .rline{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}.rline .ko{font-size:18px}.rline small{display:block;color:var(--soft);font-size:12px}
 .rtag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;background:var(--line);color:var(--ink);margin-right:6px}
+.dayl{margin-top:12px;padding:10px 12px;border-radius:12px;background:var(--line);font-size:13.5px;text-align:left;line-height:1.45}.dayl.ok{background:color-mix(in srgb,var(--red) 18%,transparent)}.dayl span{color:var(--soft)}
 .bigplay{font-size:22px;min-height:76px;padding:14px 30px}
 .rec{background:var(--err);color:#fff}
 .diff .ok{color:var(--ok);font-weight:700}.diff .ko{color:var(--err);text-decoration:line-through}
@@ -462,6 +463,10 @@ function candoState(L,c){const thr=c.k==='pro'?.7:.8;const r=EV.r.filter(x=>x.k=
 function levDist(a,b){a=[...a];b=[...b];const m=a.length,n=b.length;if(!m)return n;if(!n)return m;let p=[...Array(n+1).keys()];for(let i=1;i<=m;i++){const c=[i];for(let j=1;j<=n;j++)c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]===b[j-1]?0:1));p=c}return p[n]}
 function sim(a,b){a=norm(a);b=norm(b);if(!a)return 0;return Math.max(0,1-levDist(a,b)/Math.max(a.length,b.length))}
 const SRec=window.SpeechRecognition||window.webkitSpeechRecognition;
+const KN={dlg:'Mini-dialogues',dict:'Dictée',prog:'Écoute progressive',mot:'Écoute de mots',pair:'Oreille fine',pro:'Prononciation'};
+function dayLine(k,lv){if(k==='pair')lv='A1';const c=(EC&&EC.cando&&EC.cando[lv]||[]).find(x=>x&&x.k===k);if(!c)return '';const thr=k==='pro'?.7:.8,T=today();
+ const r=EV.r.filter(x=>x.k===k&&(k==='pair'||x.lv===lv)&&x.d===T);if(!r.length)return '';const avg=r.reduce((p,x)=>p+x.s,0)/r.length,st=candoState(lv,c),ok=avg>=thr;
+ return `<div class="dayl${ok?' ok':''}"><b>${KN[k]} ${k==='pair'?'':lv+' '}aujourd’hui : ${Math.round(avg*100)} %</b> sur ${r.length} exercice${r.length>1?'s':''} · ${ok?'pastille du jour gagnée ✓':'il faut '+Math.round(thr*100)+' % de moyenne pour la pastille du jour'}<br><span>« ${esc(c.t)} » : ${st.days}/3 jours${st.ok?' · validé 🎉':ok&&st.days<3?' · reviens demain pour la '+(st.days+1)+'ᵉ':''}</span></div>`}
 const isDue=id=>{const s=st(id);return s&&s.due<=today()};
 function pool(k=deck){
  const T=today();
@@ -708,7 +713,7 @@ async function playLines(from=0,only=false){const {d}=CUR,V=twoVoices();PLAYING=
  $$('.line').forEach(e=>e.classList.remove('playing'));PLAYING=false}
 function finishDlg(){const {d}=CUR,score=d.qs.filter((q,i)=>CUR.ans[i]===q.a).length;
  const prev=DLG[d.id];rec('dlg',d.lv,score/d.qs.length,{w:prev?.5:1});DLG[d.id]={best:Math.max(score,prev?prev.best:0),t:Date.now()};LS.set('dlg',DLG);syncSoon();
- $('#dfb').innerHTML=`<b>${score}/${d.qs.length}</b> — ${score===d.qs.length?'참 잘했어요 ! Réécoute maintenant en lisant le texte.':'Affiche le texte et réécoute les répliques pour repérer ce qui t’a échappé.'}`;
+ $('#dfb').innerHTML=`<b>${score}/${d.qs.length}</b> — ${score===d.qs.length?'참 잘했어요 ! Réécoute maintenant en lisant le texte.':'Affiche le texte et réécoute les répliques pour repérer ce qui t’a échappé.'}${dayLine('dlg',d.lv)}`;
  if(score===d.qs.length)confetti(16);const T=today(),L=LOG[T]||(LOG[T]={r:0,ok:0,n:0});L.r+=d.qs.length;L.ok+=score;saveAll()}
 /* dictée */
 let DS=null;
@@ -721,7 +726,7 @@ function dictee(next){if(!DS||next)DS={it:pickS(),hint:0};const it=DS.it;if(!it)
  $('#dhint').onclick=()=>{DS.hint++;$('#dres').innerHTML=`<span class="sub">${esc(it.fr)}</span>`};
  $('#dform').onsubmit=e=>{e.preventDefault();const ans=clean(it.ko),got=$('#din').value.trim();const W=ans.split(/\s+/),G=got.split(/\s+/);const nn=x=>x.replace(/[.,!?~…]/g,'');
   const html=W.map((w,k)=>nn(G[k]||'')===nn(w)?`<span class="ok ko">${esc(w)}</span>`:`<span class="ko">${esc(w)}</span>`).join(' ');const sc=sim(ans,got),perfect=sc>=.999,okc=W.filter((w,k)=>nn(G[k]||'')===nn(w)).length;if(!DS.done){DS.done=1;rec('dict',it.lv,sc-(DS.hint?.2:0))}
-  $('#dres').innerHTML=`<div>${perfect?'✅ <b>Parfait !</b>':`<b>${Math.round(sc*100)} %</b> · ${okc}/${W.length} mots justes`}</div><div class="ko" style="font-size:20px;margin-top:6px">${html}</div><div class="sub">${esc(it.fr)}</div><button class="btn pri" id="dnext" style="margin-top:10px">Phrase suivante →</button>`;
+  $('#dres').innerHTML=`<div>${perfect?'✅ <b>Parfait !</b>':`<b>${Math.round(sc*100)} %</b> · ${okc}/${W.length} mots justes`}</div><div class="ko" style="font-size:20px;margin-top:6px">${html}</div><div class="sub">${esc(it.fr)}</div>${dayLine('dict',it.lv)}<button class="btn pri" id="dnext" style="margin-top:10px">Phrase suivante →</button>`;
   if(perfect)pop(pick(YAY));gradeIf(it,perfect?(DS.hint?1:2):sc>=.6?1:0);$('#dnext').onclick=()=>dictee(true)}}
 /* progressive */
 let PS=null;
@@ -736,7 +741,7 @@ function progressive(next){if(!PS||next){const it=pickS();if(it){const oth=shuff
  $('#pqopts').onclick=e=>{const b=e.target.closest('[data-pq]');if(!b||PS.lock)return;PS.lock=1;const k=+b.dataset.pq,good=k>=0&&PS.opts[k]===it.fr;
   $$('#pqopts .opt').forEach(o=>{const j=+o.dataset.pq;if(j>=0&&PS.opts[j]===it.fr)o.classList.add('good')});if(!good&&k>=0)b.classList.add('bad');
   rec('prog',it.lv,good?1:0);gradeIf(it,good?2:0);if(good)pop(pick(YAY));
-  $('#pans').innerHTML=`<div class="ko" style="font-size:24px">${esc(it.ko)}</div><div class="sub">${esc(it.fr)}</div><button class="btn pri" id="pnx" style="margin-top:10px">Phrase suivante →</button>`;$('#pnx').onclick=()=>progressive(true)};
+  $('#pans').innerHTML=`<div class="ko" style="font-size:24px">${esc(it.ko)}</div><div class="sub">${esc(it.fr)}</div>${dayLine('prog',it.lv)}<button class="btn pri" id="pnx" style="margin-top:10px">Phrase suivante →</button>`;$('#pnx').onclick=()=>progressive(true)};
  setTimeout(()=>{const b=$('#pall');if(b&&PS&&PS.it===it)b.click()},300)}
 /* oreille fine */
 let PP=null;
@@ -750,7 +755,7 @@ function pairs(next){if(!PP)PP={n:0,ok:0};if(next||!PP.cur){const p=EC.pairs[Mat
  const say=()=>speakP(w.ko,{rate:.75});$('#psay').onclick=say;setTimeout(say,300);
  $('#popts').onclick=e=>{const b=e.target.closest('[data-pw]');if(!b||PP.lock)return;PP.lock=1;const good=b.dataset.pw===w.ko;PP.n++;if(good)PP.ok++;rec('pair','A1',good?1:0);
   $$('#popts .opt').forEach(o=>{if(o.dataset.pw===w.ko)o.classList.add('good')});if(!good)b.classList.add('bad');
-  $('#pfb').innerHTML=`${good?'✅ Bien entendu !':'❌ C’était <b class="ko">'+esc(w.ko)+'</b>'}<div class="sub">${esc(p.help)}</div><div class="player" style="justify-content:center">${p.w.map(x=>`<button class="btn sm" data-say="${esc(x.ko)}">🔊 ${esc(x.ko)}</button>`).join('')}<button class="btn pri" id="pnext">Suivant →</button></div>`;
+  $('#pfb').innerHTML=`${good?'✅ Bien entendu !':'❌ C’était <b class="ko">'+esc(w.ko)+'</b>'}<div class="sub">${esc(p.help)}</div><div class="player" style="justify-content:center">${p.w.map(x=>`<button class="btn sm" data-say="${esc(x.ko)}">🔊 ${esc(x.ko)}</button>`).join('')}<button class="btn pri" id="pnext">Suivant →</button></div>${dayLine('pair','A1')}`;
   $('#pnext').onclick=()=>{PP.lock=0;pairs(true)}}}
 /* shadowing */
 let SH=null,REC=null;
@@ -766,7 +771,7 @@ function shadow(next){if(!SH||next)SH={it:pickS(),url:null};const it=SH.it;if(!i
  if(SRec)$('#spro').onclick=()=>{if(!navigator.onLine){$('#sfb').textContent='La note de prononciation a besoin du réseau (reconnaissance vocale Google).';return}
   const R=new SRec();R.lang='ko-KR';R.interimResults=false;R.maxAlternatives=4;let got=false;$('#spro').disabled=true;$('#sfb').textContent='Dis la phrase maintenant…';
   R.onresult=e=>{got=true;const alts=[...e.results[0]].map(a=>a.transcript);const best=alts.map(a=>[a,sim(t,a)]).sort((x,y)=>y[1]-x[1])[0];const sc=best[1];
-   rec('pro',it.lv,sc);if(sc>=.9)pop(pick(YAY));$('#sfb').innerHTML=`<b>${Math.round(sc*100)} %</b> — ${sc>=.9?'très clair !':sc>=.7?'compréhensible, encore un petit effort':'pas encore reconnu : réécoute le modèle lentement'}<div class="sub">Compris : <span class="ko">${esc(best[0])}</span></div>`};
+   rec('pro',it.lv,sc);if(sc>=.9)pop(pick(YAY));$('#sfb').innerHTML=`<b>${Math.round(sc*100)} %</b> — ${sc>=.9?'très clair !':sc>=.7?'compréhensible, encore un petit effort':'pas encore reconnu : réécoute le modèle lentement'}<div class="sub">Compris : <span class="ko">${esc(best[0])}</span></div>${dayLine('pro',it.lv)}`};
   R.onerror=e=>{$('#sfb').textContent=e.error==='not-allowed'?'Micro refusé : autorise le micro pour cette appli.':'Je n’ai rien entendu, réessaie.'};
   R.onend=()=>{$('#spro')&&($('#spro').disabled=false);if(!got&&$('#sfb').textContent.startsWith('Dis'))$('#sfb').textContent='Je n’ai rien entendu, réessaie.'};
   try{speechSynthesis.cancel();R.start()}catch(e){$('#spro').disabled=false}};
