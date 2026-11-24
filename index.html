@@ -183,6 +183,10 @@ details.cd input{width:22px;height:22px;flex:none;margin-top:1px}
 .rline{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}.rline .ko{font-size:18px}.rline small{display:block;color:var(--soft);font-size:12px}
 .rtag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;background:var(--line);color:var(--ink);margin-right:6px}
 .dayl{margin-top:12px;padding:10px 12px;border-radius:12px;background:var(--line);font-size:13.5px;text-align:left;line-height:1.45}.dayl.ok{background:color-mix(in srgb,var(--red) 18%,transparent)}.dayl span{color:var(--soft)}
+.pthm{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin:10px 0 18px}
+.pmodes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}.pmodes .btn{flex-direction:column;gap:2px;min-height:64px;font-size:13px}.pmodes .btn b{font-size:22px;font-weight:400}
+@media(max-width:520px){.pmodes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kind{font-size:12px;color:var(--soft);text-transform:uppercase;letter-spacing:.06em;margin:16px 0 4px}
 .bigplay{font-size:22px;min-height:76px;padding:14px 30px}
 .rec{background:var(--err);color:#fff}
 .diff .ok{color:var(--ok);font-weight:700}.diff .ko{color:var(--err);text-decoration:line-through}
@@ -302,7 +306,8 @@ details.cd input{width:22px;height:22px;flex:none;margin-top:1px}
 
 <!-- ===== CARNET ===== -->
 <section class="view" id="v-carnet">
- <h1>Carnet</h1>
+ <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h1 style="margin-bottom:0">Carnet</h1><a class="btn sm" href="#mine">✏️ Mes mots</a></div>
+ <p class="sub">Le vocabulaire de tes cours avec In-young.</p>
  <input class="search" id="q" type="search" placeholder="Chercher en coréen ou en français…" autocomplete="off">
  <div class="chips" id="themes" style="margin-top:10px"></div>
  <div id="clist"></div>
@@ -338,7 +343,7 @@ details.cd input{width:22px;height:22px;flex:none;margin-top:1px}
    <label style="display:flex;align-items:center;gap:8px">Objectif <select class="inp" style="width:auto" id="lvgoal"><option>A1</option><option>A2</option><option selected>B1</option><option>B2</option><option>C1</option></select></label>
   </div>
   <div id="lvbars" style="margin-top:8px"></div>
-  <p class="sub" style="margin:6px 0 0">Un niveau est atteint quand le vocabulaire <b>et</b> l'écoute le confirment. Vocabulaire : 60 % des mots du niveau bien mémorisés. Écoute : 70 % de réussite sur tes 20 derniers exercices du niveau (8 au minimum), ou le test de niveau.</p>
+  <p class="sub" style="margin:6px 0 0">Un niveau est atteint quand le vocabulaire <b>et</b> l'écoute le confirment. Vocabulaire : 60 % des entrées du <b>Programme</b> de ce niveau bien mémorisées. Écoute : 70 % de réussite sur tes 20 derniers exercices du niveau (8 au minimum), ou le test de niveau.</p>
  </div>
  <div class="panel" style="margin-bottom:12px"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h2 style="margin:0">Test de niveau</h2><button class="btn pri" data-gotest>🎯 Passer le test (≈ 15 min)</button></div><div id="tinfo"></div></div>
  <div class="panel" style="margin-bottom:12px"><h2 style="margin-top:0">Ce que je sais faire</h2><p class="sub" style="margin-top:0">Validé automatiquement quand tu réussis l'exercice correspondant à 80 % ou plus, trois jours différents.</p><div id="cando"></div></div>
@@ -354,6 +359,12 @@ details.cd input{width:22px;height:22px;flex:none;margin-top:1px}
 </section>
 
 <!-- ===== RÉGLAGES ===== -->
+<section class="view" id="v-prog">
+ <h1>Programme A1–C1</h1>
+ <p class="sub">Un parcours complet de A1 à C1, séparé de ton carnet de cours. C'est lui qui sert à évaluer ton niveau de vocabulaire.</p>
+ <div class="chips" id="plv"></div>
+ <div id="pbody"></div>
+</section>
 <section class="view" id="v-reel">
  <h1>Écoute réelle</h1>
  <p class="sub">Dramas et chaînes YouTube : du vrai coréen. Séparé de ton carnet de cours : rien ici n'entre dans tes révisions du jour ni dans ton niveau.</p>
@@ -403,7 +414,7 @@ details.cd input{width:22px;height:22px;flex:none;margin-top:1px}
  <a href="#ecoute" data-v="ecoute"><b class="emo">🎧</b>Écoute</a>
  <a href="#carnet" data-v="carnet"><b class="emo">📖</b>Carnet</a>
  <a href="#gram" data-v="gram"><b class="emo">📐</b>Grammaire</a>
- <a href="#mine" data-v="mine"><b class="emo">➕</b>Mes mots</a>
+ <a href="#prog" data-v="prog"><b class="emo">📚</b>Niveaux</a>
  <a href="#reel" data-v="reel"><b class="emo">🎬</b>Réel</a>
  <a href="#stats" data-v="stats"><b class="emo">📈</b>Progrès</a>
  <a href="#set" data-v="set"><b class="emo">⚙️</b>Réglages</a>
@@ -418,7 +429,7 @@ const LS={get(k,d){try{const v=localStorage.getItem('dj-'+k);return v==null?d:JS
 const today=()=>Math.floor((Date.now()-new Date().getTimezoneOffset()*60000)/864e5);
 const INT=[0,1,2,4,7,14,30,60,120];
 let D=null, ITEMS=[], deck='today', dir='kf';
-let EC=LS.get('ecoute',null),CANDO=LS.get('cando',{}),DLG=LS.get('dlg',{}),ELV='Tous',EV=Object.assign({r:[],tests:[],u:{}},LS.get('ev',{}));
+let PG=LS.get('prog',null),PITEMS=[],PLOG=LS.get('plog',{}),PLV=null,PTH=null,EC=LS.get('ecoute',null),CANDO=LS.get('cando',{}),DLG=LS.get('dlg',{}),ELV='Tous',EV=Object.assign({r:[],tests:[],u:{}},LS.get('ev',{}));
 let SRS=LS.get('srs',{}), FAV=LS.get('fav',{}), OWN=LS.get('own',[]), LOG=LS.get('log',{}), CFG=Object.assign({goal:30,newd:15,rate:.8,pitch:.85,voice:'',auto:true,goalLv:'B1'},LS.get('cfg',{}));
 const saveAll=()=>{LS.set('srs',SRS);LS.set('fav',FAV);LS.set('own',OWN);LS.set('log',LOG);LS.set('cfg',CFG);syncSoon()};
 function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),2600)}
@@ -432,22 +443,21 @@ function build(){
  D.sections.forEach(s=>s.items.forEach(i=>ITEMS.push({id:i.ko,ko:i.ko,fr:i.fr,ic:i.ic,c:i.c,th:s.title,lv:i.lv||'A2'})));
  D.nombres.forEach(i=>ITEMS.push({id:i.ko,ko:i.ko,fr:i.fr,ic:i.ic,c:i.c,th:'Les nombres',lv:i.lv||'A1'}));
  D.grammaire.forEach(g=>g.rows.forEach(r=>ITEMS.push({id:'G:'+r.form,ko:r.form,fr:r.sens,ex:r.ex+' — '+r.tr,ic:r.ic,c:r.c,th:'Grammaire',gram:1,lv:r.lv||'B1'})));
- if(EC)for(const L in EC.base)EC.base[L].forEach(b=>{if(!ITEMS.some(x=>x.ko===b.ko))ITEMS.push({id:'B:'+b.ko,ko:b.ko,fr:b.fr,ic:b.ic,c:'',th:'Base '+L,base:1,lv:L})});
  OWN.filter(o=>!o.del).forEach(o=>ITEMS.push({id:'M:'+o.ko,ko:o.ko,fr:o.fr,ic:o.ic||'✏️',c:'',th:o.th||'Mes mots',own:1,lv:'A2'}));
  const last=D.cours[D.cours.length-1];
  $('#hsub').textContent=`Cours 1 à ${last.n} avec In-young · carnet du ${D.updated.split('-').reverse().join('/')}`;
  $('#sver').textContent=`${ITEMS.length} entrées · mis à jour le ${D.updated.split('-').reverse().join('/')}`;
- const decks=[['today','Séance du jour'],['all','Tout'],['hard','À retravailler'],['fav','⭐ Favoris'],['last','Dernier cours ('+last.n+')'],['mine','✏️ Mes mots'],['base','📗 Vocabulaire de base'],...D.sections.map(s=>['th:'+s.title,s.icon.slice(0,2)+' '+s.title]),['th:Les nombres','🔢 Nombres'],['th:Grammaire','📐 Grammaire']];
+ const decks=[['today','Séance du jour'],['all','Tout'],['hard','À retravailler'],['fav','⭐ Favoris'],['last','Dernier cours ('+last.n+')'],['mine','✏️ Mes mots'],...D.sections.map(s=>['th:'+s.title,s.icon.slice(0,2)+' '+s.title]),['th:Les nombres','🔢 Nombres'],['th:Grammaire','📐 Grammaire']];
  $('#decks').innerHTML=decks.map(([k,l])=>`<button class="chip${k===deck?' on':''}" data-k="${esc(k)}">${esc(l)}</button>`).join('');
- const ths=['Tous','⭐ Favoris',...D.sections.map(s=>s.title),'Les nombres','Prononciation',...LVS.map(L=>'Base '+L)];
+ const ths=['Tous','⭐ Favoris',...D.sections.map(s=>s.title),'Les nombres','Prononciation'];
  $('#themes').innerHTML=ths.map((t,i)=>`<button class="chip${i?'':' on'}" data-t="${esc(t)}">${esc(t)}</button>`).join('');
  $('#nth').innerHTML=['Mes mots',...D.sections.map(s=>s.title)].map(t=>`<option>${esc(t)}</option>`).join('');
  renderHome();renderCarnet();renderGram();renderMine();renderStats();
 }
 const st=id=>SRS[id]||null;
 const LVS=['A1','A2','B1','B2','C1'],LVI=l=>Math.max(0,LVS.indexOf(l||'A2'));
-function freshPool(){const g=LVI(CFG.goalLv);return ITEMS.filter(i=>!st(i.id)&&!i.gram&&(!i.base||LVI(i.lv)<=g)).sort((a,b)=>{const la=LVI(a.lv),lb=LVI(b.lv);const oa=la>g?1:0,ob=lb>g?1:0;return oa-ob||(a.base?1:0)-(b.base?1:0)||la-lb})}
-function lvStats(){return LVS.map(L=>{const its=ITEMS.filter(i=>!i.own&&i.lv===L),k=its.filter(i=>(st(i.id)||{}).box>=3).length;return {L,n:its.length,k,r:its.length?k/its.length:0}})}
+function freshPool(){return ITEMS.filter(i=>!st(i.id)&&!i.gram)}
+function lvStats(){return LVS.map(L=>{const its=PITEMS.filter(i=>i.lv===L),k=its.filter(i=>(st(i.id)||{}).box>=3).length;return {L,n:its.length,k,r:its.length?k/its.length:0}})}
 function vocLevel(){const S=lvStats();let e=-1;for(let i=0;i<S.length;i++){if(S[i].n&&S[i].r>=.6)e=i;else break}return e}
 /* ---------- évaluation ---------- */
 const EK=['dlg','dict','prog','mot'];
@@ -476,12 +486,11 @@ function pool(k=deck){
  if(k==='hard')return ITEMS.filter(i=>{const s=st(i.id);return s&&(s.box<=2||s.lapses>=2)});
  if(k==='fav')return ITEMS.filter(i=>FAV[i.id]>0);
  if(k==='mine')return ITEMS.filter(i=>i.own);
- if(k==='base')return ITEMS.filter(i=>i.base&&LVI(i.lv)<=LVI(CFG.goalLv));
  if(k==='last'){const n=D.cours[D.cours.length-1].n;return ITEMS.filter(i=>coursOf(i.c).includes(n))}
  if(k.startsWith('c:')){const n=+k.slice(2);return ITEMS.filter(i=>coursOf(i.c).includes(n))}
  return ITEMS.filter(i=>i.th===k.slice(3));
 }
-function grade(item,q){ // q: 0 raté, 1 difficile, 2 facile
+function grade(item,q,prog){ // q: 0 raté, 1 difficile, 2 facile
  const T=today();let s=SRS[item.id];const isNew=!s;
  if(!s)s={box:0,due:T,reps:0,lapses:0,ok:0};
  s.reps++;s.t=Date.now();
@@ -489,8 +498,8 @@ function grade(item,q){ // q: 0 raté, 1 difficile, 2 facile
  else if(q===1){s.box=Math.max(1,s.box);s.due=T+Math.max(1,Math.round(INT[s.box]/2));s.ok++}
  else{s.box=Math.min(INT.length-1,s.box+1);s.due=T+INT[s.box];s.ok++}
  SRS[item.id]=s;
- const L=LOG[T]||(LOG[T]={r:0,ok:0,n:0});L.r++;if(q>0)L.ok++;if(isNew)L.n++;
- saveAll();
+ const LG=prog?PLOG:LOG,L=LG[T]||(LG[T]={r:0,ok:0,n:0});L.r++;if(q>0)L.ok++;if(isNew)L.n++;
+ if(prog)LS.set('plog',PLOG);saveAll();
 }
 const mastered=()=>ITEMS.filter(i=>(st(i.id)||{}).box>=4).length;
 function streak(){let n=0,d=today();if(!LOG[d])d--;while(LOG[d]&&LOG[d].r>0){n++;d--}return n}
@@ -526,10 +535,12 @@ function renderHome(){
 /* ---------- session ---------- */
 let S=null;
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
-function startSession(mode){
+function startSession(mode,opt){
+ if(opt&&opt.prog)return startProg(mode,opt);
  let p=pool();
  if(deck!=='today')p=shuffle(p.slice()).sort((a,b)=>((st(a.id)||{box:-1}).box)-((st(b.id)||{box:-1}).box)).slice(0,20);
  if(mode==='listen'||mode==='write')p=p.filter(i=>!i.gram);
+ if(mode==='write')p=p.filter(i=>!/\.\.\.|…/.test(i.ko));
  let free=false;
  if(!p.length&&deck==='today'){const seen=ITEMS.filter(i=>st(i.id)&&!(mode!=='cards'&&mode!=='quiz'&&i.gram));p=(seen.length?shuffle(seen.slice()).sort((a,b)=>st(a.id).box-st(b.id).box):freshPool()).slice(0,20);free=true;if(p.length)toast('Tout est révisé pour aujourd’hui : séance libre de '+p.length+' cartes')}
  if(!p.length){toast('Aucune carte dans ce paquet pour l’instant');return}
@@ -541,12 +552,12 @@ function next(){
  const b=$('#sbody');$('#pbar').style.width=(S.done/S.total*100)+'%';$('#pcount').textContent=`${S.done}/${S.total}`;
  S.cur=S.q.shift();
  if(!S.cur){const c=pick(CHEERS),rate=S.done?S.ok/S.done:0;b.innerHTML=`<div class="done panel"><div class="stamp">${rate>=.8?'참<br>잘했어요':'수고<br>했어요'}<small>${rate>=.8?'TRÈS BIEN':'BEAU TRAVAIL'}</small></div><h2 style="justify-content:center">${rate>=.8?'Très belle séance':'Séance terminée'}</h2><p class="sub">${S.ok} bonnes réponses sur ${S.done} · <span class="ko">${c[0]}</span> ${c[1]}</p><div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap"><button class="btn pri" id="again">Continuer</button><button class="btn" id="home">Retour</button></div></div>`;
-  $('#again').onclick=()=>startSession(S.mode);$('#home').onclick=()=>location.hash='home';renderHome();renderStats();confetti(S.done>=5?28:12);
+  $('#again').onclick=()=>startSession(S.mode,S.opt);$('#home').onclick=()=>location.hash=S.opt&&S.opt.prog?'prog':'home';renderHome();renderStats();confetti(S.done>=5?28:12);
   const T=today();if((LOG[T]||{}).r>=CFG.goal&&!LS.get('goal-'+T,0)){LS.set('goal-'+T,1);setTimeout(()=>{confetti(40);toast('Objectif du jour atteint — 참 잘했어요')},700)}return}
  const i=S.cur,d=curDir();S.d=d;
  if(S.mode==='cards')cardsView(b,i,d);else if(S.mode==='quiz')quizView(b,i,d==='pk'?'kf':d);else if(S.mode==='listen')listenView(b,i);else writeView(b,i);
 }
-function after(q){if(q===2&&Math.random()<.35)pop(pick(YAY));if(S.mode==='listen'&&!S.cur.own&&!S.cur.gram)rec('mot',S.cur.lv,q>0?1:0);if(!S.free||q===0)grade(S.cur,q);else{const L=LOG[today()]||(LOG[today()]={r:0,ok:0,n:0});L.r++;L.ok++;saveAll()}S.done++;if(q>0)S.ok++;else{S.q.splice(Math.min(S.q.length,3),0,S.cur);S.total++}next()}
+function after(q){if(q===2&&Math.random()<.35)pop(pick(YAY));if(S.mode==='listen'&&!S.cur.own&&!S.cur.gram)rec('mot',S.cur.lv,q>0?1:0);if(!S.free||q===0)grade(S.cur,q,!!(S.opt&&S.opt.prog));else{const LG=S.opt&&S.opt.prog?PLOG:LOG,L=LG[today()]||(LG[today()]={r:0,ok:0,n:0});L.r++;L.ok++;LS.set('plog',PLOG);saveAll()}S.done++;if(q>0)S.ok++;else{S.q.splice(Math.min(S.q.length,3),0,S.cur);S.total++}next()}
 const metaT=i=>i.own?'mon mot':(i.c?'cours '+i.c:'');
 let AV={iy:LS.get('av-iy',''),me:LS.get('av-me','')},AVT=LS.get('avt',{iy:0,me:0});
 const avatar=w=>`<span class="av ${w}">${AV[w]?`<img src="${AV[w]}" alt="">`:(w==='iy'?'인':'A')}</span>`;
@@ -561,7 +572,7 @@ function cardsView(b,i,d){
  $('#ans').onclick=e=>{const x=e.target.closest('[data-q]');if(x)after(+x.dataset.q)};
  if(d==='kf'&&CFG.auto)speak(i.ko);
 }
-function distractors(i,n=3){const same=ITEMS.filter(x=>x.id!==i.id&&x.th===i.th&&!!x.gram===!!i.gram&&x.fr!==i.fr&&x.ko!==i.ko);const other=ITEMS.filter(x=>x.id!==i.id&&!!x.gram===!!i.gram&&x.fr!==i.fr&&x.ko!==i.ko);
+function distractors(i,n=3){const POOL=i.prog?PITEMS:ITEMS;const same=POOL.filter(x=>x.id!==i.id&&x.th===i.th&&(!i.kind||x.kind===i.kind)&&!!x.gram===!!i.gram&&x.fr!==i.fr&&x.ko!==i.ko);const other=POOL.filter(x=>x.id!==i.id&&(!i.kind||x.kind===i.kind)&&!!x.gram===!!i.gram&&x.fr!==i.fr&&x.ko!==i.ko);
  const pick=shuffle(same.slice()).slice(0,n);while(pick.length<n){const o=other[Math.floor(Math.random()*other.length)];if(o&&!pick.includes(o))pick.push(o)}return pick}
 function choiceUI(b,head,i,showKo){
  const opts=shuffle([i,...distractors(i)]);
@@ -595,7 +606,7 @@ const row=(i,del)=>`<div class="it"><div class="e emo">${esc(i.ic)}</div><div cl
 function renderCarnet(){
  const n=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');const q=n($('#q').value.trim());
  const groups=[...D.sections.map(s=>({t:s.title,sub:s.sub,ic:s.icon,items:ITEMS.filter(i=>i.th===s.title)})),{t:'Les nombres',sub:'Compteurs et quantités',ic:'🔢',items:ITEMS.filter(i=>i.th==='Les nombres')},
-  {t:'Prononciation',sub:'Les pièges signalés par In-young',ic:'🗣️',items:D.prononciation.map(i=>({id:'P:'+i.ko,...i}))},{t:'Mes mots',sub:'Ajoutés par toi',ic:'✏️',items:ITEMS.filter(i=>i.own&&i.th==='Mes mots')},...LVS.map(L=>({t:'Base '+L,sub:'Vocabulaire de base · niveau '+L,ic:'📗',items:ITEMS.filter(i=>i.base&&i.lv===L)}))];
+  {t:'Prononciation',sub:'Les pièges signalés par In-young',ic:'🗣️',items:D.prononciation.map(i=>({id:'P:'+i.ko,...i}))},{t:'Mes mots',sub:'Ajoutés par toi',ic:'✏️',items:ITEMS.filter(i=>i.own&&i.th==='Mes mots')}];
  let html='';
  for(const g of groups){if(theme!=='Tous'&&theme!=='⭐ Favoris'&&g.t!==theme)continue;
   const its=g.items.filter(i=>(!q||n(i.ko+' '+i.fr).includes(q))&&(theme!=='⭐ Favoris'||FAV[i.id]>0));
@@ -622,10 +633,10 @@ function renderStats(){
 }
 
 /* ---------- routing & events ---------- */
-const VIEWS=['home','session','ecoute','carnet','gram','mine','reel','stats','set'];
+const VIEWS=['home','session','ecoute','carnet','gram','mine','prog','reel','stats','set'];
 function route(){let v=(location.hash||'#home').slice(1);if(!VIEWS.includes(v))v='home';if(v==='session'&&!S)v='home';
  $$('.view').forEach(e=>e.classList.toggle('on',e.id==='v-'+v));$$('.tabs a').forEach(a=>a.classList.toggle('on',a.dataset.v===v));
- $('.tabs').style.display=v==='session'?'none':'flex';if(v==='home')renderHome();if(v==='stats'){renderStats();renderLevels()}if(v==='ecoute')renderEcoute();if(v==='reel')renderReel();else{try{YTP&&YTP.pauseVideo&&YTP.pauseVideo()}catch(_){}}if(v==='carnet')renderCarnet();window.scrollTo(0,0)}
+ $('.tabs').style.display=v==='session'?'none':'flex';if(v==='home')renderHome();if(v==='stats'){renderStats();renderLevels()}if(v==='ecoute')renderEcoute();if(v==='prog')renderProg();if(v==='reel')renderReel();else{try{YTP&&YTP.pauseVideo&&YTP.pauseVideo()}catch(_){}}if(v==='carnet')renderCarnet();window.scrollTo(0,0)}
 window.addEventListener('hashchange',route);
 $('#decks').addEventListener('click',e=>{const b=e.target.closest('[data-k]');if(!b)return;deck=b.dataset.k;$$('#decks .chip').forEach(c=>c.classList.toggle('on',c===b));toast(`${pool().length} cartes dans ce paquet`)});
 $('#dirs').addEventListener('click',e=>{const b=e.target.closest('[data-d]');if(!b)return;dir=b.dataset.d;$$('#dirs .chip').forEach(c=>c.classList.toggle('on',c===b))});
@@ -677,8 +688,8 @@ function speakP(t,o={}){return new Promise(res=>{try{const u=new SpeechSynthesis
 function twoVoices(){const vs=koVoices(),base=vs.find(v=>v.voiceURI===CFG.voice)||vs.find(v=>v.localService)||vs[0];const other=vs.find(v=>v!==base);const p=CFG.pitch??.85;
  return other?{A:{voice:base,pitch:p},B:{voice:other,pitch:p}}:{A:{voice:base,pitch:Math.min(1.4,p+.25)},B:{voice:base,pitch:Math.max(.3,p-.25)}}}
 let EMODE='menu',ESPEED=.85;
-const sentences=()=>ITEMS.filter(i=>!i.gram&&/\s/.test(i.ko.split(' / ')[0])&&i.ko.length>=6&&i.ko.length<=34&&(ELV==='Tous'||i.lv===ELV)).concat(Object.entries((EC&&EC.phr)||{}).flatMap(([L,a])=>ELV==='Tous'||ELV===L?a.map(p=>({id:'P:'+p.ko,ko:p.ko,fr:p.fr,lv:L})):[]));
-const gradeIf=(it,q)=>{if(!String(it.id).startsWith('P:'))grade(it,q)};
+const sentences=()=>ITEMS.filter(i=>!i.gram&&/\s/.test(i.ko.split(' / ')[0])&&i.ko.length>=6&&i.ko.length<=34&&(ELV==='Tous'||i.lv===ELV)).concat(PITEMS.filter(i=>i.kind==='p'&&(ELV==='Tous'||i.lv===ELV))).concat(Object.entries((EC&&EC.phr)||{}).flatMap(([L,a])=>ELV==='Tous'||ELV===L?a.map(p=>({id:'P:'+p.ko,ko:p.ko,fr:p.fr,lv:L})):[]));
+const gradeIf=(it,q)=>{if(!String(it.id).startsWith('P:'))grade(it,q,!!it.prog)};
 const pickS=()=>{const p=sentences();return p[Math.floor(Math.random()*p.length)]};
 const clean=t=>String(t).split(' / ')[0].replace(/\[.*?\]|\(.*?\)/g,'').trim();
 function renderEcoute(){if(!EC){$('#ebody').innerHTML='<p class="empty">Chargement…</p>';return}
@@ -904,17 +915,55 @@ document.addEventListener('click',e=>{const t=e.target;let b;
  if(b=t.closest('[data-rq]')){const R=RV.rev,x=R.q.shift(),q=+b.dataset.rq;rgrade(x,q);if(q)R.ok++;R.show=false;try{YTP&&YTP.destroy&&YTP.destroy()}catch(_){}YTP=null;reelRev();return}
  if(b=t.closest('[data-rclip]')){const x=RL.lines.find(l=>l.id===b.dataset.rclip);$('#rclipbox').innerHTML='<div class="ytwrap"><div id="ytbox"></div></div>';ytMount({vid:x.vid,start:Math.max(0,x.at-3)});return}});
 window.DJ={get TS(){return TS},get EV(){return EV},estLevel};
-async function loadEcoute(){try{const r=await fetch('ecoute.json?t='+Date.now(),{cache:'no-store'});if(r.ok){EC=await r.json();LS.set('ecoute',EC)}}catch(e){}if(EC&&D){build();renderEcoute();renderLevels()}}
+/* ---------- programme ---------- */
+function buildProg(){if(!PG)return;PITEMS=PG.themes.flatMap(t=>t.items.map(i=>({id:i.id,ko:i.ko,fr:i.fr,ic:i.ic||t.icon,th:t.title,tid:t.id,lv:t.lv,base:1,prog:1,kind:i.t,c:''})));
+ if(EC){EC.dialogues=(EC.dialogues||[]).filter(d=>!d.prog).concat(PG.dialogues||[])}}
+async function loadProg(){try{const r=await fetch('prog.json?t='+Date.now(),{cache:'no-store'});if(r.ok){const j=await r.json();if(j&&j.themes){PG=j;LS.set('prog',PG)}}}catch(e){}buildProg();if(location.hash==='#prog')renderProg();renderLevels()}
+const PNEW=()=>CFG.pnew||10;
+function pDefault(){const S=lvStats();const i=S.findIndex(x=>x.n&&x.r<.6);return LVS[i<0?LVI(CFG.goalLv):i]}
+function progPool(opt){const T=today();
+ if(opt.tid){const t=PITEMS.filter(i=>i.tid===opt.tid);return shuffle(t.slice()).sort((a,b)=>((st(a.id)||{box:-1}).box)-((st(b.id)||{box:-1}).box)).slice(0,20)}
+ const due=PITEMS.filter(i=>isDue(i.id)).sort((a,b)=>st(a.id).due-st(b.id).due);
+ const doneNew=(PLOG[T]||{}).n||0,g=LVI(opt.lv||PLV||pDefault());
+ const fresh=PITEMS.filter(i=>!st(i.id)).sort((a,b)=>{const la=LVI(a.lv),lb=LVI(b.lv);return (la===g?0:la<g?1:2)-(lb===g?0:lb<g?1:2)||la-lb}).slice(0,Math.max(0,PNEW()-doneNew));
+ return [...due,...fresh]}
+function startProg(mode,opt){let p=progPool(opt);let free=false;
+ if(mode==='listen'||mode==='write')p=p.filter(i=>!/\.\.\.|…/.test(i.ko));
+ if(!p.length&&!opt.tid){const seen=PITEMS.filter(i=>st(i.id)&&(LVI(i.lv)<=LVI(PLV||pDefault())));p=shuffle(seen.slice()).sort((a,b)=>st(a.id).box-st(b.id).box).slice(0,20);free=true;if(p.length)toast('Tout est révisé pour aujourd’hui : séance libre de '+p.length+' cartes')}
+ if(!p.length){toast('Aucune carte pour l’instant');return}
+ S={mode,q:p.slice(),total:p.length,done:0,ok:0,cur:null,free,opt};location.hash='session';next()}
+function renderProg(){const b=$('#pbody');if(!b)return;if(!PG){b.innerHTML='<p class="empty">Chargement du programme… (connecte-toi une première fois)</p>';return}
+ if(!PLV)PLV=pDefault();const S=lvStats();
+ $('#plv').innerHTML=LVS.map(L=>{const x=S.find(s=>s.L===L);return `<button class="chip${L===PLV?' on':''}" data-plv="${L}">${L}${x&&x.n?' · '+Math.round(x.r*100)+' %':''}</button>`}).join('');
+ if(PTH)return renderPTheme();
+ const T=today(),due=PITEMS.filter(i=>isDue(i.id)).length,fresh=Math.min(PITEMS.filter(i=>!st(i.id)).length,Math.max(0,PNEW()-((PLOG[T]||{}).n||0))),L=PLOG[T]||{r:0},x=S.find(s=>s.L===PLV);
+ const th=PG.themes.filter(t=>t.lv===PLV);
+ b.innerHTML=`<div class="panel"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center"><div><b style="font-size:18px">Séance du jour</b><div class="sub" style="margin:2px 0 0">${due} à revoir · ${fresh} nouvelles (niveau ${PLV} en priorité) · ${L.r} réponses aujourd’hui</div></div><span class="pill">${PLV} : ${x.k}/${x.n} bien mémorisés</span></div>
+ <div class="pmodes">${[['cards','🃏','Cartes'],['quiz','🎯','Quiz'],['listen','🎧','Écoute'],['write','✍️','Écriture']].map(([m,e,l])=>`<button class="btn" data-pmode="${m}"><b>${e}</b>${l}</button>`).join('')}</div></div>
+ <h2>Thèmes ${PLV}</h2>${th.length?`<div class="pthm">${th.map(t=>{const k=t.items.filter(i=>(st(i.id)||{}).box>=3).length;return `<button class="rcard" data-pth="${t.id}"><span class="emo">${t.icon}</span><div><b>${esc(t.title)}</b><span>${t.items.length} entrées${t.dlg.length?' · '+t.dlg.length+' dialogue'+(t.dlg.length>1?'s':''):''}</span><span>${k}/${t.items.length} bien mémorisées</span></div></button>`}).join('')}</div>`:'<p class="empty">Ce niveau arrive bientôt : un nouveau lot est ajouté chaque dimanche.</p>'}`}
+function renderPTheme(){const t=PG.themes.find(x=>x.id===PTH);if(!t){PTH=null;return renderProg()}const it=PITEMS.filter(i=>i.tid===t.id);
+ const grp=[['w','Mots'],['e','Expressions'],['p','Phrases modèles']].map(([k,l])=>{const a=it.filter(i=>i.kind===k);return a.length?`<div class="kind">${l} · ${a.length}</div><div class="list">${a.map(i=>row(i)).join('')}</div>`:''}).join('');
+ $('#pbody').innerHTML=`<div class="player"><button class="btn sm" data-pback>← Thèmes</button><span class="lvtag">${t.lv}</span><b style="font-size:18px">${t.icon} ${esc(t.title)}</b></div>
+ <div class="player"><button class="btn pri" data-ptrev="cards">🃏 Réviser ce thème</button><button class="btn" data-ptrev="quiz">🎯 Quiz</button><button class="btn" data-ptrev="listen">🎧 Écoute</button>${t.dlg.map(d=>{const D2=(PG.dialogues||[]).find(x=>x.id===d);return D2?`<button class="btn" data-pdlg="${d}">💬 ${esc(D2.title)}${DLG[d]?' ✓':''}</button>`:''}).join('')}</div>${grp}`}
+document.addEventListener('click',e=>{const t=e.target;let b;
+ if(b=t.closest('[data-plv]')){PLV=b.dataset.plv;PTH=null;renderProg();return}
+ if(b=t.closest('[data-pmode]')){startSession(b.dataset.pmode,{prog:1,lv:PLV});return}
+ if(b=t.closest('[data-pth]')){PTH=b.dataset.pth;renderProg();window.scrollTo(0,0);return}
+ if(t.closest('[data-pback]')){PTH=null;renderProg();return}
+ if(b=t.closest('[data-ptrev]')){startSession(b.dataset.ptrev,{prog:1,tid:PTH});return}
+ if(b=t.closest('[data-pdlg]')){location.hash='#ecoute';EMODE='dlg';setTimeout(()=>{openDlg(b.dataset.pdlg);window.scrollTo(0,0)},60);return}});
+async function loadEcoute(){try{const r=await fetch('ecoute.json?t='+Date.now(),{cache:'no-store'});if(r.ok){EC=await r.json();LS.set('ecoute',EC)}}catch(e){}buildProg();if(EC&&D){build();renderEcoute();renderLevels()}}
 
 /* ---------- sync (Firebase) ---------- */
 const FB_CFG={"apiKey": "AIzaSyCJPTHJ6JOwx2JD_NAMl_CyJbq9jG8x5Qs", "authDomain": "danojang-coreen.firebaseapp.com", "projectId": "danojang-coreen", "storageBucket": "danojang-coreen.firebasestorage.app", "messagingSenderId": "1043089385709", "appId": "1:1043089385709:web:61baed2db991b3548284e4"};
 let FB=null,USER=null,syncT=null,lastRemote='',lastSync=LS.get('lastsync',0);
 const ONLINE_SYNC=location.protocol==='https:'&&!/claude/.test(location.hostname);
-function stateObj(){return {srs:SRS,fav:FAV,own:OWN,log:LOG,cfg:CFG,av:AV,avt:AVT,cando:CANDO,dlg:DLG,ev:EV,reel:RL,v:1}}
+function stateObj(){return {srs:SRS,fav:FAV,own:OWN,log:LOG,plog:PLOG,cfg:CFG,av:AV,avt:AVT,cando:CANDO,dlg:DLG,ev:EV,reel:RL,v:1}}
 function mergeIn(r){if(!r)return false;let ch=false;
  for(const k in (r.srs||{})){const a=SRS[k],b=r.srs[k];if(!a||(b.t||0)>(a.t||0)||(!b.t&&!a.t&&b.reps>a.reps)){SRS[k]=b;ch=true}}
  for(const k in (r.fav||{})){if(Math.abs(r.fav[k])>Math.abs(FAV[k]||0)){FAV[k]=r.fav[k];ch=true}}
  const om=new Map(OWN.map(o=>[o.ko,o]));for(const o of (r.own||[])){const m=om.get(o.ko);if(!m||(o.t||o.added||0)>(m.t||m.added||0)){om.set(o.ko,o);ch=true}}OWN=[...om.values()];
+ for(const d in (r.plog||{})){const a=PLOG[d]||{r:0,ok:0,n:0},b=r.plog[d];const m={r:Math.max(a.r,b.r||0),ok:Math.max(a.ok,b.ok||0),n:Math.max(a.n||0,b.n||0)};if(JSON.stringify(m)!==JSON.stringify(PLOG[d])){PLOG[d]=m;ch=true}}LS.set('plog',PLOG);
  for(const d in (r.log||{})){const a=LOG[d]||{r:0,ok:0,n:0},b=r.log[d];const m={r:Math.max(a.r,b.r||0),ok:Math.max(a.ok,b.ok||0),n:Math.max(a.n||0,b.n||0)};if(JSON.stringify(m)!==JSON.stringify(LOG[d])){LOG[d]=m;ch=true}}
  if(r.cfg&&(r.cfg.t||0)>(CFG.t||0)){CFG=Object.assign(CFG,r.cfg);ch=true;try{$('#sgoal').value=CFG.goal;$('#snewd').value=CFG.newd;$('#srate').value=CFG.rate;$('#sauto').checked=CFG.auto}catch(e){}}
  for(const k in (r.cando||{})){if(Math.abs(r.cando[k])>Math.abs(CANDO[k]||0)){CANDO[k]=r.cando[k];ch=true}}
@@ -954,7 +1003,7 @@ $('#sgout').onclick=async()=>{try{await fbInit();if(unsub)unsub();unsub=null;awa
 renderSync();
 if(ONLINE_SYNC&&LS.get('signedin',false))fbInit().catch(()=>renderSync('Synchronisation reprendra avec le réseau'));
 /* online / updates */
-function net(){const on=navigator.onLine;$('#netpill').textContent=on?'En ligne':'Hors connexion';$('#netpill').classList.toggle('off',!on);if(on)checkUpdate(false)}
+function net(){const on=navigator.onLine;$('#netpill').textContent=on?'En ligne':'Hors connexion';$('#netpill').classList.toggle('off',!on);if(on){checkUpdate(false);loadProg()}}
 async function checkUpdate(manual){try{const r=await fetch('vocab.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0;const j=await r.json();
  if(D&&j.updated<=D.updated&&j.lastCourse<=D.lastCourse){if(manual)toast('Ton carnet est déjà à jour');return}
  if(useVocab(j,'net'))toast(`Nouveau : carnet mis à jour (cours 1 à ${j.lastCourse})`)}catch(e){if(manual)toast(navigator.onLine?'Pas de mise à jour disponible ici':'Pas de connexion : réessaie plus tard')}}
@@ -964,7 +1013,7 @@ if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostnam
 /* boot: cached copy first (works offline), then network */
 (async()=>{const cached=LS.get('vocab',null);if(cached)useVocab(cached,'boot');
  if(!D){try{const r=await fetch('vocab.json');useVocab(await r.json(),'boot')}catch(e){}}
- loadEcoute();
+ buildProg();loadEcoute();loadProg();
  const l=$('#loading');if(D){l.remove();route();net()}else l.textContent='Impossible de charger le carnet. Connecte-toi une première fois à Internet.'})();
 }
 </script>

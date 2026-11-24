@@ -1,0 +1,6858 @@
+{
+"v": 1,
+"themes": [
+{
+"id": "salut",
+"lv": "A1",
+"title": "Salutations et politesse",
+"icon": "👋",
+"items": [
+{
+"id": "B:인사",
+"ko": "인사",
+"fr": "salutation",
+"t": "w"
+},
+{
+"id": "B:감사",
+"ko": "감사",
+"fr": "remerciement",
+"t": "w"
+},
+{
+"id": "B:사과",
+"ko": "사과",
+"fr": "excuse (aussi : pomme)",
+"t": "w"
+},
+{
+"id": "B:네",
+"ko": "네",
+"fr": "oui",
+"t": "w"
+},
+{
+"id": "B:아니요",
+"ko": "아니요",
+"fr": "non",
+"t": "w"
+},
+{
+"id": "B:여기",
+"ko": "여기",
+"fr": "ici",
+"t": "w"
+},
+{
+"id": "B:거기",
+"ko": "거기",
+"fr": "là",
+"t": "w"
+},
+{
+"id": "B:저기",
+"ko": "저기",
+"fr": "là-bas",
+"t": "w"
+},
+{
+"id": "B:안녕하세요",
+"ko": "안녕하세요",
+"fr": "bonjour",
+"t": "e"
+},
+{
+"id": "B:안녕히 가세요",
+"ko": "안녕히 가세요",
+"fr": "au revoir (à celui qui part)",
+"t": "e"
+},
+{
+"id": "B:안녕히 계세요",
+"ko": "안녕히 계세요",
+"fr": "au revoir (à celui qui reste)",
+"t": "e"
+},
+{
+"id": "B:감사합니다",
+"ko": "감사합니다",
+"fr": "merci",
+"t": "e"
+},
+{
+"id": "B:고맙습니다",
+"ko": "고맙습니다",
+"fr": "merci",
+"t": "e"
+},
+{
+"id": "B:죄송합니다",
+"ko": "죄송합니다",
+"fr": "je suis désolé",
+"t": "e"
+},
+{
+"id": "B:미안해요",
+"ko": "미안해요",
+"fr": "pardon, désolé",
+"t": "e"
+},
+{
+"id": "B:괜찮아요",
+"ko": "괜찮아요",
+"fr": "ça va, ce n'est pas grave",
+"t": "e"
+},
+{
+"id": "B:실례합니다",
+"ko": "실례합니다",
+"fr": "excusez-moi (pour déranger)",
+"t": "e"
+},
+{
+"id": "B:잠깐만요",
+"ko": "잠깐만요",
+"fr": "un instant",
+"t": "e"
+},
+{
+"id": "B:반갑습니다",
+"ko": "반갑습니다",
+"fr": "enchanté",
+"t": "e"
+},
+{
+"id": "B:처음 뵙겠습니다",
+"ko": "처음 뵙겠습니다",
+"fr": "enchanté (première rencontre, poli)",
+"t": "e"
+},
+{
+"id": "B:또 만나요",
+"ko": "또 만나요",
+"fr": "à bientôt",
+"t": "e"
+},
+{
+"id": "B:잘 가요",
+"ko": "잘 가요",
+"fr": "au revoir (familier poli)",
+"t": "e"
+},
+{
+"id": "B:천만에요",
+"ko": "천만에요",
+"fr": "je vous en prie",
+"t": "e"
+},
+{
+"id": "B:수고하셨습니다",
+"ko": "수고하셨습니다",
+"fr": "merci pour votre travail",
+"t": "e"
+},
+{
+"id": "B:축하합니다",
+"ko": "축하합니다",
+"fr": "félicitations",
+"t": "e"
+},
+{
+"id": "B:맛있게 드세요",
+"ko": "맛있게 드세요",
+"fr": "bon appétit",
+"t": "e"
+},
+{
+"id": "B:잘 먹겠습니다",
+"ko": "잘 먹겠습니다",
+"fr": "merci pour le repas (avant de manger)",
+"t": "e"
+},
+{
+"id": "B:잘 먹었습니다",
+"ko": "잘 먹었습니다",
+"fr": "merci pour le repas (après)",
+"t": "e"
+},
+{
+"id": "B:만나서 반갑습니다.",
+"ko": "만나서 반갑습니다.",
+"fr": "Ravi de vous rencontrer.",
+"t": "p"
+},
+{
+"id": "B:도와주셔서 감사합니다.",
+"ko": "도와주셔서 감사합니다.",
+"fr": "Merci de m'avoir aidé.",
+"t": "p"
+},
+{
+"id": "B:늦어서 죄송합니다.",
+"ko": "늦어서 죄송합니다.",
+"fr": "Désolé d'être en retard.",
+"t": "p"
+},
+{
+"id": "B:다시 한번 말해 주세요.",
+"ko": "다시 한번 말해 주세요.",
+"fr": "Pouvez-vous répéter, s'il vous plaît ?",
+"t": "p"
+},
+{
+"id": "B:천천히 말해 주세요.",
+"ko": "천천히 말해 주세요.",
+"fr": "Parlez lentement, s'il vous plaît.",
+"t": "p"
+},
+{
+"id": "B:잘 모르겠어요.",
+"ko": "잘 모르겠어요.",
+"fr": "Je ne sais pas trop.",
+"t": "p"
+}
+],
+"dlg": [
+"pA1a"
+]
+},
+{
+"id": "presenter",
+"lv": "A1",
+"title": "Se présenter",
+"icon": "🙋",
+"items": [
+{
+"id": "B:이름",
+"ko": "이름",
+"fr": "nom, prénom",
+"t": "w"
+},
+{
+"id": "B:나라",
+"ko": "나라",
+"fr": "pays",
+"t": "w"
+},
+{
+"id": "B:사람",
+"ko": "사람",
+"fr": "personne",
+"t": "w"
+},
+{
+"id": "B:한국",
+"ko": "한국",
+"fr": "Corée",
+"t": "w"
+},
+{
+"id": "B:프랑스",
+"ko": "프랑스",
+"fr": "France",
+"t": "w"
+},
+{
+"id": "B:일본",
+"ko": "일본",
+"fr": "Japon",
+"t": "w"
+},
+{
+"id": "B:중국",
+"ko": "중국",
+"fr": "Chine",
+"t": "w"
+},
+{
+"id": "B:미국",
+"ko": "미국",
+"fr": "États-Unis",
+"t": "w"
+},
+{
+"id": "B:영국",
+"ko": "영국",
+"fr": "Royaume-Uni",
+"t": "w"
+},
+{
+"id": "B:독일",
+"ko": "독일",
+"fr": "Allemagne",
+"t": "w"
+},
+{
+"id": "B:나이",
+"ko": "나이",
+"fr": "âge",
+"t": "w"
+},
+{
+"id": "B:직업",
+"ko": "직업",
+"fr": "métier",
+"t": "w"
+},
+{
+"id": "B:회사원",
+"ko": "회사원",
+"fr": "employé de bureau",
+"t": "w"
+},
+{
+"id": "B:학생",
+"ko": "학생",
+"fr": "étudiant, élève",
+"t": "w"
+},
+{
+"id": "B:선생님",
+"ko": "선생님",
+"fr": "professeur",
+"t": "w"
+},
+{
+"id": "B:가수",
+"ko": "가수",
+"fr": "chanteur",
+"t": "w"
+},
+{
+"id": "B:배우",
+"ko": "배우",
+"fr": "acteur",
+"t": "w"
+},
+{
+"id": "B:의사",
+"ko": "의사",
+"fr": "médecin",
+"t": "w"
+},
+{
+"id": "B:요리사",
+"ko": "요리사",
+"fr": "cuisinier",
+"t": "w"
+},
+{
+"id": "B:엔지니어",
+"ko": "엔지니어",
+"fr": "ingénieur",
+"t": "w"
+},
+{
+"id": "B:취미",
+"ko": "취미",
+"fr": "loisir, passe-temps",
+"t": "w"
+},
+{
+"id": "B:저",
+"ko": "저",
+"fr": "je, moi (poli)",
+"t": "w"
+},
+{
+"id": "B:나",
+"ko": "나",
+"fr": "je, moi (familier)",
+"t": "w"
+},
+{
+"id": "B:우리",
+"ko": "우리",
+"fr": "nous, notre",
+"t": "w"
+},
+{
+"id": "B:저는 ...이에요/예요",
+"ko": "저는 ...이에요/예요",
+"fr": "je suis ...",
+"t": "e"
+},
+{
+"id": "B:이름이 뭐예요?",
+"ko": "이름이 뭐예요?",
+"fr": "comment vous appelez-vous ?",
+"t": "e"
+},
+{
+"id": "B:어느 나라 사람이에요?",
+"ko": "어느 나라 사람이에요?",
+"fr": "de quel pays êtes-vous ?",
+"t": "e"
+},
+{
+"id": "B:몇 살이에요?",
+"ko": "몇 살이에요?",
+"fr": "quel âge avez-vous ?",
+"t": "e"
+},
+{
+"id": "B:무슨 일을 하세요?",
+"ko": "무슨 일을 하세요?",
+"fr": "que faites-vous dans la vie ?",
+"t": "e"
+},
+{
+"id": "B:어디에 살아요?",
+"ko": "어디에 살아요?",
+"fr": "où habitez-vous ?",
+"t": "e"
+},
+{
+"id": "B:제 이름은 아르노예요.",
+"ko": "제 이름은 아르노예요.",
+"fr": "Je m'appelle Arnaud.",
+"t": "p"
+},
+{
+"id": "B:저는 프랑스 사람이에요.",
+"ko": "저는 프랑스 사람이에요.",
+"fr": "Je suis français.",
+"t": "p"
+},
+{
+"id": "B:저는 몽펠리에에 살아요.",
+"ko": "저는 몽펠리에에 살아요.",
+"fr": "J'habite à Montpellier.",
+"t": "p"
+},
+{
+"id": "B:저는 오페라 극장에서 일해요.",
+"ko": "저는 오페라 극장에서 일해요.",
+"fr": "Je travaille dans un opéra.",
+"t": "p"
+},
+{
+"id": "B:제 취미는 노래예요.",
+"ko": "제 취미는 노래예요.",
+"fr": "Mon loisir, c'est le chant.",
+"t": "p"
+},
+{
+"id": "B:한국어를 조금 해요.",
+"ko": "한국어를 조금 해요.",
+"fr": "Je parle un peu coréen.",
+"t": "p"
+}
+],
+"dlg": [
+"pA1b"
+]
+},
+{
+"id": "famille",
+"lv": "A1",
+"title": "Famille",
+"icon": "👨‍👩‍👧",
+"items": [
+{
+"id": "B:가족",
+"ko": "가족",
+"fr": "famille",
+"t": "w"
+},
+{
+"id": "B:부모님",
+"ko": "부모님",
+"fr": "parents",
+"t": "w"
+},
+{
+"id": "B:아버지",
+"ko": "아버지",
+"fr": "père",
+"t": "w"
+},
+{
+"id": "B:어머니",
+"ko": "어머니",
+"fr": "mère",
+"t": "w"
+},
+{
+"id": "B:아빠",
+"ko": "아빠",
+"fr": "papa",
+"t": "w"
+},
+{
+"id": "B:엄마",
+"ko": "엄마",
+"fr": "maman",
+"t": "w"
+},
+{
+"id": "B:형",
+"ko": "형",
+"fr": "grand frère (dit par un homme)",
+"t": "w"
+},
+{
+"id": "B:오빠",
+"ko": "오빠",
+"fr": "grand frère (dit par une femme)",
+"t": "w"
+},
+{
+"id": "B:누나",
+"ko": "누나",
+"fr": "grande sœur (dit par un homme)",
+"t": "w"
+},
+{
+"id": "B:언니",
+"ko": "언니",
+"fr": "grande sœur (dit par une femme)",
+"t": "w"
+},
+{
+"id": "B:남동생",
+"ko": "남동생",
+"fr": "petit frère",
+"t": "w"
+},
+{
+"id": "B:여동생",
+"ko": "여동생",
+"fr": "petite sœur",
+"t": "w"
+},
+{
+"id": "B:아들",
+"ko": "아들",
+"fr": "fils",
+"t": "w"
+},
+{
+"id": "B:딸",
+"ko": "딸",
+"fr": "fille",
+"t": "w"
+},
+{
+"id": "B:남편",
+"ko": "남편",
+"fr": "mari",
+"t": "w"
+},
+{
+"id": "B:아내",
+"ko": "아내",
+"fr": "épouse",
+"t": "w"
+},
+{
+"id": "B:아이",
+"ko": "아이",
+"fr": "enfant",
+"t": "w"
+},
+{
+"id": "B:할아버지",
+"ko": "할아버지",
+"fr": "grand-père",
+"t": "w"
+},
+{
+"id": "B:할머니",
+"ko": "할머니",
+"fr": "grand-mère",
+"t": "w"
+},
+{
+"id": "B:친구",
+"ko": "친구",
+"fr": "ami",
+"t": "w"
+},
+{
+"id": "B:남자",
+"ko": "남자",
+"fr": "homme",
+"t": "w"
+},
+{
+"id": "B:여자",
+"ko": "여자",
+"fr": "femme",
+"t": "w"
+},
+{
+"id": "B:가족이 몇 명이에요?",
+"ko": "가족이 몇 명이에요?",
+"fr": "combien êtes-vous dans votre famille ?",
+"t": "e"
+},
+{
+"id": "B:형제가 있어요?",
+"ko": "형제가 있어요?",
+"fr": "avez-vous des frères et sœurs ?",
+"t": "e"
+},
+{
+"id": "B:결혼했어요",
+"ko": "결혼했어요",
+"fr": "je suis marié",
+"t": "e"
+},
+{
+"id": "B:우리 가족은 네 명이에요.",
+"ko": "우리 가족은 네 명이에요.",
+"fr": "Nous sommes quatre dans ma famille.",
+"t": "p"
+},
+{
+"id": "B:저는 여동생이 한 명 있어요.",
+"ko": "저는 여동생이 한 명 있어요.",
+"fr": "J'ai une petite sœur.",
+"t": "p"
+},
+{
+"id": "B:부모님은 프랑스에 계세요.",
+"ko": "부모님은 프랑스에 계세요.",
+"fr": "Mes parents sont en France.",
+"t": "p"
+},
+{
+"id": "B:제 친구는 한국 사람이에요.",
+"ko": "제 친구는 한국 사람이에요.",
+"fr": "Mon ami est coréen.",
+"t": "p"
+}
+],
+"dlg": [
+"pA1c"
+]
+},
+{
+"id": "nombres",
+"lv": "A1",
+"title": "Nombres et argent",
+"icon": "🔢",
+"items": [
+{
+"id": "B:일",
+"ko": "일",
+"fr": "un (sino-coréen)",
+"t": "w"
+},
+{
+"id": "B:이",
+"ko": "이",
+"fr": "deux (sino-coréen)",
+"t": "w"
+},
+{
+"id": "B:삼",
+"ko": "삼",
+"fr": "trois (sino-coréen)",
+"t": "w"
+},
+{
+"id": "B:사",
+"ko": "사",
+"fr": "quatre (sino-coréen)",
+"t": "w"
+},
+{
+"id": "B:오",
+"ko": "오",
+"fr": "cinq (sino-coréen)",
+"t": "w"
+},
+{
+"id": "B:육",
+"ko": "육",
+"fr": "six (sino-coréen)",
+"t": "w"
+},
+{
+"id": "B:칠",
+"ko": "칠",
+"fr": "sept (sino-coréen)",
+"t": "w"
+},
+{
+"id": "B:팔",
+"ko": "팔",
+"fr": "huit (sino-coréen)",
+"t": "w"
+},
+{
+"id": "B:구",
+"ko": "구",
+"fr": "neuf (sino-coréen)",
+"t": "w"
+},
+{
+"id": "B:십",
+"ko": "십",
+"fr": "dix (sino-coréen)",
+"t": "w"
+},
+{
+"id": "B:백",
+"ko": "백",
+"fr": "cent",
+"t": "w"
+},
+{
+"id": "B:천",
+"ko": "천",
+"fr": "mille",
+"t": "w"
+},
+{
+"id": "B:만",
+"ko": "만",
+"fr": "dix mille",
+"t": "w"
+},
+{
+"id": "B:하나",
+"ko": "하나",
+"fr": "un (coréen natif)",
+"t": "w"
+},
+{
+"id": "B:둘",
+"ko": "둘",
+"fr": "deux (natif)",
+"t": "w"
+},
+{
+"id": "B:셋",
+"ko": "셋",
+"fr": "trois (natif)",
+"t": "w"
+},
+{
+"id": "B:넷",
+"ko": "넷",
+"fr": "quatre (natif)",
+"t": "w"
+},
+{
+"id": "B:다섯",
+"ko": "다섯",
+"fr": "cinq (natif)",
+"t": "w"
+},
+{
+"id": "B:여섯",
+"ko": "여섯",
+"fr": "six (natif)",
+"t": "w"
+},
+{
+"id": "B:일곱",
+"ko": "일곱",
+"fr": "sept (natif)",
+"t": "w"
+},
+{
+"id": "B:여덟",
+"ko": "여덟",
+"fr": "huit (natif)",
+"t": "w"
+},
+{
+"id": "B:아홉",
+"ko": "아홉",
+"fr": "neuf (natif)",
+"t": "w"
+},
+{
+"id": "B:열",
+"ko": "열",
+"fr": "dix (natif)",
+"t": "w"
+},
+{
+"id": "B:스물",
+"ko": "스물",
+"fr": "vingt (natif)",
+"t": "w"
+},
+{
+"id": "B:돈",
+"ko": "돈",
+"fr": "argent",
+"t": "w"
+},
+{
+"id": "B:원",
+"ko": "원",
+"fr": "won (monnaie)",
+"t": "w"
+},
+{
+"id": "B:유로",
+"ko": "유로",
+"fr": "euro",
+"t": "w"
+},
+{
+"id": "B:개",
+"ko": "개",
+"fr": "compteur d'objets",
+"t": "w"
+},
+{
+"id": "B:명",
+"ko": "명",
+"fr": "compteur de personnes",
+"t": "w"
+},
+{
+"id": "B:얼마예요?",
+"ko": "얼마예요?",
+"fr": "combien ça coûte ?",
+"t": "e"
+},
+{
+"id": "B:몇 개요?",
+"ko": "몇 개요?",
+"fr": "combien (d'objets) ?",
+"t": "e"
+},
+{
+"id": "B:너무 비싸요",
+"ko": "너무 비싸요",
+"fr": "c'est trop cher",
+"t": "e"
+},
+{
+"id": "B:싸요",
+"ko": "싸요",
+"fr": "c'est bon marché",
+"t": "e"
+},
+{
+"id": "B:카드로 할게요",
+"ko": "카드로 할게요",
+"fr": "je paie par carte",
+"t": "e"
+},
+{
+"id": "B:이거 얼마예요?",
+"ko": "이거 얼마예요?",
+"fr": "Combien coûte ceci ?",
+"t": "p"
+},
+{
+"id": "B:만 오천 원이에요.",
+"ko": "만 오천 원이에요.",
+"fr": "C'est 15 000 wons.",
+"t": "p"
+},
+{
+"id": "B:사과 세 개 주세요.",
+"ko": "사과 세 개 주세요.",
+"fr": "Trois pommes, s'il vous plaît.",
+"t": "p"
+},
+{
+"id": "B:학생이 다섯 명 있어요.",
+"ko": "학생이 다섯 명 있어요.",
+"fr": "Il y a cinq élèves.",
+"t": "p"
+}
+],
+"dlg": []
+},
+{
+"id": "temps",
+"lv": "A1",
+"title": "Heure, jours et dates",
+"icon": "🕐",
+"items": [
+{
+"id": "B:시간",
+"ko": "시간",
+"fr": "temps, heure (durée)",
+"t": "w"
+},
+{
+"id": "B:시",
+"ko": "시",
+"fr": "heure (au cadran)",
+"t": "w"
+},
+{
+"id": "B:분",
+"ko": "분",
+"fr": "minute",
+"t": "w"
+},
+{
+"id": "B:오늘",
+"ko": "오늘",
+"fr": "aujourd'hui",
+"t": "w"
+},
+{
+"id": "B:내일",
+"ko": "내일",
+"fr": "demain",
+"t": "w"
+},
+{
+"id": "B:어제",
+"ko": "어제",
+"fr": "hier",
+"t": "w"
+},
+{
+"id": "B:아침",
+"ko": "아침",
+"fr": "matin",
+"t": "w"
+},
+{
+"id": "B:점심",
+"ko": "점심",
+"fr": "midi, déjeuner",
+"t": "w"
+},
+{
+"id": "B:저녁",
+"ko": "저녁",
+"fr": "soir, dîner",
+"t": "w"
+},
+{
+"id": "B:밤",
+"ko": "밤",
+"fr": "nuit",
+"t": "w"
+},
+{
+"id": "B:오전",
+"ko": "오전",
+"fr": "matin (AM)",
+"t": "w"
+},
+{
+"id": "B:오후",
+"ko": "오후",
+"fr": "après-midi (PM)",
+"t": "w"
+},
+{
+"id": "B:지금",
+"ko": "지금",
+"fr": "maintenant",
+"t": "w"
+},
+{
+"id": "B:나중에",
+"ko": "나중에",
+"fr": "plus tard",
+"t": "w"
+},
+{
+"id": "B:주말",
+"ko": "주말",
+"fr": "week-end",
+"t": "w"
+},
+{
+"id": "B:월요일",
+"ko": "월요일",
+"fr": "lundi",
+"t": "w"
+},
+{
+"id": "B:화요일",
+"ko": "화요일",
+"fr": "mardi",
+"t": "w"
+},
+{
+"id": "B:수요일",
+"ko": "수요일",
+"fr": "mercredi",
+"t": "w"
+},
+{
+"id": "B:목요일",
+"ko": "목요일",
+"fr": "jeudi",
+"t": "w"
+},
+{
+"id": "B:금요일",
+"ko": "금요일",
+"fr": "vendredi",
+"t": "w"
+},
+{
+"id": "B:토요일",
+"ko": "토요일",
+"fr": "samedi",
+"t": "w"
+},
+{
+"id": "B:일요일",
+"ko": "일요일",
+"fr": "dimanche",
+"t": "w"
+},
+{
+"id": "B:주",
+"ko": "주",
+"fr": "semaine",
+"t": "w"
+},
+{
+"id": "B:달",
+"ko": "달",
+"fr": "mois (durée)",
+"t": "w"
+},
+{
+"id": "B:월",
+"ko": "월",
+"fr": "mois (date)",
+"t": "w"
+},
+{
+"id": "B:년",
+"ko": "년",
+"fr": "année",
+"t": "w"
+},
+{
+"id": "B:생일",
+"ko": "생일",
+"fr": "anniversaire",
+"t": "w"
+},
+{
+"id": "B:지금 몇 시예요?",
+"ko": "지금 몇 시예요?",
+"fr": "quelle heure est-il ?",
+"t": "e"
+},
+{
+"id": "B:오늘 무슨 요일이에요?",
+"ko": "오늘 무슨 요일이에요?",
+"fr": "quel jour sommes-nous ?",
+"t": "e"
+},
+{
+"id": "B:며칠이에요?",
+"ko": "며칠이에요?",
+"fr": "quelle date ?",
+"t": "e"
+},
+{
+"id": "B:몇 시에 만나요?",
+"ko": "몇 시에 만나요?",
+"fr": "on se voit à quelle heure ?",
+"t": "e"
+},
+{
+"id": "B:지금 세 시 반이에요.",
+"ko": "지금 세 시 반이에요.",
+"fr": "Il est trois heures et demie.",
+"t": "p"
+},
+{
+"id": "B:수업은 저녁 일곱 시에 시작해요.",
+"ko": "수업은 저녁 일곱 시에 시작해요.",
+"fr": "Le cours commence à 19 h.",
+"t": "p"
+},
+{
+"id": "B:제 생일은 오월 십일이에요.",
+"ko": "제 생일은 오월 십일이에요.",
+"fr": "Mon anniversaire est le 10 mai.",
+"t": "p"
+},
+{
+"id": "B:주말에 시간 있어요?",
+"ko": "주말에 시간 있어요?",
+"fr": "Tu as du temps ce week-end ?",
+"t": "p"
+}
+],
+"dlg": [
+"pA1g"
+]
+},
+{
+"id": "manger",
+"lv": "A1",
+"title": "Nourriture et boissons",
+"icon": "🍚",
+"items": [
+{
+"id": "B:음식",
+"ko": "음식",
+"fr": "nourriture, plat",
+"t": "w"
+},
+{
+"id": "B:밥",
+"ko": "밥",
+"fr": "riz, repas",
+"t": "w"
+},
+{
+"id": "B:빵",
+"ko": "빵",
+"fr": "pain",
+"t": "w"
+},
+{
+"id": "B:고기",
+"ko": "고기",
+"fr": "viande",
+"t": "w"
+},
+{
+"id": "B:소고기",
+"ko": "소고기",
+"fr": "bœuf",
+"t": "w"
+},
+{
+"id": "B:돼지고기",
+"ko": "돼지고기",
+"fr": "porc",
+"t": "w"
+},
+{
+"id": "B:닭고기",
+"ko": "닭고기",
+"fr": "poulet",
+"t": "w"
+},
+{
+"id": "B:생선",
+"ko": "생선",
+"fr": "poisson",
+"t": "w"
+},
+{
+"id": "B:야채",
+"ko": "야채",
+"fr": "légume",
+"t": "w"
+},
+{
+"id": "B:과일",
+"ko": "과일",
+"fr": "fruit",
+"t": "w"
+},
+{
+"id": "B:사과#manger",
+"ko": "사과",
+"fr": "pomme",
+"t": "w"
+},
+{
+"id": "B:계란",
+"ko": "계란",
+"fr": "œuf",
+"t": "w"
+},
+{
+"id": "B:김치",
+"ko": "김치",
+"fr": "kimchi",
+"t": "w"
+},
+{
+"id": "B:라면",
+"ko": "라면",
+"fr": "ramen",
+"t": "w"
+},
+{
+"id": "B:물",
+"ko": "물",
+"fr": "eau",
+"t": "w"
+},
+{
+"id": "B:커피",
+"ko": "커피",
+"fr": "café",
+"t": "w"
+},
+{
+"id": "B:차",
+"ko": "차",
+"fr": "thé",
+"t": "w"
+},
+{
+"id": "B:우유",
+"ko": "우유",
+"fr": "lait",
+"t": "w"
+},
+{
+"id": "B:주스",
+"ko": "주스",
+"fr": "jus",
+"t": "w"
+},
+{
+"id": "B:맥주",
+"ko": "맥주",
+"fr": "bière",
+"t": "w"
+},
+{
+"id": "B:와인",
+"ko": "와인",
+"fr": "vin",
+"t": "w"
+},
+{
+"id": "B:소주",
+"ko": "소주",
+"fr": "soju",
+"t": "w"
+},
+{
+"id": "B:맛있다",
+"ko": "맛있다",
+"fr": "être bon (délicieux)",
+"t": "w"
+},
+{
+"id": "B:맛없다",
+"ko": "맛없다",
+"fr": "ne pas être bon",
+"t": "w"
+},
+{
+"id": "B:맵다",
+"ko": "맵다",
+"fr": "être piquant",
+"t": "w"
+},
+{
+"id": "B:달다",
+"ko": "달다",
+"fr": "être sucré",
+"t": "w"
+},
+{
+"id": "B:짜다",
+"ko": "짜다",
+"fr": "être salé",
+"t": "w"
+},
+{
+"id": "B:배고프다",
+"ko": "배고프다",
+"fr": "avoir faim",
+"t": "w"
+},
+{
+"id": "B:배부르다",
+"ko": "배부르다",
+"fr": "être rassasié",
+"t": "w"
+},
+{
+"id": "B:먹다",
+"ko": "먹다",
+"fr": "manger",
+"t": "w"
+},
+{
+"id": "B:마시다",
+"ko": "마시다",
+"fr": "boire",
+"t": "w"
+},
+{
+"id": "B:배고파요",
+"ko": "배고파요",
+"fr": "j'ai faim",
+"t": "e"
+},
+{
+"id": "B:목말라요",
+"ko": "목말라요",
+"fr": "j'ai soif",
+"t": "e"
+},
+{
+"id": "B:맛있어요",
+"ko": "맛있어요",
+"fr": "c'est bon",
+"t": "e"
+},
+{
+"id": "B:너무 매워요",
+"ko": "너무 매워요",
+"fr": "c'est trop piquant",
+"t": "e"
+},
+{
+"id": "B:저는 고기를 안 먹어요.",
+"ko": "저는 고기를 안 먹어요.",
+"fr": "Je ne mange pas de viande.",
+"t": "p"
+},
+{
+"id": "B:한국 음식을 좋아해요.",
+"ko": "한국 음식을 좋아해요.",
+"fr": "J'aime la cuisine coréenne.",
+"t": "p"
+},
+{
+"id": "B:아침에 커피를 마셔요.",
+"ko": "아침에 커피를 마셔요.",
+"fr": "Le matin, je bois du café.",
+"t": "p"
+},
+{
+"id": "B:김치가 조금 매워요.",
+"ko": "김치가 조금 매워요.",
+"fr": "Le kimchi est un peu piquant.",
+"t": "p"
+}
+],
+"dlg": [
+"pA1j"
+]
+},
+{
+"id": "cafe",
+"lv": "A1",
+"title": "Au café et au restaurant",
+"icon": "☕",
+"items": [
+{
+"id": "B:식당",
+"ko": "식당",
+"fr": "restaurant",
+"t": "w"
+},
+{
+"id": "B:카페",
+"ko": "카페",
+"fr": "café (lieu)",
+"t": "w"
+},
+{
+"id": "B:메뉴",
+"ko": "메뉴",
+"fr": "menu",
+"t": "w"
+},
+{
+"id": "B:주문",
+"ko": "주문",
+"fr": "commande",
+"t": "w"
+},
+{
+"id": "B:계산",
+"ko": "계산",
+"fr": "addition, paiement",
+"t": "w"
+},
+{
+"id": "B:영수증",
+"ko": "영수증",
+"fr": "reçu",
+"t": "w"
+},
+{
+"id": "B:컵",
+"ko": "컵",
+"fr": "tasse, gobelet",
+"t": "w"
+},
+{
+"id": "B:숟가락",
+"ko": "숟가락",
+"fr": "cuillère",
+"t": "w"
+},
+{
+"id": "B:젓가락",
+"ko": "젓가락",
+"fr": "baguettes",
+"t": "w"
+},
+{
+"id": "B:포크",
+"ko": "포크",
+"fr": "fourchette",
+"t": "w"
+},
+{
+"id": "B:접시",
+"ko": "접시",
+"fr": "assiette",
+"t": "w"
+},
+{
+"id": "B:자리",
+"ko": "자리",
+"fr": "place, siège",
+"t": "w"
+},
+{
+"id": "B:어서 오세요",
+"ko": "어서 오세요",
+"fr": "bienvenue (à l'entrée)",
+"t": "e"
+},
+{
+"id": "B:메뉴 주세요",
+"ko": "메뉴 주세요",
+"fr": "le menu, s'il vous plaît",
+"t": "e"
+},
+{
+"id": "B:이거 주세요",
+"ko": "이거 주세요",
+"fr": "je prends ceci",
+"t": "e"
+},
+{
+"id": "B:물 좀 주세요",
+"ko": "물 좀 주세요",
+"fr": "de l'eau, s'il vous plaît",
+"t": "e"
+},
+{
+"id": "B:계산해 주세요",
+"ko": "계산해 주세요",
+"fr": "l'addition, s'il vous plaît",
+"t": "e"
+},
+{
+"id": "B:여기요!",
+"ko": "여기요!",
+"fr": "s'il vous plaît ! (pour appeler)",
+"t": "e"
+},
+{
+"id": "B:포장해 주세요",
+"ko": "포장해 주세요",
+"fr": "à emporter, s'il vous plaît",
+"t": "e"
+},
+{
+"id": "B:여기서 먹을게요",
+"ko": "여기서 먹을게요",
+"fr": "je mange sur place",
+"t": "e"
+},
+{
+"id": "B:몇 분이세요?",
+"ko": "몇 분이세요?",
+"fr": "vous êtes combien ?",
+"t": "e"
+},
+{
+"id": "B:아메리카노 두 잔 주세요.",
+"ko": "아메리카노 두 잔 주세요.",
+"fr": "Deux americanos, s'il vous plaît.",
+"t": "p"
+},
+{
+"id": "B:덜 맵게 해 주세요.",
+"ko": "덜 맵게 해 주세요.",
+"fr": "Moins piquant, s'il vous plaît.",
+"t": "p"
+},
+{
+"id": "B:카드 돼요?",
+"ko": "카드 돼요?",
+"fr": "La carte est acceptée ?",
+"t": "p"
+},
+{
+"id": "B:두 명이에요.",
+"ko": "두 명이에요.",
+"fr": "Nous sommes deux.",
+"t": "p"
+}
+],
+"dlg": [
+"pA1d"
+]
+},
+{
+"id": "ville",
+"lv": "A1",
+"title": "En ville",
+"icon": "🏙️",
+"items": [
+{
+"id": "B:집",
+"ko": "집",
+"fr": "maison",
+"t": "w"
+},
+{
+"id": "B:학교",
+"ko": "학교",
+"fr": "école",
+"t": "w"
+},
+{
+"id": "B:회사",
+"ko": "회사",
+"fr": "entreprise, bureau",
+"t": "w"
+},
+{
+"id": "B:병원",
+"ko": "병원",
+"fr": "hôpital",
+"t": "w"
+},
+{
+"id": "B:약국",
+"ko": "약국",
+"fr": "pharmacie",
+"t": "w"
+},
+{
+"id": "B:은행",
+"ko": "은행",
+"fr": "banque",
+"t": "w"
+},
+{
+"id": "B:우체국",
+"ko": "우체국",
+"fr": "poste",
+"t": "w"
+},
+{
+"id": "B:가게",
+"ko": "가게",
+"fr": "magasin",
+"t": "w"
+},
+{
+"id": "B:시장",
+"ko": "시장",
+"fr": "marché",
+"t": "w"
+},
+{
+"id": "B:편의점",
+"ko": "편의점",
+"fr": "supérette",
+"t": "w"
+},
+{
+"id": "B:마트",
+"ko": "마트",
+"fr": "supermarché",
+"t": "w"
+},
+{
+"id": "B:호텔",
+"ko": "호텔",
+"fr": "hôtel",
+"t": "w"
+},
+{
+"id": "B:공원",
+"ko": "공원",
+"fr": "parc",
+"t": "w"
+},
+{
+"id": "B:극장",
+"ko": "극장",
+"fr": "théâtre, salle de spectacle",
+"t": "w"
+},
+{
+"id": "B:영화관",
+"ko": "영화관",
+"fr": "cinéma",
+"t": "w"
+},
+{
+"id": "B:화장실",
+"ko": "화장실",
+"fr": "toilettes",
+"t": "w"
+},
+{
+"id": "B:도서관",
+"ko": "도서관",
+"fr": "bibliothèque",
+"t": "w"
+},
+{
+"id": "B:교회",
+"ko": "교회",
+"fr": "église",
+"t": "w"
+},
+{
+"id": "B:길",
+"ko": "길",
+"fr": "rue, chemin",
+"t": "w"
+},
+{
+"id": "B:앞",
+"ko": "앞",
+"fr": "devant",
+"t": "w"
+},
+{
+"id": "B:뒤",
+"ko": "뒤",
+"fr": "derrière",
+"t": "w"
+},
+{
+"id": "B:옆",
+"ko": "옆",
+"fr": "à côté",
+"t": "w"
+},
+{
+"id": "B:안",
+"ko": "안",
+"fr": "dedans",
+"t": "w"
+},
+{
+"id": "B:밖",
+"ko": "밖",
+"fr": "dehors",
+"t": "w"
+},
+{
+"id": "B:위",
+"ko": "위",
+"fr": "dessus",
+"t": "w"
+},
+{
+"id": "B:아래",
+"ko": "아래",
+"fr": "dessous",
+"t": "w"
+},
+{
+"id": "B:오른쪽",
+"ko": "오른쪽",
+"fr": "droite",
+"t": "w"
+},
+{
+"id": "B:왼쪽",
+"ko": "왼쪽",
+"fr": "gauche",
+"t": "w"
+},
+{
+"id": "B:화장실이 어디예요?",
+"ko": "화장실이 어디예요?",
+"fr": "où sont les toilettes ?",
+"t": "e"
+},
+{
+"id": "B:여기에서 멀어요?",
+"ko": "여기에서 멀어요?",
+"fr": "c'est loin d'ici ?",
+"t": "e"
+},
+{
+"id": "B:가까워요",
+"ko": "가까워요",
+"fr": "c'est près",
+"t": "e"
+},
+{
+"id": "B:쭉 가세요",
+"ko": "쭉 가세요",
+"fr": "allez tout droit",
+"t": "e"
+},
+{
+"id": "B:약국은 은행 옆에 있어요.",
+"ko": "약국은 은행 옆에 있어요.",
+"fr": "La pharmacie est à côté de la banque.",
+"t": "p"
+},
+{
+"id": "B:극장 앞에서 만나요.",
+"ko": "극장 앞에서 만나요.",
+"fr": "Retrouvons-nous devant le théâtre.",
+"t": "p"
+},
+{
+"id": "B:편의점이 어디에 있어요?",
+"ko": "편의점이 어디에 있어요?",
+"fr": "Où est la supérette ?",
+"t": "p"
+},
+{
+"id": "B:집에서 회사까지 가까워요.",
+"ko": "집에서 회사까지 가까워요.",
+"fr": "De chez moi au bureau, c'est près.",
+"t": "p"
+}
+],
+"dlg": [
+"pA1e"
+]
+},
+{
+"id": "transport",
+"lv": "A1",
+"title": "Transports",
+"icon": "🚇",
+"items": [
+{
+"id": "B:지하철",
+"ko": "지하철",
+"fr": "métro",
+"t": "w"
+},
+{
+"id": "B:버스",
+"ko": "버스",
+"fr": "bus",
+"t": "w"
+},
+{
+"id": "B:택시",
+"ko": "택시",
+"fr": "taxi",
+"t": "w"
+},
+{
+"id": "B:기차",
+"ko": "기차",
+"fr": "train",
+"t": "w"
+},
+{
+"id": "B:비행기",
+"ko": "비행기",
+"fr": "avion",
+"t": "w"
+},
+{
+"id": "B:자동차",
+"ko": "자동차",
+"fr": "voiture",
+"t": "w"
+},
+{
+"id": "B:자전거",
+"ko": "자전거",
+"fr": "vélo",
+"t": "w"
+},
+{
+"id": "B:역",
+"ko": "역",
+"fr": "gare, station",
+"t": "w"
+},
+{
+"id": "B:공항",
+"ko": "공항",
+"fr": "aéroport",
+"t": "w"
+},
+{
+"id": "B:표",
+"ko": "표",
+"fr": "billet",
+"t": "w"
+},
+{
+"id": "B:정류장",
+"ko": "정류장",
+"fr": "arrêt (de bus)",
+"t": "w"
+},
+{
+"id": "B:출구",
+"ko": "출구",
+"fr": "sortie",
+"t": "w"
+},
+{
+"id": "B:입구",
+"ko": "입구",
+"fr": "entrée",
+"t": "w"
+},
+{
+"id": "B:타다",
+"ko": "타다",
+"fr": "monter (dans un véhicule)",
+"t": "w"
+},
+{
+"id": "B:내리다",
+"ko": "내리다",
+"fr": "descendre",
+"t": "w"
+},
+{
+"id": "B:갈아타다",
+"ko": "갈아타다",
+"fr": "changer (de ligne)",
+"t": "w"
+},
+{
+"id": "B:걷다",
+"ko": "걷다",
+"fr": "marcher",
+"t": "w"
+},
+{
+"id": "B:가다",
+"ko": "가다",
+"fr": "aller",
+"t": "w"
+},
+{
+"id": "B:오다",
+"ko": "오다",
+"fr": "venir",
+"t": "w"
+},
+{
+"id": "B:어디로 가세요?",
+"ko": "어디로 가세요?",
+"fr": "où allez-vous ?",
+"t": "e"
+},
+{
+"id": "B:여기서 내려 주세요",
+"ko": "여기서 내려 주세요",
+"fr": "déposez-moi ici",
+"t": "e"
+},
+{
+"id": "B:몇 번 출구예요?",
+"ko": "몇 번 출구예요?",
+"fr": "quelle sortie ?",
+"t": "e"
+},
+{
+"id": "B:얼마나 걸려요?",
+"ko": "얼마나 걸려요?",
+"fr": "combien de temps ça prend ?",
+"t": "e"
+},
+{
+"id": "B:지하철로 회사에 가요.",
+"ko": "지하철로 회사에 가요.",
+"fr": "Je vais au bureau en métro.",
+"t": "p"
+},
+{
+"id": "B:다음 역에서 내려요.",
+"ko": "다음 역에서 내려요.",
+"fr": "Je descends à la prochaine station.",
+"t": "p"
+},
+{
+"id": "B:공항까지 한 시간 걸려요.",
+"ko": "공항까지 한 시간 걸려요.",
+"fr": "Il faut une heure jusqu'à l'aéroport.",
+"t": "p"
+},
+{
+"id": "B:이 버스 서울역에 가요?",
+"ko": "이 버스 서울역에 가요?",
+"fr": "Ce bus va à la gare de Séoul ?",
+"t": "p"
+}
+],
+"dlg": [
+"pA1f"
+]
+},
+{
+"id": "maison",
+"lv": "A1",
+"title": "Maison et objets",
+"icon": "🏠",
+"items": [
+{
+"id": "B:방",
+"ko": "방",
+"fr": "chambre, pièce",
+"t": "w"
+},
+{
+"id": "B:부엌",
+"ko": "부엌",
+"fr": "cuisine (pièce)",
+"t": "w"
+},
+{
+"id": "B:문",
+"ko": "문",
+"fr": "porte",
+"t": "w"
+},
+{
+"id": "B:창문",
+"ko": "창문",
+"fr": "fenêtre",
+"t": "w"
+},
+{
+"id": "B:침대",
+"ko": "침대",
+"fr": "lit",
+"t": "w"
+},
+{
+"id": "B:책상",
+"ko": "책상",
+"fr": "bureau (meuble)",
+"t": "w"
+},
+{
+"id": "B:의자",
+"ko": "의자",
+"fr": "chaise",
+"t": "w"
+},
+{
+"id": "B:텔레비전",
+"ko": "텔레비전",
+"fr": "télévision",
+"t": "w"
+},
+{
+"id": "B:컴퓨터",
+"ko": "컴퓨터",
+"fr": "ordinateur",
+"t": "w"
+},
+{
+"id": "B:핸드폰",
+"ko": "핸드폰",
+"fr": "téléphone portable",
+"t": "w"
+},
+{
+"id": "B:책",
+"ko": "책",
+"fr": "livre",
+"t": "w"
+},
+{
+"id": "B:가방",
+"ko": "가방",
+"fr": "sac",
+"t": "w"
+},
+{
+"id": "B:열쇠",
+"ko": "열쇠",
+"fr": "clé",
+"t": "w"
+},
+{
+"id": "B:우산",
+"ko": "우산",
+"fr": "parapluie",
+"t": "w"
+},
+{
+"id": "B:옷",
+"ko": "옷",
+"fr": "vêtement",
+"t": "w"
+},
+{
+"id": "B:신발",
+"ko": "신발",
+"fr": "chaussures",
+"t": "w"
+},
+{
+"id": "B:시계",
+"ko": "시계",
+"fr": "montre, horloge",
+"t": "w"
+},
+{
+"id": "B:안경",
+"ko": "안경",
+"fr": "lunettes",
+"t": "w"
+},
+{
+"id": "B:있다",
+"ko": "있다",
+"fr": "avoir, il y a, être (quelque part)",
+"t": "w"
+},
+{
+"id": "B:없다",
+"ko": "없다",
+"fr": "ne pas avoir, il n'y a pas",
+"t": "w"
+},
+{
+"id": "B:이게 뭐예요?",
+"ko": "이게 뭐예요?",
+"fr": "qu'est-ce que c'est ?",
+"t": "e"
+},
+{
+"id": "B:제 거예요",
+"ko": "제 거예요",
+"fr": "c'est à moi",
+"t": "e"
+},
+{
+"id": "B:어디 있어요?",
+"ko": "어디 있어요?",
+"fr": "où est-ce ?",
+"t": "e"
+},
+{
+"id": "B:가방 안에 책이 있어요.",
+"ko": "가방 안에 책이 있어요.",
+"fr": "Il y a un livre dans le sac.",
+"t": "p"
+},
+{
+"id": "B:열쇠가 없어요.",
+"ko": "열쇠가 없어요.",
+"fr": "Je n'ai pas la clé.",
+"t": "p"
+},
+{
+"id": "B:제 방은 작아요.",
+"ko": "제 방은 작아요.",
+"fr": "Ma chambre est petite.",
+"t": "p"
+},
+{
+"id": "B:핸드폰이 책상 위에 있어요.",
+"ko": "핸드폰이 책상 위에 있어요.",
+"fr": "Le téléphone est sur le bureau.",
+"t": "p"
+}
+],
+"dlg": []
+},
+{
+"id": "corps",
+"lv": "A1",
+"title": "Corps et santé",
+"icon": "🩺",
+"items": [
+{
+"id": "B:몸",
+"ko": "몸",
+"fr": "corps",
+"t": "w"
+},
+{
+"id": "B:머리",
+"ko": "머리",
+"fr": "tête, cheveux",
+"t": "w"
+},
+{
+"id": "B:눈",
+"ko": "눈",
+"fr": "œil (aussi : neige)",
+"t": "w"
+},
+{
+"id": "B:코",
+"ko": "코",
+"fr": "nez",
+"t": "w"
+},
+{
+"id": "B:입",
+"ko": "입",
+"fr": "bouche",
+"t": "w"
+},
+{
+"id": "B:귀",
+"ko": "귀",
+"fr": "oreille",
+"t": "w"
+},
+{
+"id": "B:목",
+"ko": "목",
+"fr": "cou, gorge",
+"t": "w"
+},
+{
+"id": "B:손",
+"ko": "손",
+"fr": "main",
+"t": "w"
+},
+{
+"id": "B:발",
+"ko": "발",
+"fr": "pied",
+"t": "w"
+},
+{
+"id": "B:다리",
+"ko": "다리",
+"fr": "jambe",
+"t": "w"
+},
+{
+"id": "B:배",
+"ko": "배",
+"fr": "ventre",
+"t": "w"
+},
+{
+"id": "B:이#corps",
+"ko": "이",
+"fr": "dent",
+"t": "w"
+},
+{
+"id": "B:아프다",
+"ko": "아프다",
+"fr": "avoir mal, être malade",
+"t": "w"
+},
+{
+"id": "B:감기",
+"ko": "감기",
+"fr": "rhume",
+"t": "w"
+},
+{
+"id": "B:약",
+"ko": "약",
+"fr": "médicament",
+"t": "w"
+},
+{
+"id": "B:열#corps",
+"ko": "열",
+"fr": "fièvre",
+"t": "w"
+},
+{
+"id": "B:피곤하다",
+"ko": "피곤하다",
+"fr": "être fatigué",
+"t": "w"
+},
+{
+"id": "B:어디가 아파요?",
+"ko": "어디가 아파요?",
+"fr": "où avez-vous mal ?",
+"t": "e"
+},
+{
+"id": "B:머리가 아파요",
+"ko": "머리가 아파요",
+"fr": "j'ai mal à la tête",
+"t": "e"
+},
+{
+"id": "B:감기에 걸렸어요",
+"ko": "감기에 걸렸어요",
+"fr": "j'ai attrapé un rhume",
+"t": "e"
+},
+{
+"id": "B:괜찮으세요?",
+"ko": "괜찮으세요?",
+"fr": "ça va ? (vous allez bien ?)",
+"t": "e"
+},
+{
+"id": "B:목이 아파서 노래를 못 해요.",
+"ko": "목이 아파서 노래를 못 해요.",
+"fr": "J'ai mal à la gorge, je ne peux pas chanter.",
+"t": "p"
+},
+{
+"id": "B:약국에서 약을 샀어요.",
+"ko": "약국에서 약을 샀어요.",
+"fr": "J'ai acheté des médicaments à la pharmacie.",
+"t": "p"
+},
+{
+"id": "B:오늘 너무 피곤해요.",
+"ko": "오늘 너무 피곤해요.",
+"fr": "Je suis très fatigué aujourd'hui.",
+"t": "p"
+}
+],
+"dlg": [
+"pA1h"
+]
+},
+{
+"id": "meteo",
+"lv": "A1",
+"title": "Météo et saisons",
+"icon": "🌦️",
+"items": [
+{
+"id": "B:날씨",
+"ko": "날씨",
+"fr": "temps (météo)",
+"t": "w"
+},
+{
+"id": "B:봄",
+"ko": "봄",
+"fr": "printemps",
+"t": "w"
+},
+{
+"id": "B:여름",
+"ko": "여름",
+"fr": "été",
+"t": "w"
+},
+{
+"id": "B:가을",
+"ko": "가을",
+"fr": "automne",
+"t": "w"
+},
+{
+"id": "B:겨울",
+"ko": "겨울",
+"fr": "hiver",
+"t": "w"
+},
+{
+"id": "B:비",
+"ko": "비",
+"fr": "pluie",
+"t": "w"
+},
+{
+"id": "B:눈#meteo",
+"ko": "눈",
+"fr": "neige (aussi : œil)",
+"t": "w"
+},
+{
+"id": "B:바람",
+"ko": "바람",
+"fr": "vent",
+"t": "w"
+},
+{
+"id": "B:구름",
+"ko": "구름",
+"fr": "nuage",
+"t": "w"
+},
+{
+"id": "B:해",
+"ko": "해",
+"fr": "soleil",
+"t": "w"
+},
+{
+"id": "B:덥다",
+"ko": "덥다",
+"fr": "faire chaud",
+"t": "w"
+},
+{
+"id": "B:춥다",
+"ko": "춥다",
+"fr": "faire froid",
+"t": "w"
+},
+{
+"id": "B:따뜻하다",
+"ko": "따뜻하다",
+"fr": "faire doux",
+"t": "w"
+},
+{
+"id": "B:시원하다",
+"ko": "시원하다",
+"fr": "faire frais (agréable)",
+"t": "w"
+},
+{
+"id": "B:맑다",
+"ko": "맑다",
+"fr": "être clair, dégagé",
+"t": "w"
+},
+{
+"id": "B:흐리다",
+"ko": "흐리다",
+"fr": "être nuageux",
+"t": "w"
+},
+{
+"id": "B:날씨가 좋아요",
+"ko": "날씨가 좋아요",
+"fr": "il fait beau",
+"t": "e"
+},
+{
+"id": "B:비가 와요",
+"ko": "비가 와요",
+"fr": "il pleut",
+"t": "e"
+},
+{
+"id": "B:눈이 와요",
+"ko": "눈이 와요",
+"fr": "il neige",
+"t": "e"
+},
+{
+"id": "B:오늘 추워요",
+"ko": "오늘 추워요",
+"fr": "il fait froid aujourd'hui",
+"t": "e"
+},
+{
+"id": "B:몽펠리에는 여름에 아주 더워요.",
+"ko": "몽펠리에는 여름에 아주 더워요.",
+"fr": "À Montpellier, il fait très chaud l'été.",
+"t": "p"
+},
+{
+"id": "B:내일 비가 올 거예요.",
+"ko": "내일 비가 올 거예요.",
+"fr": "Il va pleuvoir demain.",
+"t": "p"
+},
+{
+"id": "B:저는 가을을 제일 좋아해요.",
+"ko": "저는 가을을 제일 좋아해요.",
+"fr": "J'aime l'automne plus que tout.",
+"t": "p"
+}
+],
+"dlg": [
+"pA1i"
+]
+},
+{
+"id": "verbes",
+"lv": "A1",
+"title": "Verbes et adjectifs de base",
+"icon": "⚙️",
+"items": [
+{
+"id": "B:하다",
+"ko": "하다",
+"fr": "faire",
+"t": "w"
+},
+{
+"id": "B:보다",
+"ko": "보다",
+"fr": "voir, regarder",
+"t": "w"
+},
+{
+"id": "B:듣다",
+"ko": "듣다",
+"fr": "écouter",
+"t": "w"
+},
+{
+"id": "B:말하다",
+"ko": "말하다",
+"fr": "parler, dire",
+"t": "w"
+},
+{
+"id": "B:읽다",
+"ko": "읽다",
+"fr": "lire",
+"t": "w"
+},
+{
+"id": "B:쓰다",
+"ko": "쓰다",
+"fr": "écrire (aussi : utiliser)",
+"t": "w"
+},
+{
+"id": "B:배우다",
+"ko": "배우다",
+"fr": "apprendre",
+"t": "w"
+},
+{
+"id": "B:가르치다",
+"ko": "가르치다",
+"fr": "enseigner",
+"t": "w"
+},
+{
+"id": "B:공부하다",
+"ko": "공부하다",
+"fr": "étudier",
+"t": "w"
+},
+{
+"id": "B:일하다",
+"ko": "일하다",
+"fr": "travailler",
+"t": "w"
+},
+{
+"id": "B:자다",
+"ko": "자다",
+"fr": "dormir",
+"t": "w"
+},
+{
+"id": "B:일어나다",
+"ko": "일어나다",
+"fr": "se lever",
+"t": "w"
+},
+{
+"id": "B:사다",
+"ko": "사다",
+"fr": "acheter",
+"t": "w"
+},
+{
+"id": "B:팔다",
+"ko": "팔다",
+"fr": "vendre",
+"t": "w"
+},
+{
+"id": "B:만나다",
+"ko": "만나다",
+"fr": "rencontrer",
+"t": "w"
+},
+{
+"id": "B:좋아하다",
+"ko": "좋아하다",
+"fr": "aimer (bien)",
+"t": "w"
+},
+{
+"id": "B:싫어하다",
+"ko": "싫어하다",
+"fr": "ne pas aimer",
+"t": "w"
+},
+{
+"id": "B:알다",
+"ko": "알다",
+"fr": "savoir, connaître",
+"t": "w"
+},
+{
+"id": "B:모르다",
+"ko": "모르다",
+"fr": "ne pas savoir",
+"t": "w"
+},
+{
+"id": "B:주다",
+"ko": "주다",
+"fr": "donner",
+"t": "w"
+},
+{
+"id": "B:기다리다",
+"ko": "기다리다",
+"fr": "attendre",
+"t": "w"
+},
+{
+"id": "B:노래하다",
+"ko": "노래하다",
+"fr": "chanter",
+"t": "w"
+},
+{
+"id": "B:크다",
+"ko": "크다",
+"fr": "être grand",
+"t": "w"
+},
+{
+"id": "B:작다",
+"ko": "작다",
+"fr": "être petit",
+"t": "w"
+},
+{
+"id": "B:많다",
+"ko": "많다",
+"fr": "être nombreux",
+"t": "w"
+},
+{
+"id": "B:적다",
+"ko": "적다",
+"fr": "être peu nombreux",
+"t": "w"
+},
+{
+"id": "B:좋다",
+"ko": "좋다",
+"fr": "être bon, bien",
+"t": "w"
+},
+{
+"id": "B:나쁘다",
+"ko": "나쁘다",
+"fr": "être mauvais",
+"t": "w"
+},
+{
+"id": "B:비싸다",
+"ko": "비싸다",
+"fr": "être cher",
+"t": "w"
+},
+{
+"id": "B:싸다",
+"ko": "싸다",
+"fr": "être bon marché",
+"t": "w"
+},
+{
+"id": "B:재미있다",
+"ko": "재미있다",
+"fr": "être intéressant, amusant",
+"t": "w"
+},
+{
+"id": "B:재미없다",
+"ko": "재미없다",
+"fr": "être ennuyeux",
+"t": "w"
+},
+{
+"id": "B:쉽다",
+"ko": "쉽다",
+"fr": "être facile",
+"t": "w"
+},
+{
+"id": "B:어렵다",
+"ko": "어렵다",
+"fr": "être difficile",
+"t": "w"
+},
+{
+"id": "B:바쁘다",
+"ko": "바쁘다",
+"fr": "être occupé",
+"t": "w"
+},
+{
+"id": "B:알겠어요",
+"ko": "알겠어요",
+"fr": "d'accord, compris",
+"t": "e"
+},
+{
+"id": "B:몰라요",
+"ko": "몰라요",
+"fr": "je ne sais pas",
+"t": "e"
+},
+{
+"id": "B:좋아요",
+"ko": "좋아요",
+"fr": "c'est bien, d'accord",
+"t": "e"
+},
+{
+"id": "B:싫어요",
+"ko": "싫어요",
+"fr": "je n'aime pas, non merci",
+"t": "e"
+},
+{
+"id": "B:한국어 공부가 재미있어요.",
+"ko": "한국어 공부가 재미있어요.",
+"fr": "Étudier le coréen, c'est amusant.",
+"t": "p"
+},
+{
+"id": "B:요즘 너무 바빠요.",
+"ko": "요즘 너무 바빠요.",
+"fr": "Je suis très occupé ces jours-ci.",
+"t": "p"
+},
+{
+"id": "B:매일 아침 일곱 시에 일어나요.",
+"ko": "매일 아침 일곱 시에 일어나요.",
+"fr": "Je me lève à 7 h tous les matins.",
+"t": "p"
+},
+{
+"id": "B:친구를 기다리고 있어요.",
+"ko": "친구를 기다리고 있어요.",
+"fr": "J'attends un ami.",
+"t": "p"
+}
+],
+"dlg": []
+},
+{
+"id": "travail",
+"lv": "A2",
+"title": "Travail et bureau",
+"icon": "💼",
+"items": [
+{
+"id": "B:일#travail",
+"ko": "일",
+"fr": "travail (aussi : jour, un)",
+"t": "w"
+},
+{
+"id": "B:회의",
+"ko": "회의",
+"fr": "réunion",
+"t": "w"
+},
+{
+"id": "B:회의실",
+"ko": "회의실",
+"fr": "salle de réunion",
+"t": "w"
+},
+{
+"id": "B:사무실",
+"ko": "사무실",
+"fr": "bureau (pièce)",
+"t": "w"
+},
+{
+"id": "B:동료",
+"ko": "동료",
+"fr": "collègue",
+"t": "w"
+},
+{
+"id": "B:상사",
+"ko": "상사",
+"fr": "supérieur",
+"t": "w"
+},
+{
+"id": "B:부장님",
+"ko": "부장님",
+"fr": "chef de service",
+"t": "w"
+},
+{
+"id": "B:팀",
+"ko": "팀",
+"fr": "équipe",
+"t": "w"
+},
+{
+"id": "B:프로젝트",
+"ko": "프로젝트",
+"fr": "projet",
+"t": "w"
+},
+{
+"id": "B:일정",
+"ko": "일정",
+"fr": "planning, programme",
+"t": "w"
+},
+{
+"id": "B:서류",
+"ko": "서류",
+"fr": "document",
+"t": "w"
+},
+{
+"id": "B:보고서",
+"ko": "보고서",
+"fr": "rapport",
+"t": "w"
+},
+{
+"id": "B:이메일",
+"ko": "이메일",
+"fr": "e-mail",
+"t": "w"
+},
+{
+"id": "B:출근하다",
+"ko": "출근하다",
+"fr": "aller au travail",
+"t": "w"
+},
+{
+"id": "B:퇴근하다",
+"ko": "퇴근하다",
+"fr": "quitter le travail",
+"t": "w"
+},
+{
+"id": "B:야근하다",
+"ko": "야근하다",
+"fr": "faire des heures sup le soir",
+"t": "w"
+},
+{
+"id": "B:휴가",
+"ko": "휴가",
+"fr": "congé, vacances",
+"t": "w"
+},
+{
+"id": "B:월급",
+"ko": "월급",
+"fr": "salaire",
+"t": "w"
+},
+{
+"id": "B:준비하다",
+"ko": "준비하다",
+"fr": "préparer",
+"t": "w"
+},
+{
+"id": "B:확인하다",
+"ko": "확인하다",
+"fr": "vérifier",
+"t": "w"
+},
+{
+"id": "B:끝내다",
+"ko": "끝내다",
+"fr": "terminer",
+"t": "w"
+},
+{
+"id": "B:시작하다",
+"ko": "시작하다",
+"fr": "commencer",
+"t": "w"
+},
+{
+"id": "B:연락하다",
+"ko": "연락하다",
+"fr": "contacter",
+"t": "w"
+},
+{
+"id": "B:보내다",
+"ko": "보내다",
+"fr": "envoyer",
+"t": "w"
+},
+{
+"id": "B:받다",
+"ko": "받다",
+"fr": "recevoir",
+"t": "w"
+},
+{
+"id": "B:수고하세요",
+"ko": "수고하세요",
+"fr": "bon courage (en partant)",
+"t": "e"
+},
+{
+"id": "B:먼저 들어가 보겠습니다",
+"ko": "먼저 들어가 보겠습니다",
+"fr": "je vais y aller avant vous",
+"t": "e"
+},
+{
+"id": "B:확인해 볼게요",
+"ko": "확인해 볼게요",
+"fr": "je vais vérifier",
+"t": "e"
+},
+{
+"id": "B:잠깐 시간 있으세요?",
+"ko": "잠깐 시간 있으세요?",
+"fr": "vous avez un moment ?",
+"t": "e"
+},
+{
+"id": "B:회의가 몇 시에 시작해요?",
+"ko": "회의가 몇 시에 시작해요?",
+"fr": "À quelle heure commence la réunion ?",
+"t": "p"
+},
+{
+"id": "B:오늘은 야근해야 해요.",
+"ko": "오늘은 야근해야 해요.",
+"fr": "Aujourd'hui, je dois rester tard.",
+"t": "p"
+},
+{
+"id": "B:보고서를 내일까지 보내 주세요.",
+"ko": "보고서를 내일까지 보내 주세요.",
+"fr": "Envoyez-moi le rapport d'ici demain.",
+"t": "p"
+},
+{
+"id": "B:다음 주에 휴가를 가요.",
+"ko": "다음 주에 휴가를 가요.",
+"fr": "Je pars en congé la semaine prochaine.",
+"t": "p"
+},
+{
+"id": "B:이메일 받으셨어요?",
+"ko": "이메일 받으셨어요?",
+"fr": "Avez-vous reçu l'e-mail ?",
+"t": "p"
+}
+],
+"dlg": [
+"pA2a"
+]
+},
+{
+"id": "loisirs",
+"lv": "A2",
+"title": "Loisirs et sport",
+"icon": "⚽",
+"items": [
+{
+"id": "B:운동",
+"ko": "운동",
+"fr": "sport, exercice",
+"t": "w"
+},
+{
+"id": "B:축구",
+"ko": "축구",
+"fr": "football",
+"t": "w"
+},
+{
+"id": "B:수영",
+"ko": "수영",
+"fr": "natation",
+"t": "w"
+},
+{
+"id": "B:등산",
+"ko": "등산",
+"fr": "randonnée en montagne",
+"t": "w"
+},
+{
+"id": "B:요가",
+"ko": "요가",
+"fr": "yoga",
+"t": "w"
+},
+{
+"id": "B:산책",
+"ko": "산책",
+"fr": "promenade",
+"t": "w"
+},
+{
+"id": "B:여행",
+"ko": "여행",
+"fr": "voyage",
+"t": "w"
+},
+{
+"id": "B:사진",
+"ko": "사진",
+"fr": "photo",
+"t": "w"
+},
+{
+"id": "B:그림",
+"ko": "그림",
+"fr": "dessin, peinture",
+"t": "w"
+},
+{
+"id": "B:음악",
+"ko": "음악",
+"fr": "musique",
+"t": "w"
+},
+{
+"id": "B:노래",
+"ko": "노래",
+"fr": "chanson, chant",
+"t": "w"
+},
+{
+"id": "B:악기",
+"ko": "악기",
+"fr": "instrument de musique",
+"t": "w"
+},
+{
+"id": "B:피아노",
+"ko": "피아노",
+"fr": "piano",
+"t": "w"
+},
+{
+"id": "B:영화",
+"ko": "영화",
+"fr": "film",
+"t": "w"
+},
+{
+"id": "B:드라마",
+"ko": "드라마",
+"fr": "série",
+"t": "w"
+},
+{
+"id": "B:게임",
+"ko": "게임",
+"fr": "jeu",
+"t": "w"
+},
+{
+"id": "B:독서",
+"ko": "독서",
+"fr": "lecture",
+"t": "w"
+},
+{
+"id": "B:춤",
+"ko": "춤",
+"fr": "danse",
+"t": "w"
+},
+{
+"id": "B:요리",
+"ko": "요리",
+"fr": "cuisine (activité)",
+"t": "w"
+},
+{
+"id": "B:쉬다",
+"ko": "쉬다",
+"fr": "se reposer",
+"t": "w"
+},
+{
+"id": "B:놀다",
+"ko": "놀다",
+"fr": "s'amuser, sortir",
+"t": "w"
+},
+{
+"id": "B:찍다",
+"ko": "찍다",
+"fr": "prendre (une photo)",
+"t": "w"
+},
+{
+"id": "B:치다",
+"ko": "치다",
+"fr": "jouer (piano, tennis)",
+"t": "w"
+},
+{
+"id": "B:시간 날 때",
+"ko": "시간 날 때",
+"fr": "quand j'ai le temps",
+"t": "e"
+},
+{
+"id": "B:주말에 뭐 해요?",
+"ko": "주말에 뭐 해요?",
+"fr": "tu fais quoi le week-end ?",
+"t": "e"
+},
+{
+"id": "B:같이 할래요?",
+"ko": "같이 할래요?",
+"fr": "tu veux le faire ensemble ?",
+"t": "e"
+},
+{
+"id": "B:주말에 보통 등산을 해요.",
+"ko": "주말에 보통 등산을 해요.",
+"fr": "Le week-end, je fais généralement de la randonnée.",
+"t": "p"
+},
+{
+"id": "B:저는 피아노를 조금 칠 수 있어요.",
+"ko": "저는 피아노를 조금 칠 수 있어요.",
+"fr": "Je sais jouer un peu de piano.",
+"t": "p"
+},
+{
+"id": "B:요즘 한국 드라마를 자주 봐요.",
+"ko": "요즘 한국 드라마를 자주 봐요.",
+"fr": "Ces temps-ci, je regarde souvent des séries coréennes.",
+"t": "p"
+},
+{
+"id": "B:같이 산책할래요?",
+"ko": "같이 산책할래요?",
+"fr": "On va se promener ensemble ?",
+"t": "p"
+}
+],
+"dlg": [
+"pA2j"
+]
+},
+{
+"id": "voyage",
+"lv": "A2",
+"title": "Voyages et hôtel",
+"icon": "✈️",
+"items": [
+{
+"id": "B:여권",
+"ko": "여권",
+"fr": "passeport",
+"t": "w"
+},
+{
+"id": "B:비자",
+"ko": "비자",
+"fr": "visa",
+"t": "w"
+},
+{
+"id": "B:짐",
+"ko": "짐",
+"fr": "bagages",
+"t": "w"
+},
+{
+"id": "B:가방#voyage",
+"ko": "가방",
+"fr": "sac, valise",
+"t": "w"
+},
+{
+"id": "B:예약",
+"ko": "예약",
+"fr": "réservation",
+"t": "w"
+},
+{
+"id": "B:체크인",
+"ko": "체크인",
+"fr": "enregistrement",
+"t": "w"
+},
+{
+"id": "B:체크아웃",
+"ko": "체크아웃",
+"fr": "départ (hôtel)",
+"t": "w"
+},
+{
+"id": "B:방#voyage",
+"ko": "방",
+"fr": "chambre",
+"t": "w"
+},
+{
+"id": "B:1인실",
+"ko": "1인실",
+"fr": "chambre simple",
+"t": "w"
+},
+{
+"id": "B:관광",
+"ko": "관광",
+"fr": "tourisme",
+"t": "w"
+},
+{
+"id": "B:관광지",
+"ko": "관광지",
+"fr": "site touristique",
+"t": "w"
+},
+{
+"id": "B:지도",
+"ko": "지도",
+"fr": "carte, plan",
+"t": "w"
+},
+{
+"id": "B:기념품",
+"ko": "기념품",
+"fr": "souvenir (objet)",
+"t": "w"
+},
+{
+"id": "B:환전",
+"ko": "환전",
+"fr": "change (d'argent)",
+"t": "w"
+},
+{
+"id": "B:출발",
+"ko": "출발",
+"fr": "départ",
+"t": "w"
+},
+{
+"id": "B:도착",
+"ko": "도착",
+"fr": "arrivée",
+"t": "w"
+},
+{
+"id": "B:왕복",
+"ko": "왕복",
+"fr": "aller-retour",
+"t": "w"
+},
+{
+"id": "B:편도",
+"ko": "편도",
+"fr": "aller simple",
+"t": "w"
+},
+{
+"id": "B:떠나다",
+"ko": "떠나다",
+"fr": "partir",
+"t": "w"
+},
+{
+"id": "B:돌아오다",
+"ko": "돌아오다",
+"fr": "revenir",
+"t": "w"
+},
+{
+"id": "B:묵다",
+"ko": "묵다",
+"fr": "séjourner",
+"t": "w"
+},
+{
+"id": "B:구경하다",
+"ko": "구경하다",
+"fr": "visiter, regarder",
+"t": "w"
+},
+{
+"id": "B:예약했어요",
+"ko": "예약했어요",
+"fr": "j'ai réservé",
+"t": "e"
+},
+{
+"id": "B:짐을 맡길 수 있어요?",
+"ko": "짐을 맡길 수 있어요?",
+"fr": "je peux laisser mes bagages ?",
+"t": "e"
+},
+{
+"id": "B:와이파이 비밀번호가 뭐예요?",
+"ko": "와이파이 비밀번호가 뭐예요?",
+"fr": "quel est le mot de passe wifi ?",
+"t": "e"
+},
+{
+"id": "B:3박 4일 동안 서울에 있을 거예요.",
+"ko": "3박 4일 동안 서울에 있을 거예요.",
+"fr": "Je serai à Séoul pendant 4 jours et 3 nuits.",
+"t": "p"
+},
+{
+"id": "B:아침 식사는 몇 시부터예요?",
+"ko": "아침 식사는 몇 시부터예요?",
+"fr": "À partir de quelle heure est le petit-déjeuner ?",
+"t": "p"
+},
+{
+"id": "B:부산행 기차표 두 장 주세요.",
+"ko": "부산행 기차표 두 장 주세요.",
+"fr": "Deux billets de train pour Busan, s'il vous plaît.",
+"t": "p"
+},
+{
+"id": "B:경복궁을 구경하고 싶어요.",
+"ko": "경복궁을 구경하고 싶어요.",
+"fr": "Je voudrais visiter Gyeongbokgung.",
+"t": "p"
+}
+],
+"dlg": [
+"pA2c"
+]
+},
+{
+"id": "shopping",
+"lv": "A2",
+"title": "Shopping et vêtements",
+"icon": "🛍️",
+"items": [
+{
+"id": "B:쇼핑",
+"ko": "쇼핑",
+"fr": "shopping",
+"t": "w"
+},
+{
+"id": "B:옷#shopping",
+"ko": "옷",
+"fr": "vêtement",
+"t": "w"
+},
+{
+"id": "B:티셔츠",
+"ko": "티셔츠",
+"fr": "t-shirt",
+"t": "w"
+},
+{
+"id": "B:바지",
+"ko": "바지",
+"fr": "pantalon",
+"t": "w"
+},
+{
+"id": "B:치마",
+"ko": "치마",
+"fr": "jupe",
+"t": "w"
+},
+{
+"id": "B:코트",
+"ko": "코트",
+"fr": "manteau",
+"t": "w"
+},
+{
+"id": "B:모자",
+"ko": "모자",
+"fr": "chapeau, casquette",
+"t": "w"
+},
+{
+"id": "B:양말",
+"ko": "양말",
+"fr": "chaussettes",
+"t": "w"
+},
+{
+"id": "B:색깔",
+"ko": "색깔",
+"fr": "couleur",
+"t": "w"
+},
+{
+"id": "B:빨간색",
+"ko": "빨간색",
+"fr": "rouge",
+"t": "w"
+},
+{
+"id": "B:파란색",
+"ko": "파란색",
+"fr": "bleu",
+"t": "w"
+},
+{
+"id": "B:검은색",
+"ko": "검은색",
+"fr": "noir",
+"t": "w"
+},
+{
+"id": "B:흰색",
+"ko": "흰색",
+"fr": "blanc",
+"t": "w"
+},
+{
+"id": "B:사이즈",
+"ko": "사이즈",
+"fr": "taille",
+"t": "w"
+},
+{
+"id": "B:할인",
+"ko": "할인",
+"fr": "réduction",
+"t": "w"
+},
+{
+"id": "B:세일",
+"ko": "세일",
+"fr": "soldes",
+"t": "w"
+},
+{
+"id": "B:교환",
+"ko": "교환",
+"fr": "échange",
+"t": "w"
+},
+{
+"id": "B:환불",
+"ko": "환불",
+"fr": "remboursement",
+"t": "w"
+},
+{
+"id": "B:입다",
+"ko": "입다",
+"fr": "porter (vêtement)",
+"t": "w"
+},
+{
+"id": "B:신다",
+"ko": "신다",
+"fr": "porter (chaussures)",
+"t": "w"
+},
+{
+"id": "B:쓰다#shopping",
+"ko": "쓰다",
+"fr": "porter (chapeau, lunettes)",
+"t": "w"
+},
+{
+"id": "B:어울리다",
+"ko": "어울리다",
+"fr": "aller bien",
+"t": "w"
+},
+{
+"id": "B:입어 봐도 돼요?",
+"ko": "입어 봐도 돼요?",
+"fr": "je peux essayer ?",
+"t": "e"
+},
+{
+"id": "B:다른 색깔 있어요?",
+"ko": "다른 색깔 있어요?",
+"fr": "vous l'avez dans une autre couleur ?",
+"t": "e"
+},
+{
+"id": "B:좀 깎아 주세요",
+"ko": "좀 깎아 주세요",
+"fr": "faites-moi un petit prix",
+"t": "e"
+},
+{
+"id": "B:그냥 구경하는 거예요",
+"ko": "그냥 구경하는 거예요",
+"fr": "je regarde seulement",
+"t": "e"
+},
+{
+"id": "B:이 코트 너무 커요. 작은 사이즈 있어요?",
+"ko": "이 코트 너무 커요. 작은 사이즈 있어요?",
+"fr": "Ce manteau est trop grand. Vous avez une taille plus petite ?",
+"t": "p"
+},
+{
+"id": "B:환불할 수 있어요?",
+"ko": "환불할 수 있어요?",
+"fr": "Je peux être remboursé ?",
+"t": "p"
+},
+{
+"id": "B:그 모자 잘 어울려요.",
+"ko": "그 모자 잘 어울려요.",
+"fr": "Ce chapeau te va bien.",
+"t": "p"
+},
+{
+"id": "B:세일 기간이 언제까지예요?",
+"ko": "세일 기간이 언제까지예요?",
+"fr": "Jusqu'à quand durent les soldes ?",
+"t": "p"
+}
+],
+"dlg": [
+"pA2d"
+]
+},
+{
+"id": "rdv",
+"lv": "A2",
+"title": "Rendez-vous et invitations",
+"icon": "📅",
+"items": [
+{
+"id": "B:약속",
+"ko": "약속",
+"fr": "rendez-vous, promesse",
+"t": "w"
+},
+{
+"id": "B:초대",
+"ko": "초대",
+"fr": "invitation",
+"t": "w"
+},
+{
+"id": "B:파티",
+"ko": "파티",
+"fr": "fête",
+"t": "w"
+},
+{
+"id": "B:모임",
+"ko": "모임",
+"fr": "réunion (entre amis)",
+"t": "w"
+},
+{
+"id": "B:회식",
+"ko": "회식",
+"fr": "dîner d'équipe",
+"t": "w"
+},
+{
+"id": "B:선물",
+"ko": "선물",
+"fr": "cadeau",
+"t": "w"
+},
+{
+"id": "B:결혼식",
+"ko": "결혼식",
+"fr": "mariage",
+"t": "w"
+},
+{
+"id": "B:생일 파티",
+"ko": "생일 파티",
+"fr": "fête d'anniversaire",
+"t": "w"
+},
+{
+"id": "B:시간#rdv",
+"ko": "시간",
+"fr": "temps, disponibilité",
+"t": "w"
+},
+{
+"id": "B:장소",
+"ko": "장소",
+"fr": "lieu",
+"t": "w"
+},
+{
+"id": "B:취소하다",
+"ko": "취소하다",
+"fr": "annuler",
+"t": "w"
+},
+{
+"id": "B:바꾸다",
+"ko": "바꾸다",
+"fr": "changer",
+"t": "w"
+},
+{
+"id": "B:미루다",
+"ko": "미루다",
+"fr": "repousser",
+"t": "w"
+},
+{
+"id": "B:늦다",
+"ko": "늦다",
+"fr": "être en retard",
+"t": "w"
+},
+{
+"id": "B:초대하다",
+"ko": "초대하다",
+"fr": "inviter",
+"t": "w"
+},
+{
+"id": "B:시간 괜찮아요?",
+"ko": "시간 괜찮아요?",
+"fr": "tu es disponible ?",
+"t": "e"
+},
+{
+"id": "B:다음에 같이 가요",
+"ko": "다음에 같이 가요",
+"fr": "allons-y ensemble une autre fois",
+"t": "e"
+},
+{
+"id": "B:그날은 안 돼요",
+"ko": "그날은 안 돼요",
+"fr": "ce jour-là, ce n'est pas possible",
+"t": "e"
+},
+{
+"id": "B:좋은 생각이에요",
+"ko": "좋은 생각이에요",
+"fr": "bonne idée",
+"t": "e"
+},
+{
+"id": "B:금요일 저녁에 같이 식사할래요?",
+"ko": "금요일 저녁에 같이 식사할래요?",
+"fr": "Tu veux dîner avec moi vendredi soir ?",
+"t": "p"
+},
+{
+"id": "B:미안해요, 그날은 약속이 있어요.",
+"ko": "미안해요, 그날은 약속이 있어요.",
+"fr": "Désolé, ce jour-là j'ai un rendez-vous.",
+"t": "p"
+},
+{
+"id": "B:약속을 다음 주로 미뤄도 될까요?",
+"ko": "약속을 다음 주로 미뤄도 될까요?",
+"fr": "On peut repousser à la semaine prochaine ?",
+"t": "p"
+},
+{
+"id": "B:조금 늦을 것 같아요.",
+"ko": "조금 늦을 것 같아요.",
+"fr": "Je crois que je vais être un peu en retard.",
+"t": "p"
+}
+],
+"dlg": [
+"pA2b"
+]
+},
+{
+"id": "telephone",
+"lv": "A2",
+"title": "Téléphone et messages",
+"icon": "📱",
+"items": [
+{
+"id": "B:전화",
+"ko": "전화",
+"fr": "téléphone, appel",
+"t": "w"
+},
+{
+"id": "B:문자",
+"ko": "문자",
+"fr": "SMS",
+"t": "w"
+},
+{
+"id": "B:메시지",
+"ko": "메시지",
+"fr": "message",
+"t": "w"
+},
+{
+"id": "B:번호",
+"ko": "번호",
+"fr": "numéro",
+"t": "w"
+},
+{
+"id": "B:배터리",
+"ko": "배터리",
+"fr": "batterie",
+"t": "w"
+},
+{
+"id": "B:충전",
+"ko": "충전",
+"fr": "recharge",
+"t": "w"
+},
+{
+"id": "B:앱",
+"ko": "앱",
+"fr": "application",
+"t": "w"
+},
+{
+"id": "B:인터넷",
+"ko": "인터넷",
+"fr": "internet",
+"t": "w"
+},
+{
+"id": "B:사진#telephone",
+"ko": "사진",
+"fr": "photo",
+"t": "w"
+},
+{
+"id": "B:전화하다",
+"ko": "전화하다",
+"fr": "téléphoner",
+"t": "w"
+},
+{
+"id": "B:받다#telephone",
+"ko": "받다",
+"fr": "répondre, recevoir",
+"t": "w"
+},
+{
+"id": "B:끊다",
+"ko": "끊다",
+"fr": "raccrocher",
+"t": "w"
+},
+{
+"id": "B:남기다",
+"ko": "남기다",
+"fr": "laisser (un message)",
+"t": "w"
+},
+{
+"id": "B:다시",
+"ko": "다시",
+"fr": "de nouveau",
+"t": "w"
+},
+{
+"id": "B:여보세요",
+"ko": "여보세요",
+"fr": "allô",
+"t": "e"
+},
+{
+"id": "B:누구세요?",
+"ko": "누구세요?",
+"fr": "qui est à l'appareil ?",
+"t": "e"
+},
+{
+"id": "B:잠깐만 기다리세요",
+"ko": "잠깐만 기다리세요",
+"fr": "patientez un instant",
+"t": "e"
+},
+{
+"id": "B:나중에 다시 전화할게요",
+"ko": "나중에 다시 전화할게요",
+"fr": "je rappellerai plus tard",
+"t": "e"
+},
+{
+"id": "B:문자 보낼게요",
+"ko": "문자 보낼게요",
+"fr": "je t'envoie un texto",
+"t": "e"
+},
+{
+"id": "B:전화번호가 어떻게 되세요?",
+"ko": "전화번호가 어떻게 되세요?",
+"fr": "Quel est votre numéro de téléphone ?",
+"t": "p"
+},
+{
+"id": "B:지금 통화 괜찮아요?",
+"ko": "지금 통화 괜찮아요?",
+"fr": "Tu peux parler maintenant ?",
+"t": "p"
+},
+{
+"id": "B:배터리가 다 됐어요.",
+"ko": "배터리가 다 됐어요.",
+"fr": "Ma batterie est vide.",
+"t": "p"
+},
+{
+"id": "B:메시지 남겨 주세요.",
+"ko": "메시지 남겨 주세요.",
+"fr": "Laissez un message, s'il vous plaît.",
+"t": "p"
+}
+],
+"dlg": [
+"pA2i"
+]
+},
+{
+"id": "sentiments",
+"lv": "A2",
+"title": "Sentiments et caractère",
+"icon": "😊",
+"items": [
+{
+"id": "B:기분",
+"ko": "기분",
+"fr": "humeur",
+"t": "w"
+},
+{
+"id": "B:기쁘다",
+"ko": "기쁘다",
+"fr": "être content",
+"t": "w"
+},
+{
+"id": "B:슬프다",
+"ko": "슬프다",
+"fr": "être triste",
+"t": "w"
+},
+{
+"id": "B:화나다",
+"ko": "화나다",
+"fr": "être en colère",
+"t": "w"
+},
+{
+"id": "B:걱정하다",
+"ko": "걱정하다",
+"fr": "s'inquiéter",
+"t": "w"
+},
+{
+"id": "B:무섭다",
+"ko": "무섭다",
+"fr": "avoir peur",
+"t": "w"
+},
+{
+"id": "B:외롭다",
+"ko": "외롭다",
+"fr": "se sentir seul",
+"t": "w"
+},
+{
+"id": "B:행복하다",
+"ko": "행복하다",
+"fr": "être heureux",
+"t": "w"
+},
+{
+"id": "B:놀라다",
+"ko": "놀라다",
+"fr": "être surpris",
+"t": "w"
+},
+{
+"id": "B:긴장하다",
+"ko": "긴장하다",
+"fr": "être tendu, stressé",
+"t": "w"
+},
+{
+"id": "B:지루하다",
+"ko": "지루하다",
+"fr": "s'ennuyer",
+"t": "w"
+},
+{
+"id": "B:친절하다",
+"ko": "친절하다",
+"fr": "être aimable",
+"t": "w"
+},
+{
+"id": "B:착하다",
+"ko": "착하다",
+"fr": "être gentil",
+"t": "w"
+},
+{
+"id": "B:조용하다",
+"ko": "조용하다",
+"fr": "être calme",
+"t": "w"
+},
+{
+"id": "B:성격",
+"ko": "성격",
+"fr": "caractère",
+"t": "w"
+},
+{
+"id": "B:웃다",
+"ko": "웃다",
+"fr": "rire, sourire",
+"t": "w"
+},
+{
+"id": "B:울다",
+"ko": "울다",
+"fr": "pleurer",
+"t": "w"
+},
+{
+"id": "B:기분이 좋아요",
+"ko": "기분이 좋아요",
+"fr": "je suis de bonne humeur",
+"t": "e"
+},
+{
+"id": "B:걱정하지 마세요",
+"ko": "걱정하지 마세요",
+"fr": "ne vous inquiétez pas",
+"t": "e"
+},
+{
+"id": "B:정말요?",
+"ko": "정말요?",
+"fr": "vraiment ?",
+"t": "e"
+},
+{
+"id": "B:다행이에요",
+"ko": "다행이에요",
+"fr": "heureusement, tant mieux",
+"t": "e"
+},
+{
+"id": "B:공연 전에는 항상 긴장돼요.",
+"ko": "공연 전에는 항상 긴장돼요.",
+"fr": "Avant un spectacle, je suis toujours tendu.",
+"t": "p"
+},
+{
+"id": "B:오늘 기분이 별로예요.",
+"ko": "오늘 기분이 별로예요.",
+"fr": "Aujourd'hui, je ne suis pas très en forme.",
+"t": "p"
+},
+{
+"id": "B:그 사람은 정말 친절해요.",
+"ko": "그 사람은 정말 친절해요.",
+"fr": "Cette personne est vraiment aimable.",
+"t": "p"
+},
+{
+"id": "B:소식 듣고 깜짝 놀랐어요.",
+"ko": "소식 듣고 깜짝 놀랐어요.",
+"fr": "J'ai été très surpris par la nouvelle.",
+"t": "p"
+}
+],
+"dlg": [
+"pA2h"
+]
+},
+{
+"id": "sante",
+"lv": "A2",
+"title": "Santé et pharmacie",
+"icon": "💊",
+"items": [
+{
+"id": "B:병원#sante",
+"ko": "병원",
+"fr": "hôpital, clinique",
+"t": "w"
+},
+{
+"id": "B:의사#sante",
+"ko": "의사",
+"fr": "médecin",
+"t": "w"
+},
+{
+"id": "B:간호사",
+"ko": "간호사",
+"fr": "infirmier",
+"t": "w"
+},
+{
+"id": "B:환자",
+"ko": "환자",
+"fr": "patient",
+"t": "w"
+},
+{
+"id": "B:증상",
+"ko": "증상",
+"fr": "symptôme",
+"t": "w"
+},
+{
+"id": "B:기침",
+"ko": "기침",
+"fr": "toux",
+"t": "w"
+},
+{
+"id": "B:콧물",
+"ko": "콧물",
+"fr": "nez qui coule",
+"t": "w"
+},
+{
+"id": "B:두통",
+"ko": "두통",
+"fr": "mal de tête",
+"t": "w"
+},
+{
+"id": "B:소화제",
+"ko": "소화제",
+"fr": "médicament pour la digestion",
+"t": "w"
+},
+{
+"id": "B:진통제",
+"ko": "진통제",
+"fr": "antidouleur",
+"t": "w"
+},
+{
+"id": "B:처방전",
+"ko": "처방전",
+"fr": "ordonnance",
+"t": "w"
+},
+{
+"id": "B:예약하다",
+"ko": "예약하다",
+"fr": "prendre rendez-vous",
+"t": "w"
+},
+{
+"id": "B:다치다",
+"ko": "다치다",
+"fr": "se blesser",
+"t": "w"
+},
+{
+"id": "B:낫다",
+"ko": "낫다",
+"fr": "guérir",
+"t": "w"
+},
+{
+"id": "B:쉬다#sante",
+"ko": "쉬다",
+"fr": "se reposer",
+"t": "w"
+},
+{
+"id": "B:몸이 안 좋아요",
+"ko": "몸이 안 좋아요",
+"fr": "je ne me sens pas bien",
+"t": "e"
+},
+{
+"id": "B:빨리 나으세요",
+"ko": "빨리 나으세요",
+"fr": "prompt rétablissement",
+"t": "e"
+},
+{
+"id": "B:하루에 몇 번 먹어요?",
+"ko": "하루에 몇 번 먹어요?",
+"fr": "combien de fois par jour ?",
+"t": "e"
+},
+{
+"id": "B:식후 30분",
+"ko": "식후 30분",
+"fr": "30 min après le repas",
+"t": "e"
+},
+{
+"id": "B:어제부터 기침이 나요.",
+"ko": "어제부터 기침이 나요.",
+"fr": "Je tousse depuis hier.",
+"t": "p"
+},
+{
+"id": "B:진통제 좀 주세요.",
+"ko": "진통제 좀 주세요.",
+"fr": "Un antidouleur, s'il vous plaît.",
+"t": "p"
+},
+{
+"id": "B:넘어져서 다리를 다쳤어요.",
+"ko": "넘어져서 다리를 다쳤어요.",
+"fr": "Je suis tombé et je me suis blessé à la jambe.",
+"t": "p"
+},
+{
+"id": "B:처방전 없이 살 수 있어요?",
+"ko": "처방전 없이 살 수 있어요?",
+"fr": "On peut l'acheter sans ordonnance ?",
+"t": "p"
+}
+],
+"dlg": [
+"pA2e"
+]
+},
+{
+"id": "directions",
+"lv": "A2",
+"title": "Se repérer en ville",
+"icon": "🧭",
+"items": [
+{
+"id": "B:방향",
+"ko": "방향",
+"fr": "direction",
+"t": "w"
+},
+{
+"id": "B:건너편",
+"ko": "건너편",
+"fr": "en face",
+"t": "w"
+},
+{
+"id": "B:사거리",
+"ko": "사거리",
+"fr": "carrefour",
+"t": "w"
+},
+{
+"id": "B:신호등",
+"ko": "신호등",
+"fr": "feu de circulation",
+"t": "w"
+},
+{
+"id": "B:횡단보도",
+"ko": "횡단보도",
+"fr": "passage piéton",
+"t": "w"
+},
+{
+"id": "B:골목",
+"ko": "골목",
+"fr": "ruelle",
+"t": "w"
+},
+{
+"id": "B:건물",
+"ko": "건물",
+"fr": "bâtiment",
+"t": "w"
+},
+{
+"id": "B:층",
+"ko": "층",
+"fr": "étage",
+"t": "w"
+},
+{
+"id": "B:엘리베이터",
+"ko": "엘리베이터",
+"fr": "ascenseur",
+"t": "w"
+},
+{
+"id": "B:계단",
+"ko": "계단",
+"fr": "escalier",
+"t": "w"
+},
+{
+"id": "B:근처",
+"ko": "근처",
+"fr": "environs",
+"t": "w"
+},
+{
+"id": "B:돌다",
+"ko": "돌다",
+"fr": "tourner",
+"t": "w"
+},
+{
+"id": "B:건너다",
+"ko": "건너다",
+"fr": "traverser",
+"t": "w"
+},
+{
+"id": "B:찾다",
+"ko": "찾다",
+"fr": "chercher, trouver",
+"t": "w"
+},
+{
+"id": "B:어떻게 가요?",
+"ko": "어떻게 가요?",
+"fr": "comment y va-t-on ?",
+"t": "e"
+},
+{
+"id": "B:오른쪽으로 도세요",
+"ko": "오른쪽으로 도세요",
+"fr": "tournez à droite",
+"t": "e"
+},
+{
+"id": "B:길을 잃었어요",
+"ko": "길을 잃었어요",
+"fr": "je me suis perdu",
+"t": "e"
+},
+{
+"id": "B:걸어서 갈 수 있어요?",
+"ko": "걸어서 갈 수 있어요?",
+"fr": "on peut y aller à pied ?",
+"t": "e"
+},
+{
+"id": "B:사거리에서 왼쪽으로 도세요.",
+"ko": "사거리에서 왼쪽으로 도세요.",
+"fr": "Au carrefour, tournez à gauche.",
+"t": "p"
+},
+{
+"id": "B:은행 건너편에 있어요.",
+"ko": "은행 건너편에 있어요.",
+"fr": "C'est en face de la banque.",
+"t": "p"
+},
+{
+"id": "B:이 근처에 지하철역이 있어요?",
+"ko": "이 근처에 지하철역이 있어요?",
+"fr": "Il y a une station de métro près d'ici ?",
+"t": "p"
+},
+{
+"id": "B:3층으로 올라가세요.",
+"ko": "3층으로 올라가세요.",
+"fr": "Montez au troisième étage.",
+"t": "p"
+}
+],
+"dlg": [
+"pA2f"
+]
+},
+{
+"id": "cuisine",
+"lv": "A2",
+"title": "Cuisine et goûts",
+"icon": "🍳",
+"items": [
+{
+"id": "B:재료",
+"ko": "재료",
+"fr": "ingrédient",
+"t": "w"
+},
+{
+"id": "B:소금",
+"ko": "소금",
+"fr": "sel",
+"t": "w"
+},
+{
+"id": "B:설탕",
+"ko": "설탕",
+"fr": "sucre",
+"t": "w"
+},
+{
+"id": "B:간장",
+"ko": "간장",
+"fr": "sauce soja",
+"t": "w"
+},
+{
+"id": "B:고추장",
+"ko": "고추장",
+"fr": "pâte de piment",
+"t": "w"
+},
+{
+"id": "B:마늘",
+"ko": "마늘",
+"fr": "ail",
+"t": "w"
+},
+{
+"id": "B:양파",
+"ko": "양파",
+"fr": "oignon",
+"t": "w"
+},
+{
+"id": "B:쌀",
+"ko": "쌀",
+"fr": "riz (cru)",
+"t": "w"
+},
+{
+"id": "B:냄비",
+"ko": "냄비",
+"fr": "casserole",
+"t": "w"
+},
+{
+"id": "B:그릇",
+"ko": "그릇",
+"fr": "bol",
+"t": "w"
+},
+{
+"id": "B:굽다",
+"ko": "굽다",
+"fr": "griller, cuire au four",
+"t": "w"
+},
+{
+"id": "B:끓이다",
+"ko": "끓이다",
+"fr": "faire bouillir",
+"t": "w"
+},
+{
+"id": "B:볶다",
+"ko": "볶다",
+"fr": "faire sauter",
+"t": "w"
+},
+{
+"id": "B:썰다",
+"ko": "썰다",
+"fr": "couper en tranches",
+"t": "w"
+},
+{
+"id": "B:넣다",
+"ko": "넣다",
+"fr": "mettre, ajouter",
+"t": "w"
+},
+{
+"id": "B:싱겁다",
+"ko": "싱겁다",
+"fr": "être fade",
+"t": "w"
+},
+{
+"id": "B:시다",
+"ko": "시다",
+"fr": "être acide",
+"t": "w"
+},
+{
+"id": "B:쓰다#cuisine",
+"ko": "쓰다",
+"fr": "être amer",
+"t": "w"
+},
+{
+"id": "B:간이 딱 맞아요",
+"ko": "간이 딱 맞아요",
+"fr": "c'est parfaitement assaisonné",
+"t": "e"
+},
+{
+"id": "B:한번 먹어 보세요",
+"ko": "한번 먹어 보세요",
+"fr": "goûtez donc",
+"t": "e"
+},
+{
+"id": "B:물이 끓으면 라면을 넣으세요.",
+"ko": "물이 끓으면 라면을 넣으세요.",
+"fr": "Quand l'eau bout, mettez les nouilles.",
+"t": "p"
+},
+{
+"id": "B:마늘을 조금 더 넣을까요?",
+"ko": "마늘을 조금 더 넣을까요?",
+"fr": "On ajoute un peu plus d'ail ?",
+"t": "p"
+},
+{
+"id": "B:이 국은 조금 싱거워요.",
+"ko": "이 국은 조금 싱거워요.",
+"fr": "Cette soupe est un peu fade.",
+"t": "p"
+},
+{
+"id": "B:저는 매운 음식을 잘 먹어요.",
+"ko": "저는 매운 음식을 잘 먹어요.",
+"fr": "Je supporte bien la nourriture épicée.",
+"t": "p"
+}
+],
+"dlg": []
+},
+{
+"id": "etudes",
+"lv": "A2",
+"title": "Apprendre une langue",
+"icon": "📚",
+"items": [
+{
+"id": "B:언어",
+"ko": "언어",
+"fr": "langue",
+"t": "w"
+},
+{
+"id": "B:한국어",
+"ko": "한국어",
+"fr": "langue coréenne",
+"t": "w"
+},
+{
+"id": "B:단어",
+"ko": "단어",
+"fr": "mot",
+"t": "w"
+},
+{
+"id": "B:문법",
+"ko": "문법",
+"fr": "grammaire",
+"t": "w"
+},
+{
+"id": "B:발음",
+"ko": "발음",
+"fr": "prononciation",
+"t": "w"
+},
+{
+"id": "B:문장",
+"ko": "문장",
+"fr": "phrase",
+"t": "w"
+},
+{
+"id": "B:뜻",
+"ko": "뜻",
+"fr": "sens",
+"t": "w"
+},
+{
+"id": "B:숙제",
+"ko": "숙제",
+"fr": "devoirs",
+"t": "w"
+},
+{
+"id": "B:시험",
+"ko": "시험",
+"fr": "examen",
+"t": "w"
+},
+{
+"id": "B:질문",
+"ko": "질문",
+"fr": "question",
+"t": "w"
+},
+{
+"id": "B:대답",
+"ko": "대답",
+"fr": "réponse",
+"t": "w"
+},
+{
+"id": "B:수업",
+"ko": "수업",
+"fr": "cours",
+"t": "w"
+},
+{
+"id": "B:연습하다",
+"ko": "연습하다",
+"fr": "s'entraîner",
+"t": "w"
+},
+{
+"id": "B:복습하다",
+"ko": "복습하다",
+"fr": "réviser",
+"t": "w"
+},
+{
+"id": "B:외우다",
+"ko": "외우다",
+"fr": "apprendre par cœur",
+"t": "w"
+},
+{
+"id": "B:틀리다",
+"ko": "틀리다",
+"fr": "se tromper",
+"t": "w"
+},
+{
+"id": "B:맞다",
+"ko": "맞다",
+"fr": "être juste",
+"t": "w"
+},
+{
+"id": "B:이해하다",
+"ko": "이해하다",
+"fr": "comprendre",
+"t": "w"
+},
+{
+"id": "B:이게 무슨 뜻이에요?",
+"ko": "이게 무슨 뜻이에요?",
+"fr": "qu'est-ce que ça veut dire ?",
+"t": "e"
+},
+{
+"id": "B:한국어로 뭐라고 해요?",
+"ko": "한국어로 뭐라고 해요?",
+"fr": "comment dit-on en coréen ?",
+"t": "e"
+},
+{
+"id": "B:어떻게 읽어요?",
+"ko": "어떻게 읽어요?",
+"fr": "comment ça se lit ?",
+"t": "e"
+},
+{
+"id": "B:발음이 어려워요.",
+"ko": "발음이 어려워요.",
+"fr": "La prononciation est difficile.",
+"t": "p"
+},
+{
+"id": "B:매일 단어를 열 개씩 외워요.",
+"ko": "매일 단어를 열 개씩 외워요.",
+"fr": "J'apprends dix mots par jour.",
+"t": "p"
+},
+{
+"id": "B:질문이 하나 있어요.",
+"ko": "질문이 하나 있어요.",
+"fr": "J'ai une question.",
+"t": "p"
+},
+{
+"id": "B:제가 틀렸어요. 다시 해 볼게요.",
+"ko": "제가 틀렸어요. 다시 해 볼게요.",
+"fr": "Je me suis trompé. Je réessaie.",
+"t": "p"
+}
+],
+"dlg": []
+},
+{
+"id": "spectacle",
+"lv": "A2",
+"title": "Culture et spectacles",
+"icon": "🎭",
+"items": [
+{
+"id": "B:공연",
+"ko": "공연",
+"fr": "spectacle",
+"t": "w"
+},
+{
+"id": "B:오페라",
+"ko": "오페라",
+"fr": "opéra",
+"t": "w"
+},
+{
+"id": "B:콘서트",
+"ko": "콘서트",
+"fr": "concert",
+"t": "w"
+},
+{
+"id": "B:무대",
+"ko": "무대",
+"fr": "scène",
+"t": "w"
+},
+{
+"id": "B:관객",
+"ko": "관객",
+"fr": "public",
+"t": "w"
+},
+{
+"id": "B:배우#spectacle",
+"ko": "배우",
+"fr": "acteur",
+"t": "w"
+},
+{
+"id": "B:가수#spectacle",
+"ko": "가수",
+"fr": "chanteur",
+"t": "w"
+},
+{
+"id": "B:오케스트라",
+"ko": "오케스트라",
+"fr": "orchestre",
+"t": "w"
+},
+{
+"id": "B:지휘자",
+"ko": "지휘자",
+"fr": "chef d'orchestre",
+"t": "w"
+},
+{
+"id": "B:표#spectacle",
+"ko": "표",
+"fr": "billet",
+"t": "w"
+},
+{
+"id": "B:좌석",
+"ko": "좌석",
+"fr": "siège, place",
+"t": "w"
+},
+{
+"id": "B:매진",
+"ko": "매진",
+"fr": "complet (billets)",
+"t": "w"
+},
+{
+"id": "B:박수",
+"ko": "박수",
+"fr": "applaudissements",
+"t": "w"
+},
+{
+"id": "B:막",
+"ko": "막",
+"fr": "acte",
+"t": "w"
+},
+{
+"id": "B:쉬는 시간",
+"ko": "쉬는 시간",
+"fr": "entracte",
+"t": "w"
+},
+{
+"id": "B:리허설",
+"ko": "리허설",
+"fr": "répétition (générale)",
+"t": "w"
+},
+{
+"id": "B:공연이 정말 멋있었어요",
+"ko": "공연이 정말 멋있었어요",
+"fr": "le spectacle était magnifique",
+"t": "e"
+},
+{
+"id": "B:박수를 쳐 주세요",
+"ko": "박수를 쳐 주세요",
+"fr": "applaudissez",
+"t": "e"
+},
+{
+"id": "B:표가 다 매진됐어요.",
+"ko": "표가 다 매진됐어요.",
+"fr": "Les billets sont tous vendus.",
+"t": "p"
+},
+{
+"id": "B:쉬는 시간은 이십 분이에요.",
+"ko": "쉬는 시간은 이십 분이에요.",
+"fr": "L'entracte dure vingt minutes.",
+"t": "p"
+},
+{
+"id": "B:오늘 저녁에 오페라를 보러 가요.",
+"ko": "오늘 저녁에 오페라를 보러 가요.",
+"fr": "Ce soir, je vais voir un opéra.",
+"t": "p"
+},
+{
+"id": "B:무대 뒤에서 기다리세요.",
+"ko": "무대 뒤에서 기다리세요.",
+"fr": "Attendez en coulisses.",
+"t": "p"
+}
+],
+"dlg": [
+"pA2g"
+]
+},
+{
+"id": "verbesA2",
+"lv": "A2",
+"title": "Verbes et adjectifs A2",
+"icon": "⚙️",
+"items": [
+{
+"id": "B:생각하다",
+"ko": "생각하다",
+"fr": "penser",
+"t": "w"
+},
+{
+"id": "B:느끼다",
+"ko": "느끼다",
+"fr": "ressentir",
+"t": "w"
+},
+{
+"id": "B:믿다",
+"ko": "믿다",
+"fr": "croire",
+"t": "w"
+},
+{
+"id": "B:정하다",
+"ko": "정하다",
+"fr": "décider",
+"t": "w"
+},
+{
+"id": "B:고르다",
+"ko": "고르다",
+"fr": "choisir",
+"t": "w"
+},
+{
+"id": "B:도와주다",
+"ko": "도와주다",
+"fr": "aider",
+"t": "w"
+},
+{
+"id": "B:빌리다",
+"ko": "빌리다",
+"fr": "emprunter",
+"t": "w"
+},
+{
+"id": "B:돌려주다",
+"ko": "돌려주다",
+"fr": "rendre",
+"t": "w"
+},
+{
+"id": "B:잃어버리다",
+"ko": "잃어버리다",
+"fr": "perdre",
+"t": "w"
+},
+{
+"id": "B:잊어버리다",
+"ko": "잊어버리다",
+"fr": "oublier",
+"t": "w"
+},
+{
+"id": "B:기억하다",
+"ko": "기억하다",
+"fr": "se souvenir",
+"t": "w"
+},
+{
+"id": "B:설명하다",
+"ko": "설명하다",
+"fr": "expliquer",
+"t": "w"
+},
+{
+"id": "B:부탁하다",
+"ko": "부탁하다",
+"fr": "demander (un service)",
+"t": "w"
+},
+{
+"id": "B:필요하다",
+"ko": "필요하다",
+"fr": "avoir besoin",
+"t": "w"
+},
+{
+"id": "B:중요하다",
+"ko": "중요하다",
+"fr": "être important",
+"t": "w"
+},
+{
+"id": "B:편하다",
+"ko": "편하다",
+"fr": "être confortable",
+"t": "w"
+},
+{
+"id": "B:불편하다",
+"ko": "불편하다",
+"fr": "être inconfortable",
+"t": "w"
+},
+{
+"id": "B:깨끗하다",
+"ko": "깨끗하다",
+"fr": "être propre",
+"t": "w"
+},
+{
+"id": "B:더럽다",
+"ko": "더럽다",
+"fr": "être sale",
+"t": "w"
+},
+{
+"id": "B:시끄럽다",
+"ko": "시끄럽다",
+"fr": "être bruyant",
+"t": "w"
+},
+{
+"id": "B:유명하다",
+"ko": "유명하다",
+"fr": "être célèbre",
+"t": "w"
+},
+{
+"id": "B:비슷하다",
+"ko": "비슷하다",
+"fr": "être semblable",
+"t": "w"
+},
+{
+"id": "B:다르다",
+"ko": "다르다",
+"fr": "être différent",
+"t": "w"
+},
+{
+"id": "B:같다",
+"ko": "같다",
+"fr": "être pareil",
+"t": "w"
+},
+{
+"id": "B:할 수 있어요",
+"ko": "할 수 있어요",
+"fr": "je peux le faire",
+"t": "e"
+},
+{
+"id": "B:해야 해요",
+"ko": "해야 해요",
+"fr": "je dois le faire",
+"t": "e"
+},
+{
+"id": "B:하고 싶어요",
+"ko": "하고 싶어요",
+"fr": "je veux le faire",
+"t": "e"
+},
+{
+"id": "B:해 봤어요",
+"ko": "해 봤어요",
+"fr": "j'ai essayé",
+"t": "e"
+},
+{
+"id": "B:우산을 잃어버렸어요.",
+"ko": "우산을 잃어버렸어요.",
+"fr": "J'ai perdu mon parapluie.",
+"t": "p"
+},
+{
+"id": "B:책 좀 빌려줄 수 있어요?",
+"ko": "책 좀 빌려줄 수 있어요?",
+"fr": "Tu peux me prêter le livre ?",
+"t": "p"
+},
+{
+"id": "B:그건 별로 중요하지 않아요.",
+"ko": "그건 별로 중요하지 않아요.",
+"fr": "Ce n'est pas très important.",
+"t": "p"
+},
+{
+"id": "B:두 사람은 성격이 아주 달라요.",
+"ko": "두 사람은 성격이 아주 달라요.",
+"fr": "Ces deux personnes ont des caractères très différents.",
+"t": "p"
+}
+],
+"dlg": []
+},
+{
+"id": "liens",
+"lv": "A2",
+"title": "Connecteurs et adverbes",
+"icon": "🔗",
+"items": [
+{
+"id": "B:그리고",
+"ko": "그리고",
+"fr": "et, ensuite",
+"t": "w"
+},
+{
+"id": "B:그런데",
+"ko": "그런데",
+"fr": "mais, au fait",
+"t": "w"
+},
+{
+"id": "B:그래서",
+"ko": "그래서",
+"fr": "donc, c'est pourquoi",
+"t": "w"
+},
+{
+"id": "B:하지만",
+"ko": "하지만",
+"fr": "cependant",
+"t": "w"
+},
+{
+"id": "B:그러면",
+"ko": "그러면",
+"fr": "alors, dans ce cas",
+"t": "w"
+},
+{
+"id": "B:왜냐하면",
+"ko": "왜냐하면",
+"fr": "parce que",
+"t": "w"
+},
+{
+"id": "B:아직",
+"ko": "아직",
+"fr": "pas encore, encore",
+"t": "w"
+},
+{
+"id": "B:벌써",
+"ko": "벌써",
+"fr": "déjà",
+"t": "w"
+},
+{
+"id": "B:항상",
+"ko": "항상",
+"fr": "toujours",
+"t": "w"
+},
+{
+"id": "B:자주",
+"ko": "자주",
+"fr": "souvent",
+"t": "w"
+},
+{
+"id": "B:가끔",
+"ko": "가끔",
+"fr": "parfois",
+"t": "w"
+},
+{
+"id": "B:전혀",
+"ko": "전혀",
+"fr": "pas du tout",
+"t": "w"
+},
+{
+"id": "B:별로",
+"ko": "별로",
+"fr": "pas très",
+"t": "w"
+},
+{
+"id": "B:정말",
+"ko": "정말",
+"fr": "vraiment",
+"t": "w"
+},
+{
+"id": "B:너무",
+"ko": "너무",
+"fr": "trop, très",
+"t": "w"
+},
+{
+"id": "B:조금",
+"ko": "조금",
+"fr": "un peu",
+"t": "w"
+},
+{
+"id": "B:빨리",
+"ko": "빨리",
+"fr": "vite",
+"t": "w"
+},
+{
+"id": "B:천천히",
+"ko": "천천히",
+"fr": "lentement",
+"t": "w"
+},
+{
+"id": "B:같이",
+"ko": "같이",
+"fr": "ensemble",
+"t": "w"
+},
+{
+"id": "B:혼자",
+"ko": "혼자",
+"fr": "seul",
+"t": "w"
+},
+{
+"id": "B:다시#liens",
+"ko": "다시",
+"fr": "encore, de nouveau",
+"t": "w"
+},
+{
+"id": "B:먼저",
+"ko": "먼저",
+"fr": "d'abord",
+"t": "w"
+},
+{
+"id": "B:그래요?",
+"ko": "그래요?",
+"fr": "ah bon ?",
+"t": "e"
+},
+{
+"id": "B:그렇군요",
+"ko": "그렇군요",
+"fr": "je vois",
+"t": "e"
+},
+{
+"id": "B:아마",
+"ko": "아마",
+"fr": "peut-être",
+"t": "e"
+},
+{
+"id": "B:아직 점심을 안 먹었어요.",
+"ko": "아직 점심을 안 먹었어요.",
+"fr": "Je n'ai pas encore déjeuné.",
+"t": "p"
+},
+{
+"id": "B:비가 와서 집에 있었어요.",
+"ko": "비가 와서 집에 있었어요.",
+"fr": "Il pleuvait, alors je suis resté à la maison.",
+"t": "p"
+},
+{
+"id": "B:가끔 혼자 영화를 봐요.",
+"ko": "가끔 혼자 영화를 봐요.",
+"fr": "Parfois, je vais voir un film seul.",
+"t": "p"
+},
+{
+"id": "B:벌써 다 끝났어요?",
+"ko": "벌써 다 끝났어요?",
+"fr": "C'est déjà fini ?",
+"t": "p"
+}
+],
+"dlg": []
+},
+{
+"id": "baseA1",
+"lv": "A1",
+"title": "Vocabulaire essentiel",
+"icon": "📗",
+"items": [
+{
+"id": "B:네 / 아니요",
+"ko": "네 / 아니요",
+"fr": "Oui / non",
+"t": "w",
+"ic": "↕️"
+},
+{
+"id": "B:여기 / 거기 / 저기",
+"ko": "여기 / 거기 / 저기",
+"fr": "Ici / là / là-bas",
+"t": "w",
+"ic": "📍"
+},
+{
+"id": "B:주세요",
+"ko": "주세요",
+"fr": "Donnez-moi, s'il vous plaît",
+"t": "w",
+"ic": "🤲"
+},
+{
+"id": "B:크다 / 작다",
+"ko": "크다 / 작다",
+"fr": "Grand / petit",
+"t": "w",
+"ic": "🐘"
+},
+{
+"id": "B:많다 / 적다",
+"ko": "많다 / 적다",
+"fr": "Beaucoup / peu",
+"t": "w",
+"ic": "📊"
+},
+{
+"id": "B:있다 / 없다",
+"ko": "있다 / 없다",
+"fr": "Il y a, avoir / il n'y a pas",
+"t": "w",
+"ic": "✅"
+},
+{
+"id": "B:하나 둘 셋",
+"ko": "하나 둘 셋",
+"fr": "Un, deux, trois",
+"t": "w",
+"ic": "🔢"
+},
+{
+"id": "B:왼쪽 / 오른쪽",
+"ko": "왼쪽 / 오른쪽",
+"fr": "Gauche / droite",
+"t": "w",
+"ic": "↔️"
+}
+],
+"dlg": []
+},
+{
+"id": "baseA2",
+"lv": "A2",
+"title": "Vocabulaire essentiel",
+"icon": "📗",
+"items": [
+{
+"id": "B:시작하다 / 끝나다",
+"ko": "시작하다 / 끝나다",
+"fr": "Commencer / finir",
+"t": "w",
+"ic": "🏁"
+},
+{
+"id": "B:옮기다",
+"ko": "옮기다",
+"fr": "Déplacer",
+"t": "w",
+"ic": "📦"
+},
+{
+"id": "B:조심하다",
+"ko": "조심하다",
+"fr": "Faire attention",
+"t": "w",
+"ic": "⚠️"
+},
+{
+"id": "B:빨리 / 천천히",
+"ko": "빨리 / 천천히",
+"fr": "Vite / lentement",
+"t": "w",
+"ic": "🐇"
+},
+{
+"id": "B:벌써 / 아직",
+"ko": "벌써 / 아직",
+"fr": "Déjà / pas encore",
+"t": "w",
+"ic": "⌛"
+},
+{
+"id": "B:자주 / 가끔",
+"ko": "자주 / 가끔",
+"fr": "Souvent / parfois",
+"t": "w",
+"ic": "🔂"
+},
+{
+"id": "B:위 / 아래",
+"ko": "위 / 아래",
+"fr": "Dessus / dessous",
+"t": "w",
+"ic": "↕️"
+},
+{
+"id": "B:앞 / 뒤",
+"ko": "앞 / 뒤",
+"fr": "Devant / derrière",
+"t": "w",
+"ic": "🔄"
+},
+{
+"id": "B:무겁다 / 가볍다",
+"ko": "무겁다 / 가볍다",
+"fr": "Lourd / léger",
+"t": "w",
+"ic": "🏋️"
+},
+{
+"id": "B:밝다 / 어둡다",
+"ko": "밝다 / 어둡다",
+"fr": "Clair / sombre",
+"t": "w",
+"ic": "💡"
+},
+{
+"id": "B:시끄럽다 / 조용하다",
+"ko": "시끄럽다 / 조용하다",
+"fr": "Bruyant / calme",
+"t": "w",
+"ic": "🔊"
+},
+{
+"id": "B:휴식 / 쉬는 시간",
+"ko": "휴식 / 쉬는 시간",
+"fr": "Pause",
+"t": "w",
+"ic": "☕"
+},
+{
+"id": "B:사다리",
+"ko": "사다리",
+"fr": "Échelle",
+"t": "w",
+"ic": "🪜"
+},
+{
+"id": "B:소리",
+"ko": "소리",
+"fr": "Son, bruit",
+"t": "w",
+"ic": "🔉"
+},
+{
+"id": "B:불 켜 주세요",
+"ko": "불 켜 주세요",
+"fr": "Allumez, s'il vous plaît",
+"t": "w",
+"ic": "💡"
+},
+{
+"id": "B:불 꺼 주세요",
+"ko": "불 꺼 주세요",
+"fr": "Éteignez, s'il vous plaît",
+"t": "w",
+"ic": "🌑"
+},
+{
+"id": "B:잘 안 들려요",
+"ko": "잘 안 들려요",
+"fr": "Je n'entends pas bien",
+"t": "w",
+"ic": "👂"
+},
+{
+"id": "B:다시 말해 주세요",
+"ko": "다시 말해 주세요",
+"fr": "Pouvez-vous répéter ?",
+"t": "w",
+"ic": "🔁"
+},
+{
+"id": "B:천천히 말해 주세요",
+"ko": "천천히 말해 주세요",
+"fr": "Parlez lentement, s'il vous plaît",
+"t": "w",
+"ic": "🐢"
+},
+{
+"id": "B:무슨 뜻이에요?",
+"ko": "무슨 뜻이에요?",
+"fr": "Qu'est-ce que ça veut dire ?",
+"t": "w",
+"ic": "❓"
+},
+{
+"id": "B:괜찮아요?",
+"ko": "괜찮아요?",
+"fr": "Ça va ? Tout va bien ?",
+"t": "w",
+"ic": "👌"
+},
+{
+"id": "B:어디에 있어요?",
+"ko": "어디에 있어요?",
+"fr": "Où est-ce ?",
+"t": "w",
+"ic": "🗺️"
+},
+{
+"id": "B:몇 시에요?",
+"ko": "몇 시에요?",
+"fr": "À quelle heure ?",
+"t": "w",
+"ic": "🕘"
+},
+{
+"id": "B:이쪽으로 오세요",
+"ko": "이쪽으로 오세요",
+"fr": "Venez par ici",
+"t": "w",
+"ic": "👉"
+}
+],
+"dlg": []
+},
+{
+"id": "baseB1",
+"lv": "B1",
+"title": "Vocabulaire essentiel",
+"icon": "📗",
+"items": [
+{
+"id": "B:변경되다",
+"ko": "변경되다",
+"fr": "Être modifié",
+"t": "w",
+"ic": "🔀"
+},
+{
+"id": "B:연기되다",
+"ko": "연기되다",
+"fr": "Être reporté",
+"t": "w",
+"ic": "⏭️"
+},
+{
+"id": "B:담당자",
+"ko": "담당자",
+"fr": "Responsable (d'une tâche)",
+"t": "w",
+"ic": "🧑‍💼"
+},
+{
+"id": "B:안전",
+"ko": "안전",
+"fr": "Sécurité",
+"t": "w",
+"ic": "🦺"
+},
+{
+"id": "B:위험하다",
+"ko": "위험하다",
+"fr": "Être dangereux",
+"t": "w",
+"ic": "☢️"
+},
+{
+"id": "B:고장 나다",
+"ko": "고장 나다",
+"fr": "Tomber en panne",
+"t": "w",
+"ic": "🛠️"
+},
+{
+"id": "B:수리하다",
+"ko": "수리하다",
+"fr": "Réparer",
+"t": "w",
+"ic": "🔧"
+},
+{
+"id": "B:해결하다",
+"ko": "해결하다",
+"fr": "Résoudre",
+"t": "w",
+"ic": "🔑"
+},
+{
+"id": "B:결정하다",
+"ko": "결정하다",
+"fr": "Décider",
+"t": "w",
+"ic": "⚖️"
+},
+{
+"id": "B:의견",
+"ko": "의견",
+"fr": "Avis, opinion",
+"t": "w",
+"ic": "💬"
+},
+{
+"id": "B:허락",
+"ko": "허락",
+"fr": "Permission",
+"t": "w",
+"ic": "✅"
+},
+{
+"id": "B:예정이다",
+"ko": "예정이다",
+"fr": "Être prévu",
+"t": "w",
+"ic": "🗓️"
+},
+{
+"id": "B:가능하다 / 불가능하다",
+"ko": "가능하다 / 불가능하다",
+"fr": "Possible / impossible",
+"t": "w",
+"ic": "🚦"
+},
+{
+"id": "B:충분하다",
+"ko": "충분하다",
+"fr": "Être suffisant",
+"t": "w",
+"ic": "🈵"
+},
+{
+"id": "B:부족하다",
+"ko": "부족하다",
+"fr": "Manquer, être insuffisant",
+"t": "w",
+"ic": "📉"
+},
+{
+"id": "B:미리",
+"ko": "미리",
+"fr": "À l'avance",
+"t": "w",
+"ic": "⏩"
+},
+{
+"id": "B:갑자기",
+"ko": "갑자기",
+"fr": "Soudain",
+"t": "w",
+"ic": "⚡"
+},
+{
+"id": "B:결국",
+"ko": "결국",
+"fr": "Finalement",
+"t": "w",
+"ic": "🏁"
+},
+{
+"id": "B:예를 들면",
+"ko": "예를 들면",
+"fr": "Par exemple",
+"t": "w",
+"ic": "📌"
+},
+{
+"id": "B:관객석",
+"ko": "관객석",
+"fr": "Salle (places du public)",
+"t": "w",
+"ic": "💺"
+},
+{
+"id": "B:막 / 커튼",
+"ko": "막 / 커튼",
+"fr": "Rideau",
+"t": "w",
+"ic": "🎭"
+},
+{
+"id": "B:조명기",
+"ko": "조명기",
+"fr": "Projecteur",
+"t": "w",
+"ic": "🔦"
+},
+{
+"id": "B:음향 장비",
+"ko": "음향 장비",
+"fr": "Matériel son",
+"t": "w",
+"ic": "🎚️"
+},
+{
+"id": "B:하중",
+"ko": "하중",
+"fr": "Charge (poids)",
+"t": "w",
+"ic": "⚖️"
+},
+{
+"id": "B:무대 감독",
+"ko": "무대 감독",
+"fr": "Régisseur général",
+"t": "w",
+"ic": "📋"
+},
+{
+"id": "B:공연장",
+"ko": "공연장",
+"fr": "Salle de spectacle",
+"t": "w",
+"ic": "🏛️"
+}
+],
+"dlg": []
+},
+{
+"id": "baseB2",
+"lv": "B2",
+"title": "Vocabulaire essentiel",
+"icon": "📗",
+"items": [
+{
+"id": "B:협의하다",
+"ko": "협의하다",
+"fr": "Se concerter",
+"t": "w",
+"ic": "🤝"
+},
+{
+"id": "B:조정하다",
+"ko": "조정하다",
+"fr": "Ajuster, coordonner",
+"t": "w",
+"ic": "🎛️"
+},
+{
+"id": "B:검토하다",
+"ko": "검토하다",
+"fr": "Examiner, passer en revue",
+"t": "w",
+"ic": "🔍"
+},
+{
+"id": "B:승인하다",
+"ko": "승인하다",
+"fr": "Approuver",
+"t": "w",
+"ic": "🖊️"
+},
+{
+"id": "B:견적",
+"ko": "견적",
+"fr": "Devis",
+"t": "w",
+"ic": "🧾"
+},
+{
+"id": "B:예산을 초과하다",
+"ko": "예산을 초과하다",
+"fr": "Dépasser le budget",
+"t": "w",
+"ic": "💸"
+},
+{
+"id": "B:계약",
+"ko": "계약",
+"fr": "Contrat",
+"t": "w",
+"ic": "📄"
+},
+{
+"id": "B:규정",
+"ko": "규정",
+"fr": "Règlement",
+"t": "w",
+"ic": "📜"
+},
+{
+"id": "B:책임지다",
+"ko": "책임지다",
+"fr": "Assumer la responsabilité",
+"t": "w",
+"ic": "🧭"
+},
+{
+"id": "B:우선순위",
+"ko": "우선순위",
+"fr": "Priorité",
+"t": "w",
+"ic": "🥇"
+},
+{
+"id": "B:효율적이다",
+"ko": "효율적이다",
+"fr": "Être efficace",
+"t": "w",
+"ic": "⚙️"
+},
+{
+"id": "B:문제점",
+"ko": "문제점",
+"fr": "Point problématique",
+"t": "w",
+"ic": "🚩"
+},
+{
+"id": "B:대안",
+"ko": "대안",
+"fr": "Alternative, plan B",
+"t": "w",
+"ic": "🔀"
+},
+{
+"id": "B:양해 부탁드립니다",
+"ko": "양해 부탁드립니다",
+"fr": "Merci de votre compréhension",
+"t": "w",
+"ic": "🙇"
+},
+{
+"id": "B:말씀하신 대로",
+"ko": "말씀하신 대로",
+"fr": "Comme vous l'avez dit",
+"t": "w",
+"ic": "👂"
+},
+{
+"id": "B:그렇다고 해도",
+"ko": "그렇다고 해도",
+"fr": "Même si c'est le cas",
+"t": "w",
+"ic": "🤔"
+},
+{
+"id": "B:오히려",
+"ko": "오히려",
+"fr": "Au contraire, plutôt",
+"t": "w",
+"ic": "🔄"
+},
+{
+"id": "B:아무래도",
+"ko": "아무래도",
+"fr": "De toute façon, il semble que",
+"t": "w",
+"ic": "🤷"
+},
+{
+"id": "B:어쩔 수 없다",
+"ko": "어쩔 수 없다",
+"fr": "On n'y peut rien",
+"t": "w",
+"ic": "😮‍💨"
+},
+{
+"id": "B:눈치",
+"ko": "눈치",
+"fr": "Sens de l'implicite (lire l'ambiance)",
+"t": "w",
+"ic": "👀"
+},
+{
+"id": "B:분위기를 맞추다",
+"ko": "분위기를 맞추다",
+"fr": "S'adapter à l'ambiance",
+"t": "w",
+"ic": "🎶"
+},
+{
+"id": "B:무대 전환",
+"ko": "무대 전환",
+"fr": "Changement de décor",
+"t": "w",
+"ic": "🔁"
+},
+{
+"id": "B:리깅",
+"ko": "리깅",
+"fr": "Accroches (rigging)",
+"t": "w",
+"ic": "🪢"
+},
+{
+"id": "B:하중 계산",
+"ko": "하중 계산",
+"fr": "Calcul de charge",
+"t": "w",
+"ic": "🧮"
+},
+{
+"id": "B:안전 점검",
+"ko": "안전 점검",
+"fr": "Contrôle de sécurité",
+"t": "w",
+"ic": "🦺"
+},
+{
+"id": "B:기술 회의",
+"ko": "기술 회의",
+"fr": "Réunion technique",
+"t": "w",
+"ic": "🗂️"
+},
+{
+"id": "B:투어 일정",
+"ko": "투어 일정",
+"fr": "Planning de tournée",
+"t": "w",
+"ic": "🚌"
+},
+{
+"id": "B:현지 스태프",
+"ko": "현지 스태프",
+"fr": "Équipe locale",
+"t": "w",
+"ic": "👷"
+},
+{
+"id": "B:통역을 거치다",
+"ko": "통역을 거치다",
+"fr": "Passer par l'interprète",
+"t": "w",
+"ic": "🗣️"
+},
+{
+"id": "B:의사소통",
+"ko": "의사소통",
+"fr": "Communication",
+"t": "w",
+"ic": "📡"
+}
+],
+"dlg": []
+},
+{
+"id": "baseC1",
+"lv": "C1",
+"title": "Vocabulaire essentiel",
+"icon": "📗",
+"items": [
+{
+"id": "B:관행",
+"ko": "관행",
+"fr": "Usage, pratique habituelle",
+"t": "w",
+"ic": "📚"
+},
+{
+"id": "B:전반적으로",
+"ko": "전반적으로",
+"fr": "Dans l'ensemble",
+"t": "w",
+"ic": "🌐"
+},
+{
+"id": "B:구체적으로",
+"ko": "구체적으로",
+"fr": "Concrètement",
+"t": "w",
+"ic": "🧱"
+},
+{
+"id": "B:궁극적으로",
+"ko": "궁극적으로",
+"fr": "En fin de compte",
+"t": "w",
+"ic": "🎯"
+},
+{
+"id": "B:불가피하다",
+"ko": "불가피하다",
+"fr": "Être inévitable",
+"t": "w",
+"ic": "⛓️"
+},
+{
+"id": "B:시행착오",
+"ko": "시행착오",
+"fr": "Essais et erreurs",
+"t": "w",
+"ic": "🔬"
+},
+{
+"id": "B:타협하다",
+"ko": "타협하다",
+"fr": "Faire un compromis",
+"t": "w",
+"ic": "🤝"
+},
+{
+"id": "B:의견 차이를 좁히다",
+"ko": "의견 차이를 좁히다",
+"fr": "Réduire les divergences",
+"t": "w",
+"ic": "↔️"
+},
+{
+"id": "B:책임 소재",
+"ko": "책임 소재",
+"fr": "Attribution des responsabilités",
+"t": "w",
+"ic": "🧭"
+},
+{
+"id": "B:파급 효과",
+"ko": "파급 효과",
+"fr": "Effet de répercussion",
+"t": "w",
+"ic": "🌊"
+},
+{
+"id": "B:여지가 있다",
+"ko": "여지가 있다",
+"fr": "Il y a de la marge",
+"t": "w",
+"ic": "📏"
+},
+{
+"id": "B:실무진",
+"ko": "실무진",
+"fr": "Équipe opérationnelle",
+"t": "w",
+"ic": "👷"
+},
+{
+"id": "B:간과하다",
+"ko": "간과하다",
+"fr": "Négliger, passer à côté",
+"t": "w",
+"ic": "🙈"
+},
+{
+"id": "B:제작 여건",
+"ko": "제작 여건",
+"fr": "Conditions de production",
+"t": "w",
+"ic": "🏗️"
+},
+{
+"id": "B:예술적 의도",
+"ko": "예술적 의도",
+"fr": "Intention artistique",
+"t": "w",
+"ic": "🎨"
+},
+{
+"id": "B:연출가의 의도를 살리다",
+"ko": "연출가의 의도를 살리다",
+"fr": "Respecter l'intention du metteur en scène",
+"t": "w",
+"ic": "🎬"
+},
+{
+"id": "B:완성도를 높이다",
+"ko": "완성도를 높이다",
+"fr": "Améliorer la qualité finale",
+"t": "w",
+"ic": "✨"
+},
+{
+"id": "B:눈에 띄지 않게",
+"ko": "눈에 띄지 않게",
+"fr": "Discrètement, sans que ça se voie",
+"t": "w",
+"ic": "🫥"
+},
+{
+"id": "B:말끝을 흐리다",
+"ko": "말끝을 흐리다",
+"fr": "Ne pas finir sa phrase (hésiter)",
+"t": "w",
+"ic": "…"
+},
+{
+"id": "B:돌려 말하다",
+"ko": "돌려 말하다",
+"fr": "Parler à demi-mot",
+"t": "w",
+"ic": "🌀"
+},
+{
+"id": "B:무리하다",
+"ko": "무리하다",
+"fr": "Forcer, en faire trop",
+"t": "w",
+"ic": "🏋️"
+},
+{
+"id": "B:감수하다",
+"ko": "감수하다",
+"fr": "Accepter (un risque)",
+"t": "w",
+"ic": "🎲"
+},
+{
+"id": "B:한계에 부딪히다",
+"ko": "한계에 부딪히다",
+"fr": "Se heurter à ses limites",
+"t": "w",
+"ic": "🧱"
+},
+{
+"id": "B:박수를 받다",
+"ko": "박수를 받다",
+"fr": "Être applaudi",
+"t": "w",
+"ic": "👏"
+},
+{
+"id": "B:성황리에 끝나다",
+"ko": "성황리에 끝나다",
+"fr": "Se terminer avec un grand succès",
+"t": "w",
+"ic": "🏆"
+}
+],
+"dlg": []
+}
+],
+"dialogues": [
+{
+"id": "pA1a",
+"lv": "A1",
+"title": "À la réception du théâtre",
+"ctx": "Tu accueilles un visiteur coréen.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "안녕하세요. 어서 오세요.",
+"fr": "Bonjour. Bienvenue."
+},
+{
+"s": "B",
+"ko": "안녕하세요. 실례합니다. 김민수예요.",
+"fr": "Bonjour. Excusez-moi, je suis Kim Minsu."
+},
+{
+"s": "A",
+"ko": "아, 반갑습니다. 저는 아르노예요.",
+"fr": "Ah, enchanté. Je suis Arnaud."
+},
+{
+"s": "B",
+"ko": "만나서 반갑습니다. 잘 부탁드려요.",
+"fr": "Ravi de vous rencontrer. Je compte sur vous."
+}
+],
+"qs": [
+{
+"q": "Comment s'appelle le visiteur ?",
+"opts": [
+"Kim Minsu",
+"Park Minho",
+"Lee Sujin"
+],
+"a": 0
+},
+{
+"q": "Quelle formule utilise-t-il à la fin ?",
+"opts": [
+"« Je compte sur vous »",
+"« Au revoir »",
+"« Félicitations »"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA1b",
+"lv": "A1",
+"title": "Faire connaissance",
+"ctx": "Pause entre deux répétitions.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "어느 나라 사람이에요?",
+"fr": "De quel pays êtes-vous ?"
+},
+{
+"s": "B",
+"ko": "저는 프랑스 사람이에요. 몽펠리에에 살아요.",
+"fr": "Je suis français. J'habite à Montpellier."
+},
+{
+"s": "A",
+"ko": "무슨 일을 하세요?",
+"fr": "Que faites-vous dans la vie ?"
+},
+{
+"s": "B",
+"ko": "극장에서 일해요. 그리고 노래도 해요.",
+"fr": "Je travaille dans un théâtre. Et je chante aussi."
+}
+],
+"qs": [
+{
+"q": "Où habite B ?",
+"opts": [
+"À Paris",
+"À Montpellier",
+"À Séoul"
+],
+"a": 1
+},
+{
+"q": "Que fait-il en plus de son travail ?",
+"opts": [
+"Il chante",
+"Il danse",
+"Il enseigne"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA1c",
+"lv": "A1",
+"title": "La famille",
+"ctx": "Deux collègues regardent une photo.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "가족이 몇 명이에요?",
+"fr": "Combien êtes-vous dans votre famille ?"
+},
+{
+"s": "B",
+"ko": "네 명이에요. 부모님하고 여동생이 있어요.",
+"fr": "Nous sommes quatre. J'ai mes parents et une petite sœur."
+},
+{
+"s": "A",
+"ko": "여동생은 몇 살이에요?",
+"fr": "Quel âge a votre petite sœur ?"
+},
+{
+"s": "B",
+"ko": "스물다섯 살이에요. 학생이에요.",
+"fr": "Elle a vingt-cinq ans. Elle est étudiante."
+}
+],
+"qs": [
+{
+"q": "Combien sont-ils dans la famille ?",
+"opts": [
+"Trois",
+"Quatre",
+"Cinq"
+],
+"a": 1
+},
+{
+"q": "Que fait la petite sœur ?",
+"opts": [
+"Elle est étudiante",
+"Elle est médecin",
+"Elle est chanteuse"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA1d",
+"lv": "A1",
+"title": "Commander au café",
+"ctx": "Au comptoir d'un café à Séoul.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "어서 오세요. 주문하시겠어요?",
+"fr": "Bienvenue. Vous désirez ?"
+},
+{
+"s": "B",
+"ko": "아메리카노 한 잔하고 녹차 한 잔 주세요.",
+"fr": "Un americano et un thé vert, s'il vous plaît."
+},
+{
+"s": "A",
+"ko": "여기서 드세요?",
+"fr": "C'est sur place ?"
+},
+{
+"s": "B",
+"ko": "아니요, 포장해 주세요. 카드 돼요?",
+"fr": "Non, à emporter. La carte est acceptée ?"
+},
+{
+"s": "A",
+"ko": "네, 돼요. 구천 원입니다.",
+"fr": "Oui. Ce sera 9 000 wons."
+}
+],
+"qs": [
+{
+"q": "Qu'est-ce que B commande ?",
+"opts": [
+"Deux americanos",
+"Un americano et un thé vert",
+"Un jus et un café"
+],
+"a": 1
+},
+{
+"q": "Combien ça coûte ?",
+"opts": [
+"9 000 wons",
+"19 000 wons",
+"900 wons"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA1e",
+"lv": "A1",
+"title": "Demander son chemin",
+"ctx": "Dans la rue, près d'une station de métro.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "실례합니다. 약국이 어디에 있어요?",
+"fr": "Excusez-moi. Où est la pharmacie ?"
+},
+{
+"s": "B",
+"ko": "쭉 가세요. 은행 옆에 있어요.",
+"fr": "Allez tout droit. Elle est à côté de la banque."
+},
+{
+"s": "A",
+"ko": "여기에서 멀어요?",
+"fr": "C'est loin d'ici ?"
+},
+{
+"s": "B",
+"ko": "아니요, 가까워요. 오 분쯤 걸려요.",
+"fr": "Non, c'est près. Environ cinq minutes."
+}
+],
+"qs": [
+{
+"q": "Où se trouve la pharmacie ?",
+"opts": [
+"À côté de la banque",
+"Derrière la gare",
+"Devant le parc"
+],
+"a": 0
+},
+{
+"q": "Combien de temps faut-il ?",
+"opts": [
+"Environ 5 minutes",
+"Environ 15 minutes",
+"Une heure"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA1f",
+"lv": "A1",
+"title": "Dans le taxi",
+"ctx": "Arnaud prend un taxi à Séoul.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "어디로 가세요?",
+"fr": "Où allez-vous ?"
+},
+{
+"s": "B",
+"ko": "세종문화회관으로 가 주세요.",
+"fr": "Au centre culturel Sejong, s'il vous plaît."
+},
+{
+"s": "A",
+"ko": "네. 길이 조금 막혀요.",
+"fr": "D'accord. Il y a un peu de circulation."
+},
+{
+"s": "B",
+"ko": "얼마나 걸려요?",
+"fr": "Combien de temps ça prend ?"
+},
+{
+"s": "A",
+"ko": "삼십 분쯤 걸려요.",
+"fr": "Environ trente minutes."
+}
+],
+"qs": [
+{
+"q": "Où va B ?",
+"opts": [
+"À l'aéroport",
+"Au centre culturel Sejong",
+"À l'hôtel"
+],
+"a": 1
+},
+{
+"q": "Combien de temps faut-il ?",
+"opts": [
+"Environ 30 minutes",
+"Environ 3 minutes",
+"Environ 3 heures"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA1g",
+"lv": "A1",
+"title": "Fixer un rendez-vous",
+"ctx": "Au téléphone avec un ami.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "토요일에 시간 있어요?",
+"fr": "Tu as du temps samedi ?"
+},
+{
+"s": "B",
+"ko": "오전에는 바빠요. 오후는 괜찮아요.",
+"fr": "Le matin je suis occupé. L'après-midi, ça va."
+},
+{
+"s": "A",
+"ko": "그럼 오후 두 시에 만나요.",
+"fr": "Alors retrouvons-nous à 14 h."
+},
+{
+"s": "B",
+"ko": "좋아요. 어디에서 만나요?",
+"fr": "D'accord. On se retrouve où ?"
+},
+{
+"s": "A",
+"ko": "공원 앞에서 만나요.",
+"fr": "Devant le parc."
+}
+],
+"qs": [
+{
+"q": "Quand B est-il libre samedi ?",
+"opts": [
+"Le matin",
+"L'après-midi",
+"Le soir"
+],
+"a": 1
+},
+{
+"q": "Où se retrouvent-ils ?",
+"opts": [
+"Devant le parc",
+"Au café",
+"À la gare"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA1h",
+"lv": "A1",
+"title": "Chez le médecin",
+"ctx": "Arnaud ne se sent pas bien avant un concert.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "어디가 아프세요?",
+"fr": "Où avez-vous mal ?"
+},
+{
+"s": "B",
+"ko": "목이 아프고 열이 조금 있어요.",
+"fr": "J'ai mal à la gorge et un peu de fièvre."
+},
+{
+"s": "A",
+"ko": "감기예요. 약을 드릴게요. 하루에 세 번 드세요.",
+"fr": "C'est un rhume. Je vous donne un médicament. Trois fois par jour."
+},
+{
+"s": "B",
+"ko": "노래해도 돼요?",
+"fr": "Je peux chanter ?"
+},
+{
+"s": "A",
+"ko": "이틀 동안은 쉬세요.",
+"fr": "Reposez-vous pendant deux jours."
+}
+],
+"qs": [
+{
+"q": "Quels sont les symptômes ?",
+"opts": [
+"Mal à la gorge et un peu de fièvre",
+"Mal au ventre",
+"Mal aux pieds"
+],
+"a": 0
+},
+{
+"q": "Que conseille le médecin ?",
+"opts": [
+"Se reposer deux jours",
+"Chanter beaucoup",
+"Aller à l'hôpital"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA1i",
+"lv": "A1",
+"title": "Quel temps fait-il ?",
+"ctx": "Message vocal entre amis.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "서울 날씨 어때요?",
+"fr": "Quel temps fait-il à Séoul ?"
+},
+{
+"s": "B",
+"ko": "너무 추워요. 어제는 눈이 왔어요.",
+"fr": "Il fait très froid. Hier, il a neigé."
+},
+{
+"s": "A",
+"ko": "몽펠리에는 따뜻해요. 해가 나요.",
+"fr": "À Montpellier, il fait doux. Il y a du soleil."
+},
+{
+"s": "B",
+"ko": "부러워요!",
+"fr": "Je t'envie !"
+}
+],
+"qs": [
+{
+"q": "Quel temps fait-il à Séoul ?",
+"opts": [
+"Très froid",
+"Très chaud",
+"Doux"
+],
+"a": 0
+},
+{
+"q": "Que s'est-il passé hier à Séoul ?",
+"opts": [
+"Il a neigé",
+"Il a plu",
+"Il y avait du vent"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA1j",
+"lv": "A1",
+"title": "Au restaurant",
+"ctx": "Dîner après une répétition.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "뭐 먹을까요?",
+"fr": "On mange quoi ?"
+},
+{
+"s": "B",
+"ko": "저는 비빔밥 먹을게요. 고기를 안 먹어요.",
+"fr": "Je prends un bibimbap. Je ne mange pas de viande."
+},
+{
+"s": "A",
+"ko": "그럼 저는 불고기요. 맥주도 마실까요?",
+"fr": "Alors moi, un bulgogi. On boit aussi une bière ?"
+},
+{
+"s": "B",
+"ko": "좋아요! 여기요, 주문할게요.",
+"fr": "D'accord ! S'il vous plaît, on va commander."
+}
+],
+"qs": [
+{
+"q": "Pourquoi B prend-il un bibimbap ?",
+"opts": [
+"Il ne mange pas de viande",
+"C'est moins cher",
+"Il adore le riz"
+],
+"a": 0
+},
+{
+"q": "Que vont-ils boire ?",
+"opts": [
+"De la bière",
+"Du thé",
+"De l'eau"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA2a",
+"lv": "A2",
+"title": "Avant la réunion",
+"ctx": "Deux collègues au bureau.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "회의가 몇 시에 시작해요?",
+"fr": "À quelle heure commence la réunion ?"
+},
+{
+"s": "B",
+"ko": "열 시요. 그런데 부장님이 조금 늦으신대요.",
+"fr": "À dix heures. Mais le chef de service sera un peu en retard."
+},
+{
+"s": "A",
+"ko": "그럼 그동안 서류를 확인할게요.",
+"fr": "Alors en attendant, je vais vérifier les documents."
+},
+{
+"s": "B",
+"ko": "좋아요. 보고서도 출력해 주세요.",
+"fr": "D'accord. Imprime aussi le rapport, s'il te plaît."
+}
+],
+"qs": [
+{
+"q": "Qui sera en retard ?",
+"opts": [
+"Le chef de service",
+"Le collègue A",
+"Personne"
+],
+"a": 0
+},
+{
+"q": "Que va faire A en attendant ?",
+"opts": [
+"Vérifier les documents",
+"Prendre un café",
+"Rentrer chez lui"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA2b",
+"lv": "A2",
+"title": "Une invitation refusée",
+"ctx": "Au téléphone.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "금요일 저녁에 같이 식사할래요?",
+"fr": "Tu veux dîner ensemble vendredi soir ?"
+},
+{
+"s": "B",
+"ko": "미안해요. 금요일에는 공연이 있어요. 토요일은 어때요?",
+"fr": "Désolé, vendredi j'ai un spectacle. Et samedi ?"
+},
+{
+"s": "A",
+"ko": "토요일도 좋아요. 일곱 시 괜찮아요?",
+"fr": "Samedi, ça me va aussi. 19 h, ça te va ?"
+},
+{
+"s": "B",
+"ko": "네, 좋아요. 제가 식당을 예약할게요.",
+"fr": "Oui, parfait. Je réserve le restaurant."
+}
+],
+"qs": [
+{
+"q": "Pourquoi B ne peut-il pas vendredi ?",
+"opts": [
+"Il a un spectacle",
+"Il est malade",
+"Il voyage"
+],
+"a": 0
+},
+{
+"q": "Qui réserve le restaurant ?",
+"opts": [
+"A",
+"B",
+"Personne"
+],
+"a": 1
+}
+]
+},
+{
+"id": "pA2c",
+"lv": "A2",
+"title": "À l'hôtel",
+"ctx": "Arrivée à Séoul.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "안녕하세요. 예약했어요. 이름은 아르노 델모트예요.",
+"fr": "Bonjour. J'ai réservé. Au nom d'Arnaud Delmotte."
+},
+{
+"s": "B",
+"ko": "네, 3박이시네요. 여권 좀 보여 주세요.",
+"fr": "Oui, trois nuits. Votre passeport, s'il vous plaît."
+},
+{
+"s": "A",
+"ko": "여기 있어요. 아침 식사는 몇 시부터예요?",
+"fr": "Le voici. Le petit-déjeuner est à partir de quelle heure ?"
+},
+{
+"s": "B",
+"ko": "일곱 시부터 열 시까지예요. 2층 식당에서 드세요.",
+"fr": "De 7 h à 10 h, au restaurant du 2e étage."
+}
+],
+"qs": [
+{
+"q": "Combien de nuits reste-t-il ?",
+"opts": [
+"Deux",
+"Trois",
+"Quatre"
+],
+"a": 1
+},
+{
+"q": "Où est servi le petit-déjeuner ?",
+"opts": [
+"Au 2e étage",
+"Dans la chambre",
+"Au rez-de-chaussée"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA2d",
+"lv": "A2",
+"title": "Dans une boutique",
+"ctx": "Myeongdong, rayon manteaux.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "이 코트 입어 봐도 돼요?",
+"fr": "Je peux essayer ce manteau ?"
+},
+{
+"s": "B",
+"ko": "네, 탈의실은 저쪽이에요.",
+"fr": "Oui, la cabine est par là."
+},
+{
+"s": "A",
+"ko": "좀 커요. 작은 사이즈 있어요?",
+"fr": "Il est un peu grand. Vous avez plus petit ?"
+},
+{
+"s": "B",
+"ko": "검은색은 없고 파란색만 있어요.",
+"fr": "Pas en noir, seulement en bleu."
+},
+{
+"s": "A",
+"ko": "그럼 파란색으로 할게요.",
+"fr": "Alors je prends le bleu."
+}
+],
+"qs": [
+{
+"q": "Quel est le problème du manteau ?",
+"opts": [
+"Il est trop grand",
+"Il est trop cher",
+"Il est sale"
+],
+"a": 0
+},
+{
+"q": "Quelle couleur prend-il finalement ?",
+"opts": [
+"Noir",
+"Bleu",
+"Rouge"
+],
+"a": 1
+}
+]
+},
+{
+"id": "pA2e",
+"lv": "A2",
+"title": "À la pharmacie",
+"ctx": "Arnaud tousse depuis deux jours.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "어제부터 기침이 나고 목이 아파요.",
+"fr": "Depuis hier, je tousse et j'ai mal à la gorge."
+},
+{
+"s": "B",
+"ko": "열도 있어요?",
+"fr": "Vous avez aussi de la fièvre ?"
+},
+{
+"s": "A",
+"ko": "아니요, 열은 없어요.",
+"fr": "Non, pas de fièvre."
+},
+{
+"s": "B",
+"ko": "이 약을 하루에 세 번, 식후에 드세요. 사흘 지나도 안 나으면 병원에 가세요.",
+"fr": "Prenez ce médicament trois fois par jour, après les repas. Si ça ne va pas mieux dans trois jours, allez chez le médecin."
+}
+],
+"qs": [
+{
+"q": "A-t-il de la fièvre ?",
+"opts": [
+"Oui",
+"Non",
+"On ne sait pas"
+],
+"a": 1
+},
+{
+"q": "Quand doit-il prendre le médicament ?",
+"opts": [
+"Après les repas, 3 fois par jour",
+"Le soir seulement",
+"Avant de dormir"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA2f",
+"lv": "A2",
+"title": "Perdu dans le quartier",
+"ctx": "Arnaud cherche la salle de concert.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "실례지만 예술의전당에 어떻게 가요?",
+"fr": "Excusez-moi, comment va-t-on au Seoul Arts Center ?"
+},
+{
+"s": "B",
+"ko": "이 길로 쭉 가다가 사거리에서 오른쪽으로 도세요.",
+"fr": "Allez tout droit dans cette rue, puis tournez à droite au carrefour."
+},
+{
+"s": "A",
+"ko": "걸어서 갈 수 있어요?",
+"fr": "On peut y aller à pied ?"
+},
+{
+"s": "B",
+"ko": "네, 십오 분쯤 걸려요. 버스를 타면 더 빨라요.",
+"fr": "Oui, environ quinze minutes. En bus, c'est plus rapide."
+}
+],
+"qs": [
+{
+"q": "Où faut-il tourner ?",
+"opts": [
+"À droite au carrefour",
+"À gauche au feu",
+"Nulle part"
+],
+"a": 0
+},
+{
+"q": "Combien de temps à pied ?",
+"opts": [
+"Environ 15 minutes",
+"Environ 5 minutes",
+"Une heure"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA2g",
+"lv": "A2",
+"title": "À l'entracte",
+"ctx": "Deux spectateurs au foyer.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "1막 어땠어요?",
+"fr": "Comment as-tu trouvé le premier acte ?"
+},
+{
+"s": "B",
+"ko": "정말 멋있었어요. 특히 무대가 아름다웠어요.",
+"fr": "Magnifique. Surtout le décor, il était beau."
+},
+{
+"s": "A",
+"ko": "저는 오케스트라 소리가 좋았어요.",
+"fr": "Moi, j'ai aimé le son de l'orchestre."
+},
+{
+"s": "B",
+"ko": "쉬는 시간이 얼마나 남았어요?",
+"fr": "Il reste combien de temps d'entracte ?"
+},
+{
+"s": "A",
+"ko": "오 분 남았어요. 들어갈까요?",
+"fr": "Cinq minutes. On rentre ?"
+}
+],
+"qs": [
+{
+"q": "Qu'est-ce que B a particulièrement aimé ?",
+"opts": [
+"Le décor",
+"Les costumes",
+"Le chef d'orchestre"
+],
+"a": 0
+},
+{
+"q": "Combien de temps reste-t-il ?",
+"opts": [
+"Cinq minutes",
+"Quinze minutes",
+"Une demi-heure"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA2h",
+"lv": "A2",
+"title": "Avant la première",
+"ctx": "Coulisses, une heure avant le lever de rideau.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "괜찮아요? 얼굴이 좀 안 좋아 보여요.",
+"fr": "Ça va ? Tu n'as pas bonne mine."
+},
+{
+"s": "B",
+"ko": "너무 긴장돼요. 첫 공연이라서요.",
+"fr": "Je suis très tendu. C'est la première."
+},
+{
+"s": "A",
+"ko": "걱정하지 마세요. 리허설 때 정말 잘했잖아요.",
+"fr": "Ne t'inquiète pas. Tu as été très bien en répétition."
+},
+{
+"s": "B",
+"ko": "고마워요. 덕분에 기분이 좀 나아졌어요.",
+"fr": "Merci. Grâce à toi, je me sens un peu mieux."
+}
+],
+"qs": [
+{
+"q": "Pourquoi B est-il tendu ?",
+"opts": [
+"C'est la première",
+"Il est malade",
+"Il a perdu son costume"
+],
+"a": 0
+},
+{
+"q": "Comment se sent B à la fin ?",
+"opts": [
+"Un peu mieux",
+"Encore plus mal",
+"En colère"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA2i",
+"lv": "A2",
+"title": "Un appel manqué",
+"ctx": "Arnaud rappelle un collègue coréen.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "여보세요? 아까 전화하셨죠?",
+"fr": "Allô ? Vous m'avez appelé tout à l'heure ?"
+},
+{
+"s": "B",
+"ko": "네, 내일 리허설 시간이 바뀌었어요.",
+"fr": "Oui, l'horaire de la répétition de demain a changé."
+},
+{
+"s": "A",
+"ko": "몇 시로 바뀌었어요?",
+"fr": "Il est passé à quelle heure ?"
+},
+{
+"s": "B",
+"ko": "두 시에서 네 시로요. 문자로도 보낼게요.",
+"fr": "De 14 h à 16 h. Je vous l'envoie aussi par texto."
+}
+],
+"qs": [
+{
+"q": "Qu'est-ce qui a changé ?",
+"opts": [
+"L'horaire de la répétition",
+"Le lieu du concert",
+"Le chef d'orchestre"
+],
+"a": 0
+},
+{
+"q": "Quelle est la nouvelle heure ?",
+"opts": [
+"16 h",
+"14 h",
+"18 h"
+],
+"a": 0
+}
+]
+},
+{
+"id": "pA2j",
+"lv": "A2",
+"title": "Le week-end",
+"ctx": "Lundi matin à la machine à café.",
+"prog": 1,
+"lines": [
+{
+"s": "A",
+"ko": "주말에 뭐 했어요?",
+"fr": "Qu'as-tu fait ce week-end ?"
+},
+{
+"s": "B",
+"ko": "토요일에는 등산을 했고 일요일에는 집에서 쉬었어요.",
+"fr": "Samedi, j'ai fait de la randonnée, et dimanche je me suis reposé chez moi."
+},
+{
+"s": "A",
+"ko": "어느 산에 갔어요?",
+"fr": "Quelle montagne ?"
+},
+{
+"s": "B",
+"ko": "북한산이요. 경치가 정말 좋았어요. 다음에 같이 가요.",
+"fr": "Bukhansan. La vue était superbe. Allons-y ensemble la prochaine fois."
+}
+],
+"qs": [
+{
+"q": "Qu'a-t-il fait dimanche ?",
+"opts": [
+"Il s'est reposé",
+"Il a fait du sport",
+"Il a travaillé"
+],
+"a": 0
+},
+{
+"q": "Que propose-t-il ?",
+"opts": [
+"D'y aller ensemble la prochaine fois",
+"D'aller au cinéma",
+"De dîner"
+],
+"a": 0
+}
+]
+}
+]
+}
