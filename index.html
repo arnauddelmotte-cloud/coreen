@@ -187,7 +187,8 @@ details.cd input{width:22px;height:22px;flex:none;margin-top:1px}
 .pmodes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}.pmodes .btn{flex-direction:column;gap:2px;min-height:64px;font-size:13px}.pmodes .btn b{font-size:22px;font-weight:400}
 @media(max-width:520px){.pmodes{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .kind{font-size:12px;color:var(--soft);text-transform:uppercase;letter-spacing:.06em;margin:16px 0 4px}
-.trh{font-size:12px;color:var(--soft);text-transform:uppercase;letter-spacing:.06em;margin:14px 0 4px}.trrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}.trrow .ko{font-size:18px}.trrow small{color:var(--soft)}
+.trh{font-size:12px;color:var(--soft);text-transform:uppercase;letter-spacing:.06em;margin:14px 0 4px}.trsub{border-top:1px dashed var(--line)!important}.trpair{border-top:1px solid var(--line)}.trpair>.trrow:first-child{border-top:0}
+.trrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}.trrow .ko{font-size:18px}.trrow small{color:var(--soft)}
 .bigplay{font-size:22px;min-height:76px;padding:14px 30px}
 .rec{background:var(--err);color:#fff}
 .diff .ok{color:var(--ok);font-weight:700}.diff .ko{color:var(--err);text-decoration:line-through}
@@ -919,6 +920,63 @@ document.addEventListener('click',e=>{const t=e.target;let b;
  if(b=t.closest('[data-rq]')){const R=RV.rev,x=R.q.shift(),q=+b.dataset.rq;rgrade(x,q);if(q)R.ok++;R.show=false;try{YTP&&YTP.destroy&&YTP.destroy()}catch(_){}YTP=null;reelRev();return}
  if(b=t.closest('[data-rclip]')){const x=RL.lines.find(l=>l.id===b.dataset.rclip);$('#rclipbox').innerHTML='<div class="ytwrap"><div id="ytbox"></div></div>';ytMount({vid:x.vid,start:Math.max(0,x.at-3)});return}});
 /* ---------- traduction ---------- */
+/* styles poli (해요체) / formel (합니다체) — conversion de la terminaison finale */
+const KS=(()=>{
+const SB=0xAC00,dec=c=>{const n=(c||'').charCodeAt(0)-SB;return n<0||n>11171?null:{L:Math.floor(n/588),V:Math.floor(n%588/28),T:n%28}},comp=(L,V,T)=>String.fromCharCode(SB+L*588+V*28+T);
+const last=s=>s.slice(-1),init=s=>s.slice(0,-1);
+const IRR_B=new Set('덥 춥 어렵 쉽 맵 귀엽 무섭 가볍 무겁 반갑 고맙 아름답 즐겁 시끄럽 더럽 가깝 눕 돕 곱 부럽 뜨겁 차갑 새롭 외롭 괴롭 아깝 부드럽 놀랍 싱겁 그립 밉 부끄럽 어둡 두껍'.split(' '));
+const IRR_D=new Set('듣 걷 묻 싣 깨닫 알아듣'.split(' '));
+const IRR_S=new Set('낫 짓 붓 젓 잇'.split(' '));
+const IRR_H=new Set('그렇 이렇 저렇 어떻 빨갛 파랗 노랗 하얗 까맣'.split(' '));
+const REU_REG=new Set('따르 들르 치르'.split(' '));
+const bright=s=>{const d=dec(last(s));return d&&(d.V===0||d.V===2||d.V===8)};
+function aeo(st){const l=last(st),p=init(st),d=dec(l);if(!d)return null;
+ if(l==='하')return p+'해';
+ if(d.T===17&&IRR_B.has(st))return p+comp(d.L,d.V,0)+(st==='돕'||st==='곱'?'와':'워');
+ if(d.T===7&&IRR_D.has(st))return p+comp(d.L,d.V,8)+(bright(st)?'아':'어');
+ if(d.T===19&&IRR_S.has(st))return p+comp(d.L,d.V,0)+(bright(st)?'아':'어');
+ if(d.T===27&&IRR_H.has(st))return p+comp(d.L,d.V===2?3:1,0);
+ if(l==='르'&&p&&!REU_REG.has(st)){const q=dec(last(p));return init(p)+comp(q.L,q.V,8)+(bright(p)?'라':'러')}
+ if(d.T)return st+(bright(st)?'아':'어');
+ switch(d.V){case 18:return p+comp(d.L,p&&bright(p)?0:4,0);case 8:return p+comp(d.L,9,0);case 13:return p+comp(d.L,14,0);
+  case 20:return p+comp(d.L,6,0);case 11:return p+comp(d.L,10,0);case 0:case 1:case 4:case 5:case 6:case 9:case 14:return st;default:return st+'어'}}
+function past(st){const b=aeo(st);if(!b)return null;const d=dec(last(b));return init(b)+comp(d.L,d.V,20)}
+function formal(st,q){const l=last(st),p=init(st),d=dec(l);const e=q?'니까':'니다';if(!d)return null;
+ if(l==='하')return p+'합'+e;if(!d.T||d.T===8)return p+comp(d.L,d.V,17)+e;return st+'습'+e}
+const BASE='가다 오다 보다 주다 마시다 되다 서다 자다 사다 타다 만나다 배우다 기다리다 다니다 쓰다 크다 바쁘다 예쁘다 아프다 슬프다 기쁘다 나쁘다 배고프다 고프다 끄다 뜨다 모르다 빠르다 다르다 부르다 고르다 자르다 듣다 걷다 묻다 덥다 춥다 어렵다 쉽다 맵다 무섭다 가깝다 고맙다 반갑다 돕다 눕다 그렇다 어떻다 이렇다 낫다 짓다 알다 살다 만들다 놀다 열다 팔다 길다 멀다 달다 내다 보내다 지내다 켜다 쉬다 바꾸다 춤추다 있다 없다 먹다 읽다 앉다 좋다 많다 싫다 괜찮다 받다 찾다 닫다 입다 신다 웃다 씻다 벗다 넣다 놓다 작다 적다 맞다 늦다 일어나다 나가다 들어가다 내리다 가르치다 걸리다 시키다 드리다 드시다 계시다 주무시다 이기다 지다 비싸다 싸다 짜다 시다 쓰다 끝나다 시작되다 잘되다 안되다 편하다 피곤하다'.split(' ');
+let REV=null;
+function buildRev(words){REV=new Map();const add=w=>{if(!/^[가-힣]+다$/.test(w))return;const st=w.slice(0,-1);const b=aeo(st);if(b&&!REV.has(b))REV.set(b,st)};BASE.forEach(add);(words||[]).forEach(add)}
+function parse(w){if(!REV)buildRev();let m;
+ if((m=w.match(/^(.+?)(입니다|입니까)$/)))return {noun:m[1]};
+ if((m=w.match(/^(.+?)(이에요|예요)$/))&&!/[어아]$/.test(m[1]))return {noun:m[1]};
+ const lt=w.match(/^(.*?)(어요|습니다|습니까|다)$/);
+ if(lt){const P=lt[1],d=dec(last(P));if(d&&d.T===20)return {pastP:P}}
+ if((m=w.match(/^(.+겠)(어요|습니다|습니까)$/)))return {pastP:m[1]};
+ if((m=w.match(/^(.+?)(으)?(세요|십니다|십니까|십시오)$/))){const cand=m[1]+(m[2]||'')+'시';if(/십니[다까]$/.test(w)&&[...REV.values()].includes(cand))return {st:cand};return {hon:m[1]+(m[2]||''),imp:m[3]==='십시오'}}
+ if((m=w.match(/^(.+?)을게요$/)))return {fut:m[1]};
+ if((m=w.match(/^(.*)게요$/))){const d=dec(last(m[1]));if(d&&d.T===8)return {fut:init(m[1])+comp(d.L,d.V,0)}}
+ if((m=w.match(/^(.+)습니[다까]$/)))return {st:m[1]};
+ if((m=w.match(/^(.*)니[다까]$/))){const d=dec(last(m[1]));if(d&&d.T===17){const a=init(m[1])+comp(d.L,d.V,0),b=init(m[1])+comp(d.L,d.V,8);const ka=[...REV.values()].includes(a),kb=[...REV.values()].includes(b);return {st:kb&&!ka?b:a}}}
+ if((m=w.match(/^(.+)는다$/)))return {st:m[1]};
+ if((m=w.match(/^(.*)다$/))){const d=dec(last(m[1]));if(d&&d.T===4){const a=init(m[1])+comp(d.L,d.V,0),b=init(m[1])+comp(d.L,d.V,8);if([...REV.values()].includes(b)&&![...REV.values()].includes(a))return {st:b};if([...REV.values()].includes(a)||a.endsWith('하'))return {st:a}}if([...REV.values()].includes(m[1]))return {st:m[1]}}
+ if((m=w.match(/^(.+)요$/))){const b=m[1];if(REV.has(b))return {st:REV.get(b)};if(last(b)==='해')return {st:init(b)+'하'};
+  const d=dec(last(b)),pd=dec(last(init(b)));if(d&&d.L===11&&(d.V===0||d.V===4)&&!d.T&&pd&&pd.T&&pd.T!==20)return {st:init(b)}}
+ return null}
+const SPECIAL={'안녕하세요':['안녕하세요','안녕하십니까'],'안녕하십니까':['안녕하세요','안녕하십니까'],'안녕히 가세요':['안녕히 가세요','안녕히 가십시오'],'안녕히 계세요':['안녕히 계세요','안녕히 계십시오']};
+function styles(sent){const s=String(sent||'').trim();{const k=s.replace(/[.?!]+$/,'');if(SPECIAL[k]){const pu=s.slice(k.length);return {poli:SPECIAL[k][0]+pu,formel:SPECIAL[k][1]+pu}}}const pm=s.match(/^(.*?)([.?!…~]*)$/);let body=pm[1],pun=pm[2];const q=/\?/.test(pun);
+ const sp=body.lastIndexOf(' '),head=body.slice(0,sp+1),w=body.slice(sp+1);if(!/^[가-힣]+$/.test(w))return null;let r=parse(w);if(!r)return null;if(r.st==='사'&&/에 $/.test(head)&&/삽니[다까]$/.test(w))r={st:'살'};let P,F;
+ if(r.noun!==undefined){const n=r.noun,d=dec(last(n));P=n+(d&&d.T?'이에요':'예요');F=(n==='거'?'것':n)+(q?'입니까':'입니다')}
+ else if(r.pastP){P=r.pastP+'어요';F=r.pastP+(q?'습니까':'습니다')}
+ else if(r.hon!==undefined){P=r.hon+'세요';F=r.hon+(q?'십니까':(r.imp||!/십니다$/.test(w))?'십시오':'십니다');if(/십니다$/.test(w))F=r.hon+'십니다'}
+ else if(r.fut!==undefined){P=w.endsWith('게요')?w:formalFut(r.fut);F=r.fut+'겠습니다';if(!w.endsWith('게요')){const d=dec(last(r.fut));P=r.fut+(d&&d.T&&d.T!==8?'을게요':'')}}
+ else{const a=aeo(r.st);if(!a)return null;P=a+'요';F=formal(r.st,q)}
+ if(!P||!F||P===F)return null;if(!pun)pun=q?'?':'';return {poli:head+P+pun,formel:head+F+pun}}
+function formalFut(st){return st+'겠습니다'}
+return {styles,buildRev,aeo,formal,past}})();
+
+let KSREADY=false;function ksInit(){if(KSREADY)return;KS.buildRev([...ITEMS,...PITEMS].map(i=>String(i.ko).split(' / ')[0].trim()).filter(w=>/^[가-힣]+다$/.test(w)));KSREADY=true}
+function trRows(ko,fr,src,addable){ksInit();const v=KS.styles(ko);if(!v)return trRow(ko,fr,src,addable);
+ return `<div class="trpair">${trRow(v.poli,fr,(src?src+' · ':'')+'Poli (해요체)',addable)}${trRow(v.formel,fr,'Formel (합니다체)',addable).replace('class="trrow"','class="trrow trsub"')}</div>`}
 const isKo=s=>/[ㄱ-ㆎ가-힣]/.test(s);
 function trAdd(ko,fr){$('#nko').value=ko;$('#nfr').value=fr;$('#addf').scrollIntoView({behavior:'smooth',block:'center'});setTimeout(()=>$('#nfr').focus(),350);toast('Vérifie, puis touche « Ajouter au carnet »')}
 function trRow(ko,fr,src,addable){const own=OWN.some(o=>!o.del&&o.ko===ko);return `<div class="trrow"><div><div class="ko">${esc(ko)}</div><div>${esc(fr)}</div>${src?`<small>${esc(src)}</small>`:''}</div><div style="display:flex;gap:6px"><button class="btn sm" data-say="${esc(ko)}" aria-label="Écouter">🔊</button>${addable&&!own?`<button class="btn sm" data-tradd="${esc(ko)}" data-trfr="${esc(fr)}">＋ Mes mots</button>`:own?'<span class="pill">déjà dans Mes mots</span>':''}</div></div>`}
@@ -926,12 +984,12 @@ async function translate(q){const box=$('#trres');q=q.trim();if(!q){box.innerHTM
  const all=[...ITEMS.filter(i=>!i.gram).map(i=>({...i,src:i.own?'Mes mots':'Carnet In-young'})),...PITEMS.map(i=>({...i,src:'Programme '+i.lv+' · '+i.th}))];
  const k=nq(q),loc=all.filter(i=>ko?i.ko.includes(q):nq(i.fr).includes(k)).sort((a,b)=>(ko?a.ko.length-b.ko.length:a.fr.length-b.fr.length)).slice(0,8);
  const links=`<div class="player" style="margin-top:12px"><a class="btn sm" target="_blank" rel="noopener" href="https://papago.naver.com/?sk=${ko?'ko':'fr'}&tk=${ko?'fr':'ko'}&st=${encodeURIComponent(q)}">Papago ↗</a><a class="btn sm" target="_blank" rel="noopener" href="https://korean.dict.naver.com/kofrdict/#/search?query=${encodeURIComponent(q)}">Dictionnaire Naver ↗</a></div>`;
- box.innerHTML=(loc.length?`<div class="trh">Dans ton appli</div>${loc.map(i=>trRow(i.ko,i.fr,i.src,!i.own)).join('')}`:'')+`<div class="trh">Traduction automatique</div><div id="trmt"><p class="sub">${navigator.onLine?'Traduction en cours…':'Pas de réseau : seule la recherche dans ton appli fonctionne hors connexion.'}</p></div>`+links;
+ box.innerHTML=(loc.length?`<div class="trh">Dans ton appli</div>${loc.map(i=>trRows(i.ko,i.fr,i.src,!i.own)).join('')}`:'')+`<div class="trh">Traduction automatique</div><div id="trmt"><p class="sub">${navigator.onLine?'Traduction en cours…':'Pas de réseau : seule la recherche dans ton appli fonctionne hors connexion.'}</p></div>`+links;
  if(!navigator.onLine)return;
  try{const r=await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=${ko?'ko|fr':'fr|ko'}`);const j=await r.json();
   const okM=m=>m&&m.translation&&(+m.match>=.85||+m.quality>=80)&&!/[@%{}<>\[\]"“”]|label|:/i.test(m.translation)&&m.translation.length<=Math.max(30,q.length*3);const cands=[(j.responseData||{}).translatedText,...(j.matches||[]).filter(okM).map(m=>m.translation)].filter(Boolean).filter(s=>!/[@%{}<>]/.test(s)).map(s=>String(s).trim()).filter((s,i,a)=>s&&a.indexOf(s)===i&&s.toLowerCase()!==q.toLowerCase()).slice(0,3);
   const mt=$('#trmt');if(!mt)return;if(!cands.length){mt.innerHTML='<p class="sub">Pas de traduction trouvée. Essaie Papago ci-dessous.</p>';return}
-  mt.innerHTML=cands.map(c=>ko?trRow(q,c,'',true):trRow(c,q,'',true)).join('')+'<p class="sub" style="margin:6px 0 0">Traduction automatique : vérifie-la (Papago est souvent plus juste pour le coréen) avant de l’ajouter.</p>'}
+  mt.innerHTML=cands.map(c=>ko?trRow(q,c,'',true):trRows(c,q,'',true)).join('')+'<p class="sub" style="margin:6px 0 0">Traduction automatique : vérifie-la (Papago est souvent plus juste pour le coréen) avant de l’ajouter.</p>'}
  catch(e){const mt=$('#trmt');if(mt)mt.innerHTML='<p class="sub">Service de traduction indisponible pour l’instant. Essaie Papago ci-dessous.</p>'}}
 $('#trf').onsubmit=e=>{e.preventDefault();translate($('#trq').value)};
 document.addEventListener('click',e=>{const b=e.target.closest('[data-tradd]');if(b)trAdd(b.dataset.tradd,b.dataset.trfr)});
