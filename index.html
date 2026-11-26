@@ -997,6 +997,9 @@ async function translate(q){const box=$('#trres');q=q.trim();if(!q){box.innerHTM
 $('#trf').onsubmit=e=>{e.preventDefault();translate($('#trq').value)};
 document.addEventListener('click',e=>{const b=e.target.closest('[data-tradd]');if(b)trAdd(b.dataset.tradd,b.dataset.trfr)});
 try{if(evAgg(EV.r))LS.set('ev',EV)}catch(e){console.error('evAgg',e)}
+try{if(!LS.get('restore1126',0)){EV.days=EV.days||{};const put=(d,k,lv)=>{const key=d+'|'+k+'|'+lv;if(!EV.days[key])EV.days[key]=[1,1]};
+ [20780,20781,20782].forEach(d=>put(d,'dlg','A1'));['mot','dict','pair','pro'].forEach(k=>RDAYS.forEach(d=>put(d,k,'A1')));['dlg','prog','dict','mot','pro'].forEach(k=>RDAYS.forEach(d=>put(d,k,'A2')));
+ LS.set('ev',EV);LS.set('restore1126',1);setTimeout(()=>{syncSoon(500);try{renderLevels()}catch(_){}},1500)}}catch(e){}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-rst]');if(!b)return;const [k,lv]=b.dataset.rst.split('|');EV.days=EV.days||{};const d=RDAYS.find(x=>!EV.days[x+'|'+k+'|'+lv]);if(d===undefined)return;EV.days[d+'|'+k+'|'+lv]=[1,1];LS.set('ev',EV);syncSoon();renderLevels();toast('Pastille rétablie')});
 window.DJ={get TS(){return TS},get EV(){return EV},estLevel};
 /* ---------- programme ---------- */
