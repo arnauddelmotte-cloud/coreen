@@ -466,15 +466,16 @@ function lvStats(){return LVS.map(L=>{const its=PITEMS.filter(i=>i.lv===L),k=its
 function vocLevel(){const S=lvStats();let e=-1;for(let i=0;i<S.length;i++){if(S[i].n&&S[i].r>=.6)e=i;else break}return e}
 /* ---------- évaluation ---------- */
 const EK=['dlg','dict','prog','mot'];
-function rec(k,lv,s,o={}){if(!lv)return;EV.r.push({t:Date.now()+Math.random(),d:today(),k,lv,s:Math.round(Math.max(0,Math.min(1,s))*100)/100,w:o.w||1,...(o.x?{x:o.x}:{})});if(EV.r.length>600)EV.r=EV.r.slice(-600);LS.set('ev',EV);syncSoon()}
+function evAgg(list){EV.days=EV.days||{};const tmp={};for(const x of list){if(x.k==='pair')x.lv='A1';const key=x.d+'|'+x.k+'|'+x.lv;const a=tmp[key]||(tmp[key]=[0,0]);a[0]++;a[1]+=x.s}
+ let ch=false;for(const key in tmp){const a=tmp[key],b=EV.days[key];if(!b||a[0]>b[0]){EV.days[key]=[a[0],Math.round(a[1]*100)/100];ch=true}}return ch}
+function rec(k,lv,s,o={}){if(!lv)return;if(k==='pair')lv='A1';const x={t:Date.now()+Math.random(),d:today(),k,lv,s:Math.round(Math.max(0,Math.min(1,s))*100)/100,w:o.w||1,...(o.x?{x:o.x}:{})};EV.r.push(x);EV.days=EV.days||{};const key=x.d+'|'+k+'|'+lv,a=EV.days[key]||(EV.days[key]=[0,0]);a[0]++;a[1]=Math.round((a[1]+x.s)*100)/100;if(EV.r.length>3000)EV.r=EV.r.slice(-3000);LS.set('ev',EV);syncSoon()}
 function ecScore(L){const r=EV.r.filter(x=>x.lv===L&&EK.includes(x.k)).slice(-20);let sw=0,s=0;r.forEach(x=>{sw+=x.w;s+=x.s*x.w});return {n:r.length,s:sw?s/sw:0}}
 function lastTest(){const t=EV.tests.slice().sort((a,b)=>b.t-a.t)[0];return t||null}
 function ecLevel(){let e=-1;for(let i=0;i<LVS.length;i++){const c=ecScore(LVS[i]);if(c.n>=8&&c.s>=.7)e=i;else break}
  const t=lastTest();if(t&&t.lv&&Date.now()-t.t<60*864e5)e=Math.max(e,LVS.indexOf(t.lv));return e}
 function estLevel(){const v=vocLevel(),e=ecLevel(),i=Math.min(v,e);return {i,v,e,txt:i<0?'En route vers A1':LVS[i]}}
 const lvTxt=i=>i<0?'—':LVS[i];
-function candoState(L,c){const thr=c.k==='pro'?.7:.8;const r=EV.r.filter(x=>x.k===c.k&&(c.k==='pair'||x.lv===L));const by={};r.forEach(x=>{(by[x.d]=by[x.d]||[]).push(x.s)});
- const days=Object.values(by).filter(a=>a.reduce((p,q)=>p+q,0)/a.length>=thr).length;return {n:r.length,days:Math.min(3,days),ok:days>=3}}
+function candoState(L,c){const thr=c.k==='pro'?.7:.8,lv=c.k==='pair'?'A1':L;let n=0,days=0;for(const key in (EV.days||{})){const [d,k,l]=key.split('|');if(k!==c.k||l!==lv)continue;const a=EV.days[key];n+=a[0];if(a[1]/a[0]>=thr)days++}return {n,days:Math.min(3,days),ok:days>=3}}
 function levDist(a,b){a=[...a];b=[...b];const m=a.length,n=b.length;if(!m)return n;if(!n)return m;let p=[...Array(n+1).keys()];for(let i=1;i<=m;i++){const c=[i];for(let j=1;j<=n;j++)c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]===b[j-1]?0:1));p=c}return p[n]}
 function sim(a,b){a=norm(a);b=norm(b);if(!a)return 0;return Math.max(0,1-levDist(a,b)/Math.max(a.length,b.length))}
 const SRec=window.SpeechRecognition||window.webkitSpeechRecognition;
@@ -993,6 +994,7 @@ async function translate(q){const box=$('#trres');q=q.trim();if(!q){box.innerHTM
  catch(e){const mt=$('#trmt');if(mt)mt.innerHTML='<p class="sub">Service de traduction indisponible pour l’instant. Essaie Papago ci-dessous.</p>'}}
 $('#trf').onsubmit=e=>{e.preventDefault();translate($('#trq').value)};
 document.addEventListener('click',e=>{const b=e.target.closest('[data-tradd]');if(b)trAdd(b.dataset.tradd,b.dataset.trfr)});
+try{if(evAgg(EV.r))LS.set('ev',EV)}catch(e){console.error('evAgg',e)}
 window.DJ={get TS(){return TS},get EV(){return EV},estLevel};
 /* ---------- programme ---------- */
 function buildProg(){if(!PG)return;PITEMS=PG.themes.flatMap(t=>t.items.map(i=>({id:i.id,ko:i.ko,fr:i.fr,ic:i.ic||t.icon,th:t.title,tid:t.id,lv:t.lv,base:1,prog:1,kind:i.t,c:''})));
@@ -1047,7 +1049,7 @@ function mergeIn(r){if(!r)return false;let ch=false;
  if(r.cfg&&(r.cfg.t||0)>(CFG.t||0)){CFG=Object.assign(CFG,r.cfg);ch=true;try{$('#sgoal').value=CFG.goal;$('#snewd').value=CFG.newd;$('#srate').value=CFG.rate;$('#sauto').checked=CFG.auto}catch(e){}}
  for(const k in (r.cando||{})){if(Math.abs(r.cando[k])>Math.abs(CANDO[k]||0)){CANDO[k]=r.cando[k];ch=true}}
  for(const k in (r.dlg||{})){if(((r.dlg[k]||{}).t||0)>((DLG[k]||{}).t||0)){DLG[k]=r.dlg[k];ch=true}}
- if(r.ev){const m=new Map(EV.r.map(x=>[x.t+x.k,x]));for(const x of (r.ev.r||[]))if(!m.has(x.t+x.k)){m.set(x.t+x.k,x);ch=true}EV.r=[...m.values()].sort((a,b)=>a.t-b.t).slice(-600);
+ if(r.ev){const m=new Map(EV.r.map(x=>[x.t+x.k,x]));for(const x of (r.ev.r||[]))if(!m.has(x.t+x.k)){m.set(x.t+x.k,x);ch=true}if(evAgg([...m.values()]))ch=true;for(const key in (r.ev.days||{})){const a=r.ev.days[key],b=(EV.days||{})[key];if(!b||a[0]>b[0]){EV.days[key]=a;ch=true}}EV.r=[...m.values()].sort((a,b)=>a.t-b.t).slice(-3000);
   const tm=new Map(EV.tests.map(x=>[x.t,x]));for(const x of (r.ev.tests||[]))if(!tm.has(x.t)){tm.set(x.t,x);ch=true}EV.tests=[...tm.values()];
   for(const k in (r.ev.u||{}))if((r.ev.u[k]||0)>(EV.u[k]||0)){EV.u[k]=r.ev.u[k];ch=true}LS.set('ev',EV)}
  if(r.reel&&r.reel.lines){const m=new Map(RL.lines.map(x=>[x.id,x]));for(const x of r.reel.lines){const a=m.get(x.id);if(!a||(x.t||0)>(a.t||0)){m.set(x.id,x);ch=true}}RL.lines=[...m.values()].sort((a,b)=>(a.c||0)-(b.c||0));LS.set('reel',RL)}
