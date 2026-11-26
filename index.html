@@ -187,6 +187,7 @@ details.cd input{width:22px;height:22px;flex:none;margin-top:1px}
 .pmodes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}.pmodes .btn{flex-direction:column;gap:2px;min-height:64px;font-size:13px}.pmodes .btn b{font-size:22px;font-weight:400}
 @media(max-width:520px){.pmodes{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .kind{font-size:12px;color:var(--soft);text-transform:uppercase;letter-spacing:.06em;margin:16px 0 4px}
+.trh{font-size:12px;color:var(--soft);text-transform:uppercase;letter-spacing:.06em;margin:14px 0 4px}.trrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}.trrow .ko{font-size:18px}.trrow small{color:var(--soft)}
 .bigplay{font-size:22px;min-height:76px;padding:14px 30px}
 .rec{background:var(--err);color:#fff}
 .diff .ok{color:var(--ok);font-weight:700}.diff .ko{color:var(--err);text-decoration:line-through}
@@ -306,7 +307,7 @@ details.cd input{width:22px;height:22px;flex:none;margin-top:1px}
 
 <!-- ===== CARNET ===== -->
 <section class="view" id="v-carnet">
- <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h1 style="margin-bottom:0">Carnet</h1><a class="btn sm" href="#mine">✏️ Mes mots</a></div>
+ <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h1 style="margin-bottom:0">Carnet</h1><span style="display:flex;gap:8px"><a class="btn sm" href="#mine">🔎 Traduire</a><a class="btn sm" href="#mine">✏️ Mes mots</a></span></div>
  <p class="sub">Le vocabulaire de tes cours avec In-young.</p>
  <input class="search" id="q" type="search" placeholder="Chercher en coréen ou en français…" autocomplete="off">
  <div class="chips" id="themes" style="margin-top:10px"></div>
@@ -319,6 +320,9 @@ details.cd input{width:22px;height:22px;flex:none;margin-top:1px}
 <!-- ===== MES MOTS ===== -->
 <section class="view" id="v-mine">
  <h1>Mes mots</h1><p class="sub">Ajoute un mot entendu en cours ou en répétition. Il entre tout de suite dans tes révisions.</p>
+ <div class="panel" style="margin-bottom:12px"><h2 style="margin-top:0">🔎 Traduire</h2>
+  <form id="trf" class="player" style="margin:0"><input class="inp" id="trq" placeholder="Un mot ou une phrase, en coréen ou en français" style="flex:1;min-width:200px" autocomplete="off"><button class="btn pri" type="submit">Traduire</button></form>
+  <div id="trres"></div></div>
  <form class="panel" id="addf">
   <div class="grid">
    <div><label class="f" for="nko">Coréen</label><input class="inp ko" id="nko" required lang="ko"></div>
@@ -914,6 +918,23 @@ document.addEventListener('click',e=>{const t=e.target;let b;
  if(t.closest('[data-rshow]')){RV.rev.show=true;reelRev();return}
  if(b=t.closest('[data-rq]')){const R=RV.rev,x=R.q.shift(),q=+b.dataset.rq;rgrade(x,q);if(q)R.ok++;R.show=false;try{YTP&&YTP.destroy&&YTP.destroy()}catch(_){}YTP=null;reelRev();return}
  if(b=t.closest('[data-rclip]')){const x=RL.lines.find(l=>l.id===b.dataset.rclip);$('#rclipbox').innerHTML='<div class="ytwrap"><div id="ytbox"></div></div>';ytMount({vid:x.vid,start:Math.max(0,x.at-3)});return}});
+/* ---------- traduction ---------- */
+const isKo=s=>/[ㄱ-ㆎ가-힣]/.test(s);
+function trAdd(ko,fr){$('#nko').value=ko;$('#nfr').value=fr;$('#addf').scrollIntoView({behavior:'smooth',block:'center'});setTimeout(()=>$('#nfr').focus(),350);toast('Vérifie, puis touche « Ajouter au carnet »')}
+function trRow(ko,fr,src,addable){const own=OWN.some(o=>!o.del&&o.ko===ko);return `<div class="trrow"><div><div class="ko">${esc(ko)}</div><div>${esc(fr)}</div>${src?`<small>${esc(src)}</small>`:''}</div><div style="display:flex;gap:6px"><button class="btn sm" data-say="${esc(ko)}" aria-label="Écouter">🔊</button>${addable&&!own?`<button class="btn sm" data-tradd="${esc(ko)}" data-trfr="${esc(fr)}">＋ Mes mots</button>`:own?'<span class="pill">déjà dans Mes mots</span>':''}</div></div>`}
+async function translate(q){const box=$('#trres');q=q.trim();if(!q){box.innerHTML='';return}const ko=isKo(q),nq=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+ const all=[...ITEMS.filter(i=>!i.gram).map(i=>({...i,src:i.own?'Mes mots':'Carnet In-young'})),...PITEMS.map(i=>({...i,src:'Programme '+i.lv+' · '+i.th}))];
+ const k=nq(q),loc=all.filter(i=>ko?i.ko.includes(q):nq(i.fr).includes(k)).sort((a,b)=>(ko?a.ko.length-b.ko.length:a.fr.length-b.fr.length)).slice(0,8);
+ const links=`<div class="player" style="margin-top:12px"><a class="btn sm" target="_blank" rel="noopener" href="https://papago.naver.com/?sk=${ko?'ko':'fr'}&tk=${ko?'fr':'ko'}&st=${encodeURIComponent(q)}">Papago ↗</a><a class="btn sm" target="_blank" rel="noopener" href="https://korean.dict.naver.com/kofrdict/#/search?query=${encodeURIComponent(q)}">Dictionnaire Naver ↗</a></div>`;
+ box.innerHTML=(loc.length?`<div class="trh">Dans ton appli</div>${loc.map(i=>trRow(i.ko,i.fr,i.src,!i.own)).join('')}`:'')+`<div class="trh">Traduction automatique</div><div id="trmt"><p class="sub">${navigator.onLine?'Traduction en cours…':'Pas de réseau : seule la recherche dans ton appli fonctionne hors connexion.'}</p></div>`+links;
+ if(!navigator.onLine)return;
+ try{const r=await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(q)}&langpair=${ko?'ko|fr':'fr|ko'}`);const j=await r.json();
+  const okM=m=>m&&m.translation&&(+m.match>=.85||+m.quality>=80)&&!/[@%{}<>\[\]"“”]|label|:/i.test(m.translation)&&m.translation.length<=Math.max(30,q.length*3);const cands=[(j.responseData||{}).translatedText,...(j.matches||[]).filter(okM).map(m=>m.translation)].filter(Boolean).filter(s=>!/[@%{}<>]/.test(s)).map(s=>String(s).trim()).filter((s,i,a)=>s&&a.indexOf(s)===i&&s.toLowerCase()!==q.toLowerCase()).slice(0,3);
+  const mt=$('#trmt');if(!mt)return;if(!cands.length){mt.innerHTML='<p class="sub">Pas de traduction trouvée. Essaie Papago ci-dessous.</p>';return}
+  mt.innerHTML=cands.map(c=>ko?trRow(q,c,'',true):trRow(c,q,'',true)).join('')+'<p class="sub" style="margin:6px 0 0">Traduction automatique : vérifie-la (Papago est souvent plus juste pour le coréen) avant de l’ajouter.</p>'}
+ catch(e){const mt=$('#trmt');if(mt)mt.innerHTML='<p class="sub">Service de traduction indisponible pour l’instant. Essaie Papago ci-dessous.</p>'}}
+$('#trf').onsubmit=e=>{e.preventDefault();translate($('#trq').value)};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-tradd]');if(b)trAdd(b.dataset.tradd,b.dataset.trfr)});
 window.DJ={get TS(){return TS},get EV(){return EV},estLevel};
 /* ---------- programme ---------- */
 function buildProg(){if(!PG)return;PITEMS=PG.themes.flatMap(t=>t.items.map(i=>({id:i.id,ko:i.ko,fr:i.fr,ic:i.ic||t.icon,th:t.title,tid:t.id,lv:t.lv,base:1,prog:1,kind:i.t,c:''})));
